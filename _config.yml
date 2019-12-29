@@ -108,3 +108,8 @@ deploy:
   type: git
   repo: git@github.com:zs670980918/zs670980918.github.io.git
   branch: master
+
+#RSS
+# Extensions
+## Plugins: http://hexo.io/plugins/
+plugins: hexo-generate-feed
