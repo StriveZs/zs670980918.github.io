@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:02:15
 tags:
+  - pat
 ---
 
 1070 结绳 （25 分)  [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805264706813952)
@@ -33,7 +34,7 @@ tags:
     14
 
 代码：
-
+```
 #include<iostream>
 #include<algorithm>
 #include<cmath>
@@ -59,3 +60,4 @@ int main(){
     cout<<maxLen<<endl;
     return 0;
 }
+```

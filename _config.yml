@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://zs670980918.github.io/
+url: blog.strivezs.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -43,7 +43,7 @@ new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
-  enable: true # Open external links in new tab
+  enable: false # Open external links in new tab
   field: site # Apply to the whole site
   exclude: ''
 filename_case: 0
@@ -54,7 +54,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
@@ -109,7 +109,36 @@ deploy:
   repo: git@github.com:zs670980918/zs670980918.github.io.git
   branch: master
 
-#RSS
+# RSS
 # Extensions
 ## Plugins: http://hexo.io/plugins/
-plugins: hexo-generate-feed
+plugins: 
+  hexo-generate-cname
+  hexo-generator-feed
+  # hexo-tag-cloud
+
+# hexo-tag-cloud
+# tag_cloud:
+#     textFont: Trebuchet MS, Helvetica
+#     textColor: '#333'
+#     textHeight: 25
+#     outlineColor: '#E2E1D1'
+#     maxSpeed: 0.1 
+
+# 2d 二次元人物模型
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-nico
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: false

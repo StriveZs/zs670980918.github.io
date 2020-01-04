@@ -8,6 +8,9 @@ categories:
   - 文章页
 date: 2018-03-07 19:20:16
 tags:
+  - Linux
+  - C/C++
+  - VWware
 ---
 
 #### ![](http://47.100.4.8/wp-content/uploads/2018/03/QQ图片20180307191808.png)   **+   ![](http://47.100.4.8/wp-content/uploads/2018/03/QQ图片20180307191828.png)   =  当然是如下内容了：**

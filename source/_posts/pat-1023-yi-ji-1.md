@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 11:33:29
 tags:
+  - pat
 ---
 
 1023 组个最小数 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805298269634560)
@@ -32,7 +33,7 @@ tags:
     10015558
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -60,3 +61,4 @@ int main(){
     cout<<sen<<endl;
     return 0;
 }
+```

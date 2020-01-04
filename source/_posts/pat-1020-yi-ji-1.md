@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 23:24:49
 tags:
+  - pat
 ---
 
 1020 月饼 （25 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805301562163200
@@ -34,7 +35,7 @@ tags:
     94.50
 
 代码：（一直有一个测试点过不去的版本）应该是有些细节没注意到
-
+```
 #include<iostream>
 #include<iomanip>
 
@@ -102,9 +103,9 @@ int main(){
     cout<<setiosflags(ios::fixed)<<setprecision(2)<<money<<endl;
     return 0;
 }
-
+```
 参考后改正的：
-
+```
 #include<bits/stdc++.h>
 using namespace std;
 struct mooncake
@@ -145,3 +146,4 @@ int main()
     printf("%.2f\\n",sum);
     return 0;
 }
+```

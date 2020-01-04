@@ -8,6 +8,8 @@ categories:
   - 语法与例题
 date: 2018-07-23 15:58:16
 tags:
+  - DataBase
+  - 视图操作
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/06/QQ图片20180621230739.png)
@@ -15,7 +17,7 @@ tags:
 *   建立计算机系学生视图CS_S ；
 
 代码：
-
+```
 create view CS_S
 
 as
@@ -127,5 +129,5 @@ drop view CS_S2
 drop view CS_S3
 
 drop view NP_C
-
+```
   截图： ![](http://47.100.4.8/wp-content/uploads/2018/07/8.png)

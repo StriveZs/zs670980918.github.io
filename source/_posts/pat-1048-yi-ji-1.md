@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 18:28:26
 tags:
+  - pat
 ---
 
 1048 数字加密 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805276438282240)
@@ -32,7 +33,7 @@ tags:
     3695Q8118
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -91,3 +92,4 @@ int main(){
     cout<<result<<endl;
     return 0;
 }
+```

@@ -7,6 +7,9 @@ categories:
   - 文章页
 date: 2018-03-20 10:46:54
 tags:
+  - Python
+  - PyQt5
+  - 学习笔记
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/03/QQ图片20180308122611.png) [始めましょう！](https://translate.google.cn/#zh-CN/ja/%E6%88%91%E4%BB%AC%E5%BC%80%E5%A7%8B%E5%90%A7)   依旧是学习笔记  咕咕~~ ![](http://47.100.4.8/wp-content/uploads/2018/03/QQ图片20180308123017.png)

@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:50:58
 tags:
+  - pat
 ---
 
 1063 计算谱半径 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805267860930560)
@@ -37,7 +38,7 @@ tags:
     4.24
 
 代码：
-
+```
 #include<iostream>
 #include<math.h>
 #include<cstdio>
@@ -58,3 +59,4 @@ int main(){
     printf("%.2f",R);
     return 0;
 }
+```

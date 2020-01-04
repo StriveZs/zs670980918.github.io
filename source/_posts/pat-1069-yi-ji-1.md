@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:01:14
 tags:
+  - pat
 ---
 
 1069 微博转发抽奖 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805265159798784)
@@ -55,7 +56,7 @@ tags:
     Keep going...
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -87,3 +88,4 @@ int main(){
     }
     return 0;
 }
+```

@@ -8,10 +8,13 @@ categories:
   - 文章页
 date: 2018-06-09 22:58:56
 tags:
+  - C/C++
+  - 链表
+  - Template
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/06/QQ图片20180609225518.png) 链表相信都很熟悉了就不过多的介绍，如果需要自行翻阅数据结构。这里面使用到了之前结点类 创建LinkedList.h头文件 代码：
-
+```
 #ifndef LINKEDLIST_CLASS
 #define LINKEDLIST_CLASS
 #include <iostream>
@@ -314,9 +317,9 @@ void LinkedList<T>::DeleteAt(void)
    size--;
 }
 #endif
-
+```
 使用： 代码：
-
+```
 #include<iostream>
 #include "LinkedList.h"
 using namespace std;
@@ -355,5 +358,5 @@ int main()
 	}
 	cout << endl;
 }
-
+```
 结果： ![](http://47.100.4.8/wp-content/uploads/2018/06/15613.png)

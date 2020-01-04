@@ -8,10 +8,12 @@ categories:
   - 文章页
 date: 2019-01-19 17:14:01
 tags:
+  - 快速排序
+  - Python
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2019/01/QQ图片20190119170830.png)        通过键盘接收若干个整数，存放在列表中。使用Python实现快速排序并将结果输出，并且进行和自带的sort函数相比进行性能分析。
-
+```
 import copy
 import time
 import random
@@ -68,5 +70,5 @@ if \_\_name\_\_ == '\_\_main\_\_':
     print(num2)
     #算法性能的分析
     analy()
-
+```
 结果： ![](http://47.100.4.8/wp-content/uploads/2019/01/QQ图片20190119171031.png) 下面是通过查阅资料得到的对自带的sort函数进行的介绍： 它使用的是Timesort原理，timesort是结合了合并排序和插入排序而得出的排序算法。该算法为了减少对升序部分的回溯和对降序部分的性能倒退，将输入的数值按照升序和降序的特点进行了分区。因此排序的单位不是一个个数字而是一个个块-分区。其中每个分区叫一个run，针对这些run序列，每次拿一个run出来按规则进行合并。每次合并会将两个run合并为一个run，合并的结果保存到栈中，知道所有的run都被使用，这时将栈中所有的run合并到只剩一个run，这个run便是排序好的结果。 Timesort和快排之间的性能比较： ![](http://47.100.4.8/wp-content/uploads/2019/01/QQ图片20190119171150.png) 这里对timesort算法的了解参考了如下文章： https://blog.csdn.net/yangzhongblog/article/details/8184707

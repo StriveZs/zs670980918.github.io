@@ -8,6 +8,9 @@ categories:
   - 文章页
 date: 2018-05-08 23:14:08
 tags:
+  - C/C++
+  - STL
+  - deque
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/05/QQ图片20180507183124.png)
@@ -15,7 +18,7 @@ tags:
 *   deque双向队列：
 
 deque双向队列是一种双向开口的连续线性空间，可以高效的在头尾两端插入和删除元素，deque在接口上和vector非常相似，下面列出deque的常用成员函数：   构造析构函数： deque<类型>c  创建一个名称为c的空元素类型的deque deque<类型>c(a2)  用c2来初始化c1 deque<类型>c（n）  创建deque，含有n个数据，数据均有基础构造函数初始化 deque<类型>c（n，t）  创建一个含有n个t构成的deque deque<类型>c（start,end）创建一个以（start，end）区间的deque c ~deque<类型>（）   析构函数   赋值函数： 可以直接使用c\[i\]=x 直接进行赋值 c.assign（n，elem）  将n个elem赋值给c   数据访问： c.at（index）   返回索引index所指的数据  如果index大于最大边界 则抛出一个异常 c.front（）  返回deque第一个数据 c.back（）  返回最后一个数据 c.begin（）   返回指向第一个数据的迭代器 注意： deque<int>::iterator pos;  声明一个迭代器变量 使用pos=c.begin（）  来接收返回值不能使用int定义的变量接收否则会报错！ c.end（）同理。 c.end（）   返回指向最后一个数据的下一个位置的迭代器 c.rbegin（）  返回逆向队列的第一个数据 c.rend（）  返回逆向队列指向最后一个数据的下一个位置的迭代器   加入数据： c.push\_back（elem）  在尾部加入一个数据 c.push\_from（elem）  在头部插入一个数据 c.insert（pos，elem）  在pos位置后面插入一个elem  返回新的数据位置 c.insert（pos，n，elem）  在pos位置后面插入n个elem，无返回值   删除数据： c.pop\_back（）  删除最后一个数据 c.pop\_from（）  删除头部数据 c.erase（pos）  删除pos位置的数据，返回下一个数据的位置   其他操作： c.empty（）  判断容器是否为空 c.max_size（）  返回容器中最大数据的数量 c.resize（num）  重新指定队列长度 c.size（）  返回容器实际数据值 c.swap（s）  将c和s的元素互换 swap（c，s）   deque从逻辑上看是连续的内存，本质是由一段段固定大小的连续的空间组成。 ![](http://47.100.4.8/wp-content/uploads/2018/05/1232154.png) 采用一小块连续的内存索引缓存结点，每个缓存结点也是一段连续的空间，可以存储多个数据，当索引内存空间满载时，需要申请一块更大的内存做索引。   使用：
-
+```
 #include<iostream>
 #include<deque>
 #include <cstdio>
@@ -75,5 +78,5 @@ int main()
     cout<<"输入test5当前的大小:"<<test5.size()<<"  \\n输出最大数据的数量："<<test5.max_size()<<endl;
     return 0;
 }
-
+```
 结果： ![](http://47.100.4.8/wp-content/uploads/2018/05/4324235.png)

@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:56:44
 tags:
+  - pat
 ---
 
 1066 图像过滤 （15 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805266514558976)
@@ -37,7 +38,7 @@ tags:
     088 000 000 000 255
 
 代码：
-
+```
 #include<iostream>
 
 using namespace std;
@@ -85,3 +86,4 @@ int main(){
     }
     return 0;
 }
+```

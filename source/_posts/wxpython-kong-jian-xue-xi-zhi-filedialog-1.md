@@ -7,6 +7,8 @@ categories:
   - 文章页
 date: 2018-03-29 12:48:53
 tags:
+  - Python
+  - WxPython
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/03/d0c8a786c9177f3e3d1cab2870cf3bc79f3d56ee.png)

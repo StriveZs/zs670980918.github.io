@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:34:22
 tags:
+  - pat
 ---
 
 1092 最好吃的月饼 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/1071785779399028736)
@@ -36,7 +37,7 @@ tags:
     3 5
 
 代码：
-
+```
 #include<stdio.h>
 
 int main()
@@ -63,3 +64,4 @@ int main()
     }
     return 0;
 }
+```

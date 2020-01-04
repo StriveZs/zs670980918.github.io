@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:34:29
 tags:
+  - pat
 ---
 
 1053 住房空置率 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805273284165632)
@@ -45,7 +46,7 @@ tags:
 （样例解释：第2、3户为“可能空置”，第4户为“空置”，其他户不是空置。）
 
 代码：
-
+```
 #include<iostream>
 #include<cstdio>
 
@@ -82,3 +83,4 @@ int main(){
     printf("%0.1f%% %0.1f%%\\n",(maybe\_num/num)\*100,(must\_num/num)\*100);
     return 0;
 }
+```

@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 18:15:25
 tags:
+  - pat
 ---
 
 1040 有几个PAT （25 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805282389999616)
@@ -32,7 +33,7 @@ tags:
     2
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 
@@ -56,3 +57,4 @@ int main(){
     cout<<sum%1000000007<<endl;
     return 0;
 }
+```

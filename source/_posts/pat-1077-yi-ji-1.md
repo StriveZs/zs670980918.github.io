@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:15:17
 tags:
+  - pat
 ---
 
 1077 互评成绩计算 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805262303477760)
@@ -43,7 +44,7 @@ tags:
     39
 
 代码：
-
+```
 #include<iostream>
 #include<math.h>
 #include<vector>
@@ -84,3 +85,4 @@ int main(){
     }
     return 0;
 }
+```

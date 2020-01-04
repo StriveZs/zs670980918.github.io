@@ -7,6 +7,7 @@ categories:
   - 计算机组成原理
 date: 2018-04-03 12:47:29
 tags:
+  - Computer Architecture
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/04/321312432423.jpg)

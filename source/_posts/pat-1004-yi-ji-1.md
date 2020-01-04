@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 22:53:15
 tags:
+  - pat
 ---
 
 1004 成绩排名 （20 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805321640296448
@@ -45,7 +46,7 @@ tags:
     Joe Math990112
 
 代码：
-
+```
 #include<iostream>
 #include<string>
 #include<deque>
@@ -135,3 +136,4 @@ int main(){
     cout<<mess\[mess.size()-1\].name<<" "<<mess\[mess.size()-1\].ID<<endl;
     return 0;
 }
+```

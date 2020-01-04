@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 23:11:25
 tags:
+  - pat
 ---
 
 1014 福尔摩斯的约会 （20 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805308755394560
@@ -35,7 +36,7 @@ tags:
     THU 14:04
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 
@@ -150,3 +151,4 @@ int main(){
     }
     return 0;
 }
+```

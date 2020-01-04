@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 11:54:54
 tags:
+  - pat
 ---
 
 1035 插入与归并 （25 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805286714327040)
@@ -48,7 +49,7 @@ tags:
     1 2 3 8 4 5 7 9 0 6
 
 代码：
-
+```
 #include<iostream>
 #include<algorithm>
 
@@ -152,3 +153,4 @@ int main(){
     }
     return 0;
 }
+```

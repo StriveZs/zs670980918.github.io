@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 18:23:06
 tags:
+  - pat
 ---
 
 1045 快速排序 （25 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805278589960192)
@@ -41,7 +42,7 @@ tags:
     1 4 5
 
 代码：
-
+```
 #include<iostream>
 #include<algorithm>
 
@@ -82,3 +83,4 @@ int main(){
     cout<<endl;
     return 0;
 }
+```

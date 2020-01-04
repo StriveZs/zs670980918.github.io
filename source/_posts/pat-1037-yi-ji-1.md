@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 18:11:08
 tags:
+  - pat
 ---
 
 1037 在霍格沃茨找零钱 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805284923359232)
@@ -42,7 +43,7 @@ tags:
     -3.2.1
 
 代码：
-
+```
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
@@ -67,3 +68,4 @@ int main(int argc, char const *argv\[\])
 
     return 0;
 }
+```

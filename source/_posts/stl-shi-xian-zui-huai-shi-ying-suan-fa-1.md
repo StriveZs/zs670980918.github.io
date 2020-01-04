@@ -8,10 +8,13 @@ categories:
   - 算法
 date: 2018-06-01 19:01:46
 tags:
+  - C/C++
+  - 最坏适应算法
+  - STL
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/05/QQ图片20180529111458.png) 与最佳适应算法相反，最坏适应分配算法要扫描整个空闲分区或链表，总是挑选一个最大的空闲分区分割给作业使用。 算法代码：
-
+```
 //最坏适应算法
 int k=0;  //全局变量k 以便判断结束条件
 int flag1=0;
@@ -66,9 +69,9 @@ bool BF()
     cout<<"该模块已经成功存储！"<<endl;
     return true;
 }
-
+```
 使用到的数据结构、相关函数以及全局变量
-
+```
 #include<iostream>
 #include<deque>
 
@@ -112,5 +115,5 @@ void WFModeSort()
                   swap(\*pos1,\*pos);
               }
 }
-
+```
 结果： ![](http://47.100.4.8/wp-content/uploads/2018/06/自行车自行车.png) ![](http://47.100.4.8/wp-content/uploads/2018/06/爱上大声地阿萨德.png)

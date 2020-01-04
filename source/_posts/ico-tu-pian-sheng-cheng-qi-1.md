@@ -7,6 +7,8 @@ categories:
   - 文章页
 date: 2018-04-05 14:19:18
 tags:
+  - Python
+  - ico
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/04/d058ccbf6c81800ab3a945b0b93533fa838b47c4.png)

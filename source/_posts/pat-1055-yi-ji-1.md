@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:41:32
 tags:
+  - pat
 ---
 
 1055 集体照 （25 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805272021680128)
@@ -52,7 +53,7 @@ tags:
     Tim Amy John
 
 代码：
-
+```
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -98,3 +99,4 @@ int main() {
     }
     return 0;
 }
+```

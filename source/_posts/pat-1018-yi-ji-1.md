@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 23:21:05
 tags:
+  - pat
 ---
 
 1018 锤子剪刀布 （20 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805304020025344
@@ -44,7 +45,7 @@ tags:
     B B
 
 代码（有一个测试点一直过不去）：  改正方法为应该是没有满足如果解不唯一，则输出按字母序最小的解。这个条件 所以应该采用将结果保存下来然后sort进行排序
-
+```
 #include<iostream>
 
 using namespace std;
@@ -204,3 +205,4 @@ int main(){
 
     }
 }
+```

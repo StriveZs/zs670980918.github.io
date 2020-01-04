@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 11:42:44
 tags:
+  - pat
 ---
 
 1030 完美数列 （25 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805291311284224)
@@ -33,7 +34,7 @@ tags:
     8
 
 代码：
-
+```
 #include<iostream>
 #include<algorithm>
 
@@ -65,3 +66,4 @@ int main(){
     cout<<maxnum<<endl;
     return 0;
 }
+```

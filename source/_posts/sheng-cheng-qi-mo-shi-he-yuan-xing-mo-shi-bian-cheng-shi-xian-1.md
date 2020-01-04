@@ -8,6 +8,8 @@ categories:
   - 设计模式
 date: 2019-05-06 12:36:54
 tags:
+  - generator pattern
+  - prototype pattern
 ---
 
 1、生成器模式的原理：
@@ -39,7 +41,7 @@ tags:
 *   Client
 
 让一个原型克隆自身从而创建一个新的对象 **结构图：** ![](http://47.100.4.8/wp-content/uploads/2019/05/2.png) **题目要求：** 使用生成器模式模拟实现IBM电脑的生产，其中IBM电脑的主要结构用如下表示： class IBM{   string monitor=”IBM的显示器”;   string keyboard=”IBM的键盘”;   string mouse=”IBM的鼠标”;   Motherboard* MB;   void display(); } 其中MB是一个主板类，其主要结构如下： class Motherboard{ string CPU; string RAM; } 即主板包含CPU和RAM。display是一个打印各个组件的函数，主要用于检查是否生产正确。 建造顺序为先生产主板，再依次生产显示器、键盘和鼠标。 使用生成器模式生产出第一台IBM电脑后，利用原型模式，将该电脑再复制两台。 **UML类图：** ![](http://47.100.4.8/wp-content/uploads/2019/05/3.jpg) **代码：**
-
+```
 #include<iostream>
 #include<string.h>
 
@@ -167,5 +169,5 @@ int main(){
     p1->display();
     return 0;
 }
-
+```
 **结果：** ![](http://47.100.4.8/wp-content/uploads/2019/05/4.png)

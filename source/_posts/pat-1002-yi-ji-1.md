@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 22:47:08
 tags:
+  - pat
 ---
 
 1002 写出这个数 （20 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805324509200384
@@ -32,7 +33,7 @@ tags:
     yi san wu
 
 代码：
-
+```
 #include<iostream>
 #include<string>
 #include<math.h>
@@ -100,3 +101,4 @@ int main(){
     }
     return 0;
 }
+```

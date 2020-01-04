@@ -7,6 +7,8 @@ categories:
   - 机器学习
 date: 2018-03-15 18:11:29
 tags:
+  - Python
+  - Machine Learning
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/03/b8389b504fc2d562bb0ba4d9e01190ef76c66c86-300x166.png)

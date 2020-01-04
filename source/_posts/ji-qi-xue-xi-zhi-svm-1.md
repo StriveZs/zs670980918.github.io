@@ -8,6 +8,9 @@ categories:
   - 机器学习
 date: 2018-07-03 15:53:59
 tags:
+  - Machine Learning
+  - SVM
+  - Algorithm
 ---
 
 **支持****向量机（SVM）**
@@ -24,7 +27,7 @@ tags:
 *   使用算法：几乎所有分类分为都可以使用SVM，SVM是二分类器，对于多类问题使用SVM的话需要对代码进行修改
 
 **SMO高效优化算法** SMO算法是JohnPlatt发现的，用于训练SVM，SMO表示序列最小优化，Platt的SMO算法是将大优化问题分解为小的优化问题（有点类似分治的思想）。SMO的目标是求出一系列的alpha和b，一旦求出来这些alpha就方便计算出权重向量w并得到分隔超平面。 首先给出一个简单的版本来方便理解（该算法适合小规模的数据集但是执行速度比较慢）： 读取数据以及随机一个整数并且对该整数的大小进行调整函数 代码：
-
+```
 #SMO算法中的辅助函数
 def loadDataSet(fileName):  #读取数据和标签
     dataMat = \[\]
@@ -48,9 +51,9 @@ def clipAlpha(aj,H,L):  #辅助函数用于对如果随机数据太大来进行�
     if L > aj:
         aj = L
 return aj
-
+```
 对于selectJrand函数中i是第一个aplha的下标，m是所有alpha的数目，只要函数的值不等于i的值则一直会随机。 SMO函数的伪代码： 创建一个alpha向量并将其初始化为0向量 当迭代次数小于最大迭代次数时：（外循环）    对数据中的每一个数据向量：（内循环）        如果该数据向量可以被优化：           随机选择另外一个数据向量           同时优化这两个向量           如果这两个向量都不能被优化，退出内循环    如果所有向量都没有被优化，增加迭代数目，继续下一次循环 下面给出代码：
-
+```
 def SMOSimple(dataMatIn,classLabels,C,toler,maxIter): #五个参数：数据集、类别标签、常数C、容错率、最大循环次数
     dataMatrix = np.mat(dataMatIn)
     labelMat = np.mat(classLabels).transpose() #对标签进行转置，将其转置为列向量
@@ -110,7 +113,7 @@ def SMOSimple(dataMatIn,classLabels,C,toler,maxIter): #五个参数：数据集�
             iter = 0
         print("iteration number: %d" % iter)
     return b,alphas
-
+```
 主要的原理还是几个预测公式，这个是前人推出来的，我有点看不懂但是直接用还是可以的。 这个函数写的累死我了光看书写就写了好久。 函数的五个参数为：数据集、类别标签、常数C、容错率、最大循环次数 np.mat（）函数作用是：将数组转换为二维的numpy矩阵，它和ndarray数组又有一些区别。 使用np.mat(classLabels).transpose() 是将行标签转置为了列向量，方便和矩阵每行进行对应。 使用zeros创建一个初始化长度为m的numpy数组并将其转换为矩阵，用来表示alphas 注：该alphas就是之前条件公式里面的阿尔法 创建iter 用来存储在alphas没有改变的情况下遍历数据集的次数，当该值达到最大循环次数时则结束。
 
 1.  Multiply（）用来将两个矩阵/向量相乘 然后.T 是得到转置

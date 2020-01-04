@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 11:48:21
 tags:
+  - pat
 ---
 
 1033 旧键盘打字 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805288530460672)
@@ -33,7 +34,7 @@ tags:
     _hs_s_a_tst
 
 代码：（这里要仔细理解题意 只有+是上档键）
-
+```
 #include<iostream>
 #include<string.h>
 #include<vector>
@@ -72,3 +73,4 @@ int main(){
     cout<<endl;
     return 0;
 }
+```

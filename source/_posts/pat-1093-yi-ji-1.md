@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:35:13
 tags:
+  - pat
 ---
 
 1093 字符串A+B （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/1071785884776722432)
@@ -23,17 +24,17 @@ tags:
 在一行中输出题面要求的 A 和 B 的和。
 
 ### 输入样例：
-
+```
     This is a sample test
     to show you_How it works
-    
+```
 
 ### 输出样例：
-
+```
     This ampletowyu_Hrk
-
+```
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<vector>
@@ -61,3 +62,4 @@ int main(){
     cout<<endl;
     return 0;
 }
+```

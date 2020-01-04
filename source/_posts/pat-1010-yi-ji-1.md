@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 23:00:34
 tags:
+  - pat
 ---
 
 1010 一元多项式求导 （25 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805313708867584
@@ -32,7 +33,7 @@ tags:
     12 3 -10 1 6 0
 
 代码：
-
+```
 #include<iostream>
 
 using namespace std;
@@ -55,3 +56,4 @@ int main(){
     }
     return 0;
 }
+```

@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:16:17
 tags:
+  - pat
 ---
 
 1078 字符串压缩与解压 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805262018265088)
@@ -44,7 +45,7 @@ tags:
     TTTTThhiiiis isssss a   tesssst CAaaa asZZZZZZZZZZ
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<math.h>
@@ -115,3 +116,4 @@ int main(){
     }
     return 0;
 }
+```

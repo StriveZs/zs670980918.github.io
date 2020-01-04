@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:18:39
 tags:
+  - pat
 ---
 
 1080 MOOC期终成绩 （25 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805261493977088)
@@ -54,7 +55,7 @@ tags:
     wehu8 300 55 84 84
 
 代码：
-
+```
 #include<iostream>
 #include<map>
 #include<algorithm>
@@ -140,3 +141,4 @@ int main(){
     }
     return 0;
 }
+```

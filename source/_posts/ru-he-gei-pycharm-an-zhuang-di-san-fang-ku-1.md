@@ -7,6 +7,9 @@ categories:
   - 文章页
 date: 2018-03-10 18:33:03
 tags:
+  - PyCharm
+  - whl
+  - Python
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/03/f561e48065380cd7687e6295a844ad3459828102-300x300.jpg)  

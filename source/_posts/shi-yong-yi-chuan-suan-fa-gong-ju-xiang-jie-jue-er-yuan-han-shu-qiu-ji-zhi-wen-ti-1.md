@@ -10,6 +10,9 @@ categories:
   - 算法
 date: 2018-07-13 11:43:37
 tags:
+  - GA
+  - MatLab
+  - 优化算法
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/07/QQ图片20180706191552.png) **计算二元函数的最大值** **二元函数为：![](http://47.100.4.8/wp-content/uploads/2018/07/11.png)** **基础参数配置为：**
@@ -39,7 +42,7 @@ tags:
 0.01
 
 代码：
-
+```
 clc
 clear all
 close all
@@ -99,5 +102,5 @@ bestZ = trace(3,end);
 bestX = trace(1,end);
 bestY = trace(2,end);
 fprintf(\['最优解：\\nX=',num2str(bestX),'\\nY=',num2str(bestY),'\\n最大值为=',num2str(bestZ)\]);
-
+```
 结果： ![](http://47.100.4.8/wp-content/uploads/2018/07/12.png) ![](http://47.100.4.8/wp-content/uploads/2018/07/13.png)

@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 23:22:36
 tags:
+  - pat
 ---
 
 1019 数字黑洞 （20 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805302786899968
@@ -55,7 +56,7 @@ tags:
     2222 - 2222 = 0000
 
 代码：
-
+```
 #include<iostream>
 #include<iomanip>
 #include<algorithm>
@@ -116,3 +117,4 @@ int main()
 	OutPut(a);
 	return 0;
 }
+```

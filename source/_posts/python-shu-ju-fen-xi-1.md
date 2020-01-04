@@ -8,6 +8,9 @@ categories:
   - 文章页
 date: 2018-03-16 17:21:41
 tags:
+  - Python
+  - Data analysis
+  - Anaconda
 ---
 
 首先介绍一下编程工具：

@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 18:16:16
 tags:
+  - pat
 ---
 
 1041 考试座位号 （15 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805281567916032)
@@ -39,7 +40,7 @@ tags:
     3310120150912119 1
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<map>
@@ -76,3 +77,4 @@ int main(){
     }
     return 0;
 }
+```

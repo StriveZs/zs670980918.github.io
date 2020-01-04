@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 11:41:36
 tags:
+  - pat
 ---
 
 1029 旧键盘 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805292322111488)
@@ -33,7 +34,7 @@ tags:
     7TI
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -76,3 +77,4 @@ int main(){
     cout<<endl;
     return 0;
 }
+```

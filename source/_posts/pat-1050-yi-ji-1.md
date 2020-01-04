@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 18:30:36
 tags:
+  - pat
 ---
 
 1050 螺旋矩阵 （25 分）[原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805275146436608)
@@ -36,7 +37,7 @@ tags:
     58 60 76
 
 代码：
-
+```
 #include<iostream>
 #include<math.h>
 #include<algorithm>
@@ -156,3 +157,4 @@ int main(){
     }
     return 0;
 }
+```

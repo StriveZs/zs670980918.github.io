@@ -9,10 +9,13 @@ categories:
   - 算法
 date: 2018-04-28 23:07:29
 tags:
+  - C/C++
+  - Python
+  - Data analysis
 ---
 
   使用最小二乘法来拟合直线：   给定一个简单的直线模型y（a）=ax+b 这个问题称为直线回归。设变量y随自变量x变化，给出n组测试数据（xi，yi）用直线来拟合这些点，其中a，b是直线的斜率和截距。称为回归系数。 直线的拟合在机器学习中logistic回归时对数据进行拟合时便用到了。因此在这里给出一个详细解释。   为了确定回归系数，通常采用最小二乘法来确定，只要使式子达到最小即可。 根据极值原理，a和b满足下列方程： 根据上面式子再整合，得到如下式子： ![](http://47.100.4.8/wp-content/uploads/2018/04/66666666666666.png) 其实只需要记住上面的式子就好了。推导过程你不是数学专业的根本不需要知道。 上面的是式子就是求回归系数的主要依据。   C++实现：
-
+```
 #include <iostream>
 #include <cmath>
 
@@ -48,9 +51,9 @@ int main()
     cout<<"回归系数为："<<t<<endl;
     return 0;
 }
-
+```
   结果： ![](http://47.100.4.8/wp-content/uploads/2018/04/3333333333333.png) python使用numpy实现：  numpy要好好学了。。搞了半天才弄好数组计算
-
+```
 import numpy as np
 import re
 import math
@@ -82,5 +85,5 @@ def LineFit(dataSet):
 dataSet = loadData()
 a,b,t=LineFit(dataSet)
 print(a,b,t)
-
+```
   结果： ![](http://47.100.4.8/wp-content/uploads/2018/04/222222222222.png)

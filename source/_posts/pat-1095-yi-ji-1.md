@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:36:54
 tags:
+  - pat
 ---
 
 1095 解码PAT准考证 （25 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/1071786104348536832)
@@ -72,7 +73,7 @@ PAT 准考证号由 4 部分组成：
     NA
 
 代码：
-
+```
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -176,3 +177,4 @@ int main()
     }
     return 0;
 }
+```

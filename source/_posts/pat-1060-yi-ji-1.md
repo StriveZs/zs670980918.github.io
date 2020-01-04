@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:47:27
 tags:
+  - pat
 ---
 
 1060 爱丁顿数 （25 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805269312159744) 英国天文学家爱丁顿很喜欢骑车。据说他为了炫耀自己的骑车功力，还定义了一个“爱丁顿数” E ，即满足有 E 天骑车超过 E 英里的最大整数 E。据说爱丁顿自己的 E 等于87。 现给定某人 N 天的骑车距离，请你算出对应的爱丁顿数 E（≤N）。
@@ -31,7 +32,7 @@ tags:
     6
 
 代码：
-
+```
 #include<iostream>
 #include<algorithm>
 #include<math.h>
@@ -63,3 +64,4 @@ int main(){
     cout<<--aver<<endl;
     return 0;;
 }
+```

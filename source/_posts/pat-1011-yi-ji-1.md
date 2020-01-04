@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 23:01:59
 tags:
+  - pat
 ---
 
 1011 A+B 和 C （15 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805312417021952
@@ -39,7 +40,7 @@ tags:
     Case #4: false
 
 代码：
-
+```
 #include<iostream>
 #include<deque>
 #include<string.h>
@@ -80,3 +81,4 @@ int main(){
     }
     return 0;
 }
+```

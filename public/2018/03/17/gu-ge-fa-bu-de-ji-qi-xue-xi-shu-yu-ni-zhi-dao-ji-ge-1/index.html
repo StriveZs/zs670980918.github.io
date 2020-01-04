@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favision.JPG?v=5.1.4">
+
+
+
+
+
+
+
+  <meta name="keywords" content="Google,Machine Learning," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="StriveZs的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="A&#x2F;B 测试 (A&#x2F;B testing)一种统计方法，用于将两种或多种技术进行比较，通常是将当前采用的技术与新技术进行比较。A&#x2F;B 测试不仅旨在确定哪种技术的效果更好，而且还有助于了解相应差异是否具有显著的统计意义。A&#x2F;B 测试通常是采用一种衡量方式对两种技术进行比较，但也适用于任意有限数量的技术和衡量方式。 准确率 (accuracy)分类模型的正确预测所占的比例。 激活函数 (activat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="谷歌发布的机器学习术语，你知道几个？">
+<meta property="og:url" content="blog.strivezs.com/2018/03/17/gu-ge-fa-bu-de-ji-qi-xue-xi-shu-yu-ni-zhi-dao-ji-ge-1/index.html">
+<meta property="og:site_name" content="StriveZs的博客">
+<meta property="og:description" content="A&#x2F;B 测试 (A&#x2F;B testing)一种统计方法，用于将两种或多种技术进行比较，通常是将当前采用的技术与新技术进行比较。A&#x2F;B 测试不仅旨在确定哪种技术的效果更好，而且还有助于了解相应差异是否具有显著的统计意义。A&#x2F;B 测试通常是采用一种衡量方式对两种技术进行比较，但也适用于任意有限数量的技术和衡量方式。 准确率 (accuracy)分类模型的正确预测所占的比例。 激活函数 (activat">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180317232527-300x99.png">
+<meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180317232614-300x212.png">
+<meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180317232716-300x162.png">
+<meta property="article:published_time" content="2018-03-17T15:28:35.000Z">
+<meta property="article:modified_time" content="2018-03-17T15:28:35.000Z">
+<meta property="article:author" content="StriveZs">
+<meta property="article:tag" content="Google">
+<meta property="article:tag" content="Machine Learning">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180317232527-300x99.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'StriveZs'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="blog.strivezs.com/2018/03/17/gu-ge-fa-bu-de-ji-qi-xue-xi-shu-yu-ni-zhi-dao-ji-ge-1/"/>
+
+
+
+
+
+  <title>谷歌发布的机器学习术语，你知道几个？ | StriveZs的博客</title>
+  <!-- 球型气泡标签云 -->
+    <script type="text/javascript" src="/js/src/bubble.js"></script>
+    
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5c8bbf815dac51a855060f947b787303";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    
+    <a href="https://github.com/zs670980918" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">StriveZs的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Blog</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            Schedule
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            Sitemap
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/03/17/gu-ge-fa-bu-de-ji-qi-xue-xi-shu-yu-ni-zhi-dao-ji-ge-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">谷歌发布的机器学习术语，你知道几个？</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-17T23:28:35+08:00">
+                2018-03-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180317232527-300x99.png" alt=""></p>
+<h2 id="A-B-测试-A-B-testing"><a href="#A-B-测试-A-B-testing" class="headerlink" title="A/B 测试 (A/B testing)"></a>A/B 测试 (A/B testing)</h2><p>一种统计方法，用于将两种或多种技术进行比较，通常是将当前采用的技术与新技术进行比较。A/B 测试不仅旨在确定哪种技术的效果更好，而且还有助于了解相应差异是否具有显著的统计意义。A/B 测试通常是采用一种衡量方式对两种技术进行比较，但也适用于任意有限数量的技术和衡量方式。</p>
+<h2 id="准确率-accuracy"><a href="#准确率-accuracy" class="headerlink" title="准确率 (accuracy)"></a>准确率 (accuracy)</h2><p><strong>分类模型</strong>的正确预测所占的比例。</p>
+<h2 id="激活函数-activation-function"><a href="#激活函数-activation-function" class="headerlink" title="激活函数 (activation function)"></a>激活函数 (activation function)</h2><p>一种函数（例如 <strong>ReLU</strong> 或 <strong>S 型</strong>函数），用于对上一层的所有输入求加权和，然后生成一个输出值（通常为非线性值），并将其传递给下一层。</p>
+<h2 id="AdaGrad"><a href="#AdaGrad" class="headerlink" title="AdaGrad"></a>AdaGrad</h2><p>一种先进的梯度下降法，用于重新调整每个参数的梯度，以便有效地为每个参数指定独立的<strong>学习速率</strong>。如需查看完整的解释，请参阅这篇论文。</p>
+<h2 id="ROC-曲线下面积-AUC-Area-under-the-ROC-Curve"><a href="#ROC-曲线下面积-AUC-Area-under-the-ROC-Curve" class="headerlink" title="ROC 曲线下面积 (AUC, Area under the ROC Curve)"></a>ROC 曲线下面积 (AUC, Area under the ROC Curve)</h2><p>一种会考虑所有可能分类阈值的评估指标。 ROC 曲线下面积是，对于随机选择的正类别样本确实为正类别，以及随机选择的负类别样本为正类别，分类器更确信前者的概率。</p>
+<h2 id="反向传播算法-backpropagation"><a href="#反向传播算法-backpropagation" class="headerlink" title="反向传播算法 (backpropagation)"></a>反向传播算法 (backpropagation)</h2><p>在<strong>神经网络</strong>上执行<strong>梯度下降法</strong>的主要算法。该算法会先按前向传播方式计算（并缓存）每个节点的输出值，然后再按反向传播遍历图的方式计算损失函数值相对于每个参数的偏导数。</p>
+<h2 id="基准-baseline"><a href="#基准-baseline" class="headerlink" title="基准 (baseline)"></a>基准 (baseline)</h2><p>一种简单的<strong>模型</strong>或启发法，用作比较模型效果时的参考点。基准有助于模型开发者针对特定问题量化最低预期效果。</p>
+<h2 id="批次-batch"><a href="#批次-batch" class="headerlink" title="批次 (batch)"></a>批次 (batch)</h2><p><strong>模型训练</strong>的一次<strong>迭代</strong>（即一次<strong>梯度</strong>更新）中使用的样本集。</p>
+<h2 id="批次规模-batch-size"><a href="#批次规模-batch-size" class="headerlink" title="批次规模 (batch size)"></a>批次规模 (batch size)</h2><p>一个<strong>批次</strong>中的样本数。例如，<strong>SGD</strong> 的批次规模为 1，而<strong>小批次</strong>的规模通常介于 10 到 1000 之间。批次规模在训练和推断期间通常是固定的；不过，TensorFlow 允许使用动态批次规模。</p>
+<h2 id="偏差-bias"><a href="#偏差-bias" class="headerlink" title="偏差 (bias)"></a>偏差 (bias)</h2><p>距离原点的截距或偏移。偏差（也称为<strong>偏差项</strong>）在机器学习模型中以 b 或 w0 表示。例如，在下面的公式中，偏差为 b： y′=b+w1x1+w2x2+…wnxn 请勿与<strong>预测偏差</strong>混淆。</p>
+<h2 id="二元分类-binary-classification"><a href="#二元分类-binary-classification" class="headerlink" title="二元分类 (binary classification)"></a>二元分类 (binary classification)</h2><p>一种分类任务，可输出两种互斥类别之一。例如，对电子邮件进行评估并输出“垃圾邮件”或“非垃圾邮件”的机器学习模型就是一个二元分类器。</p>
+<h2 id="分箱-binning"><a href="#分箱-binning" class="headerlink" title="分箱 (binning)"></a>分箱 (binning)</h2><p>请参阅<strong>分桶</strong>。</p>
+<h2 id="分桶-bucketing"><a href="#分桶-bucketing" class="headerlink" title="分桶 (bucketing)"></a>分桶 (bucketing)</h2><p>将一个特征（通常是<strong>连续</strong>特征）转换成多个二元特征（称为桶或箱），通常是根据值区间进行转换。例如，您可以将温度区间分割为离散分箱，而不是将温度表示成单个连续的浮点特征。假设温度数据可精确到小数点后一位，则可以将介于 0.0 到 15.0 度之间的所有温度都归入一个分箱，将介于 15.1 到 30.0 度之间的所有温度归入第二个分箱，并将介于 30.1 到 50.0 度之间的所有温度归入第三个分箱。</p>
+<h2 id="校准层-calibration-layer"><a href="#校准层-calibration-layer" class="headerlink" title="校准层 (calibration layer)"></a>校准层 (calibration layer)</h2><p>一种预测后调整，通常是为了降低<strong>预测偏差</strong>。调整后的预测和概率应与观察到的标签集的分布一致。</p>
+<h2 id="候选采样-candidate-sampling"><a href="#候选采样-candidate-sampling" class="headerlink" title="候选采样 (candidate sampling)"></a>候选采样 (candidate sampling)</h2><p>一种训练时进行的优化，会使用某种函数（例如 softmax）针对所有正类别标签计算概率，但对于负类别标签，则仅针对其随机样本计算概率。例如，如果某个样本的标签为“小猎犬”和“狗”，则候选采样将针对“小猎犬”和“狗”类别输出以及其他类别（猫、棒棒糖、栅栏）的随机子集计算预测概率和相应的损失项。这种采样基于的想法是，只要<strong>正类别</strong>始终得到适当的正增强，<strong>负类别</strong>就可以从频率较低的负增强中进行学习，这确实是在实际中观察到的情况。候选采样的目的是，通过不针对所有负类别计算预测结果来提高计算效率。</p>
+<h2 id="分类数据-categorical-data"><a href="#分类数据-categorical-data" class="headerlink" title="分类数据 (categorical data)"></a>分类数据 (categorical data)</h2><p>一种<strong>特征</strong>，拥有一组离散的可能值。以某个名为 <code>house style</code> 的分类特征为例，该特征拥有一组离散的可能值（共三个），即 <code>Tudor, ranch, colonial</code>。通过将 <code>house style</code> 表示成分类数据，相应模型可以学习 <code>Tudor</code>、<code>ranch</code> 和 <code>colonial</code> 分别对房价的影响。 有时，离散集中的值是互斥的，只能将其中一个值应用于指定样本。例如，<code>car maker</code> 分类特征可能只允许一个样本有一个值 (<code>Toyota</code>)。在其他情况下，则可以应用多个值。一辆车可能会被喷涂多种不同的颜色，因此，<code>car color</code> 分类特征可能会允许单个样本具有多个值（例如 <code>red</code> 和 <code>white</code>）。 分类特征有时称为<strong>离散特征</strong>。 与<strong>数值数据</strong>相对。</p>
+<h2 id="检查点-checkpoint"><a href="#检查点-checkpoint" class="headerlink" title="检查点 (checkpoint)"></a>检查点 (checkpoint)</h2><p>一种数据，用于捕获模型变量在特定时间的状态。借助检查点，可以导出模型<strong>权重</strong>，跨多个会话执行训练，以及使训练在发生错误之后得以继续（例如作业抢占）。请注意，<strong>图</strong>本身不包含在检查点中。</p>
+<h2 id="类别-class"><a href="#类别-class" class="headerlink" title="类别 (class)"></a>类别 (class)</h2><p>为标签枚举的一组目标值中的一个。例如，在检测垃圾邮件的<strong>二元分类</strong>模型中，两种类别分别是“垃圾邮件”和“非垃圾邮件”。在识别狗品种的<strong>多类别分类</strong>模型中，类别可以是“贵宾犬”、“小猎犬”、“哈巴犬”等等。</p>
+<h2 id="分类不平衡的数据集-class-imbalanced-data-set"><a href="#分类不平衡的数据集-class-imbalanced-data-set" class="headerlink" title="分类不平衡的数据集 (class-imbalanced data set)"></a>分类不平衡的数据集 (class-imbalanced data set)</h2><p>一种<strong>二元分类</strong>问题，在此类问题中，两种类别的<strong>标签</strong>在出现频率方面具有很大的差距。例如，在某个疾病数据集中，0.0001 的样本具有正类别标签，0.9999 的样本具有负类别标签，这就属于分类不平衡问题；但在某个足球比赛预测器中，0.51 的样本的标签为其中一个球队赢，0.49 的样本的标签为另一个球队赢，这就不属于分类不平衡问题。</p>
+<h2 id="分类模型-classification-model"><a href="#分类模型-classification-model" class="headerlink" title="分类模型 (classification model)"></a>分类模型 (classification model)</h2><p>一种机器学习模型，用于区分两种或多种离散类别。例如，某个自然语言处理分类模型可以确定输入的句子是法语、西班牙语还是意大利语。请与<strong>回归模型</strong>进行比较。</p>
+<h2 id="分类阈值-classification-threshold"><a href="#分类阈值-classification-threshold" class="headerlink" title="分类阈值 (classification threshold)"></a>分类阈值 (classification threshold)</h2><p>一种标量值条件，应用于模型预测的得分，旨在将<strong>正类别</strong>与<strong>负类别</strong>区分开。将<strong>逻辑回归</strong>结果映射到<strong>二元分类</strong>时使用。以某个逻辑回归模型为例，该模型用于确定指定电子邮件是垃圾邮件的概率。如果分类阈值为 0.9，那么逻辑回归值高于 0.9 的电子邮件将被归类为“垃圾邮件”，低于 0.9 的则被归类为“非垃圾邮件”。</p>
+<h2 id="协同过滤-collaborative-filtering"><a href="#协同过滤-collaborative-filtering" class="headerlink" title="协同过滤 (collaborative filtering)"></a>协同过滤 (collaborative filtering)</h2><p>根据很多其他用户的兴趣来预测某位用户的兴趣。协同过滤通常用在推荐系统中。</p>
+<h2 id="混淆矩阵-confusion-matrix"><a href="#混淆矩阵-confusion-matrix" class="headerlink" title="混淆矩阵 (confusion matrix)"></a>混淆矩阵 (confusion matrix)</h2><p>一种 NxN 表格，用于总结<strong>分类模型</strong>的预测成效；即标签和模型预测的分类之间的关联。在混淆矩阵中，一个轴表示模型预测的标签，另一个轴表示实际标签。N 表示类别个数。在<strong>二元分类</strong>问题中，N=2。例如，下面显示了一个二元分类问题的混淆矩阵示例：</p>
+<p>肿瘤（预测的标签）</p>
+<p>非肿瘤（预测的标签）</p>
+<p>肿瘤（实际标签）</p>
+<p>18</p>
+<p>1</p>
+<p>非肿瘤（实际标签）</p>
+<p>6</p>
+<p>452</p>
+<p>上面的混淆矩阵显示，在 19 个实际有肿瘤的样本中，该模型正确地将 18 个归类为有肿瘤（18 个真正例），错误地将 1 个归类为没有肿瘤（1 个假负例）。同样，在 458 个实际没有肿瘤的样本中，模型归类正确的有 452 个（452 个真负例），归类错误的有 6 个（6 个假正例）。 多类别分类问题的混淆矩阵有助于确定出错模式。例如，某个混淆矩阵可以揭示，某个经过训练以识别手写数字的模型往往会将 4 错误地预测为 9，将 7 错误地预测为 1。混淆矩阵包含计算各种效果指标（包括精确率和召回率）所需的充足信息。</p>
+<h2 id="连续特征-continuous-feature"><a href="#连续特征-continuous-feature" class="headerlink" title="连续特征 (continuous feature)"></a>连续特征 (continuous feature)</h2><p>一种浮点特征，可能值的区间不受限制。与<strong>离散特征</strong>相对。</p>
+<h2 id="收敛-convergence"><a href="#收敛-convergence" class="headerlink" title="收敛 (convergence)"></a>收敛 (convergence)</h2><p>通俗来说，收敛通常是指在训练期间达到的一种状态，即经过一定次数的迭代之后，训练<strong>损失</strong>和验证损失在每次迭代中的变化都非常小或根本没有变化。也就是说，如果采用当前数据进行额外的训练将无法改进模型，模型即达到收敛状态。在深度学习中，损失值有时会在最终下降之前的多次迭代中保持不变或几乎保持不变，暂时形成收敛的假象。 另请参阅<strong>早停法</strong>。</p>
+<h2 id="凸函数-convex-function"><a href="#凸函数-convex-function" class="headerlink" title="凸函数 (convex function)"></a>凸函数 (convex function)</h2><p>一种函数，函数图像以上的区域为<strong>凸集</strong>。典型凸函数的形状类似于字母 <strong>U</strong>。请注意图像上方的区域如何不是凸集： <img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180317232614-300x212.png" alt=""> <strong>严格凸函数</strong>只有一个局部最低点，该点也是全局最低点。经典的 U 形函数都是严格凸函数。不过，有些凸函数（例如直线）则不是这样。 很多常见的<strong>损失函数</strong>（包括下列函数）都是凸函数：</p>
+<ul>
+<li><strong>L2 损失函数</strong></li>
+<li><strong>对数损失函数</strong></li>
+<li><strong>L1 正则化</strong></li>
+<li><strong>L2 正则化</strong></li>
+</ul>
+<p><strong>梯度下降法</strong>的很多变体都一定能找到一个接近严格凸函数最小值的点。同样，<strong>随机梯度下降法</strong>的很多变体都有很高的可能性能够找到接近严格凸函数最小值的点（但并非一定能找到）。 两个凸函数的和（例如 L2 损失函数 + L1 正则化）也是凸函数。 <strong>深度模型</strong>绝不会是凸函数。值得注意的是，专门针对<strong>凸优化</strong>设计的算法往往总能在深度网络上找到非常好的解决方案，虽然这些解决方案并不一定对应于全局最小值。</p>
+<h2 id="凸优化-convex-optimization"><a href="#凸优化-convex-optimization" class="headerlink" title="凸优化 (convex optimization)"></a>凸优化 (convex optimization)</h2><p>使用数学方法（例如<strong>梯度下降法</strong>）寻找<strong>凸函数</strong>最小值的过程。机器学习方面的大量研究都是专注于如何通过公式将各种问题表示成凸优化问题，以及如何更高效地解决这些问题。 如需完整的详细信息，请参阅 Boyd 和 Vandenberghe 合著的 Convex Optimization（《凸优化》）。</p>
+<h2 id="凸集-convex-set"><a href="#凸集-convex-set" class="headerlink" title="凸集 (convex set)"></a>凸集 (convex set)</h2><p>欧几里得空间的一个子集，其中任意两点之间的连线仍完全落在该子集内。</p>
+<h2 id="成本-cost"><a href="#成本-cost" class="headerlink" title="成本 (cost)"></a>成本 (cost)</h2><p>是<strong>损失</strong>的同义词。</p>
+<h2 id="交叉熵-cross-entropy"><a href="#交叉熵-cross-entropy" class="headerlink" title="交叉熵 (cross-entropy)"></a>交叉熵 (cross-entropy)</h2><p><strong>对数损失函数</strong>向<strong>多类别分类问题</strong>进行的一种泛化。交叉熵可以量化两种概率分布之间的差异。另请参阅<strong>困惑度</strong>。</p>
+<h2 id="自定义-Estimator-custom-Estimator"><a href="#自定义-Estimator-custom-Estimator" class="headerlink" title="自定义 Estimator (custom Estimator)"></a>自定义 Estimator (custom Estimator)</h2><p>您按照这些说明自行编写的 <strong>Estimator</strong>。 与<strong>预创建的 Estimator</strong> 相对。</p>
+<h2 id="数据集-data-set"><a href="#数据集-data-set" class="headerlink" title="数据集 (data set)"></a>数据集 (data set)</h2><p>一组<strong>样本</strong>的集合。</p>
+<h2 id="Dataset-API-tf-data"><a href="#Dataset-API-tf-data" class="headerlink" title="Dataset API (tf.data)"></a>Dataset API (tf.data)</h2><p>一种高级别的 TensorFlow API，用于读取数据并将其转换为机器学习算法所需的格式。<code>tf.data.Dataset</code> 对象表示一系列元素，其中每个元素都包含一个或多个<strong>张量</strong>。<code>tf.data.Iterator</code> 对象可获取 <code>Dataset</code> 中的元素。 如需详细了解 Dataset API，请参阅《TensorFlow 编程人员指南》中的导入数据。</p>
+<h2 id="决策边界-decision-boundary"><a href="#决策边界-decision-boundary" class="headerlink" title="决策边界 (decision boundary)"></a>决策边界 (decision boundary)</h2><p>在<strong>二元分类</strong>或<strong>多类别分类问题</strong>中，模型学到的类别之间的分界线。</p>
+<h2 id="密集层-dense-layer"><a href="#密集层-dense-layer" class="headerlink" title="密集层 (dense layer)"></a>密集层 (dense layer)</h2><p>是<strong>全连接层</strong>的同义词。</p>
+<h2 id="深度模型-deep-model"><a href="#深度模型-deep-model" class="headerlink" title="深度模型 (deep model)"></a>深度模型 (deep model)</h2><p>一种<strong>神经网络</strong>，其中包含多个<strong>隐藏层</strong>。深度模型依赖于可训练的非线性关系。 与<strong>宽度模型</strong>相对。</p>
+<h2 id="密集特征-dense-feature"><a href="#密集特征-dense-feature" class="headerlink" title="密集特征 (dense feature)"></a>密集特征 (dense feature)</h2><p>一种大部分数值是非零值的<strong>特征</strong>，通常是一个浮点值<strong>张量</strong>。参照<strong>稀疏特征</strong>。</p>
+<h2 id="衍生特征-derived-feature"><a href="#衍生特征-derived-feature" class="headerlink" title="衍生特征 (derived feature)"></a>衍生特征 (derived feature)</h2><p>是<strong>合成特征</strong>的同义词。</p>
+<h2 id="离散特征-discrete-feature"><a href="#离散特征-discrete-feature" class="headerlink" title="离散特征 (discrete feature)"></a>离散特征 (discrete feature)</h2><p>一种<strong>特征</strong>，包含有限个可能值。例如，某个值只能是“动物”、“蔬菜”或“矿物”的特征便是一个离散特征（或分类特征）。与<strong>连续特征</strong>相对。</p>
+<h2 id="丢弃正则化-dropout-regularization"><a href="#丢弃正则化-dropout-regularization" class="headerlink" title="丢弃正则化 (dropout regularization)"></a>丢弃正则化 (dropout regularization)</h2><p>一种形式的<strong>正则化</strong>，在训练<strong>神经网络</strong>方面非常有用。丢弃正则化的运作机制是，在神经网络层的一个梯度步长中移除随机选择的固定数量的单元。丢弃的单元越多，正则化效果就越强。这类似于训练神经网络以模拟较小网络的指数级规模集成学习。如需完整的详细信息，请参阅 Dropout: A Simple Way to Prevent Neural Networks from Overfitting（《丢弃：一种防止神经网络过拟合的简单方法》）。</p>
+<h2 id="动态模型-dynamic-model"><a href="#动态模型-dynamic-model" class="headerlink" title="动态模型 (dynamic model)"></a>动态模型 (dynamic model)</h2><p>一种<strong>模型</strong>，以持续更新的方式在线接受训练。也就是说，数据会源源不断地进入这种模型。</p>
+<h2 id="E"><a href="#E" class="headerlink" title="E"></a>E</h2><h2 id="早停法-early-stopping"><a href="#早停法-early-stopping" class="headerlink" title="早停法 (early stopping)"></a>早停法 (early stopping)</h2><p>一种<strong>正则化</strong>方法，涉及在训练损失仍可以继续减少之前结束模型训练。使用早停法时，您会在基于<strong>验证数据集</strong>的损失开始增加（也就是<strong>泛化</strong>效果变差）时结束模型训练。</p>
+<h2 id="嵌套-embeddings"><a href="#嵌套-embeddings" class="headerlink" title="嵌套 (embeddings)"></a>嵌套 (embeddings)</h2><p>一种分类特征，以连续值特征表示。通常，嵌套是指将高维度向量映射到低维度的空间。例如，您可以采用以下两种方式之一来表示英文句子中的单词：</p>
+<ul>
+<li>表示成包含百万个元素（高维度）的<strong>稀疏向量</strong>，其中所有元素都是整数。向量中的每个单元格都表示一个单独的英文单词，单元格中的值表示相应单词在句子中出现的次数。由于单个英文句子包含的单词不太可能超过 50 个，因此向量中几乎每个单元格都包含 0。少数非 0 的单元格中将包含一个非常小的整数（通常为 1），该整数表示相应单词在句子中出现的次数。</li>
+<li>表示成包含数百个元素（低维度）的<strong>密集向量</strong>，其中每个元素都包含一个介于 0 到 1 之间的浮点值。这就是一种嵌套。</li>
+</ul>
+<p>在 TensorFlow 中，会按<strong>反向传播**</strong>损失<strong>训练嵌套，和训练</strong>神经网络**中的任何其他参数时一样。</p>
+<h2 id="经验风险最小化-ERM-empirical-risk-minimization"><a href="#经验风险最小化-ERM-empirical-risk-minimization" class="headerlink" title="经验风险最小化 (ERM, empirical risk minimization)"></a>经验风险最小化 (ERM, empirical risk minimization)</h2><p>用于选择可以将基于训练集的损失降至最低的模型函数。与<strong>结构风险最小化</strong>相对。</p>
+<h2 id="集成学习-ensemble"><a href="#集成学习-ensemble" class="headerlink" title="集成学习 (ensemble)"></a>集成学习 (ensemble)</h2><p>多个<strong>模型</strong>的预测结果的并集。您可以通过以下一项或多项来创建集成学习：</p>
+<ul>
+<li>不同的初始化</li>
+<li>不同的<strong>超参数</strong></li>
+<li>不同的整体结构</li>
+</ul>
+<p>深度模型和宽度模型属于一种集成学习。</p>
+<h2 id="周期-epoch"><a href="#周期-epoch" class="headerlink" title="周期 (epoch)"></a>周期 (epoch)</h2><p>在训练时，整个数据集的一次完整遍历，以便不漏掉任何一个样本。因此，一个周期表示（<code>N</code>/<strong>批次规模</strong>）次训练<strong>迭代</strong>，其中 <code>N</code> 是样本总数。</p>
+<h2 id="Estimator"><a href="#Estimator" class="headerlink" title="Estimator"></a>Estimator</h2><p><code>tf.Estimator</code> 类的一个实例，用于封装负责构建 TensorFlow 图并运行 TensorFlow 会话的逻辑。您可以创建自己的<strong>自定义 Estimator</strong>（如需相关介绍，请点击此处），也可以将其他人<strong>预创建的 Estimator</strong> 实例化。</p>
+<h2 id="样本-example"><a href="#样本-example" class="headerlink" title="样本 (example)"></a>样本 (example)</h2><p>数据集的一行。一个样本包含一个或多个<strong>特征</strong>，此外还可能包含一个<strong>标签</strong>。另请参阅<strong>有标签样本</strong>和<strong>无标签样本</strong>。</p>
+<h2 id="假负例-FN-false-negative"><a href="#假负例-FN-false-negative" class="headerlink" title="假负例 (FN, false negative)"></a>假负例 (FN, false negative)</h2><p>被模型错误地预测为<strong>负类别</strong>的样本。例如，模型推断出某封电子邮件不是垃圾邮件（负类别），但该电子邮件其实是垃圾邮件。</p>
+<h2 id="假正例-FP-false-positive"><a href="#假正例-FP-false-positive" class="headerlink" title="假正例 (FP, false positive)"></a>假正例 (FP, false positive)</h2><p>被模型错误地预测为<strong>正类别</strong>的样本。例如，模型推断出某封电子邮件是垃圾邮件（正类别），但该电子邮件其实不是垃圾邮件。</p>
+<h2 id="假正例率（false-positive-rate-简称-FP-率）"><a href="#假正例率（false-positive-rate-简称-FP-率）" class="headerlink" title="假正例率（false positive rate, 简称 FP 率）"></a>假正例率（false positive rate, 简称 FP 率）</h2><p><strong>ROC 曲线</strong>中的 x 轴。</p>
+<h2 id="特征-feature"><a href="#特征-feature" class="headerlink" title="特征 (feature)"></a>特征 (feature)</h2><p>在进行<strong>预测</strong>时使用的输入变量。</p>
+<h2 id="特征列-FeatureColumns"><a href="#特征列-FeatureColumns" class="headerlink" title="特征列 (FeatureColumns)"></a>特征列 (FeatureColumns)</h2><p>一组相关特征，例如用户可能居住的所有国家/地区的集合。样本的特征列中可能包含一个或多个特征。 TensorFlow 中的特征列内还封装了元数据，例如：</p>
+<ul>
+<li>特征的数据类型</li>
+<li>特征是固定长度还是应转换为嵌套</li>
+</ul>
+<p>特征列可以包含单个特征。 “特征列”是 Google 专用的术语。特征列在 Yahoo/Microsoft 使用的 VW 系统中称为“命名空间”，也称为场。</p>
+<h2 id="特征组合-feature-cross"><a href="#特征组合-feature-cross" class="headerlink" title="特征组合 (feature cross)"></a>特征组合 (feature cross)</h2><p>通过将单独的特征进行组合（相乘或求笛卡尔积）而形成的<strong>合成特征</strong>。特征组合有助于表示非线性关系。</p>
+<h2 id="特征工程-feature-engineering"><a href="#特征工程-feature-engineering" class="headerlink" title="特征工程 (feature engineering)"></a>特征工程 (feature engineering)</h2><p>指以下过程：确定哪些<strong>特征</strong>可能在训练模型方面非常有用，然后将日志文件及其他来源的原始数据转换为所需的特征。在 TensorFlow 中，特征工程通常是指将原始日志文件条目转换为 <strong>tf.Example</strong> proto buffer。另请参阅 tf.Transform。 特征工程有时称为<strong>特征提取</strong>。</p>
+<h2 id="特征集-feature-set"><a href="#特征集-feature-set" class="headerlink" title="特征集 (feature set)"></a>特征集 (feature set)</h2><p>训练机器学习模型时采用的一组<strong>特征</strong>。例如，对于某个用于预测房价的模型，邮政编码、房屋面积以及房屋状况可以组成一个简单的特征集。</p>
+<h2 id="特征规范-feature-spec"><a href="#特征规范-feature-spec" class="headerlink" title="特征规范 (feature spec)"></a>特征规范 (feature spec)</h2><p>用于描述如何从 <strong>tf.Example</strong> proto buffer 提取<strong>特征</strong>数据。由于 tf.Example proto buffer 只是一个数据容器，因此您必须指定以下内容：</p>
+<ul>
+<li>要提取的数据（即特征的键）</li>
+<li>数据类型（例如 float 或 int）</li>
+<li>长度（固定或可变）</li>
+</ul>
+<p><strong>Estimator API</strong> 提供了一些可用来根据给定 <strong>FeatureColumns</strong> 列表生成特征规范的工具。</p>
+<h2 id="完整-softmax-full-softmax"><a href="#完整-softmax-full-softmax" class="headerlink" title="完整 softmax (full softmax)"></a>完整 softmax (full softmax)</h2><p>请参阅 <strong>softmax</strong>。与<strong>候选采样</strong>相对。</p>
+<h2 id="全连接层-fully-connected-layer"><a href="#全连接层-fully-connected-layer" class="headerlink" title="全连接层 (fully connected layer)"></a>全连接层 (fully connected layer)</h2><p>一种<strong>隐藏层</strong>，其中的每个<strong>节点</strong>均与下一个隐藏层中的每个节点相连。 全连接层又称为<strong>密集层</strong>。</p>
+<h2 id="泛化-generalization"><a href="#泛化-generalization" class="headerlink" title="泛化 (generalization)"></a>泛化 (generalization)</h2><p>指的是模型依据训练时采用的数据，针对以前未见过的新数据做出正确预测的能力。</p>
+<h2 id="广义线性模型-generalized-linear-model"><a href="#广义线性模型-generalized-linear-model" class="headerlink" title="广义线性模型 (generalized linear model)"></a>广义线性模型 (generalized linear model)</h2><p><strong>最小二乘回归</strong>模型（基于高斯噪声）向其他类型的模型（基于其他类型的噪声，例如泊松噪声或分类噪声）进行的一种泛化。广义线性模型的示例包括：</p>
+<ul>
+<li><strong>逻辑回归</strong></li>
+<li>多类别回归</li>
+<li>最小二乘回归</li>
+</ul>
+<p>可以通过凸优化找到广义线性模型的参数。 广义线性模型具有以下特性：</p>
+<ul>
+<li>最优的最小二乘回归模型的平均预测结果等于训练数据的平均标签。</li>
+<li>最优的逻辑回归模型预测的平均概率等于训练数据的平均标签。</li>
+</ul>
+<p>广义线性模型的功能受其特征的限制。与深度模型不同，广义线性模型无法“学习新特征”。</p>
+<h2 id="梯度-gradient"><a href="#梯度-gradient" class="headerlink" title="梯度 (gradient)"></a>梯度 (gradient)</h2><p><strong>偏导数</strong>相对于所有自变量的向量。在机器学习中，梯度是模型函数偏导数的向量。梯度指向最速上升的方向。</p>
+<h2 id="梯度裁剪-gradient-clipping"><a href="#梯度裁剪-gradient-clipping" class="headerlink" title="梯度裁剪 (gradient clipping)"></a>梯度裁剪 (gradient clipping)</h2><p>在应用<strong>梯度</strong>值之前先设置其上限。梯度裁剪有助于确保数值稳定性以及防止梯度爆炸。</p>
+<h2 id="梯度下降法-gradient-descent"><a href="#梯度下降法-gradient-descent" class="headerlink" title="梯度下降法 (gradient descent)"></a>梯度下降法 (gradient descent)</h2><p>一种通过计算并且减小梯度将<strong>损失</strong>降至最低的技术，它以训练数据为条件，来计算损失相对于模型参数的梯度。通俗来说，梯度下降法以迭代方式调整参数，逐渐找到<strong>权重</strong>和偏差的最佳组合，从而将损失降至最低。</p>
+<h2 id="图-graph"><a href="#图-graph" class="headerlink" title="图 (graph)"></a>图 (graph)</h2><p>TensorFlow 中的一种计算规范。图中的节点表示操作。边缘具有方向，表示将某项操作的结果（一个张量）作为一个操作数传递给另一项操作。可以使用 <strong>TensorBoard</strong> 直观呈现图。</p>
+<h2 id="启发法-heuristic"><a href="#启发法-heuristic" class="headerlink" title="启发法 (heuristic)"></a>启发法 (heuristic)</h2><p>一种非最优但实用的问题解决方案，足以用于进行改进或从中学习。</p>
+<h2 id="隐藏层-hidden-layer"><a href="#隐藏层-hidden-layer" class="headerlink" title="隐藏层 (hidden layer)"></a>隐藏层 (hidden layer)</h2><p><strong>神经网络</strong>中的合成层，介于<strong>输入层</strong>（即特征）和<strong>输出层</strong>（即预测）之间。神经网络包含一个或多个隐藏层。</p>
+<h2 id="合页损失函数-hinge-loss"><a href="#合页损失函数-hinge-loss" class="headerlink" title="合页损失函数 (hinge loss)"></a>合页损失函数 (hinge loss)</h2><p>一系列用于<strong>分类</strong>的<strong>损失</strong>函数，旨在找到距离每个训练样本都尽可能远的<strong>决策边界</strong>，从而使样本和边界之间的裕度最大化。 <strong>KSVM</strong> 使用合页损失函数（或相关函数，例如平方合页损失函数）。</p>
+<h2 id="维持数据-holdout-data"><a href="#维持数据-holdout-data" class="headerlink" title="维持数据 (holdout data)"></a>维持数据 (holdout data)</h2><p>训练期间故意不使用（“维持”）的<strong>样本</strong>。<strong>验证数据集</strong>和<strong>测试数据集</strong>都属于维持数据。维持数据有助于评估模型向训练时所用数据之外的数据进行泛化的能力。与基于训练数据集的损失相比，基于维持数据集的损失有助于更好地估算基于未见过的数据集的损失。</p>
+<h2 id="超参数-hyperparameter"><a href="#超参数-hyperparameter" class="headerlink" title="超参数 (hyperparameter)"></a>超参数 (hyperparameter)</h2><p>在模型训练的连续过程中，您调节的“旋钮”。例如，<strong>学习速率</strong>就是一种超参数。 与<strong>参数</strong>相对。</p>
+<h2 id="超平面-hyperplane"><a href="#超平面-hyperplane" class="headerlink" title="超平面 (hyperplane)"></a>超平面 (hyperplane)</h2><p>将一个空间划分为两个子空间的边界。例如，在二维空间中，直线就是一个超平面，在三维空间中，平面则是一个超平面。在机器学习中更典型的是：超平面是分隔高维度空间的边界。<strong>核支持向量机</strong>利用超平面将正类别和负类别区分开来（通常是在极高维度空间中）。</p>
+<h2 id="独立同分布-i-i-d-independently-and-identically-distributed"><a href="#独立同分布-i-i-d-independently-and-identically-distributed" class="headerlink" title="独立同分布 (i.i.d, independently and identically distributed)"></a>独立同分布 (i.i.d, independently and identically distributed)</h2><p>从不会改变的分布中提取的数据，其中提取的每个值都不依赖于之前提取的值。i.i.d. 是机器学习的理想气体 - 一种实用的数学结构，但在现实世界中几乎从未发现过。例如，某个网页的访问者在短时间内的分布可能为 i.i.d.，即分布在该短时间内没有变化，且一位用户的访问行为通常与另一位用户的访问行为无关。不过，如果将时间窗口扩大，网页访问者的分布可能呈现出季节性变化。</p>
+<h2 id="推断-inference"><a href="#推断-inference" class="headerlink" title="推断 (inference)"></a>推断 (inference)</h2><p>在机器学习中，推断通常指以下过程：通过将训练过的模型应用于<strong>无标签样本</strong>来做出预测。在统计学中，推断是指在某些观测数据条件下拟合分布参数的过程。（请参阅维基百科中有关统计学推断的文章。）</p>
+<h2 id="输入函数-input-function"><a href="#输入函数-input-function" class="headerlink" title="输入函数 (input function)"></a>输入函数 (input function)</h2><p>在 TensorFlow 中，用于将输入数据返回到 <strong>Estimator</strong> 的训练、评估或预测方法的函数。例如，训练输入函数用于返回<strong>训练集</strong>中的<strong>批次</strong>特征和标签。</p>
+<h2 id="输入层-input-layer"><a href="#输入层-input-layer" class="headerlink" title="输入层 (input layer)"></a>输入层 (input layer)</h2><p><strong>神经网络</strong>中的第一层（接收输入数据的层）。</p>
+<h2 id="实例-instance"><a href="#实例-instance" class="headerlink" title="实例 (instance)"></a>实例 (instance)</h2><p>是<strong>样本</strong>的同义词。</p>
+<h2 id="可解释性-interpretability"><a href="#可解释性-interpretability" class="headerlink" title="可解释性 (interpretability)"></a>可解释性 (interpretability)</h2><p>模型的预测可解释的难易程度。深度模型通常不可解释，也就是说，很难对深度模型的不同层进行解释。相比之下，线性回归模型和<strong>宽度模型</strong>的可解释性通常要好得多。</p>
+<h2 id="评分者间一致性信度-inter-rater-agreement"><a href="#评分者间一致性信度-inter-rater-agreement" class="headerlink" title="评分者间一致性信度 (inter-rater agreement)"></a>评分者间一致性信度 (inter-rater agreement)</h2><p>一种衡量指标，用于衡量在执行某项任务时评分者达成一致的频率。如果评分者未达成一致，则可能需要改进任务说明。有时也称为<strong>注释者间一致性信度</strong>或<strong>评分者间可靠性信度</strong>。另请参阅 Cohen’s kappa（最热门的评分者间一致性信度衡量指标之一）。</p>
+<h2 id="迭代-iteration"><a href="#迭代-iteration" class="headerlink" title="迭代 (iteration)"></a>迭代 (iteration)</h2><p>模型的权重在训练期间的一次更新。迭代包含计算参数在单个<strong>批量</strong>数据上的梯度损失。</p>
+<h2 id="Keras"><a href="#Keras" class="headerlink" title="Keras"></a>Keras</h2><p>一种热门的 Python 机器学习 API。Keras 能够在多种深度学习框架上运行，其中包括 TensorFlow（在该框架上，Keras 作为 <strong>tf.keras</strong> 提供）。</p>
+<h2 id="核支持向量机-KSVM-Kernel-Support-Vector-Machines"><a href="#核支持向量机-KSVM-Kernel-Support-Vector-Machines" class="headerlink" title="核支持向量机 (KSVM, Kernel Support Vector Machines)"></a>核支持向量机 (KSVM, Kernel Support Vector Machines)</h2><p>一种分类算法，旨在通过将输入数据向量映射到更高维度的空间，来最大化<strong>正类别</strong>和<strong>负类别</strong>之间的裕度。以某个输入数据集包含一百个特征的分类问题为例。为了最大化正类别和负类别之间的裕度，KSVM 可以在内部将这些特征映射到百万维度的空间。KSVM 使用合页损失函数。</p>
+<h2 id="L1-损失函数-L₁-loss"><a href="#L1-损失函数-L₁-loss" class="headerlink" title="L1 损失函数 (L₁ loss)"></a>L1 损失函数 (L₁ loss)</h2><p>一种<strong>损失</strong>函数，基于模型预测的值与<strong>标签</strong>的实际值之差的绝对值。与 <strong>L2 损失函数</strong>相比，L1 损失函数对离群值的敏感性弱一些。</p>
+<h2 id="L1-正则化-L₁-regularization"><a href="#L1-正则化-L₁-regularization" class="headerlink" title="L1 正则化 (L₁ regularization)"></a>L1 正则化 (L₁ regularization)</h2><p>一种<strong>正则化</strong>，根据权重的绝对值的总和来惩罚权重。在依赖<strong>稀疏特征</strong>的模型中，L1 正则化有助于使不相关或几乎不相关的特征的权重正好为 0，从而将这些特征从模型中移除。与 <strong>L2 正则化</strong>相对。</p>
+<h2 id="L2-损失函数-L₂-loss"><a href="#L2-损失函数-L₂-loss" class="headerlink" title="L2 损失函数 (L₂ loss)"></a>L2 损失函数 (L₂ loss)</h2><p>请参阅<strong>平方损失函数</strong>。</p>
+<h2 id="L2-正则化-L₂-regularization"><a href="#L2-正则化-L₂-regularization" class="headerlink" title="L2 正则化 (L₂ regularization)"></a>L2 正则化 (L₂ regularization)</h2><p>一种<strong>正则化</strong>，根据权重的平方和来惩罚权重。L2 正则化有助于使离群值（具有较大正值或较小负值）权重接近于 0，但又不正好为 0。（与 <strong>L1 正则化</strong>相对。）在线性模型中，L2 正则化始终可以改进泛化。</p>
+<h2 id="标签-label"><a href="#标签-label" class="headerlink" title="标签 (label)"></a>标签 (label)</h2><p>在监督式学习中，标签指<strong>样本</strong>的“答案”或“结果”部分。有标签数据集中的每个样本都包含一个或多个特征以及一个标签。例如，在房屋数据集中，特征可以包括卧室数、卫生间数以及房龄，而标签则可以是房价。在垃圾邮件检测数据集中，特征可以包括主题行、发件人以及电子邮件本身，而标签则可以是“垃圾邮件”或“非垃圾邮件”。</p>
+<h2 id="有标签样本-labeled-example"><a href="#有标签样本-labeled-example" class="headerlink" title="有标签样本 (labeled example)"></a>有标签样本 (labeled example)</h2><p>包含<strong>特征</strong>和<strong>标签</strong>的样本。在监督式训练中，模型从有标签样本中进行学习。</p>
+<h2 id="lambda"><a href="#lambda" class="headerlink" title="lambda"></a>lambda</h2><p>是<strong>正则化率</strong>的同义词。 （多含义术语，我们在此关注的是该术语在<strong>正则化</strong>中的定义。）</p>
+<h2 id="层-layer"><a href="#层-layer" class="headerlink" title="层 (layer)"></a>层 (layer)</h2><p><strong>神经网络</strong>中的一组<strong>神经元</strong>，处理一组输入特征，或一组神经元的输出。 此外还指 TensorFlow 中的抽象层。层是 Python 函数，以<strong>张量</strong>和配置选项作为输入，然后生成其他张量作为输出。当必要的张量组合起来，用户便可以通过模型函数将结果转换为 <strong>Estimator</strong>。</p>
+<h2 id="Layers-API-tf-layers"><a href="#Layers-API-tf-layers" class="headerlink" title="Layers API (tf.layers)"></a>Layers API (tf.layers)</h2><p>一种 TensorFlow API，用于以层组合的方式构建<strong>深度</strong>神经网络。通过 Layers API，您可以构建不同类型的<strong>层</strong>，例如：</p>
+<ul>
+<li>通过 <code>tf.layers.Dense</code> 构建<strong>全连接层</strong>。</li>
+<li>通过 <code>tf.layers.Conv2D</code> 构建卷积层。</li>
+</ul>
+<p>在编写<strong>自定义 Estimator</strong> 时，您可以编写“层”对象来定义所有<strong>隐藏层</strong>的特征。 Layers API 遵循 [<strong>Keras</strong>](#Keras) layers API 规范。也就是说，除了前缀不同以外，Layers API 中的所有函数均与 Keras layers API 中的对应函数具有相同的名称和签名。</p>
+<h2 id="学习速率-learning-rate"><a href="#学习速率-learning-rate" class="headerlink" title="学习速率 (learning rate)"></a>学习速率 (learning rate)</h2><p>在训练模型时用于梯度下降的一个变量。在每次迭代期间，<strong>梯度下降法</strong>都会将学习速率与梯度相乘。得出的乘积称为<strong>梯度步长</strong>。 学习速率是一个重要的<strong>超参数</strong>。</p>
+<h2 id="最小二乘回归-least-squares-regression"><a href="#最小二乘回归-least-squares-regression" class="headerlink" title="最小二乘回归 (least squares regression)"></a>最小二乘回归 (least squares regression)</h2><p>一种通过最小化 <strong>L2 损失</strong>训练出的线性回归模型。</p>
+<h2 id="线性回归-linear-regression"><a href="#线性回归-linear-regression" class="headerlink" title="线性回归 (linear regression)"></a>线性回归 (linear regression)</h2><p>一种<strong>回归模型</strong>，通过将输入特征进行线性组合，以连续值作为输出。</p>
+<h2 id="逻辑回归-logistic-regression"><a href="#逻辑回归-logistic-regression" class="headerlink" title="逻辑回归 (logistic regression)"></a>逻辑回归 (logistic regression)</h2><p>一种模型，通过将 <strong>S 型函数</strong>应用于线性预测，生成分类问题中每个可能的离散标签值的概率。虽然逻辑回归经常用于<strong>二元分类</strong>问题，但也可用于<strong>多类别</strong>分类问题（其叫法变为<strong>多类别逻辑回归</strong>或<strong>多项回归</strong>）。</p>
+<h2 id="对数损失函数-Log-Loss"><a href="#对数损失函数-Log-Loss" class="headerlink" title="对数损失函数 (Log Loss)"></a>对数损失函数 (Log Loss)</h2><p>二元<strong>逻辑回归</strong>中使用的<strong>损失</strong>函数。</p>
+<h2 id="损失-Loss"><a href="#损失-Loss" class="headerlink" title="损失 (Loss)"></a>损失 (Loss)</h2><p>一种衡量指标，用于衡量模型的<strong>预测</strong>偏离其<strong>标签</strong>的程度。或者更悲观地说是衡量模型有多差。要确定此值，模型必须定义损失函数。例如，线性回归模型通常将<strong>均方误差</strong>用于损失函数，而逻辑回归模型则使用<strong>对数损失函数</strong>。</p>
+<h2 id="机器学习-machine-learning"><a href="#机器学习-machine-learning" class="headerlink" title="机器学习 (machine learning)"></a>机器学习 (machine learning)</h2><p>一种程序或系统，用于根据输入数据构建（训练）预测模型。这种系统会利用学到的模型根据从分布（训练该模型时使用的同一分布）中提取的新数据（以前从未见过的数据）进行实用的预测。机器学习还指与这些程序或系统相关的研究领域。</p>
+<h2 id="均方误差-MSE-Mean-Squared-Error"><a href="#均方误差-MSE-Mean-Squared-Error" class="headerlink" title="均方误差 (MSE, Mean Squared Error)"></a>均方误差 (MSE, Mean Squared Error)</h2><p>每个样本的平均平方损失。MSE 的计算方法是<strong>平方损失</strong>除以<strong>样本</strong>数。<strong>TensorFlow Playground</strong> 显示的“训练损失”值和“测试损失”值都是 MSE。</p>
+<h2 id="指标-metric"><a href="#指标-metric" class="headerlink" title="指标 (metric)"></a>指标 (metric)</h2><p>您关心的一个数值。可能可以也可能不可以直接在机器学习系统中得到优化。您的系统尝试优化的指标称为<strong>目标</strong>。</p>
+<h2 id="Metrics-API-tf-metrics"><a href="#Metrics-API-tf-metrics" class="headerlink" title="Metrics API (tf.metrics)"></a>Metrics API (tf.metrics)</h2><p>一种用于评估模型的 TensorFlow API。例如，<code>tf.metrics.accuracy</code> 用于确定模型的预测与标签匹配的频率。在编写<strong>自定义 Estimator</strong> 时，您可以调用 Metrics API 函数来指定应如何评估您的模型。</p>
+<h2 id="小批次-mini-batch"><a href="#小批次-mini-batch" class="headerlink" title="小批次 (mini-batch)"></a>小批次 (mini-batch)</h2><p>从训练或推断过程的一次迭代中一起运行的整批<strong>样本</strong>内随机选择的一小部分。小批次的<strong>规模</strong>通常介于 10 到 1000 之间。与基于完整的训练数据计算损失相比，基于小批次数据计算损失要高效得多。</p>
+<h2 id="小批次随机梯度下降法-SGD-mini-batch-stochastic-gradient-descent"><a href="#小批次随机梯度下降法-SGD-mini-batch-stochastic-gradient-descent" class="headerlink" title="小批次随机梯度下降法 (SGD, mini-batch stochastic gradient descent)"></a>小批次随机梯度下降法 (SGD, mini-batch stochastic gradient descent)</h2><p>一种采用<strong>小批次</strong>样本的<strong>梯度下降法</strong>。也就是说，小批次 SGD 会根据一小部分训练数据来估算梯度。<strong>Vanilla SGD</strong> 使用的小批次的规模为 1。</p>
+<h2 id="ML"><a href="#ML" class="headerlink" title="ML"></a>ML</h2><p><strong>机器学习</strong>的缩写。</p>
+<h2 id="模型-model"><a href="#模型-model" class="headerlink" title="模型 (model)"></a>模型 (model)</h2><p>机器学习系统从训练数据学到的内容的表示形式。多含义术语，可以理解为下列两种相关含义之一：</p>
+<ul>
+<li>一种 <strong>TensorFlow</strong> 图，用于表示预测计算结构。</li>
+<li>该 TensorFlow 图的特定权重和偏差，通过<strong>训练</strong>决定。</li>
+</ul>
+<h2 id="模型训练-model-training"><a href="#模型训练-model-training" class="headerlink" title="模型训练 (model training)"></a>模型训练 (model training)</h2><p>确定最佳<strong>模型</strong>的过程。</p>
+<h2 id="动量-Momentum"><a href="#动量-Momentum" class="headerlink" title="动量 (Momentum)"></a>动量 (Momentum)</h2><p>一种先进的梯度下降法，其中学习步长不仅取决于当前步长的导数，还取决于之前一步或多步的步长的导数。动量涉及计算梯度随时间而变化的指数级加权移动平均值，与物理学中的动量类似。动量有时可以防止学习过程被卡在局部最小的情况。</p>
+<h2 id="多类别分类-multi-class-classification"><a href="#多类别分类-multi-class-classification" class="headerlink" title="多类别分类 (multi-class classification)"></a>多类别分类 (multi-class classification)</h2><p>区分两种以上类别的分类问题。例如，枫树大约有 128 种，因此，确定枫树种类的模型就属于多类别模型。反之，仅将电子邮件分为两类（“垃圾邮件”和“非垃圾邮件”）的模型属于<strong>二元分类模型</strong>。</p>
+<h2 id="多项分类-multinomial-classification"><a href="#多项分类-multinomial-classification" class="headerlink" title="多项分类 (multinomial classification)"></a>多项分类 (multinomial classification)</h2><p>是<strong>多类别分类</strong>的同义词。</p>
+<h2 id="NaN-陷阱-NaN-trap"><a href="#NaN-陷阱-NaN-trap" class="headerlink" title="NaN 陷阱 (NaN trap)"></a>NaN 陷阱 (NaN trap)</h2><p>模型中的一个数字在训练期间变成 NaN，这会导致模型中的很多或所有其他数字最终也会变成 NaN。 NaN 是“非数字”的缩写。</p>
+<h2 id="负类别-negative-class"><a href="#负类别-negative-class" class="headerlink" title="负类别 (negative class)"></a>负类别 (negative class)</h2><p>在<strong>二元分类</strong>中，一种类别称为正类别，另一种类别称为负类别。正类别是我们要寻找的类别，负类别则是另一种可能性。例如，在医学检查中，负类别可以是“非肿瘤”。在电子邮件分类器中，负类别可以是“非垃圾邮件”。另请参阅<strong>正类别</strong>。</p>
+<h2 id="神经网络-neural-network"><a href="#神经网络-neural-network" class="headerlink" title="神经网络 (neural network)"></a>神经网络 (neural network)</h2><p>一种模型，灵感来源于脑部结构，由多个层构成（至少有一个是<strong>隐藏层</strong>），每个层都包含简单相连的单元或<strong>神经元</strong>（具有非线性关系）。</p>
+<h2 id="神经元-neuron"><a href="#神经元-neuron" class="headerlink" title="神经元 (neuron)"></a>神经元 (neuron)</h2><p><strong>神经网络</strong>中的节点，通常是接收多个输入值并生成一个输出值。神经元通过将<strong>激活函数</strong>（非线性转换）应用于输入值的加权和来计算输出值。</p>
+<h2 id="节点-node"><a href="#节点-node" class="headerlink" title="节点 (node)"></a>节点 (node)</h2><p>多含义术语，可以理解为下列两种含义之一：</p>
+<ul>
+<li><strong>隐藏层</strong>中的神经元。</li>
+<li>TensorFlow <strong>图</strong>中的操作。</li>
+</ul>
+<h2 id="标准化-normalization"><a href="#标准化-normalization" class="headerlink" title="标准化 (normalization)"></a>标准化 (normalization)</h2><p>将实际的值区间转换为标准的值区间（通常为 -1 到 +1 或 0 到 1）的过程。例如，假设某个特征的自然区间是 800 到 6000。通过减法和除法运算，您可以将这些值标准化为位于 -1 到 +1 区间内。 另请参阅<strong>缩放</strong>。</p>
+<h2 id="数值数据-numerical-data"><a href="#数值数据-numerical-data" class="headerlink" title="数值数据 (numerical data)"></a>数值数据 (numerical data)</h2><p>用整数或实数表示的<strong>特征</strong>。例如，在房地产模型中，您可能会用数值数据表示房子大小（以平方英尺或平方米为单位）。如果用数值数据表示特征，则可以表明特征的值相互之间具有数学关系，并且与标签可能也有数学关系。例如，如果用数值数据表示房子大小，则可以表明面积为 200 平方米的房子是面积为 100 平方米的房子的两倍。此外，房子面积的平方米数可能与房价存在一定的数学关系。 并非所有整数数据都应表示成数值数据。例如，世界上某些地区的邮政编码是整数，但在模型中，不应将整数邮政编码表示成数值数据。这是因为邮政编码 <code>20000</code> 在效力上并不是邮政编码 10000 的两倍（或一半）。此外，虽然不同的邮政编码确实与不同的房地产价值有关，但我们也不能假设邮政编码为 20000 的房地产在价值上是邮政编码为 10000 的房地产的两倍。邮政编码应表示成<strong>分类数据</strong>。 数值特征有时称为<strong>连续特征</strong>。</p>
+<h2 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h2><p>一个开放源代码数学库，在 Python 中提供高效的数组操作。<strong>Pandas</strong> 就建立在 Numpy 之上。</p>
+<h2 id="目标-objective"><a href="#目标-objective" class="headerlink" title="目标 (objective)"></a>目标 (objective)</h2><p>算法尝试优化的指标。</p>
+<h2 id="离线推断-offline-inference"><a href="#离线推断-offline-inference" class="headerlink" title="离线推断 (offline inference)"></a>离线推断 (offline inference)</h2><p>生成一组<strong>预测</strong>，存储这些预测，然后根据需求检索这些预测。与<strong>在线推断</strong>相对。</p>
+<h2 id="one-hot-编码-one-hot-encoding"><a href="#one-hot-编码-one-hot-encoding" class="headerlink" title="one-hot 编码 (one-hot encoding)"></a>one-hot 编码 (one-hot encoding)</h2><p>一种稀疏向量，其中：</p>
+<ul>
+<li>一个元素设为 1。</li>
+<li>所有其他元素均设为 0。</li>
+</ul>
+<p>one-hot 编码常用于表示拥有有限个可能值的字符串或标识符。例如，假设某个指定的植物学数据集记录了 15000 个不同的物种，其中每个物种都用独一无二的字符串标识符来表示。在特征工程过程中，您可能需要将这些字符串标识符编码为 one-hot 向量，向量的大小为 15000。</p>
+<h2 id="一对多-one-vs-all"><a href="#一对多-one-vs-all" class="headerlink" title="一对多 (one-vs.-all)"></a>一对多 (one-vs.-all)</h2><p>假设某个分类问题有 N 种可能的解决方案，一对多解决方案将包含 N 个单独的<strong>二元分类器</strong> - 一个二元分类器对应一种可能的结果。例如，假设某个模型用于区分样本属于动物、蔬菜还是矿物，一对多解决方案将提供下列三个单独的二元分类器：</p>
+<ul>
+<li>动物和非动物</li>
+<li>蔬菜和非蔬菜</li>
+<li>矿物和非矿物</li>
+</ul>
+<h2 id="在线推断-online-inference"><a href="#在线推断-online-inference" class="headerlink" title="在线推断 (online inference)"></a>在线推断 (online inference)</h2><p>根据需求生成<strong>预测</strong>。与<strong>离线推断</strong>相对。</p>
+<h2 id="操作-op-Operation"><a href="#操作-op-Operation" class="headerlink" title="操作 (op, Operation)"></a>操作 (op, Operation)</h2><p>TensorFlow 图中的节点。在 TensorFlow 中，任何创建、操纵或销毁<strong>张量</strong>的过程都属于操作。例如，矩阵相乘就是一种操作，该操作以两个张量作为输入，并生成一个张量作为输出。</p>
+<h2 id="优化器-optimizer"><a href="#优化器-optimizer" class="headerlink" title="优化器 (optimizer)"></a>优化器 (optimizer)</h2><p><strong>梯度下降法</strong>的一种具体实现。TensorFlow 的优化器基类是 tf.train.Optimizer。不同的优化器（<code>tf.train.Optimizer</code> 的子类）会考虑如下概念：</p>
+<ul>
+<li>动量 (Momentum)</li>
+<li>更新频率 （AdaGrad = ADAptive GRADient descent； Adam = ADAptive with Momentum；RMSProp）</li>
+<li>稀疏性/正则化 (Ftrl)</li>
+<li>更复杂的计算方法 （Proximal， 等等）</li>
+</ul>
+<p>甚至还包括 NN 驱动的优化器。</p>
+<h2 id="离群值-outlier"><a href="#离群值-outlier" class="headerlink" title="离群值 (outlier)"></a>离群值 (outlier)</h2><p>与大多数其他值差别很大的值。在机器学习中，下列所有值都是离群值。</p>
+<ul>
+<li>绝对值很高的<strong>权重</strong>。</li>
+<li>与实际值相差很大的预测值。</li>
+<li>值比平均值高大约 3 个标准偏差的输入数据。</li>
+</ul>
+<p>离群值常常会导致模型训练出现问题。</p>
+<h2 id="输出层-output-layer"><a href="#输出层-output-layer" class="headerlink" title="输出层 (output layer)"></a>输出层 (output layer)</h2><p>神经网络的“最后”一层，也是包含答案的层。</p>
+<h2 id="过拟合-overfitting"><a href="#过拟合-overfitting" class="headerlink" title="过拟合 (overfitting)"></a>过拟合 (overfitting)</h2><p>创建的模型与<strong>训练数据</strong>过于匹配，以致于模型无法根据新数据做出正确的预测。</p>
+<h2 id="Pandas"><a href="#Pandas" class="headerlink" title="Pandas"></a>Pandas</h2><p>面向列的数据分析 API。很多机器学习框架（包括 TensorFlow）都支持将 Pandas 数据结构作为输入。请参阅 Pandas 文档。</p>
+<h2 id="参数-parameter"><a href="#参数-parameter" class="headerlink" title="参数 (parameter)"></a>参数 (parameter)</h2><p>机器学习系统自行训练的模型的变量。例如，<strong>权重</strong>就是一种参数，它们的值是机器学习系统通过连续的训练迭代逐渐学习到的。与<strong>超参数</strong>相对。</p>
+<h2 id="参数服务器-PS-Parameter-Server"><a href="#参数服务器-PS-Parameter-Server" class="headerlink" title="参数服务器 (PS, Parameter Server)"></a>参数服务器 (PS, Parameter Server)</h2><p>一种作业，负责在分布式设置中跟踪模型<strong>参数</strong>。</p>
+<h2 id="参数更新-parameter-update"><a href="#参数更新-parameter-update" class="headerlink" title="参数更新 (parameter update)"></a>参数更新 (parameter update)</h2><p>在训练期间（通常是在<strong>梯度下降法</strong>的单次迭代中）调整模型<strong>参数</strong>的操作。</p>
+<h2 id="偏导数-partial-derivative"><a href="#偏导数-partial-derivative" class="headerlink" title="偏导数 (partial derivative)"></a>偏导数 (partial derivative)</h2><p>一种导数，除一个变量之外的所有变量都被视为常量。例如，f(x, y) 对 x 的偏导数就是 f(x) 的导数（即，使 y 保持恒定）。f 对 x 的偏导数仅关注 x 如何变化，而忽略公式中的所有其他变量。</p>
+<h2 id="分区策略-partitioning-strategy"><a href="#分区策略-partitioning-strategy" class="headerlink" title="分区策略 (partitioning strategy)"></a>分区策略 (partitioning strategy)</h2><p><strong>参数服务器</strong>中分割变量的算法。</p>
+<h2 id="性能-performance"><a href="#性能-performance" class="headerlink" title="性能 (performance)"></a>性能 (performance)</h2><p>多含义术语，具有以下含义：</p>
+<ul>
+<li>在软件工程中的传统含义。即：相应软件的运行速度有多快（或有多高效）？</li>
+<li>在机器学习中的含义。在机器学习领域，性能旨在回答以下问题：相应<strong>模型</strong>的准确度有多高？即模型在预测方面的表现有多好？</li>
+</ul>
+<h2 id="困惑度-perplexity"><a href="#困惑度-perplexity" class="headerlink" title="困惑度 (perplexity)"></a>困惑度 (perplexity)</h2><p>一种衡量指标，用于衡量<strong>模型</strong>能够多好地完成任务。例如，假设任务是读取用户使用智能手机键盘输入字词时输入的前几个字母，然后列出一组可能的完整字词。此任务的困惑度 (P) 是：为了使列出的字词中包含用户尝试输入的实际字词，您需要提供的猜测项的个数。 困惑度与<strong>交叉熵</strong>的关系如下： P=2−cross entropy</p>
+<h2 id="流水线-pipeline"><a href="#流水线-pipeline" class="headerlink" title="流水线 (pipeline)"></a>流水线 (pipeline)</h2><p>机器学习算法的基础架构。流水线包括收集数据、将数据放入训练数据文件、训练一个或多个模型，以及将模型导出到生产环境。</p>
+<h2 id="正类别-positive-class"><a href="#正类别-positive-class" class="headerlink" title="正类别 (positive class)"></a>正类别 (positive class)</h2><p>在<strong>二元分类</strong>中，两种可能的类别分别被标记为正类别和负类别。正类别结果是我们要测试的对象。（不可否认的是，我们会同时测试这两种结果，但只关注正类别结果。）例如，在医学检查中，正类别可以是“肿瘤”。在电子邮件分类器中，正类别可以是“垃圾邮件”。 与<strong>负类别</strong>相对。</p>
+<h2 id="精确率-precision"><a href="#精确率-precision" class="headerlink" title="精确率 (precision)"></a>精确率 (precision)</h2><p>一种<strong>分类模型</strong>指标。精确率指模型正确预测正类别的频率.</p>
+<h2 id="预测-prediction"><a href="#预测-prediction" class="headerlink" title="预测 (prediction)"></a>预测 (prediction)</h2><p>模型在收到输入的<strong>样本</strong>后的输出。</p>
+<h2 id="预测偏差-prediction-bias"><a href="#预测偏差-prediction-bias" class="headerlink" title="预测偏差 (prediction bias)"></a>预测偏差 (prediction bias)</h2><p>一个值，用于表明<strong>预测</strong>平均值与数据集中<strong>标签</strong>的平均值相差有多大。</p>
+<h2 id="预创建的-Estimator-pre-made-Estimator"><a href="#预创建的-Estimator-pre-made-Estimator" class="headerlink" title="预创建的 Estimator (pre-made Estimator)"></a>预创建的 Estimator (pre-made Estimator)</h2><p>其他人已建好的 <strong>Estimator</strong>。TensorFlow 提供了一些预创建的 Estimator，包括 <code>DNNClassifier</code>、<code>DNNRegressor</code> 和 <code>LinearClassifier</code>。您可以按照这些说明构建自己预创建的 Estimator。</p>
+<h2 id="预训练模型-pre-trained-model"><a href="#预训练模型-pre-trained-model" class="headerlink" title="预训练模型 (pre-trained model)"></a>预训练模型 (pre-trained model)</h2><p>已经过训练的模型或模型组件（例如<strong>嵌套</strong>）。有时，您需要将预训练的嵌套馈送到<strong>神经网络</strong>。在其他时候，您的模型将自行训练嵌套，而不依赖于预训练的嵌套。</p>
+<h2 id="先验信念-prior-belief"><a href="#先验信念-prior-belief" class="headerlink" title="先验信念 (prior belief)"></a>先验信念 (prior belief)</h2><p>在开始采用相应数据进行训练之前，您对这些数据抱有的信念。例如，<strong>L2 正则化</strong>依赖的先验信念是<strong>权重</strong>应该很小且应以 0 为中心呈正态分布。</p>
+<h2 id="队列-queue"><a href="#队列-queue" class="headerlink" title="队列 (queue)"></a>队列 (queue)</h2><p>一种 TensorFlow <strong>操作</strong>，用于实现队列数据结构。通常用于 I/O 中。</p>
+<h2 id="等级-rank"><a href="#等级-rank" class="headerlink" title="等级 (rank)"></a>等级 (rank)</h2><p>机器学习中的一个多含义术语，可以理解为下列含义之一：</p>
+<ul>
+<li><strong>张量</strong>中的维度数量。例如，标量等级为 0，向量等级为 1，矩阵等级为 2。</li>
+<li>在将类别从最高到最低进行排序的机器学习问题中，类别的顺序位置。例如，行为排序系统可以将狗狗的奖励从最高（牛排）到最低（枯萎的羽衣甘蓝）进行排序。</li>
+</ul>
+<h2 id="评分者-rater"><a href="#评分者-rater" class="headerlink" title="评分者 (rater)"></a>评分者 (rater)</h2><p>为<strong>样本</strong>提供<strong>标签</strong>的人。有时称为“注释者”。</p>
+<h2 id="召回率-recall"><a href="#召回率-recall" class="headerlink" title="召回率 (recall)"></a>召回率 (recall)</h2><p>一种<strong>分类模型</strong>指标，用于回答以下问题：在所有可能的正类别标签中，模型正确地识别出了多少个？</p>
+<h2 id="修正线性单元-ReLU-Rectified-Linear-Unit"><a href="#修正线性单元-ReLU-Rectified-Linear-Unit" class="headerlink" title="修正线性单元 (ReLU, Rectified Linear Unit)"></a>修正线性单元 (ReLU, Rectified Linear Unit)</h2><p>一种<strong>激活函数</strong>，其规则如下：</p>
+<ul>
+<li>如果输入为负数或 0，则输出 0。</li>
+<li>如果输入为正数，则输出等于输入。</li>
+</ul>
+<h2 id="回归模型-regression-model"><a href="#回归模型-regression-model" class="headerlink" title="回归模型 (regression model)"></a>回归模型 (regression model)</h2><p>一种模型，能够输出连续的值（通常为浮点值）。请与<strong>分类模型</strong>进行比较，分类模型输出离散值，例如“黄花菜”或“虎皮百合”。</p>
+<h2 id="正则化-regularization"><a href="#正则化-regularization" class="headerlink" title="正则化 (regularization)"></a>正则化 (regularization)</h2><p>对模型复杂度的惩罚。正则化有助于防止出现<strong>过拟合</strong>，包含以下类型：</p>
+<ul>
+<li><strong>L1 正则化</strong></li>
+<li><strong>L2 正则化</strong></li>
+<li><strong>丢弃正则化</strong></li>
+<li><strong>早停法</strong>（这不是正式的正则化方法，但可以有效限制过拟合）</li>
+</ul>
+<h2 id="正则化率-regularization-rate"><a href="#正则化率-regularization-rate" class="headerlink" title="正则化率 (regularization rate)"></a>正则化率 (regularization rate)</h2><p>一种标量值，以 lambda 表示，用于指定正则化函数的相对重要性。从下面简化的<strong>损失</strong>公式中可以看出正则化率的影响： minimize(loss function + λ(regularization function)) 提高正则化率可以减少<strong>过拟合</strong>，但可能会使模型的<strong>准确率</strong>降低。</p>
+<h2 id="表示法-representation"><a href="#表示法-representation" class="headerlink" title="表示法 (representation)"></a>表示法 (representation)</h2><p>将数据映射到实用<strong>特征</strong>的过程。</p>
+<h2 id="受试者工作特征曲线（receiver-operating-characteristic-简称-ROC-曲线）"><a href="#受试者工作特征曲线（receiver-operating-characteristic-简称-ROC-曲线）" class="headerlink" title="受试者工作特征曲线（receiver operating characteristic, 简称 ROC 曲线）"></a>受试者工作特征曲线（receiver operating characteristic, 简称 ROC 曲线）</h2><p>不同<strong>分类阈值</strong>下的<strong>真正例率</strong>和<strong>假正例率</strong>构成的曲线。另请参阅<strong>曲线下面积</strong>。</p>
+<h2 id="根目录-root-directory"><a href="#根目录-root-directory" class="headerlink" title="根目录 (root directory)"></a>根目录 (root directory)</h2><p>您指定的目录，用于托管多个模型的 TensorFlow 检查点和事件文件的子目录。</p>
+<h2 id="均方根误差-RMSE-Root-Mean-Squared-Error"><a href="#均方根误差-RMSE-Root-Mean-Squared-Error" class="headerlink" title="均方根误差 (RMSE, Root Mean Squared Error)"></a>均方根误差 (RMSE, Root Mean Squared Error)</h2><p><strong>均方误差</strong>的平方根。</p>
+<h2 id="SavedModel"><a href="#SavedModel" class="headerlink" title="SavedModel"></a>SavedModel</h2><p>保存和恢复 TensorFlow 模型时建议使用的格式。SavedModel 是一种独立于语言且可恢复的序列化格式，使较高级别的系统和工具可以创建、使用和转换 TensorFlow 模型。 如需完整的详细信息，请参阅《TensorFlow 编程人员指南》中的保存和恢复。</p>
+<h2 id="Saver"><a href="#Saver" class="headerlink" title="Saver"></a>Saver</h2><p>一种 TensorFlow 对象，负责保存模型检查点。</p>
+<h2 id="缩放-scaling"><a href="#缩放-scaling" class="headerlink" title="缩放 (scaling)"></a>缩放 (scaling)</h2><p><strong>特征工程</strong>中的一种常用做法，是对某个特征的值区间进行调整，使之与数据集中其他特征的值区间一致。例如，假设您希望数据集中所有浮点特征的值都位于 0 到 1 区间内，如果某个特征的值位于 0 到 500 区间内，您就可以通过将每个值除以 500 来缩放该特征。 另请参阅<strong>标准化</strong>。</p>
+<h2 id="scikit-learn"><a href="#scikit-learn" class="headerlink" title="scikit-learn"></a>scikit-learn</h2><p>一个热门的开放源代码机器学习平台。请访问 <a href="http://www.scikit-learn.org。">www.scikit-learn.org。</a></p>
+<h2 id="半监督式学习-semi-supervised-learning"><a href="#半监督式学习-semi-supervised-learning" class="headerlink" title="半监督式学习 (semi-supervised learning)"></a>半监督式学习 (semi-supervised learning)</h2><p>训练模型时采用的数据中，某些训练样本有标签，而其他样本则没有标签。半监督式学习采用的一种技术是推断无标签样本的标签，然后使用推断出的标签进行训练，以创建新模型。如果获得有标签样本需要高昂的成本，而无标签样本则有很多，那么半监督式学习将非常有用。</p>
+<h2 id="序列模型-sequence-model"><a href="#序列模型-sequence-model" class="headerlink" title="序列模型 (sequence model)"></a>序列模型 (sequence model)</h2><p>一种模型，其输入具有序列依赖性。例如，根据之前观看过的一系列视频对观看的下一个视频进行预测。</p>
+<h2 id="会话-session"><a href="#会话-session" class="headerlink" title="会话 (session)"></a>会话 (session)</h2><p>维持 TensorFlow 程序中的状态（例如变量）。</p>
+<h2 id="S-型函数-sigmoid-function"><a href="#S-型函数-sigmoid-function" class="headerlink" title="S 型函数 (sigmoid function)"></a>S 型函数 (sigmoid function)</h2><p>一种函数，可将逻辑回归输出或多项回归输出（对数几率）映射到概率，以返回介于 0 到 1 之间的值。 在某些<strong>神经网络</strong>中，S 型函数可作为<strong>激活函数</strong>使用。</p>
+<h2 id="softmax"><a href="#softmax" class="headerlink" title="softmax"></a>softmax</h2><p>一种函数，可提供<strong>多类别分类模型</strong>中每个可能类别的概率。这些概率的总和正好为 1.0。例如，softmax 可能会得出某个图像是狗、猫和马的概率分别是 0.9、0.08 和 0.02。（也称为<strong>完整 softmax</strong>。） 与<strong>候选采样</strong>相对。</p>
+<h2 id="稀疏特征-sparse-feature"><a href="#稀疏特征-sparse-feature" class="headerlink" title="稀疏特征 (sparse feature)"></a>稀疏特征 (sparse feature)</h2><p>一种<strong>特征</strong>向量，其中的大多数值都为 0 或为空。例如，某个向量包含一个为 1 的值和一百万个为 0 的值，则该向量就属于稀疏向量。再举一个例子，搜索查询中的单词也可能属于稀疏特征 - 在某种指定语言中有很多可能的单词，但在某个指定的查询中仅包含其中几个。 与<strong>密集特征</strong>相对。</p>
+<h2 id="平方合页损失函数-squared-hinge-loss"><a href="#平方合页损失函数-squared-hinge-loss" class="headerlink" title="平方合页损失函数 (squared hinge loss)"></a>平方合页损失函数 (squared hinge loss)</h2><p><strong>合页损失函数</strong>的平方。与常规合页损失函数相比，平方合页损失函数对离群值的惩罚更严厉。</p>
+<h2 id="平方损失函数-squared-loss"><a href="#平方损失函数-squared-loss" class="headerlink" title="平方损失函数 (squared loss)"></a>平方损失函数 (squared loss)</h2><p>在<strong>线性回归</strong>中使用的<strong>损失</strong>函数（也称为 <strong>L2 损失函数</strong>）。该函数可计算模型为有标签<strong>样本</strong>预测的值和<strong>标签</strong>的实际值之差的平方。由于取平方值，因此该损失函数会放大不佳预测的影响。也就是说，与 <strong>L1 损失函数</strong>相比，平方损失函数对离群值的反应更强烈。</p>
+<h2 id="静态模型-static-model"><a href="#静态模型-static-model" class="headerlink" title="静态模型 (static model)"></a>静态模型 (static model)</h2><p>离线训练的一种模型。</p>
+<h2 id="平稳性-stationarity"><a href="#平稳性-stationarity" class="headerlink" title="平稳性 (stationarity)"></a>平稳性 (stationarity)</h2><p>数据集中数据的一种属性，表示数据分布在一个或多个维度保持不变。这种维度最常见的是时间，即表明平稳性的数据不随时间而变化。例如，从 9 月到 12 月，表明平稳性的数据没有发生变化。</p>
+<h2 id="步-step"><a href="#步-step" class="headerlink" title="步 (step)"></a>步 (step)</h2><p>对一个<strong>批次</strong>的向前和向后评估。</p>
+<h2 id="步长-step-size"><a href="#步长-step-size" class="headerlink" title="步长 (step size)"></a>步长 (step size)</h2><p>是<strong>学习速率</strong>的同义词。</p>
+<h2 id="随机梯度下降法-SGD-stochastic-gradient-descent"><a href="#随机梯度下降法-SGD-stochastic-gradient-descent" class="headerlink" title="随机梯度下降法 (SGD, stochastic gradient descent)"></a>随机梯度下降法 (SGD, stochastic gradient descent)</h2><p>批次规模为 1 的一种<strong>梯度下降法</strong>。换句话说，SGD 依赖于从数据集中随机均匀选择的单个样本来计算每步的梯度估算值。</p>
+<h2 id="结构风险最小化-SRM-structural-risk-minimization"><a href="#结构风险最小化-SRM-structural-risk-minimization" class="headerlink" title="结构风险最小化 (SRM, structural risk minimization)"></a>结构风险最小化 (SRM, structural risk minimization)</h2><p>一种算法，用于平衡以下两个目标：</p>
+<ul>
+<li>期望构建最具预测性的模型（例如损失最低）。</li>
+<li>期望使模型尽可能简单（例如强大的正则化）。</li>
+</ul>
+<p>例如，旨在将基于训练集的损失和正则化降至最低的模型函数就是一种结构风险最小化算法。 如需更多信息，请参阅 <a href="http://www.svms.org/srm/。">http://www.svms.org/srm/。</a> 与<strong>经验风险最小化</strong>相对。</p>
+<h2 id="总结-summary"><a href="#总结-summary" class="headerlink" title="总结 (summary)"></a>总结 (summary)</h2><p>在 TensorFlow 中的某一<strong>步</strong>计算出的一个值或一组值，通常用于在训练期间跟踪模型指标。</p>
+<h2 id="监督式机器学习-supervised-machine-learning"><a href="#监督式机器学习-supervised-machine-learning" class="headerlink" title="监督式机器学习 (supervised machine learning)"></a>监督式机器学习 (supervised machine learning)</h2><p>根据输入数据及其对应的<strong>标签</strong>来训练<strong>模型</strong>。监督式机器学习类似于学生通过研究一系列问题及其对应的答案来学习某个主题。在掌握了问题和答案之间的对应关系后，学生便可以回答关于同一主题的新问题（以前从未见过的问题）。请与<strong>非监督式机器学习</strong>进行比较。</p>
+<h2 id="合成特征-synthetic-feature"><a href="#合成特征-synthetic-feature" class="headerlink" title="合成特征 (synthetic feature)"></a>合成特征 (synthetic feature)</h2><p>一种<strong>特征</strong>，不在输入特征之列，而是从一个或多个输入特征衍生而来。合成特征包括以下类型：</p>
+<ul>
+<li>将一个特征与其本身或其他特征相乘（称为<strong>特征组合</strong>）。</li>
+<li>两个特征相除。</li>
+<li>对连续特征进行<strong>分桶</strong>，以分为多个区间分箱。</li>
+</ul>
+<p>通过<strong>标准化</strong>或<strong>缩放</strong>单独创建的特征不属于合成特征。</p>
+<h2 id="目标-target"><a href="#目标-target" class="headerlink" title="目标 (target)"></a>目标 (target)</h2><p>是<strong>标签</strong>的同义词。</p>
+<h2 id="时态数据-temporal-data"><a href="#时态数据-temporal-data" class="headerlink" title="时态数据 (temporal data)"></a>时态数据 (temporal data)</h2><p>在不同时间点记录的数据。例如，记录的一年中每一天的冬外套销量就属于时态数据。</p>
+<h2 id="张量-Tensor"><a href="#张量-Tensor" class="headerlink" title="张量 (Tensor)"></a>张量 (Tensor)</h2><p>TensorFlow 程序中的主要数据结构。张量是 N 维（其中 N 可能非常大）数据结构，最常见的是标量、向量或矩阵。张量的元素可以包含整数值、浮点值或字符串值。</p>
+<h2 id="张量处理单元-TPU-Tensor-Processing-Unit"><a href="#张量处理单元-TPU-Tensor-Processing-Unit" class="headerlink" title="张量处理单元 (TPU, Tensor Processing Unit)"></a>张量处理单元 (TPU, Tensor Processing Unit)</h2><p>一种 ASIC（应用专用集成电路），用于优化 TensorFlow 程序的性能。</p>
+<h2 id="张量等级-Tensor-rank"><a href="#张量等级-Tensor-rank" class="headerlink" title="张量等级 (Tensor rank)"></a>张量等级 (Tensor rank)</h2><p>请参阅<strong>等级</strong>。</p>
+<h2 id="张量形状-Tensor-shape"><a href="#张量形状-Tensor-shape" class="headerlink" title="张量形状 (Tensor shape)"></a>张量形状 (Tensor shape)</h2><p><strong>张量</strong>在各种维度中包含的元素数。例如，张量 [5, 10] 在一个维度中的形状为 5，在另一个维度中的形状为 10。</p>
+<h2 id="张量大小-Tensor-size"><a href="#张量大小-Tensor-size" class="headerlink" title="张量大小 (Tensor size)"></a>张量大小 (Tensor size)</h2><p><strong>张量</strong>包含的标量总数。例如，张量 [5, 10] 的大小为 50。</p>
+<h2 id="TensorBoard"><a href="#TensorBoard" class="headerlink" title="TensorBoard"></a>TensorBoard</h2><p>一个信息中心，用于显示在执行一个或多个 TensorFlow 程序期间保存的摘要信息。</p>
+<h2 id="TensorFlow"><a href="#TensorFlow" class="headerlink" title="TensorFlow"></a>TensorFlow</h2><p>一个大型的分布式机器学习平台。该术语还指 TensorFlow 堆栈中的基本 API 层，该层支持对数据流图进行一般计算。 虽然 TensorFlow 主要应用于机器学习领域，但也可用于需要使用数据流图进行数值计算的非机器学习任务。</p>
+<h2 id="TensorFlow-Playground"><a href="#TensorFlow-Playground" class="headerlink" title="TensorFlow Playground"></a>TensorFlow Playground</h2><p>一款用于直观呈现不同的<strong>超参数</strong>对模型（主要是神经网络）训练的影响的程序。要试用 TensorFlow Playground，请前往 <a href="http://playground.tensorflow.org。">http://playground.tensorflow.org。</a></p>
+<h2 id="TensorFlow-Serving"><a href="#TensorFlow-Serving" class="headerlink" title="TensorFlow Serving"></a>TensorFlow Serving</h2><p>一个平台，用于将训练过的模型部署到生产环境。</p>
+<h2 id="测试集-test-set"><a href="#测试集-test-set" class="headerlink" title="测试集 (test set)"></a>测试集 (test set)</h2><p>数据集的子集，用于在<strong>模型</strong>经由验证集的初步验证之后测试模型。 与<strong>训练集</strong>和<strong>验证集</strong>相对。</p>
+<h2 id="tf-Example"><a href="#tf-Example" class="headerlink" title="tf.Example"></a>tf.Example</h2><p>一种标准的 proto buffer，旨在描述用于机器学习模型训练或推断的输入数据。</p>
+<h2 id="时间序列分析-time-series-analysis"><a href="#时间序列分析-time-series-analysis" class="headerlink" title="时间序列分析 (time series analysis)"></a>时间序列分析 (time series analysis)</h2><p>机器学习和统计学的一个子领域，旨在分析<strong>时态数据</strong>。很多类型的机器学习问题都需要时间序列分析，其中包括分类、聚类、预测和异常检测。例如，您可以利用时间序列分析根据历史销量数据预测未来每月的冬外套销量。</p>
+<h2 id="训练-training"><a href="#训练-training" class="headerlink" title="训练 (training)"></a>训练 (training)</h2><p>确定构成模型的理想<strong>参数</strong>的过程。</p>
+<h2 id="训练集-training-set"><a href="#训练集-training-set" class="headerlink" title="训练集 (training set)"></a>训练集 (training set)</h2><p>数据集的子集，用于训练模型。 与<strong>验证集</strong>和<strong>测试集</strong>相对。</p>
+<h2 id="转移学习-transfer-learning"><a href="#转移学习-transfer-learning" class="headerlink" title="转移学习 (transfer learning)"></a>转移学习 (transfer learning)</h2><p>将信息从一个机器学习任务转移到另一个机器学习任务。例如，在多任务学习中，一个模型可以完成多项任务，例如针对不同任务具有不同输出节点的<strong>深度模型</strong>。转移学习可能涉及将知识从较简单任务的解决方案转移到较复杂的任务，或者将知识从数据较多的任务转移到数据较少的任务。 大多数机器学习系统都只能完成一项任务。转移学习是迈向人工智能的一小步；在人工智能中，单个程序可以完成多项任务。</p>
+<h2 id="真负例-TN-true-negative"><a href="#真负例-TN-true-negative" class="headerlink" title="真负例 (TN, true negative)"></a>真负例 (TN, true negative)</h2><p>被模型正确地预测为<strong>负类别</strong>的样本。例如，模型推断出某封电子邮件不是垃圾邮件，而该电子邮件确实不是垃圾邮件。</p>
+<h2 id="真正例-TP-true-positive"><a href="#真正例-TP-true-positive" class="headerlink" title="真正例 (TP, true positive)"></a>真正例 (TP, true positive)</h2><p>被模型正确地预测为<strong>正类别</strong>的样本。例如，模型推断出某封电子邮件是垃圾邮件，而该电子邮件确实是垃圾邮件。</p>
+<h2 id="真正例率（true-positive-rate-简称-TP-率）"><a href="#真正例率（true-positive-rate-简称-TP-率）" class="headerlink" title="真正例率（true positive rate, 简称 TP 率）"></a>真正例率（true positive rate, 简称 TP 率）</h2><p>是<strong>召回率</strong>的同义词. 真正例率是 <strong>ROC 曲线</strong>的 y 轴。</p>
+<h2 id="无标签样本-unlabeled-example"><a href="#无标签样本-unlabeled-example" class="headerlink" title="无标签样本 (unlabeled example)"></a>无标签样本 (unlabeled example)</h2><p>包含<strong>特征</strong>但没有<strong>标签</strong>的样本。无标签样本是用于进行<strong>推断</strong>的输入内容。在<strong>半监督式</strong>和<strong>非监督式</strong>学习中，无标签样本在训练期间被使用。</p>
+<h2 id="非监督式机器学习-unsupervised-machine-learning"><a href="#非监督式机器学习-unsupervised-machine-learning" class="headerlink" title="非监督式机器学习 (unsupervised machine learning)"></a>非监督式机器学习 (unsupervised machine learning)</h2><p>训练<strong>模型</strong>，以找出数据集（通常是无标签数据集）中的模式。 非监督式机器学习最常见的用途是将数据分为不同的聚类，使相似的样本位于同一组中。例如，非监督式机器学习算法可以根据音乐的各种属性将歌曲分为不同的聚类。所得聚类可以作为其他机器学习算法（例如音乐推荐服务）的输入。在很难获取真标签的领域，聚类可能会非常有用。例如，在反滥用和反欺诈等领域，聚类有助于人们更好地了解相关数据。 非监督式机器学习的另一个例子是<strong>主成分分析 (PCA)</strong>。例如，通过对包含数百万购物车中物品的数据集进行主成分分析，可能会发现有柠檬的购物车中往往也有抗酸药。 请与<strong>监督式机器学习</strong>进行比较。</p>
+<h2 id="验证集-validation-set"><a href="#验证集-validation-set" class="headerlink" title="验证集 (validation set)"></a>验证集 (validation set)</h2><p>数据集的一个子集，从训练集分离而来，用于调整<strong>超参数</strong>。 与<strong>训练集</strong>和<strong>测试集</strong>相对。</p>
+<h2 id="权重-weight"><a href="#权重-weight" class="headerlink" title="权重 (weight)"></a>权重 (weight)</h2><p>线性模型中<strong>特征</strong>的系数，或深度网络中的边。训练线性模型的目标是确定每个特征的理想权重。如果权重为 0，则相应的特征对模型来说没有任何贡献。</p>
+<h2 id="宽度模型-wide-model"><a href="#宽度模型-wide-model" class="headerlink" title="宽度模型 (wide model)"></a>宽度模型 (wide model)</h2><p>一种线性模型，通常有很多<strong>稀疏输入特征</strong>。我们之所以称之为“宽度模型”，是因为这是一种特殊类型的<strong>神经网络</strong>，其大量输入均直接与输出节点相连。与深度模型相比，宽度模型通常更易于调试和检查。虽然宽度模型无法通过<strong>隐藏层</strong>来表示非线性关系，但可以利用<strong>特征组合</strong>、<strong>分桶</strong>等转换以不同的方式为非线性关系建模。 与<strong>深度模型</strong>相对。 <img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180317232716-300x162.png" alt=""></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg" alt="StriveZs wechat" style="width: 200px; max-width: 100%;"/>
+    <div>Where is will, there is a way.</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Google/" rel="tag"># Google</a>
+          
+            <a href="/tags/Machine-Learning/" rel="tag"># Machine Learning</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/16/python-shu-ju-fen-xi-1/" rel="next" title="python数据分析">
+                <i class="fa fa-chevron-left"></i> python数据分析
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/18/pyqt5-xue-xi-bi-ji-si-1/" rel="prev" title="PyQt5学习笔记（四）">
+                PyQt5学习笔记（四） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.JPG"
+                alt="StriveZs" />
+            
+              <p class="site-author-name" itemprop="name">StriveZs</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">258</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">169</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">162</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#A-B-测试-A-B-testing"><span class="nav-number">1.</span> <span class="nav-text">A&#x2F;B 测试 (A&#x2F;B testing)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准确率-accuracy"><span class="nav-number">2.</span> <span class="nav-text">准确率 (accuracy)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#激活函数-activation-function"><span class="nav-number">3.</span> <span class="nav-text">激活函数 (activation function)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AdaGrad"><span class="nav-number">4.</span> <span class="nav-text">AdaGrad</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ROC-曲线下面积-AUC-Area-under-the-ROC-Curve"><span class="nav-number">5.</span> <span class="nav-text">ROC 曲线下面积 (AUC, Area under the ROC Curve)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反向传播算法-backpropagation"><span class="nav-number">6.</span> <span class="nav-text">反向传播算法 (backpropagation)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基准-baseline"><span class="nav-number">7.</span> <span class="nav-text">基准 (baseline)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#批次-batch"><span class="nav-number">8.</span> <span class="nav-text">批次 (batch)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#批次规模-batch-size"><span class="nav-number">9.</span> <span class="nav-text">批次规模 (batch size)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#偏差-bias"><span class="nav-number">10.</span> <span class="nav-text">偏差 (bias)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二元分类-binary-classification"><span class="nav-number">11.</span> <span class="nav-text">二元分类 (binary classification)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分箱-binning"><span class="nav-number">12.</span> <span class="nav-text">分箱 (binning)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分桶-bucketing"><span class="nav-number">13.</span> <span class="nav-text">分桶 (bucketing)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#校准层-calibration-layer"><span class="nav-number">14.</span> <span class="nav-text">校准层 (calibration layer)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#候选采样-candidate-sampling"><span class="nav-number">15.</span> <span class="nav-text">候选采样 (candidate sampling)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类数据-categorical-data"><span class="nav-number">16.</span> <span class="nav-text">分类数据 (categorical data)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#检查点-checkpoint"><span class="nav-number">17.</span> <span class="nav-text">检查点 (checkpoint)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类别-class"><span class="nav-number">18.</span> <span class="nav-text">类别 (class)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类不平衡的数据集-class-imbalanced-data-set"><span class="nav-number">19.</span> <span class="nav-text">分类不平衡的数据集 (class-imbalanced data set)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类模型-classification-model"><span class="nav-number">20.</span> <span class="nav-text">分类模型 (classification model)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类阈值-classification-threshold"><span class="nav-number">21.</span> <span class="nav-text">分类阈值 (classification threshold)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#协同过滤-collaborative-filtering"><span class="nav-number">22.</span> <span class="nav-text">协同过滤 (collaborative filtering)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#混淆矩阵-confusion-matrix"><span class="nav-number">23.</span> <span class="nav-text">混淆矩阵 (confusion matrix)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连续特征-continuous-feature"><span class="nav-number">24.</span> <span class="nav-text">连续特征 (continuous feature)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#收敛-convergence"><span class="nav-number">25.</span> <span class="nav-text">收敛 (convergence)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#凸函数-convex-function"><span class="nav-number">26.</span> <span class="nav-text">凸函数 (convex function)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#凸优化-convex-optimization"><span class="nav-number">27.</span> <span class="nav-text">凸优化 (convex optimization)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#凸集-convex-set"><span class="nav-number">28.</span> <span class="nav-text">凸集 (convex set)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#成本-cost"><span class="nav-number">29.</span> <span class="nav-text">成本 (cost)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#交叉熵-cross-entropy"><span class="nav-number">30.</span> <span class="nav-text">交叉熵 (cross-entropy)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义-Estimator-custom-Estimator"><span class="nav-number">31.</span> <span class="nav-text">自定义 Estimator (custom Estimator)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据集-data-set"><span class="nav-number">32.</span> <span class="nav-text">数据集 (data set)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dataset-API-tf-data"><span class="nav-number">33.</span> <span class="nav-text">Dataset API (tf.data)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#决策边界-decision-boundary"><span class="nav-number">34.</span> <span class="nav-text">决策边界 (decision boundary)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#密集层-dense-layer"><span class="nav-number">35.</span> <span class="nav-text">密集层 (dense layer)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深度模型-deep-model"><span class="nav-number">36.</span> <span class="nav-text">深度模型 (deep model)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#密集特征-dense-feature"><span class="nav-number">37.</span> <span class="nav-text">密集特征 (dense feature)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#衍生特征-derived-feature"><span class="nav-number">38.</span> <span class="nav-text">衍生特征 (derived feature)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#离散特征-discrete-feature"><span class="nav-number">39.</span> <span class="nav-text">离散特征 (discrete feature)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#丢弃正则化-dropout-regularization"><span class="nav-number">40.</span> <span class="nav-text">丢弃正则化 (dropout regularization)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态模型-dynamic-model"><span class="nav-number">41.</span> <span class="nav-text">动态模型 (dynamic model)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#E"><span class="nav-number">42.</span> <span class="nav-text">E</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#早停法-early-stopping"><span class="nav-number">43.</span> <span class="nav-text">早停法 (early stopping)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#嵌套-embeddings"><span class="nav-number">44.</span> <span class="nav-text">嵌套 (embeddings)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#经验风险最小化-ERM-empirical-risk-minimization"><span class="nav-number">45.</span> <span class="nav-text">经验风险最小化 (ERM, empirical risk minimization)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#集成学习-ensemble"><span class="nav-number">46.</span> <span class="nav-text">集成学习 (ensemble)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#周期-epoch"><span class="nav-number">47.</span> <span class="nav-text">周期 (epoch)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Estimator"><span class="nav-number">48.</span> <span class="nav-text">Estimator</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#样本-example"><span class="nav-number">49.</span> <span class="nav-text">样本 (example)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#假负例-FN-false-negative"><span class="nav-number">50.</span> <span class="nav-text">假负例 (FN, false negative)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#假正例-FP-false-positive"><span class="nav-number">51.</span> <span class="nav-text">假正例 (FP, false positive)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#假正例率（false-positive-rate-简称-FP-率）"><span class="nav-number">52.</span> <span class="nav-text">假正例率（false positive rate, 简称 FP 率）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征-feature"><span class="nav-number">53.</span> <span class="nav-text">特征 (feature)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征列-FeatureColumns"><span class="nav-number">54.</span> <span class="nav-text">特征列 (FeatureColumns)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征组合-feature-cross"><span class="nav-number">55.</span> <span class="nav-text">特征组合 (feature cross)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征工程-feature-engineering"><span class="nav-number">56.</span> <span class="nav-text">特征工程 (feature engineering)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征集-feature-set"><span class="nav-number">57.</span> <span class="nav-text">特征集 (feature set)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征规范-feature-spec"><span class="nav-number">58.</span> <span class="nav-text">特征规范 (feature spec)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完整-softmax-full-softmax"><span class="nav-number">59.</span> <span class="nav-text">完整 softmax (full softmax)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#全连接层-fully-connected-layer"><span class="nav-number">60.</span> <span class="nav-text">全连接层 (fully connected layer)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#泛化-generalization"><span class="nav-number">61.</span> <span class="nav-text">泛化 (generalization)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#广义线性模型-generalized-linear-model"><span class="nav-number">62.</span> <span class="nav-text">广义线性模型 (generalized linear model)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#梯度-gradient"><span class="nav-number">63.</span> <span class="nav-text">梯度 (gradient)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#梯度裁剪-gradient-clipping"><span class="nav-number">64.</span> <span class="nav-text">梯度裁剪 (gradient clipping)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#梯度下降法-gradient-descent"><span class="nav-number">65.</span> <span class="nav-text">梯度下降法 (gradient descent)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图-graph"><span class="nav-number">66.</span> <span class="nav-text">图 (graph)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启发法-heuristic"><span class="nav-number">67.</span> <span class="nav-text">启发法 (heuristic)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#隐藏层-hidden-layer"><span class="nav-number">68.</span> <span class="nav-text">隐藏层 (hidden layer)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#合页损失函数-hinge-loss"><span class="nav-number">69.</span> <span class="nav-text">合页损失函数 (hinge loss)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#维持数据-holdout-data"><span class="nav-number">70.</span> <span class="nav-text">维持数据 (holdout data)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#超参数-hyperparameter"><span class="nav-number">71.</span> <span class="nav-text">超参数 (hyperparameter)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#超平面-hyperplane"><span class="nav-number">72.</span> <span class="nav-text">超平面 (hyperplane)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#独立同分布-i-i-d-independently-and-identically-distributed"><span class="nav-number">73.</span> <span class="nav-text">独立同分布 (i.i.d, independently and identically distributed)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推断-inference"><span class="nav-number">74.</span> <span class="nav-text">推断 (inference)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入函数-input-function"><span class="nav-number">75.</span> <span class="nav-text">输入函数 (input function)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入层-input-layer"><span class="nav-number">76.</span> <span class="nav-text">输入层 (input layer)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例-instance"><span class="nav-number">77.</span> <span class="nav-text">实例 (instance)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可解释性-interpretability"><span class="nav-number">78.</span> <span class="nav-text">可解释性 (interpretability)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#评分者间一致性信度-inter-rater-agreement"><span class="nav-number">79.</span> <span class="nav-text">评分者间一致性信度 (inter-rater agreement)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代-iteration"><span class="nav-number">80.</span> <span class="nav-text">迭代 (iteration)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Keras"><span class="nav-number">81.</span> <span class="nav-text">Keras</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#核支持向量机-KSVM-Kernel-Support-Vector-Machines"><span class="nav-number">82.</span> <span class="nav-text">核支持向量机 (KSVM, Kernel Support Vector Machines)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L1-损失函数-L₁-loss"><span class="nav-number">83.</span> <span class="nav-text">L1 损失函数 (L₁ loss)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L1-正则化-L₁-regularization"><span class="nav-number">84.</span> <span class="nav-text">L1 正则化 (L₁ regularization)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L2-损失函数-L₂-loss"><span class="nav-number">85.</span> <span class="nav-text">L2 损失函数 (L₂ loss)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L2-正则化-L₂-regularization"><span class="nav-number">86.</span> <span class="nav-text">L2 正则化 (L₂ regularization)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标签-label"><span class="nav-number">87.</span> <span class="nav-text">标签 (label)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有标签样本-labeled-example"><span class="nav-number">88.</span> <span class="nav-text">有标签样本 (labeled example)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#lambda"><span class="nav-number">89.</span> <span class="nav-text">lambda</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#层-layer"><span class="nav-number">90.</span> <span class="nav-text">层 (layer)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Layers-API-tf-layers"><span class="nav-number">91.</span> <span class="nav-text">Layers API (tf.layers)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#学习速率-learning-rate"><span class="nav-number">92.</span> <span class="nav-text">学习速率 (learning rate)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最小二乘回归-least-squares-regression"><span class="nav-number">93.</span> <span class="nav-text">最小二乘回归 (least squares regression)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性回归-linear-regression"><span class="nav-number">94.</span> <span class="nav-text">线性回归 (linear regression)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑回归-logistic-regression"><span class="nav-number">95.</span> <span class="nav-text">逻辑回归 (logistic regression)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对数损失函数-Log-Loss"><span class="nav-number">96.</span> <span class="nav-text">对数损失函数 (Log Loss)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#损失-Loss"><span class="nav-number">97.</span> <span class="nav-text">损失 (Loss)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器学习-machine-learning"><span class="nav-number">98.</span> <span class="nav-text">机器学习 (machine learning)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#均方误差-MSE-Mean-Squared-Error"><span class="nav-number">99.</span> <span class="nav-text">均方误差 (MSE, Mean Squared Error)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指标-metric"><span class="nav-number">100.</span> <span class="nav-text">指标 (metric)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Metrics-API-tf-metrics"><span class="nav-number">101.</span> <span class="nav-text">Metrics API (tf.metrics)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小批次-mini-batch"><span class="nav-number">102.</span> <span class="nav-text">小批次 (mini-batch)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小批次随机梯度下降法-SGD-mini-batch-stochastic-gradient-descent"><span class="nav-number">103.</span> <span class="nav-text">小批次随机梯度下降法 (SGD, mini-batch stochastic gradient descent)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ML"><span class="nav-number">104.</span> <span class="nav-text">ML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模型-model"><span class="nav-number">105.</span> <span class="nav-text">模型 (model)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模型训练-model-training"><span class="nav-number">106.</span> <span class="nav-text">模型训练 (model training)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动量-Momentum"><span class="nav-number">107.</span> <span class="nav-text">动量 (Momentum)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多类别分类-multi-class-classification"><span class="nav-number">108.</span> <span class="nav-text">多类别分类 (multi-class classification)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多项分类-multinomial-classification"><span class="nav-number">109.</span> <span class="nav-text">多项分类 (multinomial classification)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NaN-陷阱-NaN-trap"><span class="nav-number">110.</span> <span class="nav-text">NaN 陷阱 (NaN trap)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#负类别-negative-class"><span class="nav-number">111.</span> <span class="nav-text">负类别 (negative class)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#神经网络-neural-network"><span class="nav-number">112.</span> <span class="nav-text">神经网络 (neural network)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#神经元-neuron"><span class="nav-number">113.</span> <span class="nav-text">神经元 (neuron)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#节点-node"><span class="nav-number">114.</span> <span class="nav-text">节点 (node)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标准化-normalization"><span class="nav-number">115.</span> <span class="nav-text">标准化 (normalization)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数值数据-numerical-data"><span class="nav-number">116.</span> <span class="nav-text">数值数据 (numerical data)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Numpy"><span class="nav-number">117.</span> <span class="nav-text">Numpy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目标-objective"><span class="nav-number">118.</span> <span class="nav-text">目标 (objective)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#离线推断-offline-inference"><span class="nav-number">119.</span> <span class="nav-text">离线推断 (offline inference)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#one-hot-编码-one-hot-encoding"><span class="nav-number">120.</span> <span class="nav-text">one-hot 编码 (one-hot encoding)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一对多-one-vs-all"><span class="nav-number">121.</span> <span class="nav-text">一对多 (one-vs.-all)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在线推断-online-inference"><span class="nav-number">122.</span> <span class="nav-text">在线推断 (online inference)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作-op-Operation"><span class="nav-number">123.</span> <span class="nav-text">操作 (op, Operation)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化器-optimizer"><span class="nav-number">124.</span> <span class="nav-text">优化器 (optimizer)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#离群值-outlier"><span class="nav-number">125.</span> <span class="nav-text">离群值 (outlier)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输出层-output-layer"><span class="nav-number">126.</span> <span class="nav-text">输出层 (output layer)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过拟合-overfitting"><span class="nav-number">127.</span> <span class="nav-text">过拟合 (overfitting)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pandas"><span class="nav-number">128.</span> <span class="nav-text">Pandas</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数-parameter"><span class="nav-number">129.</span> <span class="nav-text">参数 (parameter)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数服务器-PS-Parameter-Server"><span class="nav-number">130.</span> <span class="nav-text">参数服务器 (PS, Parameter Server)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数更新-parameter-update"><span class="nav-number">131.</span> <span class="nav-text">参数更新 (parameter update)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#偏导数-partial-derivative"><span class="nav-number">132.</span> <span class="nav-text">偏导数 (partial derivative)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分区策略-partitioning-strategy"><span class="nav-number">133.</span> <span class="nav-text">分区策略 (partitioning strategy)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#性能-performance"><span class="nav-number">134.</span> <span class="nav-text">性能 (performance)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#困惑度-perplexity"><span class="nav-number">135.</span> <span class="nav-text">困惑度 (perplexity)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#流水线-pipeline"><span class="nav-number">136.</span> <span class="nav-text">流水线 (pipeline)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正类别-positive-class"><span class="nav-number">137.</span> <span class="nav-text">正类别 (positive class)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#精确率-precision"><span class="nav-number">138.</span> <span class="nav-text">精确率 (precision)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预测-prediction"><span class="nav-number">139.</span> <span class="nav-text">预测 (prediction)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预测偏差-prediction-bias"><span class="nav-number">140.</span> <span class="nav-text">预测偏差 (prediction bias)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预创建的-Estimator-pre-made-Estimator"><span class="nav-number">141.</span> <span class="nav-text">预创建的 Estimator (pre-made Estimator)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预训练模型-pre-trained-model"><span class="nav-number">142.</span> <span class="nav-text">预训练模型 (pre-trained model)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#先验信念-prior-belief"><span class="nav-number">143.</span> <span class="nav-text">先验信念 (prior belief)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#队列-queue"><span class="nav-number">144.</span> <span class="nav-text">队列 (queue)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#等级-rank"><span class="nav-number">145.</span> <span class="nav-text">等级 (rank)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#评分者-rater"><span class="nav-number">146.</span> <span class="nav-text">评分者 (rater)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#召回率-recall"><span class="nav-number">147.</span> <span class="nav-text">召回率 (recall)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修正线性单元-ReLU-Rectified-Linear-Unit"><span class="nav-number">148.</span> <span class="nav-text">修正线性单元 (ReLU, Rectified Linear Unit)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#回归模型-regression-model"><span class="nav-number">149.</span> <span class="nav-text">回归模型 (regression model)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正则化-regularization"><span class="nav-number">150.</span> <span class="nav-text">正则化 (regularization)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正则化率-regularization-rate"><span class="nav-number">151.</span> <span class="nav-text">正则化率 (regularization rate)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表示法-representation"><span class="nav-number">152.</span> <span class="nav-text">表示法 (representation)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#受试者工作特征曲线（receiver-operating-characteristic-简称-ROC-曲线）"><span class="nav-number">153.</span> <span class="nav-text">受试者工作特征曲线（receiver operating characteristic, 简称 ROC 曲线）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#根目录-root-directory"><span class="nav-number">154.</span> <span class="nav-text">根目录 (root directory)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#均方根误差-RMSE-Root-Mean-Squared-Error"><span class="nav-number">155.</span> <span class="nav-text">均方根误差 (RMSE, Root Mean Squared Error)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SavedModel"><span class="nav-number">156.</span> <span class="nav-text">SavedModel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Saver"><span class="nav-number">157.</span> <span class="nav-text">Saver</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缩放-scaling"><span class="nav-number">158.</span> <span class="nav-text">缩放 (scaling)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#scikit-learn"><span class="nav-number">159.</span> <span class="nav-text">scikit-learn</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#半监督式学习-semi-supervised-learning"><span class="nav-number">160.</span> <span class="nav-text">半监督式学习 (semi-supervised learning)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#序列模型-sequence-model"><span class="nav-number">161.</span> <span class="nav-text">序列模型 (sequence model)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#会话-session"><span class="nav-number">162.</span> <span class="nav-text">会话 (session)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#S-型函数-sigmoid-function"><span class="nav-number">163.</span> <span class="nav-text">S 型函数 (sigmoid function)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#softmax"><span class="nav-number">164.</span> <span class="nav-text">softmax</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#稀疏特征-sparse-feature"><span class="nav-number">165.</span> <span class="nav-text">稀疏特征 (sparse feature)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#平方合页损失函数-squared-hinge-loss"><span class="nav-number">166.</span> <span class="nav-text">平方合页损失函数 (squared hinge loss)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#平方损失函数-squared-loss"><span class="nav-number">167.</span> <span class="nav-text">平方损失函数 (squared loss)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态模型-static-model"><span class="nav-number">168.</span> <span class="nav-text">静态模型 (static model)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#平稳性-stationarity"><span class="nav-number">169.</span> <span class="nav-text">平稳性 (stationarity)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步-step"><span class="nav-number">170.</span> <span class="nav-text">步 (step)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步长-step-size"><span class="nav-number">171.</span> <span class="nav-text">步长 (step size)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#随机梯度下降法-SGD-stochastic-gradient-descent"><span class="nav-number">172.</span> <span class="nav-text">随机梯度下降法 (SGD, stochastic gradient descent)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结构风险最小化-SRM-structural-risk-minimization"><span class="nav-number">173.</span> <span class="nav-text">结构风险最小化 (SRM, structural risk minimization)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结-summary"><span class="nav-number">174.</span> <span class="nav-text">总结 (summary)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#监督式机器学习-supervised-machine-learning"><span class="nav-number">175.</span> <span class="nav-text">监督式机器学习 (supervised machine learning)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#合成特征-synthetic-feature"><span class="nav-number">176.</span> <span class="nav-text">合成特征 (synthetic feature)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目标-target"><span class="nav-number">177.</span> <span class="nav-text">目标 (target)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#时态数据-temporal-data"><span class="nav-number">178.</span> <span class="nav-text">时态数据 (temporal data)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#张量-Tensor"><span class="nav-number">179.</span> <span class="nav-text">张量 (Tensor)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#张量处理单元-TPU-Tensor-Processing-Unit"><span class="nav-number">180.</span> <span class="nav-text">张量处理单元 (TPU, Tensor Processing Unit)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#张量等级-Tensor-rank"><span class="nav-number">181.</span> <span class="nav-text">张量等级 (Tensor rank)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#张量形状-Tensor-shape"><span class="nav-number">182.</span> <span class="nav-text">张量形状 (Tensor shape)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#张量大小-Tensor-size"><span class="nav-number">183.</span> <span class="nav-text">张量大小 (Tensor size)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TensorBoard"><span class="nav-number">184.</span> <span class="nav-text">TensorBoard</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TensorFlow"><span class="nav-number">185.</span> <span class="nav-text">TensorFlow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TensorFlow-Playground"><span class="nav-number">186.</span> <span class="nav-text">TensorFlow Playground</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TensorFlow-Serving"><span class="nav-number">187.</span> <span class="nav-text">TensorFlow Serving</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试集-test-set"><span class="nav-number">188.</span> <span class="nav-text">测试集 (test set)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tf-Example"><span class="nav-number">189.</span> <span class="nav-text">tf.Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#时间序列分析-time-series-analysis"><span class="nav-number">190.</span> <span class="nav-text">时间序列分析 (time series analysis)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#训练-training"><span class="nav-number">191.</span> <span class="nav-text">训练 (training)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#训练集-training-set"><span class="nav-number">192.</span> <span class="nav-text">训练集 (training set)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转移学习-transfer-learning"><span class="nav-number">193.</span> <span class="nav-text">转移学习 (transfer learning)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#真负例-TN-true-negative"><span class="nav-number">194.</span> <span class="nav-text">真负例 (TN, true negative)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#真正例-TP-true-positive"><span class="nav-number">195.</span> <span class="nav-text">真正例 (TP, true positive)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#真正例率（true-positive-rate-简称-TP-率）"><span class="nav-number">196.</span> <span class="nav-text">真正例率（true positive rate, 简称 TP 率）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#无标签样本-unlabeled-example"><span class="nav-number">197.</span> <span class="nav-text">无标签样本 (unlabeled example)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非监督式机器学习-unsupervised-machine-learning"><span class="nav-number">198.</span> <span class="nav-text">非监督式机器学习 (unsupervised machine learning)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#验证集-validation-set"><span class="nav-number">199.</span> <span class="nav-text">验证集 (validation set)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#权重-weight"><span class="nav-number">200.</span> <span class="nav-text">权重 (weight)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宽度模型-wide-model"><span class="nav-number">201.</span> <span class="nav-text">宽度模型 (wide model)</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+      
+      
+        <!-- canvas粒子时钟 -->
+        
+<div style="">
+  <canvas id="canvas" style="width:60%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+</div>
+<script>
+(function(){
+
+   var digit=
+    [
+        [
+            [0,0,1,1,1,0,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,0,1,1,0],
+            [0,0,1,1,1,0,0]
+        ],//0
+        [
+            [0,0,0,1,1,0,0],
+            [0,1,1,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [1,1,1,1,1,1,1]
+        ],//1
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,1,1],
+            [1,1,1,1,1,1,1]
+        ],//2
+        [
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//3
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,0],
+            [0,0,1,1,1,1,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,1,1,0],
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,1]
+        ],//4
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,1,1,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//5
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//6
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0]
+        ],//7
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//8
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,1,1,0,0,0,0]
+        ],//9
+        [
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0]
+        ]//:
+    ];
+
+var canvas = document.getElementById('canvas');
+
+if(canvas.getContext){
+    var cxt = canvas.getContext('2d');
+    //声明canvas的宽高
+    var H = 100,W = 700;
+    canvas.height = H;
+    canvas.width = W;
+    cxt.fillStyle = '#f00';
+    cxt.fillRect(10,10,50,50);
+
+    //存储时间数据
+    var data = [];
+    //存储运动的小球
+    var balls = [];
+    //设置粒子半径
+    var R = canvas.height/20-1;
+    (function(){
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        //存储时间数字，由十位小时、个位小时、冒号、十位分钟、个位分钟、冒号、十位秒钟、个位秒钟这7个数字组成
+        data.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+    })();
+
+    /*生成点阵数字*/
+    function renderDigit(index,num){
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    cxt.beginPath();
+                    cxt.arc(14*(R+2)*index + j*2*(R+1)+(R+1),i*2*(R+1)+(R+1),R,0,2*Math.PI);
+                    cxt.closePath();
+                    cxt.fill();
+                }
+            }
+        }
+    }
+
+    /*更新时钟*/
+    function updateDigitTime(){
+        var changeNumArray = [];
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        var NewData = [];
+        NewData.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+        for(var i = data.length-1; i >=0 ; i--){
+            //时间发生变化
+            if(NewData[i] !== data[i]){
+                //将变化的数字值和在data数组中的索引存储在changeNumArray数组中
+                changeNumArray.push(i+'_'+(Number(data[i])+1)%10);
+            }
+        }
+        //增加小球
+        for(var i = 0; i< changeNumArray.length; i++){
+            addBalls.apply(this,changeNumArray[i].split('_'));
+        }
+        data = NewData.concat();
+    }
+
+    /*更新小球状态*/
+    function updateBalls(){
+        for(var i = 0; i < balls.length; i++){
+            balls[i].stepY += balls[i].disY;
+            balls[i].x += balls[i].stepX;
+            balls[i].y += balls[i].stepY;
+            if(balls[i].x > W + R || balls[i].y > H + R){
+                balls.splice(i,1);
+                i--;
+            }
+        }
+    }
+
+    /*增加要运动的小球*/
+    function addBalls(index,num){
+        var numArray = [1,2,3];
+        var colorArray =  ["#3BE","#09C","#A6C","#93C","#9C0","#690","#FB3","#F80","#F44","#C00"];
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    var ball = {
+                        x:14*(R+2)*index + j*2*(R+1)+(R+1),
+                        y:i*2*(R+1)+(R+1),
+                        stepX:Math.floor(Math.random() * 4 -2),
+                        stepY:-2*numArray[Math.floor(Math.random()*numArray.length)],
+                        color:colorArray[Math.floor(Math.random()*colorArray.length)],
+                        disY:1
+                    };
+                    balls.push(ball);
+                }
+            }
+        }
+    }
+
+    /*渲染*/
+    function render(){
+        //重置画布宽度，达到清空画布的效果
+        canvas.height = 100;
+        //渲染时钟
+        for(var i = 0; i < data.length; i++){
+            renderDigit(i,data[i]);
+        }
+        //渲染小球
+        for(var i = 0; i < balls.length; i++){
+            cxt.beginPath();
+            cxt.arc(balls[i].x,balls[i].y,R,0,2*Math.PI);
+            cxt.fillStyle = balls[i].color;
+            cxt.closePath();
+            cxt.fill();
+        }
+    }
+
+    clearInterval(oTimer);
+    var oTimer = setInterval(function(){
+        //更新时钟
+        updateDigitTime();
+        //更新小球状态
+        updateBalls();
+        //渲染
+        render();
+    },50);
+}
+
+})();
+</script>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">StriveZs</span>
+
+  
+</div>
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/5.js?i=5b3ac4cx0nk&amp;m=0&amp;c=ff0000&amp;cr1=ffffff" async="async"></script>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+</html>

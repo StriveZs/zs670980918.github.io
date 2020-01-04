@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:49:56
 tags:
+  - pat
 ---
 
 1062 最简分数 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805268334886912)
@@ -32,7 +33,7 @@ tags:
     5/12 7/12
 
 代码：
-
+```
 #include<iostream>
 #include<cstdio>
 
@@ -86,3 +87,4 @@ int main(){
     cout<<endl;
     return 0;
 }
+```

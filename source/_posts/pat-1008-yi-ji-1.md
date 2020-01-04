@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 22:58:10
 tags:
+  - pat
 ---
 
 1008 数组元素循环右移问题 （20 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805316250615808
@@ -33,7 +34,7 @@ tags:
     5 6 1 2 3 4
 
 代码：
-
+```
 #include<iostream>
 #include<deque>
 
@@ -63,3 +64,4 @@ int main(){
     cout<<*pos<<endl;
     return 0;
 }
+```

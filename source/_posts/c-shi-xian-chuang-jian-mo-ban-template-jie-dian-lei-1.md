@@ -8,10 +8,12 @@ categories:
   - 文章页
 date: 2018-06-08 00:04:47
 tags:
+  - C/C++
+  - Template
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/05/4-5.png) Node.h头文件 代码：
-
+```d
 #ifndef NODE_LIBRARY
 #define NODE_LIBRARY
 #include <iostream>
@@ -237,5 +239,5 @@ int main()
     ClearList(head);
     cout<<"成功清除结点表"<<endl;
 }
-
+```
 结果： ![](http://47.100.4.8/wp-content/uploads/2018/06/1235.png)

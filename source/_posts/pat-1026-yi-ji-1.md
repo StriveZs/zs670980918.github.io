@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 11:37:24
 tags:
+  - pat
 ---
 
 1026 程序运行时间 （15 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805295203598336)
@@ -32,7 +33,7 @@ tags:
     12:42:59
 
 代码：
-
+```
 #include<iostream>
 #include<time.h>
 #include<math.h>
@@ -62,3 +63,4 @@ int main(){
     test();
     return 0;
 }
+```

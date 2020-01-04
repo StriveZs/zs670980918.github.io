@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:04:55
 tags:
+  - pat
 ---
 
 1072 开学寄语 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805263964422144)
@@ -45,7 +46,7 @@ tags:
     3 5
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -86,3 +87,4 @@ int main(){
     cout<<num\_s<<" "<<num\_t<<endl;
     return 0;
 }
+```

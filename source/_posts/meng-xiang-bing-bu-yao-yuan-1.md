@@ -7,6 +7,8 @@ categories:
   - 文章页
 date: 2018-03-11 18:14:10
 tags:
+  - 励志
+  - English
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/03/Never-give-up-300x200.jpg)  

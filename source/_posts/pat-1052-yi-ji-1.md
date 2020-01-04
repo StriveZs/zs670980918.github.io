@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:32:20
 tags:
+  - pat
 ---
 
 1052 卖个萌 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805273883951104)
@@ -47,7 +48,7 @@ tags:
     Are you kidding me? @\/@
 
 代码（有一个测试点没通过）：
-
+```
 #include<iostream>
 #include<cstdio>
 #include<vector>
@@ -133,3 +134,4 @@ int main() {
     }
     return 0;
 }
+```

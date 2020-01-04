@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-25 23:22:13
 tags:
+  - pat
 ---
 
 1002 A+B for Polynomials （25 分) [原文地址](https://pintia.cn/problem-sets/994805342720868352/problems/994805526272000000)
@@ -33,7 +34,7 @@ For each test case you should output the sum of A and B in one line, with th
     3 2 1.5 1 2.9 0 3.2
 
 代码：
-
+```
 #include<iostream>
 #include<map>
 #include<cstdio>
@@ -113,3 +114,4 @@ int main(){
     }*/
     return 0;
 }
+```

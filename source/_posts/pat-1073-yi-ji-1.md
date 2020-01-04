@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:06:57
 tags:
+  - pat
 ---
 
 1073 多选题常见计分法 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805263624683520)
@@ -60,7 +61,7 @@ tags:
     Too simple
 
 代码（本题和之前的一题十分类似）：
-
+```
 #include <iostream>
 #include <vector>
 #include <iomanip>
@@ -172,3 +173,4 @@ int main() {
 
 	return 0;
 }
+```

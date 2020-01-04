@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:29:52
 tags:
+  - pat
 ---
 
 1051 复数乘法 （15 分)  [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805274496319488)
@@ -32,7 +33,7 @@ tags:
     -8.68-8.23i
 
 代码：
-
+```
 #include <stdio.h>
 #include <math.h>
 //思路：根据提供指数形式进行乘法，然后在转换为sin（） cos（）的形式
@@ -52,3 +53,4 @@ int main()
     printf("%.2lf%+.2lfi", A, B);
     return 0;
 }
+```

@@ -8,6 +8,8 @@ categories:
   - 文章页
 date: 2018-04-06 17:17:03
 tags:
+  - Java
+  - Game
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/04/QQ图片20180406170916.png)

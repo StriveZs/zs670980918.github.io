@@ -7,6 +7,8 @@ categories:
   - 机器学习
 date: 2018-03-17 23:28:35
 tags:
+  - Machine Learning
+  - Google
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/03/QQ图片20180317232527-300x99.png)

@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 23:15:26
 tags:
+  - pat
 ---
 
 1016 部分A+B （15 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805306310115328
@@ -42,7 +43,7 @@ tags:
     0
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 
@@ -84,3 +85,4 @@ int main(){
     cout<<Pa + Pb<<endl;
     return 0;
 }
+```

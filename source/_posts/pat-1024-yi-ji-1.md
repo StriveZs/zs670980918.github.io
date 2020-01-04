@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 11:34:50
 tags:
+  - pat
 ---
 
 1024 科学计数法 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805297229447168)
@@ -42,7 +43,7 @@ tags:
     -12000000000
 
 代码:
-
+```
 #include<iostream>
 #include<string.h>
 #include<math.h>
@@ -122,3 +123,4 @@ int main(){
     }
     return 0;
 }
+```

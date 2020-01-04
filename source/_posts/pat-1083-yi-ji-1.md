@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:22:57
 tags:
+  - pat
 ---
 
 1083 是否存在相等的差 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805260780945408)
@@ -35,7 +36,7 @@ tags:
     2 2
 
 代码：
-
+```
 #include<iostream>
 #include<map>
 #include<vector>
@@ -92,3 +93,4 @@ int main(){
     }
     return 0;
 }
+```

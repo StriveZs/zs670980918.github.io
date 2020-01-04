@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 23:17:50
 tags:
+  - pat
 ---
 
 1017 A除以B （20 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805305181847552
@@ -32,7 +33,7 @@ tags:
     17636684150141093474 3
 
 代码（大数除法）：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -154,3 +155,4 @@ int main(){
     BigNumberChu();
     return 0;
 }
+```

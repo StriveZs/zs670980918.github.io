@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 18:29:20
 tags:
+  - pat
 ---
 
 1049 数列的片段和 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805275792359424)
@@ -33,7 +34,7 @@ tags:
     5.00
 
 代码：
-
+```
 #include<iostream>
 #include<iomanip>
 #include<cstdio>
@@ -86,3 +87,4 @@ int main(){
     cout<<setiosflags(ios::fixed)<<setprecision(2)<<sum<<endl;
     return 0;
 }
+```

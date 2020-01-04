@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:38:56
 tags:
+  - pat
 ---
 
 1054 求平均值 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805272659214336)
@@ -50,7 +51,7 @@ tags:
     The average of 0 numbers is Undefined
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<math.h>
@@ -171,3 +172,4 @@ int main(){
     }
     return 0;
 }
+```

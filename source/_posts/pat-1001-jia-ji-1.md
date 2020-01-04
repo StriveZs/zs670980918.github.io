@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-25 23:17:04
 tags:
+  - pat
 ---
 
 1001 A+B Format （20 分) [原文地址](https://pintia.cn/problem-sets/994805342720868352/problems/994805528788582400)
@@ -32,7 +33,7 @@ For each test case, you should output the sum of a and b in one line. The su
     -999,991
 
 代码：（这里自己写过一个可以使所有数据进行相加减的大数运算 但是会发生time out 因此这个参考了网上大佬写的，基本上能看懂所以在这里就贴大佬的了）
-
+```
 #include<iostream>
 #include<cstdio>
 #include<cmath>
@@ -61,3 +62,4 @@ int main(){
     }
     return 0;
 }
+```

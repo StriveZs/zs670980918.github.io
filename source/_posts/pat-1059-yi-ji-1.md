@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:46:06
 tags:
+  - pat
 ---
 
 1059 C语言竞赛 （20 分)  [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805269828059136)
@@ -56,7 +57,7 @@ C 语言竞赛是浙江大学计算机学院主持的一个欢乐的竞赛。既
     2222: Are you kidding?
 
 代码：
-
+```
 #include <iostream>
 #include <map>
 #include <math.h>
@@ -111,3 +112,4 @@ int main() {
 
 	return 0;
 }
+```

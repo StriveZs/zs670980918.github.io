@@ -8,10 +8,12 @@ categories:
   - 文章页
 date: 2018-06-19 23:09:34
 tags:
+  - Python
+  - 爬虫
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/05/阿达下次再撒.jpg) **Get请求实例分析：** 代码：
-
+```
 import urllib.request
 
 url="https://www.baidu.com/s?wd="
@@ -22,9 +24,9 @@ req.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb
 data= urllib.request.urlopen(req,timeout=80).read()
 filenanme = open("F:/a.html","wb")
 filenanme.write(data)
-
+```
 结果： ![](http://47.100.4.8/wp-content/uploads/2018/06/QQ图片20180619230553.png) ![](http://47.100.4.8/wp-content/uploads/2018/06/QQ图片20180619230615.png) **接下来对代码进行优化，由于之间介绍过的编码问题在地址中不能使用中文，因此要对想要查找的中文进行编码。** 代码：
-
+```
 import urllib.request
 
 url="https://www.baidu.com/s?wd="
@@ -37,7 +39,7 @@ data= urllib.request.urlopen(req,timeout=80).read()
 filenanme = open("F:/a.html","wb")
 filenanme.write(data)
 filenanme.close()
-
+```
 结果： ![](http://47.100.4.8/wp-content/uploads/2018/06/QQ图片20180619230648.png) 使用Get的请求思路：
 
 *   构建对应的URL地址（一般为一个模板URL+关键词），该URL地址包含Get请求的字段名和字段内容等信息，且URL地址满足GET请求的格式，即“http://网址？字段名1=字段内容……”;（必要的时候要对字段内容进行编码）

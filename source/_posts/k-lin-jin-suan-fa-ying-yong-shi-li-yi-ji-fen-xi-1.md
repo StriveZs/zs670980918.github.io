@@ -8,6 +8,8 @@ categories:
   - 机器学习
 date: 2018-04-09 18:20:54
 tags:
+  - Machine Learning
+  - KNN
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/04/timg.jpg) 这里的实例是手写数字识别系统。 步骤：

@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favision.JPG?v=5.1.4">
+
+
+
+
+
+
+
+  <meta name="keywords" content="算法,遗传算法,多种群遗传算法,智能优化,MatLab," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="StriveZs的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="多种群遗传算法的函数优化算法（MPGA） 多种群遗传算法（MPGA）概述 MPGA在GA的基础上主要引入了一下几个概念：  突破GA仅靠单个群体进行遗传进化的框架，引入多个种群问题同时进行优化搜索；不同的种群赋以不用的控制参数，实现不同的搜索的目的。 各个种群之间通过移民算子进行联系，实现多种群的协同进化；最优解的获取是多个种群协同进化的综合结果。 通过人工选择算子保存各种群每个进化代中的最优个体">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多种群遗传算法的函数优化算法">
+<meta property="og:url" content="blog.strivezs.com/2018/08/28/duo-zhong-qun-yi-chuan-suan-fa-de-han-shu-you-hua-suan-fa-1/index.html">
+<meta property="og:site_name" content="StriveZs的博客">
+<meta property="og:description" content="多种群遗传算法的函数优化算法（MPGA） 多种群遗传算法（MPGA）概述 MPGA在GA的基础上主要引入了一下几个概念：  突破GA仅靠单个群体进行遗传进化的框架，引入多个种群问题同时进行优化搜索；不同的种群赋以不用的控制参数，实现不同的搜索的目的。 各个种群之间通过移民算子进行联系，实现多种群的协同进化；最优解的获取是多个种群协同进化的综合结果。 通过人工选择算子保存各种群每个进化代中的最优个体">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/08/1-1.png">
+<meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/08/2-1.png">
+<meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/08/3-1.png">
+<meta property="article:published_time" content="2018-08-28T08:40:46.000Z">
+<meta property="article:modified_time" content="2018-08-28T08:40:46.000Z">
+<meta property="article:author" content="StriveZs">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="遗传算法">
+<meta property="article:tag" content="多种群遗传算法">
+<meta property="article:tag" content="智能优化">
+<meta property="article:tag" content="MatLab">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://47.100.4.8/wp-content/uploads/2018/08/1-1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'StriveZs'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="blog.strivezs.com/2018/08/28/duo-zhong-qun-yi-chuan-suan-fa-de-han-shu-you-hua-suan-fa-1/"/>
+
+
+
+
+
+  <title>多种群遗传算法的函数优化算法 | StriveZs的博客</title>
+  <!-- 球型气泡标签云 -->
+    <script type="text/javascript" src="/js/src/bubble.js"></script>
+    
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5c8bbf815dac51a855060f947b787303";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    
+    <a href="https://github.com/zs670980918" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">StriveZs的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Blog</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            Schedule
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            Sitemap
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/08/28/duo-zhong-qun-yi-chuan-suan-fa-de-han-shu-you-hua-suan-fa-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">多种群遗传算法的函数优化算法</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-28T16:40:46+08:00">
+                2018-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BC%98%E5%8C%96%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
+                    <span itemprop="name">优化算法</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BC%98%E5%8C%96%E7%AE%97%E6%B3%95/%E5%A4%9A%E7%A7%8D%E7%BE%A4%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%EF%BC%88MPGA%EF%BC%89/" itemprop="url" rel="index">
+                    <span itemprop="name">多种群遗传算法（MPGA）</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BC%98%E5%8C%96%E7%AE%97%E6%B3%95/%E5%A4%9A%E7%A7%8D%E7%BE%A4%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%EF%BC%88MPGA%EF%BC%89/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BC%98%E5%8C%96%E7%AE%97%E6%B3%95/%E5%A4%9A%E7%A7%8D%E7%BE%A4%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%EF%BC%88MPGA%EF%BC%89/%E6%96%87%E7%AB%A0%E9%A1%B5/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>多种群遗传算法的函数优化算法（MPGA）</strong> <strong>多种群遗传算法（MPGA）概述</strong> MPGA在GA的基础上主要引入了一下几个概念：</p>
+<ul>
+<li>突破GA仅靠单个群体进行遗传进化的框架，引入多个种群问题同时进行优化搜索；不同的种群赋以不用的控制参数，实现不同的搜索的目的。</li>
+<li>各个种群之间通过移民算子进行联系，实现多种群的协同进化；最优解的获取是多个种群协同进化的综合结果。</li>
+<li>通过人工选择算子保存各种群每个进化代中的最优个体，并作为判断算法收敛的依据。</li>
+</ul>
+<p>MPGA的算法结构示意图 <img src="http://47.100.4.8/wp-content/uploads/2018/08/1-1.png" alt="">   这里的SGA就是标准GA，由上图可以看出每个种群还是遵循GA中的算法准则，只不过是通过移民算子以及人工选择将最优的解结合到了一起。 各种群取不同的控制参数。交叉概率Pc和变异概率Pm的取值决定了算法全局搜索和拒不搜索能力的均衡。在GA中，交叉算子是产生新个体的主要算子，它决定了遗传算法全局搜索的能力；而变异算子只是产生新个体的辅助算子，它决定了遗传算法的局部搜索能力。大多数认为Pc在0.7<del>0.9最为合适，Pm在0.001</del>0.05之间最为合适。但是他们的取值方式还是有无数种的，对于不同的取值方式，优化结果差异也是很大的。MPGA弥补了GA的这一不足，通过多个设有不同控制参数的种群协同进化，同时兼顾了算法的全局搜索和局部搜索。 各种群是相对独立的，相互之间通过移民算子联系。移民算子将各种群在进化过程中出现的最优个体定期地（每隔一定的进化代数）引入其他的种群中，实现种群之间的信息交换。具体的操作规则是，将目标种群中的最差个体用源种群的最优个体替代。移民算子在MPGA中至关重要，如果没有银民算子，各种群之间失去联系，MPGA将等同于用不同的控制参数进行多次GA计算，从而是去了MPGA的特色。 精华种群和其他种群有很大不同。在金华的每一代，通过人工选择算子选出其他种群的 最优个体放入精华种群加以保存。精华种群不进行选择、交叉、变异等遗传操作，保证进化过程中各种群产生的最优个体不被破坏和丢失。同时，精华种群也是判断算法终止的依据。这里采用最优个体最少保持代数作为最终判断依据。这种判断充分利用了遗传算法在进化过程中的知识积累，较最大遗传代数判据更为合理。   <strong>问题描述</strong> 复杂二元函数求最值： <strong>max f(x,y) = 21.5 + xsin(4πx) + ysin(20πy)</strong> 图像生成代码：  </p>
+<p>clear;</p>
+<p>[X,Y] = meshgrid(-10:0.355:10);</p>
+<p>Z = 21.5 + X.*sin(4*pi.*X) + Y.*sin(20*pi.*Y);</p>
+<p>surf(X,Y,Z);</p>
+<p>图像： <img src="http://47.100.4.8/wp-content/uploads/2018/08/2-1.png" alt=""> 由上图可以看出该函数在区间内分布着多个局部极值，这样如果使用普通的遗传算法很容易出现早熟的现象，因此多种群遗传算法比较适合。 该问题所使用到的遗传算法工具箱的函数列表：</p>
+<p>算子</p>
+<p>函数</p>
+<p>功能</p>
+<p>创建种群</p>
+<p>Crtbp</p>
+<p>创建基向量</p>
+<p>适应度计算</p>
+<p>Ranking</p>
+<p>常用的基于秩的适应度计算</p>
+<p>  选择函数</p>
+<p>Select</p>
+<p>高级选择函数</p>
+<p>Sus</p>
+<p>随机变异采样</p>
+<p>Reins</p>
+<p>一致随机和基于适应度的重插入</p>
+<p>交叉算子</p>
+<p>Recombin</p>
+<p>高级重组算子</p>
+<p>Xovsp</p>
+<p>单点交叉</p>
+<p>变异算子</p>
+<p>Mut</p>
+<p>离散变异</p>
+<p>  <strong>移民算子</strong> 函数名为immigrant，函数的输入、输出参数如下：</p>
+<p>变量名</p>
+<p>类型</p>
+<p>意义</p>
+<p>输入参数</p>
+<p>Chrom</p>
+<p>Cell</p>
+<p>每个元细胞单元为一个种群的编码（移民前）</p>
+<p>ObjV</p>
+<p>Cell</p>
+<p>每个元细胞为一个种群所有个体的目标值（移民前）</p>
+<p>输出参数</p>
+<p>Chrom</p>
+<p>Cell</p>
+<p>每个元细胞单元为一个种群的编码（移民后）</p>
+<p>ObjV</p>
+<p>Cell</p>
+<p>每个元细胞为一个种群所有个体的目标值（移民后）</p>
+<p>代码：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> \<span class="params">[Chrom,ObjV\]</span>=<span class="title">immigrant</span><span class="params">(Chrom,ObjV)</span></span></span><br><span class="line"><span class="comment">%% 移民算子</span></span><br><span class="line">MP=<span class="built_in">length</span>(Chrom); <span class="comment">%得到种群个数</span></span><br><span class="line"><span class="comment">% 遍历每个种群寻找到其中的最优解</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:MP</span><br><span class="line">    \[MaxO,maxI\]=<span class="built_in">max</span>(ObjV&#123;<span class="built_in">i</span>&#125;);  <span class="comment">% 找出第i种群中最优的个体的值以及它的序号</span></span><br><span class="line">    next_i=<span class="built_in">i</span>+<span class="number">1</span>;                <span class="comment">% 目标种群（移民操作中） 到下一个种群</span></span><br><span class="line">    <span class="keyword">if</span> next_i&gt;MP <span class="comment">% 如果 i的值大于总的种群个数 使用取模操作回到开头</span></span><br><span class="line">        next\_i=<span class="built_in">mod</span>(next\_i,MP);</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    \[MinO,minI\]=<span class="built_in">min</span>(ObjV&#123;next_i&#125;);          <span class="comment">%  找出目标种群中最劣的个体</span></span><br><span class="line">    <span class="comment">%% 目标种群最劣个体替换为源种群最优个体</span></span><br><span class="line">    Chrom&#123;next_i&#125;(minI,:)=Chrom&#123;<span class="built_in">i</span>&#125;(maxI,:);</span><br><span class="line">    ObjV&#123;next_i&#125;(minI)=ObjV&#123;<span class="built_in">i</span>&#125;(maxI); <span class="comment">%目标值的替换</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p><strong>人工选择算子</strong> 函数名为EliteInduvidual，函数的输入、输出参数如下：</p>
+<p>变量名</p>
+<p>意义</p>
+<p>输入参数</p>
+<p>Chrom</p>
+<p>每个元细胞单元为一个种群的编码（移民前）</p>
+<p>ObjV</p>
+<p>每个元细胞为一个种群所有个体的目标值（移民前）</p>
+<p>MaxObjV</p>
+<p>各个种群当前最优个体的目标值（选择前）</p>
+<p>MaxChrom</p>
+<p>各个种群当前最优个体的编码（选择前）</p>
+<p>输出参数</p>
+<p>MaxObjV</p>
+<p>各个种群当前最优个体的目标值（选择后）</p>
+<p>MaxChrom</p>
+<p>各个种群当前最优的编码（选择后）</p>
+<p>代码：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> \<span class="params">[MaxObjV,MaxChrom\]</span>=<span class="title">EliteInduvidual</span><span class="params">(Chrom,ObjV,MaxObjV,MaxChrom)</span></span></span><br><span class="line"><span class="comment">%% 人工选择算子</span></span><br><span class="line">MP=<span class="built_in">length</span>(Chrom);  <span class="comment">%种群数</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:MP</span><br><span class="line">    \[MaxO,maxI\]=<span class="built_in">max</span>(ObjV&#123;<span class="built_in">i</span>&#125;);   <span class="comment">%找出第i种群中最优个体以及编号</span></span><br><span class="line">    <span class="keyword">if</span> MaxO&gt;MaxObjV(<span class="built_in">i</span>) <span class="comment">%如果选择出来的最优个体的目标值大于当前种群最优的目标值</span></span><br><span class="line">        MaxObjV(<span class="built_in">i</span>)=MaxO;         <span class="comment">%记录各种群的精华个体</span></span><br><span class="line">        MaxChrom(<span class="built_in">i</span>,:)=Chrom&#123;<span class="built_in">i</span>&#125;(maxI,:);  <span class="comment">%记录各种群精华个体的编码</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p><strong>目标函数</strong> 针对提出问题写出来的目标函数 代码：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">obj</span>=<span class="title">ObjectFunction</span><span class="params">(X)</span></span></span><br><span class="line"><span class="comment">%% 待优化的目标函数</span></span><br><span class="line">col=<span class="built_in">size</span>(X,<span class="number">1</span>); <span class="comment">%得到个体个数</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:col <span class="comment">%计算种群每个个体对应的目标值</span></span><br><span class="line">    obj(<span class="built_in">i</span>,<span class="number">1</span>)=<span class="number">21.5</span>+X(<span class="built_in">i</span>,<span class="number">1</span>)\*<span class="built_in">sin</span>(<span class="number">4</span>\*<span class="built_in">pi</span>\*X(<span class="built_in">i</span>,<span class="number">1</span>))+X(<span class="built_in">i</span>,<span class="number">2</span>)\*<span class="built_in">sin</span>(<span class="number">20</span>\*<span class="built_in">pi</span>\*X(<span class="built_in">i</span>,<span class="number">2</span>));</span><br><span class="line"><span class="keyword">end</span> </span><br><span class="line"></span><br><span class="line">**MPGA：**</span><br><span class="line"></span><br><span class="line"><span class="comment">%% 2、多种群遗传算法</span></span><br><span class="line">clear;</span><br><span class="line">clc</span><br><span class="line">NIND=<span class="number">40</span>;               <span class="comment">%个体数目</span></span><br><span class="line">NVAR=<span class="number">2</span>;                <span class="comment">%变量的维数</span></span><br><span class="line">PRECI=<span class="number">20</span>;              <span class="comment">%变量的二进制位数</span></span><br><span class="line">GGAP=<span class="number">0.9</span>;              <span class="comment">%代沟</span></span><br><span class="line">MP=<span class="number">10</span>;                 <span class="comment">%种群数目</span></span><br><span class="line">FieldD=\[rep(PRECI,\[<span class="number">1</span>,NVAR\]);\[<span class="number">-3</span>,<span class="number">4.1</span>;<span class="number">12.1</span>,<span class="number">5.8</span>\];rep(\[<span class="number">1</span>;<span class="number">0</span>;<span class="number">1</span>;<span class="number">1</span>\],\[<span class="number">1</span>,NVAR\])\];  <span class="comment">%译码矩阵</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:MP</span><br><span class="line">    Chrom&#123;<span class="built_in">i</span>&#125;=crtbp(NIND, NVAR*PRECI);                       <span class="comment">%创建初始种群</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">pc=<span class="number">0.7</span>+(<span class="number">0.9</span><span class="number">-0.7</span>)*<span class="built_in">rand</span>(MP,<span class="number">1</span>);    <span class="comment">%在【0.7,0.9】范围i内随机产生交叉概率</span></span><br><span class="line">pm=<span class="number">0.001</span>+(<span class="number">0.05</span><span class="number">-0.001</span>)*<span class="built_in">rand</span>(MP,<span class="number">1</span>);  <span class="comment">%在【0.001,0.05】范围内随机产生变异概率</span></span><br><span class="line">gen=<span class="number">0</span>;  <span class="comment">%初始遗传代数</span></span><br><span class="line">gen0=<span class="number">0</span>; <span class="comment">%初始保持代数</span></span><br><span class="line">MAXGEN=<span class="number">10</span>;  <span class="comment">%最优个体最少保持代数</span></span><br><span class="line">maxY=<span class="number">0</span>; <span class="comment">%最优值</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:MP</span><br><span class="line">    ObjV&#123;<span class="built_in">i</span>&#125;=ObjectFunction(bs2rv(Chrom&#123;<span class="built_in">i</span>&#125;, FieldD));<span class="comment">%计算各初始种群个体的目标函数值</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">MaxObjV=<span class="built_in">zeros</span>(MP,<span class="number">1</span>);           <span class="comment">%记录精华种群</span></span><br><span class="line">MaxChrom=<span class="built_in">zeros</span>(MP,PRECI*NVAR); <span class="comment">%记录精华种群的编码</span></span><br><span class="line"><span class="comment">% 结束条件为如果进行MAXGEN+1次优秀的迭代 则结束循环（即每次得到的最优结果都比前面的值好）</span></span><br><span class="line"><span class="keyword">while</span> gen0&lt;=MAXGEN</span><br><span class="line">    gen=gen+<span class="number">1</span>;       <span class="comment">%遗传代数加1</span></span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:MP</span><br><span class="line">        FitnV&#123;<span class="built_in">i</span>&#125;=ranking(-ObjV&#123;<span class="built_in">i</span>&#125;);                      <span class="comment">% 各种群的适应度</span></span><br><span class="line">        SelCh&#123;<span class="built_in">i</span>&#125;=select(<span class="string">'sus'</span>, Chrom&#123;<span class="built_in">i</span>&#125;, FitnV&#123;<span class="built_in">i</span>&#125;,GGAP); <span class="comment">% 选择操作</span></span><br><span class="line">        SelCh&#123;<span class="built_in">i</span>&#125;=recombin(<span class="string">'xovsp'</span>,SelCh&#123;<span class="built_in">i</span>&#125;, pc(<span class="built_in">i</span>));      <span class="comment">% 交叉操作</span></span><br><span class="line">        SelCh&#123;<span class="built_in">i</span>&#125;=mut(SelCh&#123;<span class="built_in">i</span>&#125;,pm(<span class="built_in">i</span>));                    <span class="comment">% 变异操作</span></span><br><span class="line">        ObjVSel=ObjectFunction(bs2rv(SelCh&#123;<span class="built_in">i</span>&#125;, FieldD)); <span class="comment">% 计算子代目标函数值</span></span><br><span class="line">        \[Chrom&#123;<span class="built_in">i</span>&#125;,ObjV&#123;<span class="built_in">i</span>&#125;\]=reins(Chrom&#123;<span class="built_in">i</span>&#125;,SelCh&#123;<span class="built_in">i</span>&#125;,<span class="number">1</span>,<span class="number">1</span>,ObjV&#123;<span class="built_in">i</span>&#125;,ObjVSel);    <span class="comment">%重插入操作</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    \[Chrom,ObjV\]=immigrant(Chrom,ObjV);     <span class="comment">% 移民操作</span></span><br><span class="line">    \[MaxObjV,MaxChrom\]=EliteInduvidual(Chrom,ObjV,MaxObjV,MaxChrom);     <span class="comment">% 人工选择精华种群</span></span><br><span class="line">    YY(gen)=<span class="built_in">max</span>(MaxObjV);    <span class="comment">%找出精华种群中最优的个体</span></span><br><span class="line">    <span class="keyword">if</span> YY(gen)&gt;maxY   <span class="comment">%判断当前优化值是否与前一次优化值相同</span></span><br><span class="line">        maxY=YY(gen); <span class="comment">%更新最优值</span></span><br><span class="line">        gen0=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        gen0=gen0+<span class="number">1</span>; <span class="comment">%最优值保持次数加1</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="comment">%% 进化过程图</span></span><br><span class="line"><span class="built_in">plot</span>(<span class="number">1</span>:gen,YY);</span><br><span class="line">xlabel(<span class="string">'进化代数'</span>)</span><br><span class="line">ylabel(<span class="string">'最优解变化'</span>)</span><br><span class="line">title(<span class="string">'MPGA进化过程'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">%% 输出最优解</span></span><br><span class="line">\[Y,I\]=<span class="built_in">max</span>(MaxObjV);    <span class="comment">%找出精华种群中最优的个体</span></span><br><span class="line">X=(bs2rv(MaxChrom(I,:), FieldD));   <span class="comment">%最优个体的解码解</span></span><br><span class="line"><span class="built_in">disp</span>(\[<span class="string">'最优值为：'</span>,num2str(Y)\])</span><br><span class="line"><span class="built_in">disp</span>(\[<span class="string">'对应的自变量取值：'</span>,num2str(X)\])</span><br></pre></td></tr></table></figure>
+<p>结果： 最优值为：38.8503 对应的自变量取值：11.6255      5.72504 <img src="http://47.100.4.8/wp-content/uploads/2018/08/3-1.png" alt=""></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg" alt="StriveZs wechat" style="width: 200px; max-width: 100%;"/>
+    <div>Where is will, there is a way.</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
+          
+            <a href="/tags/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95/" rel="tag"># 遗传算法</a>
+          
+            <a href="/tags/%E5%A4%9A%E7%A7%8D%E7%BE%A4%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95/" rel="tag"># 多种群遗传算法</a>
+          
+            <a href="/tags/%E6%99%BA%E8%83%BD%E4%BC%98%E5%8C%96/" rel="tag"># 智能优化</a>
+          
+            <a href="/tags/MatLab/" rel="tag"># MatLab</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/22/yi-chuan-suan-fa-de-zao-shu-wen-ti-1/" rel="next" title="遗传算法的早熟问题">
+                <i class="fa fa-chevron-left"></i> 遗传算法的早熟问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/29/shi-yong-sga-dui-duo-yuan-han-shu-jin-xing-you-hua-1/" rel="prev" title="使用SGA对多元函数进行优化">
+                使用SGA对多元函数进行优化 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.JPG"
+                alt="StriveZs" />
+            
+              <p class="site-author-name" itemprop="name">StriveZs</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">258</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">169</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">162</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+      
+      
+        <!-- canvas粒子时钟 -->
+        
+<div style="">
+  <canvas id="canvas" style="width:60%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+</div>
+<script>
+(function(){
+
+   var digit=
+    [
+        [
+            [0,0,1,1,1,0,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,0,1,1,0],
+            [0,0,1,1,1,0,0]
+        ],//0
+        [
+            [0,0,0,1,1,0,0],
+            [0,1,1,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [1,1,1,1,1,1,1]
+        ],//1
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,1,1],
+            [1,1,1,1,1,1,1]
+        ],//2
+        [
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//3
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,0],
+            [0,0,1,1,1,1,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,1,1,0],
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,1]
+        ],//4
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,1,1,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//5
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//6
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0]
+        ],//7
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//8
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,1,1,0,0,0,0]
+        ],//9
+        [
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0]
+        ]//:
+    ];
+
+var canvas = document.getElementById('canvas');
+
+if(canvas.getContext){
+    var cxt = canvas.getContext('2d');
+    //声明canvas的宽高
+    var H = 100,W = 700;
+    canvas.height = H;
+    canvas.width = W;
+    cxt.fillStyle = '#f00';
+    cxt.fillRect(10,10,50,50);
+
+    //存储时间数据
+    var data = [];
+    //存储运动的小球
+    var balls = [];
+    //设置粒子半径
+    var R = canvas.height/20-1;
+    (function(){
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        //存储时间数字，由十位小时、个位小时、冒号、十位分钟、个位分钟、冒号、十位秒钟、个位秒钟这7个数字组成
+        data.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+    })();
+
+    /*生成点阵数字*/
+    function renderDigit(index,num){
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    cxt.beginPath();
+                    cxt.arc(14*(R+2)*index + j*2*(R+1)+(R+1),i*2*(R+1)+(R+1),R,0,2*Math.PI);
+                    cxt.closePath();
+                    cxt.fill();
+                }
+            }
+        }
+    }
+
+    /*更新时钟*/
+    function updateDigitTime(){
+        var changeNumArray = [];
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        var NewData = [];
+        NewData.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+        for(var i = data.length-1; i >=0 ; i--){
+            //时间发生变化
+            if(NewData[i] !== data[i]){
+                //将变化的数字值和在data数组中的索引存储在changeNumArray数组中
+                changeNumArray.push(i+'_'+(Number(data[i])+1)%10);
+            }
+        }
+        //增加小球
+        for(var i = 0; i< changeNumArray.length; i++){
+            addBalls.apply(this,changeNumArray[i].split('_'));
+        }
+        data = NewData.concat();
+    }
+
+    /*更新小球状态*/
+    function updateBalls(){
+        for(var i = 0; i < balls.length; i++){
+            balls[i].stepY += balls[i].disY;
+            balls[i].x += balls[i].stepX;
+            balls[i].y += balls[i].stepY;
+            if(balls[i].x > W + R || balls[i].y > H + R){
+                balls.splice(i,1);
+                i--;
+            }
+        }
+    }
+
+    /*增加要运动的小球*/
+    function addBalls(index,num){
+        var numArray = [1,2,3];
+        var colorArray =  ["#3BE","#09C","#A6C","#93C","#9C0","#690","#FB3","#F80","#F44","#C00"];
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    var ball = {
+                        x:14*(R+2)*index + j*2*(R+1)+(R+1),
+                        y:i*2*(R+1)+(R+1),
+                        stepX:Math.floor(Math.random() * 4 -2),
+                        stepY:-2*numArray[Math.floor(Math.random()*numArray.length)],
+                        color:colorArray[Math.floor(Math.random()*colorArray.length)],
+                        disY:1
+                    };
+                    balls.push(ball);
+                }
+            }
+        }
+    }
+
+    /*渲染*/
+    function render(){
+        //重置画布宽度，达到清空画布的效果
+        canvas.height = 100;
+        //渲染时钟
+        for(var i = 0; i < data.length; i++){
+            renderDigit(i,data[i]);
+        }
+        //渲染小球
+        for(var i = 0; i < balls.length; i++){
+            cxt.beginPath();
+            cxt.arc(balls[i].x,balls[i].y,R,0,2*Math.PI);
+            cxt.fillStyle = balls[i].color;
+            cxt.closePath();
+            cxt.fill();
+        }
+    }
+
+    clearInterval(oTimer);
+    var oTimer = setInterval(function(){
+        //更新时钟
+        updateDigitTime();
+        //更新小球状态
+        updateBalls();
+        //渲染
+        render();
+    },50);
+}
+
+})();
+</script>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">StriveZs</span>
+
+  
+</div>
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/5.js?i=5b3ac4cx0nk&amp;m=0&amp;c=ff0000&amp;cr1=ffffff" async="async"></script>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+</html>

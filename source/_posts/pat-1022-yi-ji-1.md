@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 11:32:21
 tags:
+  - pat
 ---
 
 1022 D进制的A+B （20 分）[原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805299301433344)
@@ -32,7 +33,7 @@ tags:
     1103
 
 代码：
-
+```
 #include<iostream>
 #include<stack>
 
@@ -60,3 +61,4 @@ int main(){
     }
     return 0;
 }
+```

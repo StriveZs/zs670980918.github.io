@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 18:17:10
 tags:
+  - pat
 ---
 
 1042 字符统计 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805280817135616)
@@ -32,7 +33,7 @@ tags:
     e 7
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<map>
@@ -79,3 +80,4 @@ int main(){
     cout<<*dir_vec.begin()<<endl;
     return 0;
 }
+```

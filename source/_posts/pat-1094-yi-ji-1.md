@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:36:06
 tags:
+  - pat
 ---
 
 1094 谷歌的招聘 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/1071785997033074688)
@@ -44,7 +45,7 @@ tags:
     404
 
 代码：
-
+```
 #include <iostream>  
 #include <string> 
 using namespace std;
@@ -83,3 +84,4 @@ int main(void){
  
     return 0;
 } // guangjinzheng 2019.1.14 15:02
+```

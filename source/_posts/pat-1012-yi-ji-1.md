@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 23:04:34
 tags:
+  - pat
 ---
 
 1012 数字分类 （20 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805311146147840
@@ -48,7 +49,7 @@ tags:
     N 11 2 N 9
 
 代码：（有一个测试点一直通不过）
-
+```
 #include<iostream>
 #include<iomanip>
 
@@ -126,9 +127,9 @@ int main(){
     }
     return 0;
 }
-
+```
 参考别人后改正的：
-
+```
 #include<iostream>
 #include<iomanip>
 #include<typeinfo>
@@ -201,3 +202,4 @@ int main()
 
     return 0;
 }
+```

@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:43:28
 tags:
+  - pat
 ---
 
 1057 数零壹 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805270914383872)
@@ -32,7 +33,7 @@ tags:
     3 4
 
 代码：
-
+```
 #include<iostream>
 #include<map>
 #include<string.h>
@@ -74,3 +75,4 @@ int main(){
     cout<<count(binary.begin(),binary.end(),'0')<<" "<<count(binary.begin(),binary.end(),'1')<<endl;
     return 0;
 }
+```

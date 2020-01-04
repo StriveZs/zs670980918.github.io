@@ -8,10 +8,13 @@ categories:
   - 文章页
 date: 2018-06-06 21:27:32
 tags:
+  - Python
+  - tkinter
+  - Game
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/05/u407244128253124607fm27gp0.jpg) 写了一个弹球小游戏，能够实现的简单的通过键盘的左右键来进行木板的移动，还有小球弹到边界反弹，以及随机出生点还有速度的改变、最后是游戏结束的提示，感觉还有改进的地方，比如：可以手动选择游戏难度，游戏结束后重新开始等，这个后续可能会加上去。 截图： ![](http://47.100.4.8/wp-content/uploads/2018/06/QQ图片20180606155956.png) ![](http://47.100.4.8/wp-content/uploads/2018/06/QQ图片20180606160006.png) 代码总共下来也就不到100行，也是看了网上写的一些东西自己在编写得到的。 下载地址:https://download.csdn.net/download/qq_16184125/10463456 代码：
-
+```
 import tkinter
 import random
 import time
@@ -107,3 +110,4 @@ while 1:
 
 if flag1 == 1:
     tkinter.messagebox.showinfo(title='Python tkinter',message='游戏结束')
+```

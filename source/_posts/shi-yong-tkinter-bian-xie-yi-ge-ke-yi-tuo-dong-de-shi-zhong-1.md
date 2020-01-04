@@ -7,6 +7,8 @@ categories:
   - 文章页
 date: 2018-03-04 22:53:03
 tags:
+  - tkinter
+  - Python
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/03/timg.jpg) ![](http://47.100.4.8/wp-content/uploads/2018/03/QQ图片20180304224928.png)

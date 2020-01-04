@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 22:55:34
 tags:
+  - pat
 ---
 
 1006 换个格式输出整数 （15 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805318855278592
@@ -42,7 +43,7 @@ tags:
     SS123
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 
@@ -87,3 +88,4 @@ int main(){
     }
     return 0;
 }
+```

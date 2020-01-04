@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 11:40:21
 tags:
+  - pat
 ---
 
 1028 人口普查 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805293282607104)
@@ -37,7 +38,7 @@ tags:
     3 Tom John
 
 代码：
-
+```
 #include<iostream>
 using namespace std;
  
@@ -75,3 +76,4 @@ int main()
  
     return 0;
 }
+```

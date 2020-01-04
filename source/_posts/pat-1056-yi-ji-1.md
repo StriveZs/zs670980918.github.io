@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:42:30
 tags:
+  - pat
 ---
 
 1056 组合数的和 （15 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805271455449088)
@@ -32,7 +33,7 @@ tags:
     330
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<math.h>
@@ -96,3 +97,4 @@ int main(){
     cout<<sum<<endl;
     return 0;
 }
+```

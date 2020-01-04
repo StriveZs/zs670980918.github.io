@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:52:53
 tags:
+  - pat
 ---
 
 1065 单身狗 （25 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805266942377984)
@@ -38,7 +39,7 @@ tags:
     10000 23333 44444 55555 88888
 
 代码：
-
+```
 #include<iostream>
 #include<algorithm>
 #include<map>
@@ -104,3 +105,4 @@ int main(){
     }
     return 0;
 }
+```

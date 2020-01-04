@@ -9,10 +9,11 @@ categories:
   - 算法
 date: 2019-02-07 12:16:46
 tags:
+  - 大数加减乘除
 ---
 
 这里采用了string来存储大数，其实之前还考虑了使用数组来存储但是感觉操作不如string所以最终还是采用了string来存储。 1.大数的加法： 核心思想：主要是将两个大数逐位相加（从低位到高），若相加的结果大于10则采用取余的方法来得到当前位的值，然后使用除来得到进位。 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -244,3 +245,4 @@ int main(){
     result = BigNumberJian();
     cout<<result<<endl;
 }
+```

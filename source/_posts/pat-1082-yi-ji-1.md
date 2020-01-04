@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:21:52
 tags:
+  - pat
 ---
 
 1082 射击比赛 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805260990660608)
@@ -40,7 +41,7 @@ tags:
     0233 0001
 
 代码：
-
+```
 #include<iostream>
 #include<math.h>
 #include<algorithm>
@@ -73,3 +74,4 @@ int main(){
     cout<<players\[num-1\].name<<" "<<players\[0\].name<<endl;
     return 0;
 }
+```

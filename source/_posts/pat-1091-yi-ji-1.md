@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:33:20
 tags:
+  - pat
 ---
 
 1091 N-自守数 （15 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/1071785664454127616)
@@ -35,7 +36,7 @@ tags:
     No
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -103,3 +104,4 @@ int main(){
     }
     return 0;
 }
+```

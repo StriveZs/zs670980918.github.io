@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 23:10:19
 tags:
+  - pat
 ---
 
 1013 数素数 （20 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805309963354112
@@ -34,7 +35,7 @@ tags:
     97 101 103
 
 代码：
-
+```
 #include<iostream>
 #include<math.h>
 
@@ -80,3 +81,4 @@ int main(){
     }
     return 0;
 }
+```

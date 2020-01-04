@@ -7,10 +7,13 @@ categories:
   - 机器学习
 date: 2018-04-19 22:56:20
 tags:
+  - Decision Tree
+  - Algorithm
+  - Machine Learning
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/04/timg.jpg) 使用matplotlib绘制决策树： 构造注解树： 首先要得到树的子节点数目和树的深度 都是通过递归得到的 首先是递归得到树的叶子结点数目：
-
+```
 #深度递归遍历获取树的叶节点数目
 def getNumLeafs(myTree):
     numLeafs = 0
@@ -104,5 +107,5 @@ def retrieveTree(i):
                   {'no surfacing':{0:'no',1:{'flippers':{0:{'head':{0:'no',1:'yes'}},1:'no'}}}}
                   \]
     return listOfTree\[i\]
-
+```
   效果图： ![](http://47.100.4.8/wp-content/uploads/2018/04/6435.png)![](http://47.100.4.8/wp-content/uploads/2018/04/8523652.png)   End！

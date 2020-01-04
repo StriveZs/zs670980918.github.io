@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:23:59
 tags:
+  - pat
 ---
 
 1084 外观数列 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805260583813120)
@@ -37,7 +38,7 @@ tags:
     1123123111
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -87,3 +88,4 @@ int main(){
     cout<<result<<endl;
     return 0;
 }
+```

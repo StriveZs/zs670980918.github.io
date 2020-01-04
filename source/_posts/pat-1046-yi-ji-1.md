@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 18:24:38
 tags:
+  - pat
 ---
 
 1046 划拳 （15 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805277847568384)
@@ -42,7 +43,7 @@ tags:
     1 2
 
 代码：
-
+```
 #include<iostream>
 
 using namespace std;
@@ -67,3 +68,4 @@ int main(){
     cout<<Jia<<" "<<Yi<<endl;
     return 0;
 }
+```

@@ -7,6 +7,7 @@ categories:
   - 乙级
 date: 2019-03-12 11:38:52
 tags:
+  - pat
 ---
 
 1027 打印沙漏 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805294251491328)
@@ -45,7 +46,7 @@ tags:
     2
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 
@@ -106,3 +107,4 @@ int main(){
     }
     return 0;
 }
+```

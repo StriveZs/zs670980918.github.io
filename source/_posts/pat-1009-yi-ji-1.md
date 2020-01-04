@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 22:59:16
 tags:
+  - pat
 ---
 
 1009 说反话 （20 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805314941992960
@@ -32,7 +33,7 @@ tags:
     Come I Here World Hello
 
 代码：
-
+```
 #include<iostream>
 #include<deque>
 #include<string.h>
@@ -57,3 +58,4 @@ int main(){
     cout<<*pos<<endl;
     return 0;
 }
+```

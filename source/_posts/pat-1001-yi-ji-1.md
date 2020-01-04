@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 22:46:07
 tags:
+  - pat
 ---
 
 1001 害死人不偿命的(3n+1)猜想 （15 分）  地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805325918486528
@@ -32,7 +33,7 @@ tags:
     5
 
 代码：
-
+```
 #include<iostream>
 
 using namespace std;
@@ -52,3 +53,4 @@ int main(){
     cout<<step;
     return 0;
 }
+```

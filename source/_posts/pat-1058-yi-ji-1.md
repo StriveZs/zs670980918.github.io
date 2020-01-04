@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:44:20
 tags:
+  - pat
 ---
 
 1058 选择题 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805270356541440)
@@ -42,7 +43,7 @@ tags:
     2 2 3 4
 
 代码：
-
+```
 #include<iostream>
 #include<cstdio>
 #include<string.h>
@@ -177,3 +178,4 @@ int main(){
     }
     return 0;
 }
+```

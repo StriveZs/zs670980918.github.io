@@ -7,6 +7,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:13:04
 tags:
+  - pat
 ---
 
 1075 链表元素分类 （25 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805262953594880)
@@ -53,7 +54,7 @@ tags:
     27777 11 -1
 
 代码（两个测试点通过不了的版本）：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -159,9 +160,9 @@ int main(){
     }
     return 0;
 }
-
+```
 改正后版本：
-
+```
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -215,3 +216,4 @@ int main() {
     }
     return 0;
 }
+```

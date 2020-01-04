@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:32:10
 tags:
+  - pat
 ---
 
 1090 危险品装箱 （25 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/1038429484026175488)
@@ -48,7 +49,7 @@ tags:
     Yes
 
 代码：
-
+```
 #include<iostream>
 #include<map>
 #include<vector>
@@ -104,3 +105,4 @@ int main(){
     }
     return 0;
 }
+```

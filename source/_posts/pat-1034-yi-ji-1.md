@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 11:50:54
 tags:
+  - pat
 ---
 
 1034 有理数四则运算 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805287624491008)
@@ -48,7 +49,7 @@ tags:
     1 2/3 / 0 = Inf
 
 代码：（复杂版本）
-
+```
 //以下版本实现实在是太复杂了 所以不采用了
 #include<iostream>
 #include<string.h>
@@ -140,9 +141,9 @@ int main(){
     numberOper(s1,s2,flag1,flag2);
     return 0;
 }
-
+```
 由于上面的版本太过复杂所以不在采用了，下面是优化版本 代码：
-
+```
 #include<iostream>
 #include<cstdio>
 
@@ -231,3 +232,4 @@ int main(){
     simplf(t1\_front,t1\_back);cout<<" / ";simplf(t2\_front,t2\_back);cout<<" = ";simplf(result\_front,result\_back);cout<<endl;
     return 0;
 }
+```

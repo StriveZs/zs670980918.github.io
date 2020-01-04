@@ -7,6 +7,7 @@ categories:
   - 系统CMD命令
 date: 2018-03-04 18:51:55
 tags:
+  - cmd
 ---
 
 w(ﾟДﾟ)w  ![](http://47.100.4.8/wp-content/uploads/2018/03/QQ图片20180304184635.png)

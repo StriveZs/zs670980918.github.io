@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 22:56:59
 tags:
+  - pat
 ---
 
 1007 素数对猜想 （20 分）地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805317546655744
@@ -32,7 +33,7 @@ tags:
     4
 
 代码：
-
+```
 #include<iostream>
 #include<stack>
 #include<math.h>
@@ -82,3 +83,4 @@ int main(){
     cout<<sum<<endl;
     return 0;
 }
+```

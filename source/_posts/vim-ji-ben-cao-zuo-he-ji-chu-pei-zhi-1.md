@@ -7,6 +7,8 @@ categories:
   - vim
 date: 2018-04-10 17:37:20
 tags:
+  - Linux
+  - Vim
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/04/QQ图片20180410171638.png)

@@ -7,6 +7,8 @@ categories:
   - 文章页
 date: 2018-03-10 12:39:21
 tags:
+  - Python
+  - PyQt5
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/03/QQ图片20180308122611.png)

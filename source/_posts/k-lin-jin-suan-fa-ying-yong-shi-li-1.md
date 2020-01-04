@@ -8,6 +8,9 @@ categories:
   - 机器学习
 date: 2018-04-08 12:10:16
 tags:
+  - Machine Learnig
+  - KNN
+  - Matplotlib
 ---
 
 这里使用k-邻近算法解决约会网站问题： 步骤：

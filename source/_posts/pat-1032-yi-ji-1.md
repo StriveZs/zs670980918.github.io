@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 11:46:39
 tags:
+  - pat
 ---
 
 1032 挖掘机技术哪家强 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805289432236032)
@@ -38,7 +39,7 @@ tags:
     2 150
 
 代码：
-
+```
 #include<iostream>
 #include<map>
 #include<algorithm>
@@ -69,3 +70,4 @@ int main(){
     cout<<index<<" "<<list1\[index\]<<endl;
     return 0;
 }
+```

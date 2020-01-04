@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 23:14:02
 tags:
+  - pat
 ---
 
 1015 德才论 （25 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805307551629312
@@ -58,7 +59,7 @@ tags:
     10000001 64 90
 
 代码：
-
+```
 #include<iostream>
 #include<algorithm>
 #include<vector>
@@ -223,3 +224,4 @@ int main()
     system("pause");  
     return 0;  
 }
+```

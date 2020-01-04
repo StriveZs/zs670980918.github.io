@@ -9,6 +9,11 @@ categories:
   - 算法
 date: 2018-08-28 16:40:46
 tags:
+  - 遗传算法
+  - 多种群遗传算法
+  - 智能优化
+  - 算法
+  - MatLab
 ---
 
 **多种群遗传算法的函数优化算法（MPGA）** **多种群遗传算法（MPGA）概述** MPGA在GA的基础上主要引入了一下几个概念：
@@ -114,7 +119,7 @@ Cell
 每个元细胞为一个种群所有个体的目标值（移民后）
 
 代码：
-
+```
 function \[Chrom,ObjV\]=immigrant(Chrom,ObjV)
 %% 移民算子
 MP=length(Chrom); %得到种群个数
@@ -130,7 +135,7 @@ for i=1:MP
     Chrom{next_i}(minI,:)=Chrom{i}(maxI,:);
     ObjV{next_i}(minI)=ObjV{i}(maxI); %目标值的替换
 end 
-
+```
 **人工选择算子** 函数名为EliteInduvidual，函数的输入、输出参数如下：
 
 变量名
@@ -166,7 +171,7 @@ MaxChrom
 各个种群当前最优的编码（选择后）
 
 代码：
-
+```
 function \[MaxObjV,MaxChrom\]=EliteInduvidual(Chrom,ObjV,MaxObjV,MaxChrom)
 %% 人工选择算子
 MP=length(Chrom);  %种群数
@@ -177,9 +182,9 @@ for i=1:MP
         MaxChrom(i,:)=Chrom{i}(maxI,:);  %记录各种群精华个体的编码
     end
 end 
-
+```
 **目标函数** 针对提出问题写出来的目标函数 代码：
-
+```
 function obj=ObjectFunction(X)
 %% 待优化的目标函数
 col=size(X,1); %得到个体个数
@@ -245,5 +250,5 @@ title('MPGA进化过程')
 X=(bs2rv(MaxChrom(I,:), FieldD));   %最优个体的解码解
 disp(\['最优值为：',num2str(Y)\])
 disp(\['对应的自变量取值：',num2str(X)\]) 
-
+```
 结果： 最优值为：38.8503 对应的自变量取值：11.6255      5.72504 ![](http://47.100.4.8/wp-content/uploads/2018/08/3-1.png)

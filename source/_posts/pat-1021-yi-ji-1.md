@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 11:30:21
 tags:
+  - pat
 ---
 
 1021 个位数统计 （15 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805300404535296
@@ -34,7 +35,7 @@ tags:
     3:1
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -93,3 +94,4 @@ int main(){
     }
     return 0;
 }
+```

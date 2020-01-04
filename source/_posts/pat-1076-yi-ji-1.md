@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:14:14
 tags:
+  - pat
 ---
 
 1076 Wifi密码 （15 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805262622244864)
@@ -40,7 +41,7 @@ tags:
     13224143
 
 代码：
-
+```
 #include<iostream>
 #include<map>
 using namespace std;
@@ -63,3 +64,4 @@ int main(){
     cout<<wifi_password<<endl;
     return 0;
 }
+```

@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:28:08
 tags:
+ - pat
 ---
 
 1086 就不告诉你 （15 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/1038429065476579328)
@@ -32,7 +33,7 @@ tags:
     53
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -67,3 +68,4 @@ int main(){
     cout<<result.substr(result.find\_first\_not_of('0'))<<endl; //对于 10 * 10 得到的100 要将001处理为1
     return 0;
 }
+```

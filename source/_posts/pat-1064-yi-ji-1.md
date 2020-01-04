@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:51:56
 tags:
+  - pat
 ---
 
 1064 朋友数 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805267416334336)
@@ -34,7 +35,7 @@ tags:
     3 6 9 26
 
 代码：
-
+```
 #include<iostream>
 #include<map>
 #include<string.h>
@@ -81,3 +82,4 @@ int main(){
     cout<<endl;
     return 0;
 }
+```

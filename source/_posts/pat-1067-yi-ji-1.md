@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 10:57:48
 tags:
+  - pat
 ---
 
 1067 试密码 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805266007048192)
@@ -57,7 +58,7 @@ tags:
     Welcome in
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<deque>
@@ -96,3 +97,4 @@ int main(){
     }
     return 0;
 }
+```

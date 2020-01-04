@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 22:54:24
 tags:
+  - pat
 ---
 
 1005 继续(3n+1)猜想 （25 分） 地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805320306507776
@@ -33,7 +34,7 @@ tags:
     7 6
 
 代码：
-
+```
 #include<iostream>
 #include<set>
 #include<algorithm>
@@ -159,3 +160,4 @@ int main(){
     cout<<endl;*/
     return 0;
 }
+```

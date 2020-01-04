@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-18 11:09:50
 tags:
+  - pat
 ---
 
 1074 宇宙无敌加法器 （20 分) [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805263297527808)
@@ -34,7 +35,7 @@ tags:
     7201
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -88,3 +89,4 @@ int main(){
     }
     return 0;
 }
+```

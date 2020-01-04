@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-11 22:52:07
 tags:
+  - pat
 ---
 
 1003 我要通过！ （20 分）  地址：https://pintia.cn/problem-sets/994805260223102976/problems/994805323154440192
@@ -53,7 +54,7 @@ tags:
     NO
 
 代码：
-
+```
 #include <stdio.h>
 #include <iostream>
 #include <string.h>
@@ -112,3 +113,4 @@ int main(){
     }
     return 0;
 }
+```

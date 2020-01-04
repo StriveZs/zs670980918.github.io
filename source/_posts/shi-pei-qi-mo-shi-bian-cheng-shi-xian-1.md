@@ -8,6 +8,7 @@ categories:
   - 设计模式
 date: 2019-05-08 19:02:27
 tags:
+  - adaptor pattern
 ---
 
 适配器模式
@@ -35,7 +36,7 @@ tags:
 *   Adapter
 
 对Adaptee的接口与Target接口进行适配 **使用例题：** 分别利用类版本和对象版本的适配器模式模拟实现ps2接口和usb接口的转换。 我们手中有个ps2插头的设备，但是主机上只有usb插头的接口，实现一个适配器将ps2接口转换为usb接口。其中，ps2接口表示为： class Ps2{ virtual void isPs2(); } Usb接口表示为： class Usb{ Virtual void isusb(); }。 **对象版本的代码：**
-
+```
 #include<iostream>
 
 using namespace std;
@@ -100,5 +101,5 @@ int main(){
     usb->isUsb();
     return 0;
 }
-
+```
 **对应的UML类图：** ![](http://47.100.4.8/wp-content/uploads/2019/05/4-1.png)

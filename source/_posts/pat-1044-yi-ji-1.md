@@ -7,6 +7,7 @@ categories:
   - 乙级
 date: 2019-03-12 18:19:26
 tags:
+  - pat
 ---
 
 1044 火星数字 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805279328157696)
@@ -44,7 +45,7 @@ tags:
     13
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<math.h>
@@ -134,3 +135,4 @@ int main(){
     }
     return 0;
 }
+```

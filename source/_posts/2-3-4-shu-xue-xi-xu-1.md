@@ -8,10 +8,12 @@ categories:
   - 文章页
 date: 2018-05-22 23:41:15
 tags:
+  - C/C++
+  - 2-3-4树
 ---
 
 向四结点的插入节点的情况： 第二种情况： 向3 key结点插入，父结点也是3 key结点的处理情况。 如图： ![](http://47.100.4.8/wp-content/uploads/2018/05/1-7.png) ![](http://47.100.4.8/wp-content/uploads/2018/05/2-7.png) ![](http://47.100.4.8/wp-content/uploads/2018/05/3-6.png) ![](http://47.100.4.8/wp-content/uploads/2018/05/4-6.png) ![](http://47.100.4.8/wp-content/uploads/2018/05/5-4.png) 主要核心的思想是：向3 key结点插入数值，父结点也为3 key结点的话，则父结点也要进行中间值提到父结点的父结点的操作，知道结点不再是3 key值结点为止。   下面给出2-3-4数创建的过程（大家可自行分析理解我个人认为已经很好理解了） 如图： ![](http://47.100.4.8/wp-content/uploads/2018/05/6-3.png) ![](http://47.100.4.8/wp-content/uploads/2018/05/7-3.png) ![](http://47.100.4.8/wp-content/uploads/2018/05/8-1.png) ![](http://47.100.4.8/wp-content/uploads/2018/05/9-1.png) 最后会形成一个所有高度都一样的树： ![](http://47.100.4.8/wp-content/uploads/2018/05/10-1.png) 在很多数据的情况下： 2-3-4树的效率比平衡二叉树要好的很多。 2-3-4的高度的最坏情况（全是2-node），也就相当于演变成了平衡二叉树 ： 相当于平衡二叉树 lgN 2-3-4树高度的最好情况（全是4-node），log4 N = 1/2 lg N   删除操作：要保证结点在同一高度，有必要时要进行合并 如图： ![](http://47.100.4.8/wp-content/uploads/2018/05/11-2.png) ![](http://47.100.4.8/wp-content/uploads/2018/05/12-1.png) ![](http://47.100.4.8/wp-content/uploads/2018/05/13-1.png) ![](http://47.100.4.8/wp-content/uploads/2018/05/14-1.png) ![](http://47.100.4.8/wp-content/uploads/2018/05/15.png) 在这里要感谢：[https://www.jianshu.com/p/37c845a5add6](https://www.jianshu.com/p/37c845a5add6) [http://www.cnblogs.com/nullzx/p/6111175.html](http://www.cnblogs.com/nullzx/p/6111175.html) 两位博主 提供的讲解，上面的图均取自二者的博文，再次感谢。   C++实现难点：要有三种结点分别有三个两个一个键值，要进行他们之间的转换，以及处理所以比较麻烦。 由于代码比较难于实现所里这里只进行了分析。 为了以后的红黑树做准备。   因此这给出伪代码： 结点数据结构：
-
+```
 //1键值的结点
 
 struct Node1{
@@ -91,3 +93,4 @@ void insert(Key key,Elem Val)
         x.make4Node(key, val); //则进行插入操作
 
 }
+```

@@ -8,6 +8,7 @@ categories:
   - 文章页
 date: 2019-03-12 18:14:34
 tags:
+  - pat
 ---
 
 1039 到底买不买 （20 分） [原文地址](https://pintia.cn/problem-sets/994805260223102976/problems/994805283241443328)
@@ -44,7 +45,7 @@ tags:
     No 2
 
 代码：
-
+```
 #include<iostream>
 #include<string.h>
 #include<map>
@@ -104,3 +105,4 @@ int main(){
         cout<<"No "<<sum<<endl;
     }
 }
+```

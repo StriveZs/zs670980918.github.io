@@ -8,6 +8,7 @@ categories:
   - 设计模式
 date: 2019-05-13 15:04:12
 tags:
+  - decorate pattern
 ---
 
 **装饰模式**
@@ -26,7 +27,7 @@ tags:
 *   类定义被隐藏，或类定义不能用于生成子类。
 
 **装饰模式的结构：** ![](http://47.100.4.8/wp-content/uploads/2019/05/11.png) **例题：** 给定两种初始的汽车类，例如丰田和沃尔沃，利用装饰模式分别给它们添加新的功能，其中丰田可以导航和自动驾驶，沃尔沃可以导航和语音控制。 **代码：**
-
+```
 #include<iostream>
 using namespace std;
 class Car{
@@ -100,5 +101,5 @@ int main(){
     concreteFunction4->Operation();
     return 0;
 }
-
+```
 **UML类图：** ![](http://47.100.4.8/wp-content/uploads/2019/05/2-2.png) **结果：** ![](http://47.100.4.8/wp-content/uploads/2019/05/3-1.png)

@@ -6,6 +6,7 @@ categories:
   - Stephen Hawking
 date: 2018-03-14 13:07:01
 tags:
+  - Stephen Hawking
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/03/e1fe9925bc315c60700715c181b1cb1349547709-300x198.jpg)

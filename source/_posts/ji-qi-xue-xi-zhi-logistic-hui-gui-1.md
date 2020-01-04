@@ -8,6 +8,9 @@ categories:
   - 机器学习
 date: 2018-04-29 20:44:22
 tags:
+  - Machine Learning
+  - Logisitic
+  - Algorithm
 ---
 
 ![](http://47.100.4.8/wp-content/uploads/2018/04/timg.jpg) logistic回归 这里我们会使用到最优化算法，最优化问题常用来解决最短路径，最少工作时间最大效益等问题。 回归：假设有一些数据点，我们用一条直线对这些点进行拟合（该条直线被称为最佳拟合直线），这个拟合过程称为回归。 利用logistic回归进行分类的主要思想是：根据现有数据对分类边界线建立回归公式，依次进行分类。 logistic回归的一般过程：
