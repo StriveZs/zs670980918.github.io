@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>Anaconda`s problem of pip</title>
+      <link href="/2020/01/13/Anaconda%E5%9C%A8%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E5%90%8E%E5%AE%89%E8%A3%85pip%E5%B9%B6%E8%A7%A3%E5%86%B3%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/"/>
+      <url>/2020/01/13/Anaconda%E5%9C%A8%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E5%90%8E%E5%AE%89%E8%A3%85pip%E5%B9%B6%E8%A7%A3%E5%86%B3%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Anaconda-s-problem-of-pip"><a href="#Anaconda-s-problem-of-pip" class="headerlink" title="Anaconda`s problem of pip"></a>Anaconda`s problem of pip</h1><h2 id="Anaconda安装pip"><a href="#Anaconda安装pip" class="headerlink" title="Anaconda安装pip"></a>Anaconda安装pip</h2><p><strong>步骤</strong></p><ol><li>在对应的环境中打开terminal</li><li>输入conda install setuptools，安装相关的包下载工具</li><li>然后输入 conda install pip 即可安装</li></ol><h2 id="给pip更换国内源"><a href="#给pip更换国内源" class="headerlink" title="给pip更换国内源"></a>给pip更换国内源</h2><p><strong>步骤</strong></p><ol><li>使用windows+R打开运行</li><li>输入%HOMEPATH%</li><li>在用户目录文件夹下创建pip.ini用txt打开（如果有则直接打开）</li><li>更换国内源<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[<span class="keyword">global</span>]</span><br><span class="line">timeout = <span class="number">10</span> # 设置超时，单位s</span><br><span class="line"><span class="keyword">index</span>-url =  http://mirrors.aliyun.com/pypi/simple/   # 指定优先下载源</span><br><span class="line">extra-<span class="keyword">index</span>-url= http://pypi.douban.com/simple/   # 第二下载源</span><br><span class="line">[install]</span><br><span class="line"><span class="keyword">trusted</span>-host=</span><br><span class="line">    mirrors.aliyun.com</span><br><span class="line">    pypi.douban.com</span><br></pre></td></tr></table></figure></li></ol><h2 id="解决SSL问题"><a href="#解决SSL问题" class="headerlink" title="解决SSL问题"></a>解决SSL问题</h2><p>在更换完国内源之后仍然出现SSL，连接失败问题的话，则给出下述办法。<br><strong>步骤</strong></p><ol><li>找到该地址<strong>D:\Anaconda\pkgs\openssl-1.0.2p-hfa6e2cd_0\Library\bin</strong></li><li>然后将它添加到User的系统环境变量中即可。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 文章页 </category>
+          
+          <category> Python </category>
+          
+          <category> Anaconda </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> Anaconda </tag>
+            
+            <tag> pip </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo中归档页美化</title>
       <link href="/2019/12/31/Hexo%E4%B8%AD%E5%BD%92%E6%A1%A3%E9%A1%B5%E7%BE%8E%E5%8C%96/"/>
       <url>/2019/12/31/Hexo%E4%B8%AD%E5%BD%92%E6%A1%A3%E9%A1%B5%E7%BE%8E%E5%8C%96/</url>

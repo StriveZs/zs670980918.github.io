@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>blog.strivezs.com/tags/pip/</loc>
+        <lastmod>2020-01-13T08:09:08.493Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.strivezs.com/tags/Anaconda/</loc>
+        <lastmod>2020-01-13T08:09:08.493Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.strivezs.com/tags/Python/</loc>
+        <lastmod>2020-01-13T08:09:08.493Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>blog.strivezs.com/tags/archive/</loc>
         <lastmod>2019-12-31T08:15:40.037Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -249,13 +270,6 @@
 
     <url>
         <loc>blog.strivezs.com/tags/%25E5%25BF%25AB%25E9%2580%259F%25E6%258E%2592%25E5%25BA%258F/</loc>
-        <lastmod>2019-01-19T09:14:01.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>blog.strivezs.com/tags/Python/</loc>
         <lastmod>2019-01-19T09:14:01.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -985,13 +999,6 @@
     <url>
         <loc>blog.strivezs.com/tags/Google/</loc>
         <lastmod>2018-03-19T10:43:58.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>blog.strivezs.com/tags/Anaconda/</loc>
-        <lastmod>2018-03-16T09:21:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
