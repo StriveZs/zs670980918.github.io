@@ -1,9 +1,10 @@
 hexo-editor/
 themes/.DS_Store
 debug.log
-public/
 .deploy*/
 .DS_Store
 Thumbs.db
 db.json
 *.log
+.DS_Store
+public/

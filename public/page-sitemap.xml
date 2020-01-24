@@ -29,13 +29,6 @@
     </url>
     
     <url>
-        <loc>blog.strivezs.com/fang-ke-tong-ji/</loc>
-        <lastmod>2018-06-09T14:50:32.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
         <loc>blog.strivezs.com/fang-ke-tong-ji/index-1.html</loc>
         <lastmod>2018-06-09T14:50:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -43,14 +36,21 @@
     </url>
     
     <url>
-        <loc>blog.strivezs.com/zai-xian-gong-ju/</loc>
-        <lastmod>2018-06-05T10:06:09.000Z</lastmod>
+        <loc>blog.strivezs.com/fang-ke-tong-ji/</loc>
+        <lastmod>2018-06-09T14:50:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>blog.strivezs.com/zai-xian-gong-ju/index-1.html</loc>
+        <lastmod>2018-06-05T10:06:09.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>blog.strivezs.com/zai-xian-gong-ju/</loc>
         <lastmod>2018-06-05T10:06:09.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -85,14 +85,14 @@
     </url>
     
     <url>
-        <loc>blog.strivezs.com/hou-yuan-tuan/index-1.html</loc>
+        <loc>blog.strivezs.com/hou-yuan-tuan/</loc>
         <lastmod>2018-03-04T02:26:17.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/hou-yuan-tuan/</loc>
+        <loc>blog.strivezs.com/hou-yuan-tuan/index-1.html</loc>
         <lastmod>2018-03-04T02:26:17.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -127,14 +127,14 @@
     </url>
     
     <url>
-        <loc>blog.strivezs.com/liu-yan-ban/index-1.html</loc>
+        <loc>blog.strivezs.com/liu-yan-ban/</loc>
         <lastmod>2018-03-04T01:44:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/liu-yan-ban/</loc>
+        <loc>blog.strivezs.com/liu-yan-ban/index-1.html</loc>
         <lastmod>2018-03-04T01:44:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
