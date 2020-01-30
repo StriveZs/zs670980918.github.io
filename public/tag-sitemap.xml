@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>blog.strivezs.com/tags/RNN/</loc>
+        <lastmod>2020-01-30T10:30:27.662Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.strivezs.com/tags/Machine-Learning/</loc>
+        <lastmod>2020-01-30T10:30:27.662Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.strivezs.com/tags/Python/</loc>
+        <lastmod>2020-01-30T10:30:27.662Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>blog.strivezs.com/tags/%25E7%25A4%25BE%25E4%25BF%259D/</loc>
         <lastmod>2020-01-24T04:02:44.513Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,13 +39,6 @@
 
     <url>
         <loc>blog.strivezs.com/tags/Anaconda/</loc>
-        <lastmod>2020-01-13T08:09:08.493Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>blog.strivezs.com/tags/Python/</loc>
         <lastmod>2020-01-13T08:09:08.493Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -536,13 +550,6 @@
 
     <url>
         <loc>blog.strivezs.com/tags/SVM/</loc>
-        <lastmod>2018-07-03T07:53:59.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>blog.strivezs.com/tags/Machine-Learning/</loc>
         <lastmod>2018-07-03T07:53:59.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
