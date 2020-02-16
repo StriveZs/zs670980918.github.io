@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.strivezs.com/"/>
-  <updated>2020-01-30T10:30:27.662Z</updated>
+  <updated>2020-02-16T04:04:20.591Z</updated>
   <id>www.strivezs.com/</id>
   
   <author>
@@ -15,6 +15,80 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Learning In RNN Part II</title>
+    <link href="www.strivezs.com/2020/02/16/Learning%20In%20RNN%20Part%20II/"/>
+    <id>www.strivezs.com/2020/02/16/Learning%20In%20RNN%20Part%20II/</id>
+    <published>2020-02-16T04:04:20.591Z</published>
+    <updated>2020-02-16T04:04:20.591Z</updated>
+    
+    <content type="html"><![CDATA[<h1>Learning In RNN Part II</h1><p><strong>Learning Tager:</strong> Make the loss be minimize that evaluating by cost function.</p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/kHcMXX.png" alt="figure1"></p><h2 id="Unfortunately"><a class="header-anchor" href="#Unfortunately">¶</a>Unfortunately</h2><ul><li>RNN-based network is not always easy to learn.</li></ul><p><img src="https://gitee.com/zyp521/upload_image/raw/master/8bJy2V.png" alt="figure2"></p><ul><li>Th error surface is rought</li></ul><p><img src="https://gitee.com/zyp521/upload_image/raw/master/dy4doG.png" alt="figure3"></p><h2 id="Helpful-Techniques"><a class="header-anchor" href="#Helpful-Techniques">¶</a>Helpful Techniques</h2><h3 id="Long-Short-term-Memory-LSTM"><a class="header-anchor" href="#Long-Short-term-Memory-LSTM">¶</a>Long Short-term Memory(LSTM)</h3><h4 id="Why-replace-RNN-to-LSTM"><a class="header-anchor" href="#Why-replace-RNN-to-LSTM">¶</a>Why replace RNN to LSTM?</h4><p>Can deal with gradient vanishing(消灭，等于0) (not gradient explode爆炸激增)<br>It can make your error surface to be flatting nor not steep.<br>The specify performance is that it can remove the flat regions and solve the problem of gradient vanishing, but not gradient explode.</p><h4 id="How-to-work"><a class="header-anchor" href="#How-to-work">¶</a>How to work:</h4><p>The different operation between RNN and LSTM is that RNN can reomve value in memory after each computation and store new value. But LSTM can add the previous value to new value in cell memory after each computation.(Concretely depend on the value of forget gate)<br>So the difference of RNN and LSTM is if a weight influence value of memory, the influence never disappears unless forget gate is closed.<br>If forget gate is opened, there no gradient vanishing.</p><h4 id="Summarization"><a class="header-anchor" href="#Summarization">¶</a>Summarization</h4><ul><li>can deal with gradient vanishing(not gradient explode)</li><li>Memory and input are <ins>added</ins></li><li>The influence never disappears<br>unless forget gate is closed</li><li>No Gradient vanishing(If forget gate is opened)</li></ul><p>Gated Recurrent Unit(GRU):simpier thant LSTM</p><p><strong>Other helpful techniques:</strong></p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/EDrdli.png" alt="figure4"></p><h2 id="More-Applications"><a class="header-anchor" href="#More-Applications">¶</a>More Applications</h2><h3 id="Many-to-one"><a class="header-anchor" href="#Many-to-one">¶</a>Many to one</h3><ul><li>Input is a vector sequence, but output is only one vector.</li></ul><p><strong>Sentiment Analysis:(意见分析)</strong></p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/K5bxC0.png" alt="figure5"></p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/XKwMQM.png" alt="figure6"></p><h3 id="Many-to-Many-Output-is-shorter"><a class="header-anchor" href="#Many-to-Many-Output-is-shorter">¶</a>Many to Many (Output is shorter)</h3><ul><li>Both input and output are both sequences, <strong>but the output is shorter</strong>.</li></ul><p><strong>Speech Recognition:</strong></p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/QuBJ2j.png" alt="figure7"></p><h4 id="How-to-differentiate"><a class="header-anchor" href="#How-to-differentiate">¶</a>How to differentiate?</h4><ul><li>Connectionist Temporal Classification(<strong>CTC</strong>，联结主义时间分类)</li></ul><p>==Add an extra symbol “Φ” representing “null”.==</p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/kCJIsg.png" alt="figure8"></p><p>Use this method to slove the problem like differentiate “好棒” or “好棒棒”.</p><h4 id="CTC-Training"><a class="header-anchor" href="#CTC-Training">¶</a>CTC Training</h4><p><strong>Acoustic Features:(声音特征)</strong><br>ALL possible alignments(序列/顺序) are considered as correct because we don’t know what alignment is correct. So we can list all alignments to train.</p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/WPPHRn.png" alt="figure9"></p><h4 id="CTC-example"><a class="header-anchor" href="#CTC-example">¶</a>CTC: example</h4><p><img src="https://gitee.com/zyp521/upload_image/raw/master/3yexBF.png" alt="figure10"></p><h3 id="Many-to-Many-No-Limitation"><a class="header-anchor" href="#Many-to-Many-No-Limitation">¶</a>Many to Many (No Limitation)</h3><ul><li>Both input and output are both sequences <strong>with differnet lengths</strong>. ➡ <strong>Sequence to sequence learning</strong><br><strong>Machine Translate</strong>(Machine Learning ➡ 机器学习)</li></ul><p><strong>bag-of-word:</strong></p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/HjyAMK.png" alt="figure11"></p><p>Above model can’t stop until it’s interrupted.</p><h4 id="How-to-make-the-network-stop"><a class="header-anchor" href="#How-to-make-the-network-stop">¶</a>How to make the network stop</h4><ul><li>Adda a symbol ‘===’(断)</li></ul><p><img src="https://gitee.com/zyp521/upload_image/raw/master/8Gu1j2.png" alt="figure12"></p><h3 id="Beyond-Sequence"><a class="header-anchor" href="#Beyond-Sequence">¶</a>Beyond Sequence</h3><ul><li>Syntactic parsing(句法分析)</li></ul><h4 id="Transform-Tree-Structure-to-sequence"><a class="header-anchor" href="#Transform-Tree-Structure-to-sequence">¶</a>Transform Tree Structure to sequence</h4><p><strong>Conversion principle:</strong></p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/BRp1UF.png" alt="figure13"></p><p>We can transform sentence tree to sequence by using this principle and train a sequence model to recognize sentence.</p><h3 id="Sequence-to-sequence"><a class="header-anchor" href="#Sequence-to-sequence">¶</a>Sequence-to-sequence</h3><h4 id="Auto-encoder-Text"><a class="header-anchor" href="#Auto-encoder-Text">¶</a>Auto-encoder-Text</h4><ul><li>To understand the meaning of a word sequence, the order of the words can not be ignored.</li></ul><p><img src="https://gitee.com/zyp521/upload_image/raw/master/By7XBu.png" alt="figure14"></p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/wYKkpA.png" alt="figure15"></p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/eCiGf3.png" alt="figure16"></p><h4 id="Auto-encoder-Speech"><a class="header-anchor" href="#Auto-encoder-Speech">¶</a>Auto-encoder-Speech</h4><ul><li>Dimension reduction for a sequence with variable length</li></ul><p>audio segments()word-level-&gt;Fixed-length vector</p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/RARIzh.png" alt="figure17"></p><h5 id="Audio-Search-Principle"><a class="header-anchor" href="#Audio-Search-Principle">¶</a><strong>Audio Search Principle:</strong></h5><p><img src="https://gitee.com/zyp521/upload_image/raw/master/zYlxJy.png" alt="figure18"></p><h5 id="How-to-transform-audio-segment-to-vector"><a class="header-anchor" href="#How-to-transform-audio-segment-to-vector">¶</a>How to transform audio segment to vector</h5><p><img src="https://gitee.com/zyp521/upload_image/raw/master/tTKbLU.png" alt="figure19"></p><p>ps: jointly 共同地 同时地 similarity 相似 类似 embedding 埋入/埋葬</p><h5 id="Visualizing-embedding-vectors-of-the-words"><a class="header-anchor" href="#Visualizing-embedding-vectors-of-the-words">¶</a>Visualizing embedding vectors of the words</h5><p><img src="https://gitee.com/zyp521/upload_image/raw/master/CGfD3r.png" alt="figure20"></p><h4 id="Sequence-to-sequence-Learning-Demo-Chat-bot"><a class="header-anchor" href="#Sequence-to-sequence-Learning-Demo-Chat-bot">¶</a>Sequence-to-sequence Learning Demo:Chat-bot</h4><p><strong>Learning Principle:</strong></p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/0szRES.png" alt="figure21"></p><p><strong>Data Set:</strong><br>40000 sentences in Movie album and discussion of presidential election in American.</p><h2 id="Attention-based-Model"><a class="header-anchor" href="#Attention-based-Model">¶</a>Attention-based Model</h2><p><strong>Structure Version 1:</strong></p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/Ajbf8o.png" alt="figure22"></p><p><strong>Structure Version 2:</strong><br>==Neural Turing Machine(神经图灵机)==</p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/h4FdpY.png" alt="figure23"></p><h3 id="Reading-Comprehension"><a class="header-anchor" href="#Reading-Comprehension">¶</a>Reading Comprehension</h3><p><img src="https://gitee.com/zyp521/upload_image/raw/master/ErGx83.png" alt="figure24"></p><h3 id="Visual-Question-Answering"><a class="header-anchor" href="#Visual-Question-Answering">¶</a>Visual Question Answering</h3><p><img src="https://gitee.com/zyp521/upload_image/raw/master/opnM0d.png" alt="figure25"></p><p><strong>Principle:</strong><br>==A vector for each region==</p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/QyhNhJ.png" alt="figure26"></p><h3 id="Speech-Question-Answering"><a class="header-anchor" href="#Speech-Question-Answering">¶</a>Speech Question Answering</h3><ul><li>TOEFL Listening Comprehension Test By Machine</li></ul><p><strong>Example:</strong></p><ol><li>Audio Story: the original story is 5 min long</li><li>Question: “what is possible of Venus’ clouds?”</li><li>Choices:<ol><li>gased released as a result of volcanic activity</li><li>chemical reactions caused by high surface temperatures</li><li>bursts of radio energy from the plane’s surface</li><li>strong winds that blow dust into the atmosphere</li></ol></li></ol><h4 id="Model-Architecture"><a class="header-anchor" href="#Model-Architecture">¶</a>Model Architecture</h4><p>Everything is learned from training examples.</p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/ADclLS.png" alt="figure27"></p><h2 id="Deep-Structure"><a class="header-anchor" href="#Deep-Structure">¶</a>Deep &amp; Structure</h2><h3 id="Integrated-together"><a class="header-anchor" href="#Integrated-together">¶</a>Integrated together</h3><ul><li>Speech Recognition: CNN/LSTM/DNN+HMM<br><img src="https://gitee.com/zyp521/upload_image/raw/master/JKDhvu.jpg" alt="figure28"></li></ul><p>Bayes theorem</p><p><img src="https://gitee.com/zyp521/upload_image/raw/master/ssXaWg.png" alt="figure29"></p><ul><li>Sematic Tagging: Bi-directional LSTM+CRF/Structured SVM<br>Testing:<br><img src="https://gitee.com/zyp521/upload_image/raw/master/zryrFy.jpg" alt="figure31"></li></ul><p><img src="https://gitee.com/zyp521/upload_image/raw/master/GJhyYd.png" alt="figure30"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1&gt;Learning In RNN Part II&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Learning Tager:&lt;/strong&gt; Make the loss be minimize that evaluating by cost function.&lt;/p&gt;
+&lt;p&gt;&lt;img
+      
+    
+    </summary>
+    
+    
+      <category term="文章页" scheme="www.strivezs.com/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/"/>
+    
+      <category term="Python" scheme="www.strivezs.com/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Python/"/>
+    
+      <category term="Machine Learning" scheme="www.strivezs.com/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Python/Machine-Learning/"/>
+    
+      <category term="Neural NetWork" scheme="www.strivezs.com/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Python/Machine-Learning/Neural-NetWork/"/>
+    
+    
+      <category term="Python" scheme="www.strivezs.com/tags/Python/"/>
+    
+      <category term="Machine Learning" scheme="www.strivezs.com/tags/Machine-Learning/"/>
+    
+      <category term="RNN" scheme="www.strivezs.com/tags/RNN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>将域名从服务器解析到github page上</title>
+    <link href="www.strivezs.com/2020/02/16/%E5%B0%86%E5%9F%9F%E5%90%8D%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A7%A3%E6%9E%90%E5%88%B0github%20page%E4%B8%8A/"/>
+    <id>www.strivezs.com/2020/02/16/%E5%B0%86%E5%9F%9F%E5%90%8D%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A7%A3%E6%9E%90%E5%88%B0github%20page%E4%B8%8A/</id>
+    <published>2020-02-16T03:58:38.133Z</published>
+    <updated>2020-02-16T03:58:38.133Z</updated>
+    
+    <content type="html"><![CDATA[<h1>将域名从服务器解析到github page上</h1><ol><li>首先停用掉自己之前的所使用的的子域名</li></ol><p><img src="https://gitee.com/zyp521/upload_image/raw/master/n2rrTi.png" alt="figure1"></p><ol start="2"><li>然后将列表中关于服务器解析的相关记录去除掉防止出现冲突</li></ol><p><img src="https://gitee.com/zyp521/upload_image/raw/master/JzKtQB.png" alt="figure2"></p><ol start="3"><li>然后修改github上项目配置将著名设置为<ins><a href="http://www.stirvezs.com">www.stirvezs.com</a></ins>.</li></ol><p><img src="https://gitee.com/zyp521/upload_image/raw/master/jnIjhS.png" alt="figure3"></p><ol start="4"><li>修改hexo中的配置文件将url：<a href="http://xn--www-c88d846h.strivezs.com">改为www.strivezs.com</a></li></ol><p><img src="https://gitee.com/zyp521/upload_image/raw/master/5cew7x.png" alt="figure4"></p><ol start="5"><li>在域名管理里面添加域名解析<br>主机记录：www 用于www.strivezs.com的访问<br>主机记录：@ 用于strivezs.com的访问</li></ol><p><img src="https://gitee.com/zyp521/upload_image/raw/master/LdTBEN.png" alt="figure5"></p><ol start="6"><li>使用hexo c&amp;&amp;hexo g &amp;&amp; hexo d将项目重新部署到github上即可。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1&gt;将域名从服务器解析到github page上&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;首先停用掉自己之前的所使用的的子域名&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/zyp521/upload_image/raw/master/n2rrTi.
+      
+    
+    </summary>
+    
+    
+      <category term="文章页" scheme="www.strivezs.com/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/"/>
+    
+      <category term="Github" scheme="www.strivezs.com/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Github/"/>
+    
+      <category term="域名" scheme="www.strivezs.com/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Github/%E5%9F%9F%E5%90%8D/"/>
+    
+    
+      <category term="域名解析" scheme="www.strivezs.com/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
+    
+      <category term="Github Page" scheme="www.strivezs.com/tags/Github-Page/"/>
+    
+  </entry>
   
   <entry>
     <title>Learning In RNN Part I</title>
@@ -636,68 +710,6 @@ The chinese name is 循环神经网络.&lt;/p&gt;
       
         &lt;p&gt;1095 解码PAT准考证 （25 分) &lt;a href=&quot;https://pintia.cn/problem-sets/994805260223102976/problems/1071786104348536832&quot;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;PAT 准考证号由 4
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="www.strivezs.com/categories/PAT/"/>
-    
-      <category term="乙级" scheme="www.strivezs.com/categories/PAT/%E4%B9%99%E7%BA%A7/"/>
-    
-      <category term="文章页" scheme="www.strivezs.com/categories/PAT/%E4%B9%99%E7%BA%A7/%E6%96%87%E7%AB%A0%E9%A1%B5/"/>
-    
-    
-      <category term="pat" scheme="www.strivezs.com/tags/pat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pat_1094（乙级）</title>
-    <link href="www.strivezs.com/2019/03/18/pat-1094-yi-ji-1/"/>
-    <id>www.strivezs.com/2019/03/18/pat-1094-yi-ji-1/</id>
-    <published>2019-03-18T03:36:06.000Z</published>
-    <updated>2019-03-18T03:36:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>1094 谷歌的招聘 （20 分) <a href="https://pintia.cn/problem-sets/994805260223102976/problems/1071785997033074688">原文地址</a></p><p>2004 年 7 月，谷歌在硅谷的 101 号公路边竖立了一块巨大的广告牌（如下图）用于招聘。内容超级简单，就是一个以 .com 结尾的网址，而前面的网址是一个 10 位素数，这个素数是自然常数 e 中最早出现的 10 位连续数字。能找出这个素数的人，就可以通过访问谷歌的这个网站进入招聘流程的下一步。 <img src="https://images.ptausercontent.com/57148679-d574-4f49-b048-775c6c07791c.jpg" alt="prime.jpg"> 自然常数 e 是一个著名的超越数，前面若干位写出来是这样的：e = 2.71828182845904523536028747135266249775724709369995957496696762772407663035354759457138217852516642<strong>7427466391</strong>932003059921… 其中粗体标出的 10 位数就是答案。 本题要求你编程解决一个更通用的问题：从任一给定的长度为 L 的数字中，找出最早出现的 K 位连续数字所组成的素数。</p><h3 id="输入格式："><a class="header-anchor" href="#输入格式：">¶</a>输入格式：</h3><p>输入在第一行给出 2 个正整数，分别是 L（不超过 1000 的正整数，为数字长度）和 K（小于 10 的正整数）。接下来一行给出一个长度为 L 的正整数 N。</p><h3 id="输出格式："><a class="header-anchor" href="#输出格式：">¶</a>输出格式：</h3><p>在一行中输出 N 中最早出现的 K 位连续数字所组成的素数。如果这样的素数不存在，则输出 <code>404</code>。注意，原始数字中的前导零也计算在位数之内。例如在 200236 中找 4 位素数，0023 算是解；但第一位 2 不能被当成 0002 输出，因为在原始数字中不存在这个 2 的前导零。</p><h3 id="输入样例-1："><a class="header-anchor" href="#输入样例-1：">¶</a>输入样例 1：</h3><pre><code>20 523654987725541023819</code></pre><h3 id="输出样例-1："><a class="header-anchor" href="#输出样例-1：">¶</a>输出样例 1：</h3><pre><code>49877</code></pre><h3 id="输入样例-2："><a class="header-anchor" href="#输入样例-2：">¶</a>输入样例 2：</h3><pre><code>10 32468024680</code></pre><h3 id="输出样例-2："><a class="header-anchor" href="#输出样例-2：">¶</a>输出样例 2：</h3><pre><code>404</code></pre><p>代码：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;  </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt; </span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line">   </span><br><span class="line"><span class="comment">// 判断是否为素数</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isprime</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x==<span class="number">0</span> || x==<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i*i&lt;=x;++i)&#123;</span><br><span class="line">        <span class="keyword">if</span>(x%i==<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line"><span class="comment">// 1094 谷歌的招聘 （20 point(s)）</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span>&#123;      </span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> n,k,out=<span class="number">-1</span>;</span><br><span class="line">    <span class="built_in">string</span> s;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;k&gt;&gt;s; </span><br><span class="line">     </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=k;i&lt;=n;++i)&#123;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> t = stoi(s.substr(i-k,k)); <span class="comment">// 字符串截取</span></span><br><span class="line">        <span class="keyword">if</span>(isprime(t))&#123; <span class="comment">// 判断素数</span></span><br><span class="line">            out=i-k;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">    <span class="keyword">if</span>(out != <span class="number">-1</span>)&#123; <span class="comment">// 如 0002 ，不应该输出 2</span></span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;s.substr(out,k)&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"404"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125; <span class="comment">// guangjinzheng 2019.1.14 15:02</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;1094 谷歌的招聘 （20 分) &lt;a href=&quot;https://pintia.cn/problem-sets/994805260223102976/problems/1071785997033074688&quot;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;2004 年 7 月，谷歌在
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="www.strivezs.com/categories/PAT/"/>
-    
-      <category term="乙级" scheme="www.strivezs.com/categories/PAT/%E4%B9%99%E7%BA%A7/"/>
-    
-      <category term="文章页" scheme="www.strivezs.com/categories/PAT/%E4%B9%99%E7%BA%A7/%E6%96%87%E7%AB%A0%E9%A1%B5/"/>
-    
-    
-      <category term="pat" scheme="www.strivezs.com/tags/pat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pat_1093（乙级）</title>
-    <link href="www.strivezs.com/2019/03/18/pat-1093-yi-ji-1/"/>
-    <id>www.strivezs.com/2019/03/18/pat-1093-yi-ji-1/</id>
-    <published>2019-03-18T03:35:13.000Z</published>
-    <updated>2019-03-18T03:35:13.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>1093 字符串A+B （20 分) <a href="https://pintia.cn/problem-sets/994805260223102976/problems/1071785884776722432">原文地址</a></p><p>给定两个字符串 A 和 B，本题要求你输出 A+B，即两个字符串的并集。要求先输出 A，再输出 B，但<strong>重复的字符必须被剔除</strong>。</p><h3 id="输入格式："><a class="header-anchor" href="#输入格式：">¶</a>输入格式：</h3><p>输入在两行中分别给出 A 和 B，均为长度不超过 10​6​​的、由可见 ASCII 字符 (即码值为32~126)和空格组成的、由回车标识结束的非空字符串。</p><h3 id="输出格式："><a class="header-anchor" href="#输出格式：">¶</a>输出格式：</h3><p>在一行中输出题面要求的 A 和 B 的和。</p><h3 id="输入样例："><a class="header-anchor" href="#输入样例：">¶</a>输入样例：</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">This <span class="keyword">is</span> a sample test</span><br><span class="line"><span class="keyword">to</span> show you_How <span class="keyword">it</span> works</span><br></pre></td></tr></table></figure><h3 id="输出样例："><a class="header-anchor" href="#输出样例：">¶</a>输出样例：</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">This ampletowyu_Hrk</span></span><br></pre></td></tr></table></figure><p>代码：</p><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">string</span> s1,s2;</span><br><span class="line">    getline(<span class="built_in">cin</span>,s1);</span><br><span class="line">    getline(<span class="built_in">cin</span>,s2);</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt; dir;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s1.length();i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">find</span>(dir.<span class="built_in">begin</span>(),dir.<span class="built_in">end</span>(),s1\[i\]) == dir.<span class="built_in">end</span>())&#123;</span><br><span class="line">            <span class="built_in">cout</span>&lt;&lt;s1\[i\];</span><br><span class="line">            dir.push_back(s1\[i\]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s2.length();i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">find</span>(dir.<span class="built_in">begin</span>(),dir.<span class="built_in">end</span>(),s2\[i\]) == dir.<span class="built_in">end</span>())&#123;</span><br><span class="line">            <span class="built_in">cout</span>&lt;&lt;s2\[i\];</span><br><span class="line">            dir.push_back(s2\[i\]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;1093 字符串A+B （20 分) &lt;a href=&quot;https://pintia.cn/problem-sets/994805260223102976/problems/1071785884776722432&quot;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;给定两个字符串 A 和 B
       
     
     </summary>
