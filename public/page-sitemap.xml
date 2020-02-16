@@ -2,139 +2,139 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>blog.strivezs.com</loc>
+        <loc>www.strivezs.com</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/categories/</loc>
+        <loc>www.strivezs.com/categories/</loc>
         <lastmod>2020-01-04T08:49:51.673Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/tags/</loc>
+        <loc>www.strivezs.com/tags/</loc>
         <lastmod>2020-01-04T08:49:51.667Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/archives/</loc>
+        <loc>www.strivezs.com/archives/</loc>
         <lastmod>2020-01-04T08:49:51.664Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/fang-ke-tong-ji/index-1.html</loc>
+        <loc>www.strivezs.com/fang-ke-tong-ji/</loc>
         <lastmod>2018-06-09T14:50:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/fang-ke-tong-ji/</loc>
+        <loc>www.strivezs.com/fang-ke-tong-ji/index-1.html</loc>
         <lastmod>2018-06-09T14:50:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/zai-xian-gong-ju/index-1.html</loc>
+        <loc>www.strivezs.com/zai-xian-gong-ju/</loc>
         <lastmod>2018-06-05T10:06:09.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/zai-xian-gong-ju/</loc>
+        <loc>www.strivezs.com/zai-xian-gong-ju/index-1.html</loc>
         <lastmod>2018-06-05T10:06:09.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/di-qiu-fang-ke/index-1.html</loc>
+        <loc>www.strivezs.com/di-qiu-fang-ke/index-1.html</loc>
         <lastmod>2018-03-16T04:31:04.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/di-qiu-fang-ke/</loc>
+        <loc>www.strivezs.com/di-qiu-fang-ke/</loc>
         <lastmod>2018-03-16T04:31:04.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/tong-ji/</loc>
+        <loc>www.strivezs.com/tong-ji/index-1.html</loc>
         <lastmod>2018-03-04T03:26:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/tong-ji/index-1.html</loc>
+        <loc>www.strivezs.com/tong-ji/</loc>
         <lastmod>2018-03-04T03:26:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/hou-yuan-tuan/</loc>
+        <loc>www.strivezs.com/hou-yuan-tuan/index-1.html</loc>
         <lastmod>2018-03-04T02:26:17.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/hou-yuan-tuan/index-1.html</loc>
+        <loc>www.strivezs.com/hou-yuan-tuan/</loc>
         <lastmod>2018-03-04T02:26:17.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/wen-zhang-ye/index-1.html</loc>
+        <loc>www.strivezs.com/wen-zhang-ye/index-1.html</loc>
         <lastmod>2018-03-04T01:47:58.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/wen-zhang-ye/</loc>
+        <loc>www.strivezs.com/wen-zhang-ye/</loc>
         <lastmod>2018-03-04T01:47:58.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/deng-lu/index-1.html</loc>
+        <loc>www.strivezs.com/deng-lu/index-1.html</loc>
         <lastmod>2018-03-04T01:44:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/deng-lu/</loc>
+        <loc>www.strivezs.com/deng-lu/</loc>
         <lastmod>2018-03-04T01:44:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/liu-yan-ban/</loc>
+        <loc>www.strivezs.com/liu-yan-ban/index-1.html</loc>
         <lastmod>2018-03-04T01:44:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.strivezs.com/liu-yan-ban/index-1.html</loc>
+        <loc>www.strivezs.com/liu-yan-ban/</loc>
         <lastmod>2018-03-04T01:44:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

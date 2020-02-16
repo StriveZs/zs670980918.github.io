@@ -78,7 +78,7 @@
 <meta name="description" content="Get请求实例分析： 代码： 12345678910import urllib.requesturl&#x3D;&quot;https:&#x2F;&#x2F;www.baidu.com&#x2F;s?wd&#x3D;&quot;keyword &#x3D; &quot;strivez&quot;url1 &#x3D; url+keywordreq &#x3D; urllib.request.Request(url1)req.add_header(&#39;User-Agent&#39;, &#39;Mozilla&#x2F;5.0 (Windo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python爬虫学习urllib.request之Get">
-<meta property="og:url" content="blog.strivezs.com/2018/06/19/python-pa-chong-xue-xi-urllib-request-zhi-get-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/06/19/python-pa-chong-xue-xi-urllib-request-zhi-get-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="Get请求实例分析： 代码： 12345678910import urllib.requesturl&#x3D;&quot;https:&#x2F;&#x2F;www.baidu.com&#x2F;s?wd&#x3D;&quot;keyword &#x3D; &quot;strivez&quot;url1 &#x3D; url+keywordreq &#x3D; urllib.request.Request(url1)req.add_header(&#39;User-Agent&#39;, &#39;Mozilla&#x2F;5.0 (Windo">
 <meta property="og:locale" content="en_US">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/06/19/python-pa-chong-xue-xi-urllib-request-zhi-get-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/06/19/python-pa-chong-xue-xi-urllib-request-zhi-get-1/"/>
 
 
 
@@ -324,7 +324,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/06/19/python-pa-chong-xue-xi-urllib-request-zhi-get-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/06/19/python-pa-chong-xue-xi-urllib-request-zhi-get-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -441,7 +441,7 @@
 <figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import urllib.request</span><br><span class="line"></span><br><span class="line">url=<span class="string">"https://www.baidu.com/s?wd="</span></span><br><span class="line"><span class="type">key</span> = <span class="string">"你好"</span></span><br><span class="line">keyword = urllib.request.quote(<span class="type">key</span>)  #对中文进行编码</span><br><span class="line">url1 = url+keyword</span><br><span class="line">req = urllib.request.Request(url1)</span><br><span class="line">req.add_header('User-Agent', 'Mozilla/<span class="number">5.0</span> (Windows NT <span class="number">10.0</span>; Win64; x64) AppleWebKit/<span class="number">537.36</span> (KHTML, like Gecko) Chrome/<span class="number">65.0</span><span class="number">.3325</span><span class="number">.181</span> Safari/<span class="number">537.36</span>')</span><br><span class="line">data= urllib.request.urlopen(req,timeout=<span class="number">80</span>).read()</span><br><span class="line">filenanme = open(<span class="string">"F:/a.html"</span>,<span class="string">"wb"</span>)</span><br><span class="line">filenanme.write(data)</span><br><span class="line">filenanme.close()</span><br></pre></td></tr></table></figure>
 <p>结果： <img src="http://47.100.4.8/wp-content/uploads/2018/06/QQ%E5%9B%BE%E7%89%8720180619230648.png" alt=""> 使用Get的请求思路：</p>
 <ul>
-<li>构建对应的URL地址（一般为一个模板URL+关键词），该URL地址包含Get请求的字段名和字段内容等信息，且URL地址满足GET请求的格式，即“http://网址？字段名1=字段内容……”;（必要的时候要对字段内容进行编码）</li>
+<li>构建对应的URL地址（一般为一个模板URL+关键词），该URL地址包含Get请求的字段名和字段内容等信息，且URL地址满足GET请求的格式，即“<a href="http://xn--ses554g">http://网址</a>？字段名1=字段内容……”;（必要的时候要对字段内容进行编码）</li>
 <li>以对应的URL为参数，构建Request</li>
 <li>最好添加一下报头信息，以防止403错误</li>
 <li>通过urlopen（）打开构建的Request对象</li>

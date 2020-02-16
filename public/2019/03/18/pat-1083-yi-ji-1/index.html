@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="1083 是否存在相等的差 （20 分) 原文地址 给定 N 张卡片，正面分别写上 1、2、……、N，然后全部翻面，洗牌，在背面分别写上 1、2、……、N。将每张牌的正反两面数字相减（大减小），得到 N 个非负差值，其中是否存在相等的差？ 输入格式：输入第一行给出一个正整数 N（2 ≤ N ≤ 10 000），随后一行给出 1 到 N 的一个洗牌后的排列，第 i 个数表示正面写了 i 的那张卡片背">
+<meta name="description" content="1083 是否存在相等的差 （20 分) 原文地址 给定 N 张卡片，正面分别写上 1、2、……、N，然后全部翻面，洗牌，在背面分别写上 1、2、……、N。将每张牌的正反两面数字相减（大减小），得到 N 个非负差值，其中是否存在相等的差？ ¶输入格式： 输入第一行给出一个正整数 N（2 ≤ N ≤ 10 000），随后一行给出 1 到 N 的一个洗牌后的排列，第 i 个数表示正面写了 i 的那张卡">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pat_1083（乙级）">
-<meta property="og:url" content="blog.strivezs.com/2019/03/18/pat-1083-yi-ji-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2019/03/18/pat-1083-yi-ji-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="1083 是否存在相等的差 （20 分) 原文地址 给定 N 张卡片，正面分别写上 1、2、……、N，然后全部翻面，洗牌，在背面分别写上 1、2、……、N。将每张牌的正反两面数字相减（大减小），得到 N 个非负差值，其中是否存在相等的差？ 输入格式：输入第一行给出一个正整数 N（2 ≤ N ≤ 10 000），随后一行给出 1 到 N 的一个洗牌后的排列，第 i 个数表示正面写了 i 的那张卡片背">
+<meta property="og:description" content="1083 是否存在相等的差 （20 分) 原文地址 给定 N 张卡片，正面分别写上 1、2、……、N，然后全部翻面，洗牌，在背面分别写上 1、2、……、N。将每张牌的正反两面数字相减（大减小），得到 N 个非负差值，其中是否存在相等的差？ ¶输入格式： 输入第一行给出一个正整数 N（2 ≤ N ≤ 10 000），随后一行给出 1 到 N 的一个洗牌后的排列，第 i 个数表示正面写了 i 的那张卡">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-03-18T03:22:57.000Z">
 <meta property="article:modified_time" content="2019-03-18T03:22:57.000Z">
@@ -116,7 +116,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2019/03/18/pat-1083-yi-ji-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2019/03/18/pat-1083-yi-ji-1/"/>
 
 
 
@@ -318,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2019/03/18/pat-1083-yi-ji-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/03/18/pat-1083-yi-ji-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -429,14 +429,22 @@
       
 
       
-        <p>1083 是否存在相等的差 （20 分) <a href="https://pintia.cn/problem-sets/994805260223102976/problems/994805260780945408">原文地址</a></p>
+        <p>1083 是否存在相等的差 （20 分) <a href="https://pintia.cn/problem-sets/994805260223102976/problems/994805260780945408">原文地址</a></p>
 <p>给定 N 张卡片，正面分别写上 1、2、……、N，然后全部翻面，洗牌，在背面分别写上 1、2、……、N。将每张牌的正反两面数字相减（大减小），得到 N 个非负差值，其中是否存在相等的差？</p>
-<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入第一行给出一个正整数 N（2 ≤ N ≤ 10 000），随后一行给出 1 到 N 的一个洗牌后的排列，第 i 个数表示正面写了 i 的那张卡片背面的数字。</p>
-<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>按照“差值 重复次数”的格式从大到小输出重复的差值及其重复的次数，每行输出一个结果。</p>
-<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><pre><code>8
-3 5 8 6 2 1 4 7</code></pre><h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><pre><code>5 2
+<h3 id="输入格式："><a class="header-anchor" href="#输入格式：">¶</a>输入格式：</h3>
+<p>输入第一行给出一个正整数 N（2 ≤ N ≤ 10 000），随后一行给出 1 到 N 的一个洗牌后的排列，第 i 个数表示正面写了 i 的那张卡片背面的数字。</p>
+<h3 id="输出格式："><a class="header-anchor" href="#输出格式：">¶</a>输出格式：</h3>
+<p>按照“差值 重复次数”的格式从大到小输出重复的差值及其重复的次数，每行输出一个结果。</p>
+<h3 id="输入样例："><a class="header-anchor" href="#输入样例：">¶</a>输入样例：</h3>
+<pre><code>8
+3 5 8 6 2 1 4 7
+</code></pre>
+<h3 id="输出样例："><a class="header-anchor" href="#输出样例：">¶</a>输出样例：</h3>
+<pre><code>5 2
 3 3
-2 2</code></pre><p>代码：</p>
+2 2
+</code></pre>
+<p>代码：</p>
 <figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> t1;</span><br><span class="line">    <span class="keyword">int</span> t2;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(Node a,Node b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a.t1 &gt; b.t1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">map</span>&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; dir;</span><br><span class="line">    <span class="built_in">map</span>&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt;::iterator pos;</span><br><span class="line">    <span class="built_in">vector</span>&lt;Node&gt; dir_vec;</span><br><span class="line">    <span class="built_in">vector</span>&lt;Node&gt;::iterator pos1;</span><br><span class="line">    <span class="keyword">int</span> num;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;num;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;num;i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> cha,temp;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;temp;</span><br><span class="line">        <span class="keyword">if</span>(temp &gt; i+<span class="number">1</span>)&#123;</span><br><span class="line">            cha = temp - (i+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            cha = (i+<span class="number">1</span>) - temp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(dir.count(cha) == <span class="number">0</span>)&#123;</span><br><span class="line">            dir\[cha\] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            dir\[cha\] += <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(pos=dir.<span class="built_in">begin</span>();pos!=dir.<span class="built_in">end</span>();pos++)&#123;</span><br><span class="line">        Node node = &#123;(\*pos).first,(\*pos).second&#125;;</span><br><span class="line">        <span class="keyword">if</span>((*pos).second &gt; <span class="number">1</span>)&#123;</span><br><span class="line">            dir\_vec.push\_back(node);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(dir_vec.empty())&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">       sort(dir\_vec.<span class="built_in">begin</span>(),dir\_vec.<span class="built_in">end</span>(),cmp);</span><br><span class="line">        <span class="keyword">for</span>(pos1 = dir\_vec.<span class="built_in">begin</span>();pos1!=dir\_vec.<span class="built_in">end</span>();pos1++)&#123;</span><br><span class="line">            <span class="built_in">cout</span>&lt;&lt;(\*pos1).t1&lt;&lt;<span class="string">" "</span>&lt;&lt;(\*pos1).t2&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -630,7 +638,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例："><span class="nav-number">3.</span> <span class="nav-text">输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例："><span class="nav-number">4.</span> <span class="nav-text">输出样例：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">¶输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">¶输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例："><span class="nav-number">3.</span> <span class="nav-text">¶输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例："><span class="nav-number">4.</span> <span class="nav-text">¶输出样例：</span></a></li></ol></div>
             
 
           </div>

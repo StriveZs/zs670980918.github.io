@@ -62,7 +62,7 @@
 
 
 
-  <meta name="keywords" content="算法,MatLab,遗传算法,多种群遗传算法,智能优化," />
+  <meta name="keywords" content="算法,遗传算法,多种群遗传算法,智能优化,MatLab," />
 
 
 
@@ -78,7 +78,7 @@
 <meta name="description" content="多种群遗传算法的函数优化算法（MPGA） 多种群遗传算法（MPGA）概述 MPGA在GA的基础上主要引入了一下几个概念：  突破GA仅靠单个群体进行遗传进化的框架，引入多个种群问题同时进行优化搜索；不同的种群赋以不用的控制参数，实现不同的搜索的目的。 各个种群之间通过移民算子进行联系，实现多种群的协同进化；最优解的获取是多个种群协同进化的综合结果。 通过人工选择算子保存各种群每个进化代中的最优个体">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多种群遗传算法的函数优化算法">
-<meta property="og:url" content="blog.strivezs.com/2018/08/28/duo-zhong-qun-yi-chuan-suan-fa-de-han-shu-you-hua-suan-fa-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/08/28/duo-zhong-qun-yi-chuan-suan-fa-de-han-shu-you-hua-suan-fa-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="多种群遗传算法的函数优化算法（MPGA） 多种群遗传算法（MPGA）概述 MPGA在GA的基础上主要引入了一下几个概念：  突破GA仅靠单个群体进行遗传进化的框架，引入多个种群问题同时进行优化搜索；不同的种群赋以不用的控制参数，实现不同的搜索的目的。 各个种群之间通过移民算子进行联系，实现多种群的协同进化；最优解的获取是多个种群协同进化的综合结果。 通过人工选择算子保存各种群每个进化代中的最优个体">
 <meta property="og:locale" content="en_US">
@@ -89,10 +89,10 @@
 <meta property="article:modified_time" content="2018-08-28T08:40:46.000Z">
 <meta property="article:author" content="StriveZs">
 <meta property="article:tag" content="算法">
-<meta property="article:tag" content="MatLab">
 <meta property="article:tag" content="遗传算法">
 <meta property="article:tag" content="多种群遗传算法">
 <meta property="article:tag" content="智能优化">
+<meta property="article:tag" content="MatLab">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://47.100.4.8/wp-content/uploads/2018/08/1-1.png">
 
@@ -124,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/08/28/duo-zhong-qun-yi-chuan-suan-fa-de-han-shu-you-hua-suan-fa-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/08/28/duo-zhong-qun-yi-chuan-suan-fa-de-han-shu-you-hua-suan-fa-1/"/>
 
 
 
@@ -326,7 +326,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/08/28/duo-zhong-qun-yi-chuan-suan-fa-de-han-shu-you-hua-suan-fa-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/08/28/duo-zhong-qun-yi-chuan-suan-fa-de-han-shu-you-hua-suan-fa-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -454,7 +454,7 @@
 <li>各个种群之间通过移民算子进行联系，实现多种群的协同进化；最优解的获取是多个种群协同进化的综合结果。</li>
 <li>通过人工选择算子保存各种群每个进化代中的最优个体，并作为判断算法收敛的依据。</li>
 </ul>
-<p>MPGA的算法结构示意图 <img src="http://47.100.4.8/wp-content/uploads/2018/08/1-1.png" alt="">   这里的SGA就是标准GA，由上图可以看出每个种群还是遵循GA中的算法准则，只不过是通过移民算子以及人工选择将最优的解结合到了一起。 各种群取不同的控制参数。交叉概率Pc和变异概率Pm的取值决定了算法全局搜索和拒不搜索能力的均衡。在GA中，交叉算子是产生新个体的主要算子，它决定了遗传算法全局搜索的能力；而变异算子只是产生新个体的辅助算子，它决定了遗传算法的局部搜索能力。大多数认为Pc在0.7<del>0.9最为合适，Pm在0.001</del>0.05之间最为合适。但是他们的取值方式还是有无数种的，对于不同的取值方式，优化结果差异也是很大的。MPGA弥补了GA的这一不足，通过多个设有不同控制参数的种群协同进化，同时兼顾了算法的全局搜索和局部搜索。 各种群是相对独立的，相互之间通过移民算子联系。移民算子将各种群在进化过程中出现的最优个体定期地（每隔一定的进化代数）引入其他的种群中，实现种群之间的信息交换。具体的操作规则是，将目标种群中的最差个体用源种群的最优个体替代。移民算子在MPGA中至关重要，如果没有银民算子，各种群之间失去联系，MPGA将等同于用不同的控制参数进行多次GA计算，从而是去了MPGA的特色。 精华种群和其他种群有很大不同。在金华的每一代，通过人工选择算子选出其他种群的 最优个体放入精华种群加以保存。精华种群不进行选择、交叉、变异等遗传操作，保证进化过程中各种群产生的最优个体不被破坏和丢失。同时，精华种群也是判断算法终止的依据。这里采用最优个体最少保持代数作为最终判断依据。这种判断充分利用了遗传算法在进化过程中的知识积累，较最大遗传代数判据更为合理。   <strong>问题描述</strong> 复杂二元函数求最值： <strong>max f(x,y) = 21.5 + xsin(4πx) + ysin(20πy)</strong> 图像生成代码：  </p>
+<p>MPGA的算法结构示意图 <img src="http://47.100.4.8/wp-content/uploads/2018/08/1-1.png" alt="">   这里的SGA就是标准GA，由上图可以看出每个种群还是遵循GA中的算法准则，只不过是通过移民算子以及人工选择将最优的解结合到了一起。 各种群取不同的控制参数。交叉概率Pc和变异概率Pm的取值决定了算法全局搜索和拒不搜索能力的均衡。在GA中，交叉算子是产生新个体的主要算子，它决定了遗传算法全局搜索的能力；而变异算子只是产生新个体的辅助算子，它决定了遗传算法的局部搜索能力。大多数认为Pc在0.7<sub>0.9最为合适，Pm在0.001</sub>0.05之间最为合适。但是他们的取值方式还是有无数种的，对于不同的取值方式，优化结果差异也是很大的。MPGA弥补了GA的这一不足，通过多个设有不同控制参数的种群协同进化，同时兼顾了算法的全局搜索和局部搜索。 各种群是相对独立的，相互之间通过移民算子联系。移民算子将各种群在进化过程中出现的最优个体定期地（每隔一定的进化代数）引入其他的种群中，实现种群之间的信息交换。具体的操作规则是，将目标种群中的最差个体用源种群的最优个体替代。移民算子在MPGA中至关重要，如果没有银民算子，各种群之间失去联系，MPGA将等同于用不同的控制参数进行多次GA计算，从而是去了MPGA的特色。 精华种群和其他种群有很大不同。在金华的每一代，通过人工选择算子选出其他种群的 最优个体放入精华种群加以保存。精华种群不进行选择、交叉、变异等遗传操作，保证进化过程中各种群产生的最优个体不被破坏和丢失。同时，精华种群也是判断算法终止的依据。这里采用最优个体最少保持代数作为最终判断依据。这种判断充分利用了遗传算法在进化过程中的知识积累，较最大遗传代数判据更为合理。   <strong>问题描述</strong> 复杂二元函数求最值： <strong>max f(x,y) = 21.5 + xsin(4πx) + ysin(20πy)</strong> 图像生成代码：</p>
 <p>clear;</p>
 <p>[X,Y] = meshgrid(-10:0.355:10);</p>
 <p>Z = 21.5 + X.*sin(4*pi.*X) + Y.*sin(20*pi.*Y);</p>
@@ -469,7 +469,7 @@
 <p>适应度计算</p>
 <p>Ranking</p>
 <p>常用的基于秩的适应度计算</p>
-<p>  选择函数</p>
+<p>选择函数</p>
 <p>Select</p>
 <p>高级选择函数</p>
 <p>Sus</p>
@@ -484,7 +484,7 @@
 <p>变异算子</p>
 <p>Mut</p>
 <p>离散变异</p>
-<p>  <strong>移民算子</strong> 函数名为immigrant，函数的输入、输出参数如下：</p>
+<p><strong>移民算子</strong> 函数名为immigrant，函数的输入、输出参数如下：</p>
 <p>变量名</p>
 <p>类型</p>
 <p>意义</p>
@@ -525,7 +525,7 @@
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> \<span class="params">[MaxObjV,MaxChrom\]</span>=<span class="title">EliteInduvidual</span><span class="params">(Chrom,ObjV,MaxObjV,MaxChrom)</span></span></span><br><span class="line"><span class="comment">%% 人工选择算子</span></span><br><span class="line">MP=<span class="built_in">length</span>(Chrom);  <span class="comment">%种群数</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:MP</span><br><span class="line">    \[MaxO,maxI\]=<span class="built_in">max</span>(ObjV&#123;<span class="built_in">i</span>&#125;);   <span class="comment">%找出第i种群中最优个体以及编号</span></span><br><span class="line">    <span class="keyword">if</span> MaxO&gt;MaxObjV(<span class="built_in">i</span>) <span class="comment">%如果选择出来的最优个体的目标值大于当前种群最优的目标值</span></span><br><span class="line">        MaxObjV(<span class="built_in">i</span>)=MaxO;         <span class="comment">%记录各种群的精华个体</span></span><br><span class="line">        MaxChrom(<span class="built_in">i</span>,:)=Chrom&#123;<span class="built_in">i</span>&#125;(maxI,:);  <span class="comment">%记录各种群精华个体的编码</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
 <p><strong>目标函数</strong> 针对提出问题写出来的目标函数 代码：</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">obj</span>=<span class="title">ObjectFunction</span><span class="params">(X)</span></span></span><br><span class="line"><span class="comment">%% 待优化的目标函数</span></span><br><span class="line">col=<span class="built_in">size</span>(X,<span class="number">1</span>); <span class="comment">%得到个体个数</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:col <span class="comment">%计算种群每个个体对应的目标值</span></span><br><span class="line">    obj(<span class="built_in">i</span>,<span class="number">1</span>)=<span class="number">21.5</span>+X(<span class="built_in">i</span>,<span class="number">1</span>)\*<span class="built_in">sin</span>(<span class="number">4</span>\*<span class="built_in">pi</span>\*X(<span class="built_in">i</span>,<span class="number">1</span>))+X(<span class="built_in">i</span>,<span class="number">2</span>)\*<span class="built_in">sin</span>(<span class="number">20</span>\*<span class="built_in">pi</span>\*X(<span class="built_in">i</span>,<span class="number">2</span>));</span><br><span class="line"><span class="keyword">end</span> </span><br><span class="line"></span><br><span class="line">**MPGA：**</span><br><span class="line"></span><br><span class="line"><span class="comment">%% 2、多种群遗传算法</span></span><br><span class="line">clear;</span><br><span class="line">clc</span><br><span class="line">NIND=<span class="number">40</span>;               <span class="comment">%个体数目</span></span><br><span class="line">NVAR=<span class="number">2</span>;                <span class="comment">%变量的维数</span></span><br><span class="line">PRECI=<span class="number">20</span>;              <span class="comment">%变量的二进制位数</span></span><br><span class="line">GGAP=<span class="number">0.9</span>;              <span class="comment">%代沟</span></span><br><span class="line">MP=<span class="number">10</span>;                 <span class="comment">%种群数目</span></span><br><span class="line">FieldD=\[rep(PRECI,\[<span class="number">1</span>,NVAR\]);\[<span class="number">-3</span>,<span class="number">4.1</span>;<span class="number">12.1</span>,<span class="number">5.8</span>\];rep(\[<span class="number">1</span>;<span class="number">0</span>;<span class="number">1</span>;<span class="number">1</span>\],\[<span class="number">1</span>,NVAR\])\];  <span class="comment">%译码矩阵</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:MP</span><br><span class="line">    Chrom&#123;<span class="built_in">i</span>&#125;=crtbp(NIND, NVAR*PRECI);                       <span class="comment">%创建初始种群</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">pc=<span class="number">0.7</span>+(<span class="number">0.9</span><span class="number">-0.7</span>)*<span class="built_in">rand</span>(MP,<span class="number">1</span>);    <span class="comment">%在【0.7,0.9】范围i内随机产生交叉概率</span></span><br><span class="line">pm=<span class="number">0.001</span>+(<span class="number">0.05</span><span class="number">-0.001</span>)*<span class="built_in">rand</span>(MP,<span class="number">1</span>);  <span class="comment">%在【0.001,0.05】范围内随机产生变异概率</span></span><br><span class="line">gen=<span class="number">0</span>;  <span class="comment">%初始遗传代数</span></span><br><span class="line">gen0=<span class="number">0</span>; <span class="comment">%初始保持代数</span></span><br><span class="line">MAXGEN=<span class="number">10</span>;  <span class="comment">%最优个体最少保持代数</span></span><br><span class="line">maxY=<span class="number">0</span>; <span class="comment">%最优值</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:MP</span><br><span class="line">    ObjV&#123;<span class="built_in">i</span>&#125;=ObjectFunction(bs2rv(Chrom&#123;<span class="built_in">i</span>&#125;, FieldD));<span class="comment">%计算各初始种群个体的目标函数值</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">MaxObjV=<span class="built_in">zeros</span>(MP,<span class="number">1</span>);           <span class="comment">%记录精华种群</span></span><br><span class="line">MaxChrom=<span class="built_in">zeros</span>(MP,PRECI*NVAR); <span class="comment">%记录精华种群的编码</span></span><br><span class="line"><span class="comment">% 结束条件为如果进行MAXGEN+1次优秀的迭代 则结束循环（即每次得到的最优结果都比前面的值好）</span></span><br><span class="line"><span class="keyword">while</span> gen0&lt;=MAXGEN</span><br><span class="line">    gen=gen+<span class="number">1</span>;       <span class="comment">%遗传代数加1</span></span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:MP</span><br><span class="line">        FitnV&#123;<span class="built_in">i</span>&#125;=ranking(-ObjV&#123;<span class="built_in">i</span>&#125;);                      <span class="comment">% 各种群的适应度</span></span><br><span class="line">        SelCh&#123;<span class="built_in">i</span>&#125;=select(<span class="string">'sus'</span>, Chrom&#123;<span class="built_in">i</span>&#125;, FitnV&#123;<span class="built_in">i</span>&#125;,GGAP); <span class="comment">% 选择操作</span></span><br><span class="line">        SelCh&#123;<span class="built_in">i</span>&#125;=recombin(<span class="string">'xovsp'</span>,SelCh&#123;<span class="built_in">i</span>&#125;, pc(<span class="built_in">i</span>));      <span class="comment">% 交叉操作</span></span><br><span class="line">        SelCh&#123;<span class="built_in">i</span>&#125;=mut(SelCh&#123;<span class="built_in">i</span>&#125;,pm(<span class="built_in">i</span>));                    <span class="comment">% 变异操作</span></span><br><span class="line">        ObjVSel=ObjectFunction(bs2rv(SelCh&#123;<span class="built_in">i</span>&#125;, FieldD)); <span class="comment">% 计算子代目标函数值</span></span><br><span class="line">        \[Chrom&#123;<span class="built_in">i</span>&#125;,ObjV&#123;<span class="built_in">i</span>&#125;\]=reins(Chrom&#123;<span class="built_in">i</span>&#125;,SelCh&#123;<span class="built_in">i</span>&#125;,<span class="number">1</span>,<span class="number">1</span>,ObjV&#123;<span class="built_in">i</span>&#125;,ObjVSel);    <span class="comment">%重插入操作</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    \[Chrom,ObjV\]=immigrant(Chrom,ObjV);     <span class="comment">% 移民操作</span></span><br><span class="line">    \[MaxObjV,MaxChrom\]=EliteInduvidual(Chrom,ObjV,MaxObjV,MaxChrom);     <span class="comment">% 人工选择精华种群</span></span><br><span class="line">    YY(gen)=<span class="built_in">max</span>(MaxObjV);    <span class="comment">%找出精华种群中最优的个体</span></span><br><span class="line">    <span class="keyword">if</span> YY(gen)&gt;maxY   <span class="comment">%判断当前优化值是否与前一次优化值相同</span></span><br><span class="line">        maxY=YY(gen); <span class="comment">%更新最优值</span></span><br><span class="line">        gen0=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        gen0=gen0+<span class="number">1</span>; <span class="comment">%最优值保持次数加1</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="comment">%% 进化过程图</span></span><br><span class="line"><span class="built_in">plot</span>(<span class="number">1</span>:gen,YY);</span><br><span class="line">xlabel(<span class="string">'进化代数'</span>)</span><br><span class="line">ylabel(<span class="string">'最优解变化'</span>)</span><br><span class="line">title(<span class="string">'MPGA进化过程'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">%% 输出最优解</span></span><br><span class="line">\[Y,I\]=<span class="built_in">max</span>(MaxObjV);    <span class="comment">%找出精华种群中最优的个体</span></span><br><span class="line">X=(bs2rv(MaxChrom(I,:), FieldD));   <span class="comment">%最优个体的解码解</span></span><br><span class="line"><span class="built_in">disp</span>(\[<span class="string">'最优值为：'</span>,num2str(Y)\])</span><br><span class="line"><span class="built_in">disp</span>(\[<span class="string">'对应的自变量取值：'</span>,num2str(X)\])</span><br></pre></td></tr></table></figure>
-<p>结果： 最优值为：38.8503 对应的自变量取值：11.6255      5.72504 <img src="http://47.100.4.8/wp-content/uploads/2018/08/3-1.png" alt=""></p>
+<p>结果： 最优值为：38.8503 对应的自变量取值：11.6255      5.72504 <img src="http://47.100.4.8/wp-content/uploads/2018/08/3-1.png" alt=""></p>
 
       
     </div>
@@ -553,13 +553,13 @@
           
             <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
           
-            <a href="/tags/MatLab/" rel="tag"># MatLab</a>
-          
             <a href="/tags/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95/" rel="tag"># 遗传算法</a>
           
             <a href="/tags/%E5%A4%9A%E7%A7%8D%E7%BE%A4%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95/" rel="tag"># 多种群遗传算法</a>
           
             <a href="/tags/%E6%99%BA%E8%83%BD%E4%BC%98%E5%8C%96/" rel="tag"># 智能优化</a>
+          
+            <a href="/tags/MatLab/" rel="tag"># MatLab</a>
           
         </div>
       

@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="始めましょう！   依旧是学习笔记  咕咕~~  菜单栏使用以及图标应用具体形式如上： QAction可以操作菜单栏,工具栏,或自定义键盘快捷键  QIcon可以将图片添加到你想要放置的位置 创立一个QAction对象  QIcon设置图标 ‘**&amp;**名称’ 记住格式 exitAction &#x3D; QAction(QIcon(‘qwe.jpeg’),’&amp;Exit’,self) 注：">
+<meta name="description" content="始めましょう！   依旧是学习笔记  咕咕~~  ¶菜单栏使用以及图标应用 具体形式如上： QAction可以操作菜单栏,工具栏,或自定义键盘快捷键  QIcon可以将图片添加到你想要放置的位置 创立一个QAction对象  QIcon设置图标 **‘****&amp;**名称’ 记住格式 exitAction &#x3D; QAction(QIcon(‘qwe.jpeg’),’&amp;Exit’,se">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PyQt学习笔记（五）">
-<meta property="og:url" content="blog.strivezs.com/2018/03/20/pyqt-xue-xi-bi-ji-wu-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/03/20/pyqt-xue-xi-bi-ji-wu-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="始めましょう！   依旧是学习笔记  咕咕~~  菜单栏使用以及图标应用具体形式如上： QAction可以操作菜单栏,工具栏,或自定义键盘快捷键  QIcon可以将图片添加到你想要放置的位置 创立一个QAction对象  QIcon设置图标 ‘**&amp;**名称’ 记住格式 exitAction &#x3D; QAction(QIcon(‘qwe.jpeg’),’&amp;Exit’,self) 注：">
+<meta property="og:description" content="始めましょう！   依旧是学习笔记  咕咕~~  ¶菜单栏使用以及图标应用 具体形式如上： QAction可以操作菜单栏,工具栏,或自定义键盘快捷键  QIcon可以将图片添加到你想要放置的位置 创立一个QAction对象  QIcon设置图标 **‘****&amp;**名称’ 记住格式 exitAction &#x3D; QAction(QIcon(‘qwe.jpeg’),’&amp;Exit’,se">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180308122611.png">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180308123017.png">
@@ -124,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/03/20/pyqt-xue-xi-bi-ji-wu-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/03/20/pyqt-xue-xi-bi-ji-wu-1/"/>
 
 
 
@@ -326,7 +326,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/03/20/pyqt-xue-xi-bi-ji-wu-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/20/pyqt-xue-xi-bi-ji-wu-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -426,8 +426,9 @@
       
 
       
-        <p><img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180308122611.png" alt=""> <a href="https://translate.google.cn/#zh-CN/ja/%E6%88%91%E4%BB%AC%E5%BC%80%E5%A7%8B%E5%90%A7">始めましょう！</a>   依旧是学习笔记  咕咕~~ <img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180308123017.png" alt=""></p>
-<h5 id="菜单栏使用以及图标应用"><a href="#菜单栏使用以及图标应用" class="headerlink" title="菜单栏使用以及图标应用"></a>菜单栏使用以及图标应用</h5><p>具体形式如上： QAction可以操作菜单栏,工具栏,或自定义键盘快捷键  QIcon可以将图片添加到你想要放置的位置 创立一个QAction对象  QIcon设置图标 <strong>‘**</strong>&amp;<strong>**名称’</strong> 记住格式 exitAction = QAction(QIcon(‘qwe.jpeg’),’&amp;Exit’,self) 注：顺序不能更改   定义该操作的快捷键 exitAction.setShortcut(‘Ctrl+Q’)   绑定信息 创建一个鼠标指针悬停在该菜单项上时的提示 exitAction.setStatusTip(‘Exit application’)   当我们点击菜单的时候，调用qApp.quit,终止应用程序。 或者按Ctrl+Q exitAction.triggered.connect(qApp.quit)   <img src="http://47.100.4.8/wp-content/uploads/2018/03/%E5%95%8A%E5%AE%9E%E6%89%93%E5%AE%9E%E5%A4%A7%E5%A4%A7%E5%AD%A6%E5%9F%8E%E7%AB%99%E4%B8%8B%E8%BD%A6.png" alt="">     另一种设置一个图标的方式： 和上面例子的一样 exitAction = QAction(QIcon(‘qwe.jpeg’),’&amp;Exit’,self) exitAction.setShortcut(‘Ctrl+Q’) exitAction.triggered.connect(qApp.exit) 绑定快捷键  设置退出   创建一个简单的工具栏 toolbar为鼠标放置小提示 self.toolbar = self.addToolBar(‘Exit’) self.toolbar.addAction(exitAction) self.toolbar.addAction 连接事件 self.addToolBar(‘提示内容’)  添加提示内容,鼠标放到上面显示提示内容     QLCDNumber控件用于显示一个LCD数字。 它可以显示几乎任意大小的数字。可以显示十进制、十六进制、八进制或二进制数。很容易使用display()槽连接到数据源，这个槽可以被任何五个参数类型的数据源重载。 <img src="http://47.100.4.8/wp-content/uploads/2018/03/%E5%95%8A%E8%BE%93%E5%87%BA%E5%A4%A7%E6%B6%A6%E5%8F%91%E8%89%B2%E7%9A%84.png" alt=""> <a href="http://47.100.4.8/wp-content/uploads/2018/03/代码记录五.rar">代码记录五</a> End！ <img src="http://47.100.4.8/wp-content/uploads/2018/03/u26562914982410145144fm27gp0-240x300.jpg" alt=""></p>
+        <p><img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180308122611.png" alt=""> <a href="https://translate.google.cn/#zh-CN/ja/%E6%88%91%E4%BB%AC%E5%BC%80%E5%A7%8B%E5%90%A7">始めましょう！</a>   依旧是学习笔记  咕咕~~ <img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180308123017.png" alt=""></p>
+<h5 id="菜单栏使用以及图标应用"><a class="header-anchor" href="#菜单栏使用以及图标应用">¶</a>菜单栏使用以及图标应用</h5>
+<p>具体形式如上： QAction可以操作菜单栏,工具栏,或自定义键盘快捷键  QIcon可以将图片添加到你想要放置的位置 创立一个QAction对象  QIcon设置图标 **‘****&amp;**<strong>名称’</strong> 记住格式 exitAction = QAction(QIcon(‘qwe.jpeg’),’&amp;Exit’,self) 注：顺序不能更改   定义该操作的快捷键 exitAction.setShortcut(‘Ctrl+Q’)   绑定信息 创建一个鼠标指针悬停在该菜单项上时的提示 exitAction.setStatusTip(‘Exit application’)   当我们点击菜单的时候，调用qApp.quit,终止应用程序。 或者按Ctrl+Q exitAction.triggered.connect(qApp.quit)   <img src="http://47.100.4.8/wp-content/uploads/2018/03/%E5%95%8A%E5%AE%9E%E6%89%93%E5%AE%9E%E5%A4%A7%E5%A4%A7%E5%AD%A6%E5%9F%8E%E7%AB%99%E4%B8%8B%E8%BD%A6.png" alt="">     另一种设置一个图标的方式： 和上面例子的一样 exitAction = QAction(QIcon(‘qwe.jpeg’),’&amp;Exit’,self) exitAction.setShortcut(‘Ctrl+Q’) exitAction.triggered.connect(qApp.exit) 绑定快捷键  设置退出   创建一个简单的工具栏 toolbar为鼠标放置小提示 self.toolbar = self.addToolBar(‘Exit’) self.toolbar.addAction(exitAction) self.toolbar.addAction 连接事件 self.addToolBar(‘提示内容’)  添加提示内容,鼠标放到上面显示提示内容     QLCDNumber控件用于显示一个LCD数字。 它可以显示几乎任意大小的数字。可以显示十进制、十六进制、八进制或二进制数。很容易使用display()槽连接到数据源，这个槽可以被任何五个参数类型的数据源重载。 <img src="http://47.100.4.8/wp-content/uploads/2018/03/%E5%95%8A%E8%BE%93%E5%87%BA%E5%A4%A7%E6%B6%A6%E5%8F%91%E8%89%B2%E7%9A%84.png" alt=""> <a href="http://47.100.4.8/wp-content/uploads/2018/03/%E4%BB%A3%E7%A0%81%E8%AE%B0%E5%BD%95%E4%BA%94.rar">代码记录五</a> End！ <img src="http://47.100.4.8/wp-content/uploads/2018/03/u26562914982410145144fm27gp0-240x300.jpg" alt=""></p>
 
       
     </div>
@@ -625,7 +626,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#菜单栏使用以及图标应用"><span class="nav-number">1.</span> <span class="nav-text">菜单栏使用以及图标应用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#菜单栏使用以及图标应用"><span class="nav-number">1.</span> <span class="nav-text">¶菜单栏使用以及图标应用</span></a></li></ol></div>
             
 
           </div>

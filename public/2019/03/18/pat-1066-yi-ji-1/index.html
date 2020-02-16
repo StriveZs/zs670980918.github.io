@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="1066 图像过滤 （15 分) 原文地址 图像过滤是把图像中不重要的像素都染成背景色，使得重要部分被凸显出来。现给定一幅黑白图像，要求你将灰度值位于某指定区间内的所有像素颜色都用一种指定的颜色替换。 输入格式：输入在第一行给出一幅图像的分辨率，即两个正整数 M 和 N（0&lt;M,N≤500），另外是待过滤的灰度值区间端点 A 和 B（0≤A&lt;B≤255）、以及指定的替换灰度值。随后 M">
+<meta name="description" content="1066 图像过滤 （15 分) 原文地址 图像过滤是把图像中不重要的像素都染成背景色，使得重要部分被凸显出来。现给定一幅黑白图像，要求你将灰度值位于某指定区间内的所有像素颜色都用一种指定的颜色替换。 ¶输入格式： 输入在第一行给出一幅图像的分辨率，即两个正整数 M 和 N（0&lt;M,N≤500），另外是待过滤的灰度值区间端点 A 和 B（0≤A&lt;B≤255）、以及指定的替换灰度值。随后">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pat_1066（乙级）">
-<meta property="og:url" content="blog.strivezs.com/2019/03/18/pat-1066-yi-ji-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2019/03/18/pat-1066-yi-ji-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="1066 图像过滤 （15 分) 原文地址 图像过滤是把图像中不重要的像素都染成背景色，使得重要部分被凸显出来。现给定一幅黑白图像，要求你将灰度值位于某指定区间内的所有像素颜色都用一种指定的颜色替换。 输入格式：输入在第一行给出一幅图像的分辨率，即两个正整数 M 和 N（0&lt;M,N≤500），另外是待过滤的灰度值区间端点 A 和 B（0≤A&lt;B≤255）、以及指定的替换灰度值。随后 M">
+<meta property="og:description" content="1066 图像过滤 （15 分) 原文地址 图像过滤是把图像中不重要的像素都染成背景色，使得重要部分被凸显出来。现给定一幅黑白图像，要求你将灰度值位于某指定区间内的所有像素颜色都用一种指定的颜色替换。 ¶输入格式： 输入在第一行给出一幅图像的分辨率，即两个正整数 M 和 N（0&lt;M,N≤500），另外是待过滤的灰度值区间端点 A 和 B（0≤A&lt;B≤255）、以及指定的替换灰度值。随后">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-03-18T02:56:44.000Z">
 <meta property="article:modified_time" content="2019-03-18T02:56:44.000Z">
@@ -116,7 +116,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2019/03/18/pat-1066-yi-ji-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2019/03/18/pat-1066-yi-ji-1/"/>
 
 
 
@@ -318,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2019/03/18/pat-1066-yi-ji-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/03/18/pat-1066-yi-ji-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -429,16 +429,24 @@
       
 
       
-        <p>1066 图像过滤 （15 分) <a href="https://pintia.cn/problem-sets/994805260223102976/problems/994805266514558976">原文地址</a></p>
+        <p>1066 图像过滤 （15 分) <a href="https://pintia.cn/problem-sets/994805260223102976/problems/994805266514558976">原文地址</a></p>
 <p>图像过滤是把图像中不重要的像素都染成背景色，使得重要部分被凸显出来。现给定一幅黑白图像，要求你将灰度值位于某指定区间内的所有像素颜色都用一种指定的颜色替换。</p>
-<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入在第一行给出一幅图像的分辨率，即两个正整数 M 和 N（0&lt;M,N≤500），另外是待过滤的灰度值区间端点 A 和 B（0≤A&lt;B≤255）、以及指定的替换灰度值。随后 M 行，每行给出 N个像素点的灰度值，其间以空格分隔。所有灰度值都在 [0, 255] 区间内。</p>
-<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>输出按要求过滤后的图像。即输出 M 行，每行 N 个像素灰度值，每个灰度值占 3 位（例如黑色要显示为 <code>000</code>），其间以一个空格分隔。行首尾不得有多余空格。</p>
-<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><pre><code>3 5 100 150 0
+<h3 id="输入格式："><a class="header-anchor" href="#输入格式：">¶</a>输入格式：</h3>
+<p>输入在第一行给出一幅图像的分辨率，即两个正整数 M 和 N（0&lt;M,N≤500），另外是待过滤的灰度值区间端点 A 和 B（0≤A&lt;B≤255）、以及指定的替换灰度值。随后 M 行，每行给出 N个像素点的灰度值，其间以空格分隔。所有灰度值都在 [0, 255] 区间内。</p>
+<h3 id="输出格式："><a class="header-anchor" href="#输出格式：">¶</a>输出格式：</h3>
+<p>输出按要求过滤后的图像。即输出 M 行，每行 N 个像素灰度值，每个灰度值占 3 位（例如黑色要显示为 <code>000</code>），其间以一个空格分隔。行首尾不得有多余空格。</p>
+<h3 id="输入样例："><a class="header-anchor" href="#输入样例：">¶</a>输入样例：</h3>
+<pre><code>3 5 100 150 0
 3 189 254 101 119
 150 233 151 99 100
-88 123 149 0 255</code></pre><h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><pre><code>003 189 254 000 000
+88 123 149 0 255
+</code></pre>
+<h3 id="输出样例："><a class="header-anchor" href="#输出样例：">¶</a>输出样例：</h3>
+<pre><code>003 189 254 000 000
 000 233 151 099 000
-088 000 000 000 255</code></pre><p>代码：</p>
+088 000 000 000 255
+</code></pre>
+<p>代码：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//统计如果小于100则需要补零的个数</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">countZero</span><span class="params">(<span class="keyword">int</span> t)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(t - <span class="number">10</span> &lt; <span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> N,M,A,B,T;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;N&gt;&gt;M&gt;&gt;A&gt;&gt;B&gt;&gt;T;</span><br><span class="line">    <span class="keyword">int</span> pic\[N\]\[M\];</span><br><span class="line">    <span class="keyword">int</span> temp;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;M;j++)&#123;</span><br><span class="line">            <span class="built_in">cin</span>&gt;&gt;temp;</span><br><span class="line">            <span class="keyword">if</span>(temp&gt;=A&amp;&amp;temp&lt;=B)&#123;</span><br><span class="line">                pic\[i\]\[j\] = T;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                pic\[i\]\[j\] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;M;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(j != <span class="number">0</span>)&#123;</span><br><span class="line">                <span class="built_in">cout</span>&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(pic\[i\]\[j\] &lt; <span class="number">100</span>)&#123;</span><br><span class="line">                <span class="keyword">int</span> m = countZero(pic\[i\]\[j\]);</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> q=<span class="number">0</span>;q&lt;m;q++)&#123;</span><br><span class="line">                    <span class="built_in">cout</span>&lt;&lt;<span class="number">0</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="built_in">cout</span>&lt;&lt;pic\[i\]\[j\];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -632,7 +640,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例："><span class="nav-number">3.</span> <span class="nav-text">输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例："><span class="nav-number">4.</span> <span class="nav-text">输出样例：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">¶输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">¶输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例："><span class="nav-number">3.</span> <span class="nav-text">¶输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例："><span class="nav-number">4.</span> <span class="nav-text">¶输出样例：</span></a></li></ol></div>
             
 
           </div>

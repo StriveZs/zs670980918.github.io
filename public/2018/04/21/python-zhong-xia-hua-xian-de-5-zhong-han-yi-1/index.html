@@ -78,7 +78,7 @@
 <meta name="description" content="在Python中单下划线和双下划线之间有不同的区别，不仅是在代表的意思上不同，方法名称上也有不同的含义。 下面是五种下划线模式和命名：  单前导下划线：_var 单末尾下划线：var_ 双前导下划线：__var 双前导和末尾下划线：__var__ 单下划线：_  首先是单前导下划线： 当涉及到变量和方法名称时，单个下划线前缀有一个约定俗成的含义。 它是对程序员的一个提示 - 意味着Python一">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python中下划线的5种含义">
-<meta property="og:url" content="blog.strivezs.com/2018/04/21/python-zhong-xia-hua-xian-de-5-zhong-han-yi-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/04/21/python-zhong-xia-hua-xian-de-5-zhong-han-yi-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="在Python中单下划线和双下划线之间有不同的区别，不仅是在代表的意思上不同，方法名称上也有不同的含义。 下面是五种下划线模式和命名：  单前导下划线：_var 单末尾下划线：var_ 双前导下划线：__var 双前导和末尾下划线：__var__ 单下划线：_  首先是单前导下划线： 当涉及到变量和方法名称时，单个下划线前缀有一个约定俗成的含义。 它是对程序员的一个提示 - 意味着Python一">
 <meta property="og:locale" content="en_US">
@@ -129,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/04/21/python-zhong-xia-hua-xian-de-5-zhong-han-yi-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/04/21/python-zhong-xia-hua-xian-de-5-zhong-han-yi-1/"/>
 
 
 
@@ -331,7 +331,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/04/21/python-zhong-xia-hua-xian-de-5-zhong-han-yi-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/21/python-zhong-xia-hua-xian-de-5-zhong-han-yi-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -439,7 +439,7 @@
 <li>双前导和末尾下划线：__var__</li>
 <li>单下划线：_</li>
 </ul>
-<p>首先是单前导下划线： 当涉及到变量和方法名称时，单个下划线前缀有一个约定俗成的含义。 它是对程序员的一个提示 - 意味着Python一致认为它应该是什么意思，但程序的行为不受影响。 下划线前缀的含义是告知其他程序员：以单个下划线开头的变量或方法仅供内部使用。 该约定在PEP 8中有定义。 具体形式： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180421225434.png" alt="">)<img src="http://47.100.4.8/wp-content/uploads/2018/05/QQ%E5%9B%BE%E7%89%8720180421230818.png" alt=""> 接下来是单末尾下划线： 有时候，一个变量的最合适的名称已经被一个关键字所占用。 因此，像class或def这样的名称不能用作Python中的变量名称。 在这种情况下，你可以附加一个下划线来解决命名冲突： 具体来讲就是用来解决函数或者变量命名之间冲突的问题。 具体如下： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180421225647.png" alt="">)<img src="http://47.100.4.8/wp-content/uploads/2018/05/QQ%E5%9B%BE%E7%89%8720180421225434.png" alt=""> 然后是双前导下划线： 双下划线前缀会导致Python解释器重写属性名称，以避免子类中的命名冲突。 这也叫做名称修饰（name mangling） - 解释器更改变量的名称，以便在类被扩展的时候不容易产生冲突。 实质上就是对函数的的重载。 具体例子： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180421225647.png" alt="">)<img src="http://47.100.4.8/wp-content/uploads/2018/05/QQ%E5%9B%BE%E7%89%8720180421225647.png" alt=""> 上面的例子就是对__init__（）进行了重载 ，否则在调用该类时，解释器会默认使用自带的init（初始化）函数。 下面是系统自带的对象属性的列表： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180421230109.png" alt="">)<img src="http://47.100.4.8/wp-content/uploads/2018/05/QQ%E5%9B%BE%E7%89%8720180421230109.png" alt=""> 可以看到这上面出现了自己当初重载__init__中的变量：test_match,testmatch 这就是__双下划线的对对象属性的修改 接来下是双前导和末尾下划线： 一个名字同时以双下划线开始和结束，则不会应用名称修饰。由双下划线前缀和后缀包围的变量不会被Python解释器修改， 但是Python保留了有双前导和双末尾下划线的名称，用于特殊用途。   最后是单下划线_： 单个独立下划线是用作一个名字，来表示某个变量是临时的或无关紧要的。 这里的_i就是一个临时变量，表示的是一个不关心的变量名称任意。 这个含义只是“依照约定”，并不会在Python解释器中触发特殊的行为。 单个下划线仅仅是一个有效的变量名称，会有这个用途而已。   总结：一张图解释一切！ <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180421230940.png" alt="">)<img src="http://47.100.4.8/wp-content/uploads/2018/05/QQ%E5%9B%BE%E7%89%8720180421230940.png" alt=""></p>
+<p>首先是单前导下划线： 当涉及到变量和方法名称时，单个下划线前缀有一个约定俗成的含义。 它是对程序员的一个提示 - 意味着Python一致认为它应该是什么意思，但程序的行为不受影响。 下划线前缀的含义是告知其他程序员：以单个下划线开头的变量或方法仅供内部使用。 该约定在PEP 8中有定义。 具体形式： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180421225434.png" alt=""><img src="http://47.100.4.8/wp-content/uploads/2018/05/QQ%E5%9B%BE%E7%89%8720180421230818.png" alt=""> 接下来是单末尾下划线： 有时候，一个变量的最合适的名称已经被一个关键字所占用。 因此，像class或def这样的名称不能用作Python中的变量名称。 在这种情况下，你可以附加一个下划线来解决命名冲突： 具体来讲就是用来解决函数或者变量命名之间冲突的问题。 具体如下： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180421225647.png" alt=""><img src="http://47.100.4.8/wp-content/uploads/2018/05/QQ%E5%9B%BE%E7%89%8720180421225434.png" alt=""> 然后是双前导下划线： 双下划线前缀会导致Python解释器重写属性名称，以避免子类中的命名冲突。 这也叫做名称修饰（name mangling） - 解释器更改变量的名称，以便在类被扩展的时候不容易产生冲突。 实质上就是对函数的的重载。 具体例子： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180421225647.png" alt=""><img src="http://47.100.4.8/wp-content/uploads/2018/05/QQ%E5%9B%BE%E7%89%8720180421225647.png" alt=""> 上面的例子就是对__init__（）进行了重载 ，否则在调用该类时，解释器会默认使用自带的init（初始化）函数。 下面是系统自带的对象属性的列表： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180421230109.png" alt=""><img src="http://47.100.4.8/wp-content/uploads/2018/05/QQ%E5%9B%BE%E7%89%8720180421230109.png" alt=""> 可以看到这上面出现了自己当初重载__init__中的变量：test_match,testmatch 这就是__双下划线的对对象属性的修改 接来下是双前导和末尾下划线： 一个名字同时以双下划线开始和结束，则不会应用名称修饰。由双下划线前缀和后缀包围的变量不会被Python解释器修改， 但是Python保留了有双前导和双末尾下划线的名称，用于特殊用途。   最后是单下划线_： 单个独立下划线是用作一个名字，来表示某个变量是临时的或无关紧要的。 这里的_i就是一个临时变量，表示的是一个不关心的变量名称任意。 这个含义只是“依照约定”，并不会在Python解释器中触发特殊的行为。 单个下划线仅仅是一个有效的变量名称，会有这个用途而已。   总结：一张图解释一切！ <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180421230940.png" alt=""><img src="http://47.100.4.8/wp-content/uploads/2018/05/QQ%E5%9B%BE%E7%89%8720180421230940.png" alt=""></p>
 
       
     </div>

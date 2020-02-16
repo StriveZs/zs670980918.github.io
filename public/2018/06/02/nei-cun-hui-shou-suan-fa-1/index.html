@@ -78,7 +78,7 @@
 <meta name="description" content="内存回收算法： 首先是输入你需要归还空间的地址start以及长度length，然后计算出空间的释放区下部地址len，然后循环遍历整个空间说明表，分为以下四种情况：  释放区下部邻接空间区 释放区上部邻接空闲区 释放区上下部都邻接空闲区 释放区上下部均不邻接空闲区  操作： 对于情况①，更新空间说明表最后一个元素的所有数据即可。 对于情况②，更新空间说明表第一个元素所有数据即可。 对于情况③，更新">
 <meta property="og:type" content="article">
 <meta property="og:title" content="内存回收算法">
-<meta property="og:url" content="blog.strivezs.com/2018/06/02/nei-cun-hui-shou-suan-fa-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/06/02/nei-cun-hui-shou-suan-fa-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="内存回收算法： 首先是输入你需要归还空间的地址start以及长度length，然后计算出空间的释放区下部地址len，然后循环遍历整个空间说明表，分为以下四种情况：  释放区下部邻接空间区 释放区上部邻接空闲区 释放区上下部都邻接空闲区 释放区上下部均不邻接空闲区  操作： 对于情况①，更新空间说明表最后一个元素的所有数据即可。 对于情况②，更新空间说明表第一个元素所有数据即可。 对于情况③，更新">
 <meta property="og:locale" content="en_US">
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/06/02/nei-cun-hui-shou-suan-fa-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/06/02/nei-cun-hui-shou-suan-fa-1/"/>
 
 
 
@@ -320,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/06/02/nei-cun-hui-shou-suan-fa-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/06/02/nei-cun-hui-shou-suan-fa-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -439,12 +439,84 @@
 <li>释放区上下部均不邻接空闲区</li>
 </ul>
 <p>操作： 对于情况①，更新空间说明表最后一个元素的所有数据即可。 对于情况②，更新空间说明表第一个元素所有数据即可。 对于情况③，更新空间说明表所要释放位置前后元素的所有数据，并且将他们合并为一个。 对于情况④，重新创建一个模块，然后插入进队列即可。 代码：</p>
-<p>#include<iostream><br>#include<deque></p>
+<p>#include<iostream><br>
+#include<deque></p>
 <p>using namespace std;</p>
 <p>#define numUse 100  //定义空闲区说明表最多有十个可用存储空间</p>
-<p>struct Mode{  //定义空闲区说明表<br>    int Start;  //起始地址<br>    int Length;  //长度<br>    char State;  //状态 R为未分配 F为以分配<br>}mode[numUse];</p>
-<p>deque<Mode> Q;  //创建一个空的deque队列用来存储可能空闲空间<br>deque<Mode>::iterator pos;  //创建迭代器</p>
-<p>//回收存储空间算法<br>void HuiShou()<br>{<br>    cout&lt;&lt;”Message：请根据空间空闲表来写入合适回收空间！”&lt;&lt;endl;<br>    int start1=0; //初始化<br>    int length1=0;  //初始化<br>    cout&lt;&lt;”请输入起始地址：”;<br>    cin&gt;&gt;start1;<br>    cout&lt;&lt;”请输入长度：”;<br>    cin&gt;&gt;length1;<br>    int len=start1+length1;  //释放区下部<br>    if(len&lt;=(<em>(Q.begin())).Start||start1&gt;=((</em>(Q.end()-1)).Start+(<em>(Q.end()-1)).Length))<br>    {<br>        if(len&lt;(</em>(Q.begin())).Start)<br>        {<br>            mode[n+q].Length=length1;<br>            mode[n+q].Start=start1;<br>            mode[n+q].State=’R’;<br>            Q.push_front(mode[n+q]);<br>            q++;<br>        }<br>        else if(len==(<em>(Q.begin())).Start)<br>        {<br>            (</em>(Q.begin())).Start=start1;<br>            (<em>(Q.begin())).Length+=length1;<br>        }<br>        else if(start1==((</em>(Q.end()-1)).Start+(<em>(Q.end()-1)).Length))<br>        {<br>            (</em>(Q.end()-1)).Length+=length1;<br>        }<br>        else if(start1&gt;((<em>(Q.end()-1)).Start+(</em>(Q.end()-1)).Length))<br>        {<br>            mode[n+q].Length=length1;<br>            mode[n+q].Start=start1;<br>            mode[n+q].State=’R’;<br>            Q.push_back(mode[n+q]);<br>            q++;<br>        }<br>    }<br>    else{<br>    for(pos=Q.begin();pos!=Q.end();pos++)<br>    {<br>        if(len==(<em>(pos+1)).Start&amp;&amp;start1==(*pos).Start+(*pos).Length)  //释放区上下部都与空间区邻接<br>        {<br>            (*pos).Length+=(\</em>(pos+1)).Length+length1;<br>            Q.erase((pos+1));<br>        }<br>        else if((len&lt;(<em>(pos+1)).Start)&amp;&amp;(start1&gt;(*pos).Start+(*pos).Length))<br>        {<br>            mode[n+q].Start=start1;<br>            mode[n+q].Length=length1;<br>            mode[n+q].State=’R’;<br>            Q.insert(pos+1,mode[n+q]);<br>            q++;<br>        }<br>        else if((len&lt;(</em>(pos+1)).Start)&amp;&amp;(start1==(*pos).Start+(*pos).Length))<br>        {<br>            (*pos).Length+=(*(pos+1)).Length+length1;<br>        }<br>        else if((len==(<em>(pos+1)).Start)&amp;&amp;(start1&gt;(*pos).Start+(*pos).Length))<br>        {<br>            (</em>(pos+1)).Start = start1;<br>            (*(pos+1)).Length += length1;<br>        }<br>    }<br>    }<br>}</p>
+<p>struct Mode{  //定义空闲区说明表<br>
+int Start;  //起始地址<br>
+int Length;  //长度<br>
+char State;  //状态 R为未分配 F为以分配<br>
+}mode[numUse];</p>
+<p>deque<Mode> Q;  //创建一个空的deque队列用来存储可能空闲空间<br>
+deque<Mode>::iterator pos;  //创建迭代器</p>
+<p>//回收存储空间算法<br>
+void HuiShou()<br>
+{<br>
+cout&lt;&lt;“Message：请根据空间空闲表来写入合适回收空间！”&lt;&lt;endl;<br>
+int start1=0; //初始化<br>
+int length1=0;  //初始化<br>
+cout&lt;&lt;“请输入起始地址：”;<br>
+cin&gt;&gt;start1;<br>
+cout&lt;&lt;“请输入长度：”;<br>
+cin&gt;&gt;length1;<br>
+int len=start1+length1;  //释放区下部<br>
+if(len&lt;=(<em>(Q.begin())).Start||start1&gt;=((</em>(Q.end()-1)).Start+(<em>(Q.end()-1)).Length))<br>
+{<br>
+if(len&lt;(</em>(Q.begin())).Start)<br>
+{<br>
+mode[n+q].Length=length1;<br>
+mode[n+q].Start=start1;<br>
+mode[n+q].State=‘R’;<br>
+Q.push_front(mode[n+q]);<br>
+q++;<br>
+}<br>
+else if(len==(<em>(Q.begin())).Start)<br>
+{<br>
+(</em>(Q.begin())).Start=start1;<br>
+(<em>(Q.begin())).Length+=length1;<br>
+}<br>
+else if(start1==((</em>(Q.end()-1)).Start+(<em>(Q.end()-1)).Length))<br>
+{<br>
+(</em>(Q.end()-1)).Length+=length1;<br>
+}<br>
+else if(start1&gt;((<em>(Q.end()-1)).Start+(</em>(Q.end()-1)).Length))<br>
+{<br>
+mode[n+q].Length=length1;<br>
+mode[n+q].Start=start1;<br>
+mode[n+q].State=‘R’;<br>
+Q.push_back(mode[n+q]);<br>
+q++;<br>
+}<br>
+}<br>
+else{<br>
+for(pos=Q.begin();pos!=Q.end();pos++)<br>
+{<br>
+if(len==(<em>(pos+1)).Start&amp;&amp;start1==(*pos).Start+(*pos).Length)  //释放区上下部都与空间区邻接<br>
+{<br>
+(*pos).Length+=(*(pos+1)).Length+length1;<br>
+Q.erase((pos+1));<br>
+}<br>
+else if((len&lt;(</em>(pos+1)).Start)&amp;&amp;(start1&gt;(*pos).Start+(*pos).Length))<br>
+{<br>
+mode[n+q].Start=start1;<br>
+mode[n+q].Length=length1;<br>
+mode[n+q].State=‘R’;<br>
+Q.insert(pos+1,mode[n+q]);<br>
+q++;<br>
+}<br>
+else if((len&lt;(<em>(pos+1)).Start)&amp;&amp;(start1==(*pos).Start+(*pos).Length))<br>
+{<br>
+(*pos).Length+=(*(pos+1)).Length+length1;<br>
+}<br>
+else if((len==(</em>(pos+1)).Start)&amp;&amp;(start1&gt;(*pos).Start+(*pos).Length))<br>
+{<br>
+(<em>(pos+1)).Start = start1;<br>
+(</em>(pos+1)).Length += length1;<br>
+}<br>
+}<br>
+}<br>
+}</p>
 <p>结果： <img src="http://47.100.4.8/wp-content/uploads/2018/06/123.png" alt=""></p>
 
       

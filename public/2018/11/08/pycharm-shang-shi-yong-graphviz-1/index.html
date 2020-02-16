@@ -78,7 +78,7 @@
 <meta name="description" content="由于最近需要用到Graphviz去画图，所以今天就介绍了自己是如何在pycharm上使用graphviz进行画图的。 环境配置 1.首先先去官网上下载安装程序，地址为：http:&#x2F;&#x2F;www.graphviz.org&#x2F;Download_windows.php  2.接下来打开你的PyCharm在setting中安装Graphviz的包，或者你可以直接在命令行里面使用pip进行安装，再不行直接下载轮子">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PyCharm上使用Graphviz">
-<meta property="og:url" content="blog.strivezs.com/2018/11/08/pycharm-shang-shi-yong-graphviz-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/11/08/pycharm-shang-shi-yong-graphviz-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="由于最近需要用到Graphviz去画图，所以今天就介绍了自己是如何在pycharm上使用graphviz进行画图的。 环境配置 1.首先先去官网上下载安装程序，地址为：http:&#x2F;&#x2F;www.graphviz.org&#x2F;Download_windows.php  2.接下来打开你的PyCharm在setting中安装Graphviz的包，或者你可以直接在命令行里面使用pip进行安装，再不行直接下载轮子">
 <meta property="og:locale" content="en_US">
@@ -123,7 +123,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/11/08/pycharm-shang-shi-yong-graphviz-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/11/08/pycharm-shang-shi-yong-graphviz-1/"/>
 
 
 
@@ -325,7 +325,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/11/08/pycharm-shang-shi-yong-graphviz-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/11/08/pycharm-shang-shi-yong-graphviz-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -436,7 +436,7 @@
       
 
       
-        <p><strong>由于最近需要用到Graphviz去画图，所以今天就介绍了自己是如何在pycharm上使用graphviz进行画图的。</strong> <strong>环境配置</strong> 1.首先先去官网上下载安装程序，地址为：<a href="http://www.graphviz.org/Download_windows.php">http://www.graphviz.org/Download_windows.php</a> <img src="http://47.100.4.8/wp-content/uploads/2018/11/QQ%E5%9B%BE%E7%89%8720181108174954.png" alt=""> 2.接下来打开你的PyCharm在setting中安装Graphviz的包，或者你可以直接在命令行里面使用pip进行安装，再不行直接下载轮子手动安装吧。 <img src="http://47.100.4.8/wp-content/uploads/2018/11/QQ%E5%9B%BE%E7%89%8720181108175229.png" alt=""> 3.接下来需要配置一下系统的环境变量（在Path中添加路径） 首先是配置用户的环境变量<img src="http://47.100.4.8/wp-content/uploads/2018/11/QQ%E5%9B%BE%E7%89%8720181108175508.png" alt=""> 然后是修改系统的环境变量<img src="http://47.100.4.8/wp-content/uploads/2018/11/QQ%E5%9B%BE%E7%89%8720181108175558.png" alt=""> 4.配置完成之后重启PyCharm即可使用了呀。   具体使用例子：</p>
+        <p><strong>由于最近需要用到Graphviz去画图，所以今天就介绍了自己是如何在pycharm上使用graphviz进行画图的。</strong> <strong>环境配置</strong> 1.首先先去官网上下载安装程序，地址为：<a href="http://www.graphviz.org/Download_windows.php">http://www.graphviz.org/Download_windows.php</a> <img src="http://47.100.4.8/wp-content/uploads/2018/11/QQ%E5%9B%BE%E7%89%8720181108174954.png" alt=""> 2.接下来打开你的PyCharm在setting中安装Graphviz的包，或者你可以直接在命令行里面使用pip进行安装，再不行直接下载轮子手动安装吧。 <img src="http://47.100.4.8/wp-content/uploads/2018/11/QQ%E5%9B%BE%E7%89%8720181108175229.png" alt=""> 3.接下来需要配置一下系统的环境变量（在Path中添加路径） 首先是配置用户的环境变量<img src="http://47.100.4.8/wp-content/uploads/2018/11/QQ%E5%9B%BE%E7%89%8720181108175508.png" alt=""> 然后是修改系统的环境变量<img src="http://47.100.4.8/wp-content/uploads/2018/11/QQ%E5%9B%BE%E7%89%8720181108175558.png" alt=""> 4.配置完成之后重启PyCharm即可使用了呀。   具体使用例子：</p>
 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">g = Digraph(<span class="string">'test'</span>)</span><br><span class="line">g.node(<span class="attribute">name</span>=<span class="string">'a'</span>, <span class="attribute">color</span>=<span class="string">'red'</span>) #设置点</span><br><span class="line">g.node(<span class="attribute">name</span>=<span class="string">'b'</span>, <span class="attribute">color</span>=<span class="string">'red'</span>)</span><br><span class="line">g.edge(<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>,<span class="attribute">color</span>=<span class="string">'blue'</span>)  #c为边的名字 ab分别为起始点和终止点</span><br><span class="line">g.view()</span><br></pre></td></tr></table></figure>
 <p>运行之后的结果： <img src="http://47.100.4.8/wp-content/uploads/2018/11/QQ%E5%9B%BE%E7%89%8720181108180000.png" alt=""></p>
 

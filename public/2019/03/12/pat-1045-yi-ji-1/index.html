@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="1045 快速排序 （25 分） 原文地址 著名的快速排序算法里有一个经典的划分过程：我们通常采用某种方法取一个元素作为主元，通过交换，把比主元小的元素放到它的左边，比主元大的元素放到它的右边。 给定划分后的 N 个互不相同的正整数的排列，请问有多少个元素可能是划分前选取的主元？ 例如给定 $N &#x3D; 5$, 排列是1、3、2、4、5。则：  1 的左边没有元素，右边的元素都比它大，所以它可能是主元">
+<meta name="description" content="1045 快速排序 （25 分） 原文地址 著名的快速排序算法里有一个经典的划分过程：我们通常采用某种方法取一个元素作为主元，通过交换，把比主元小的元素放到它的左边，比主元大的元素放到它的右边。 给定划分后的 N 个互不相同的正整数的排列，请问有多少个元素可能是划分前选取的主元？ 例如给定 $N &#x3D; 5$, 排列是1、3、2、4、5。则：  1 的左边没有元素，右边的元素都比它大，所以它可能是主元">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pat_1045（乙级）">
-<meta property="og:url" content="blog.strivezs.com/2019/03/12/pat-1045-yi-ji-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2019/03/12/pat-1045-yi-ji-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="1045 快速排序 （25 分） 原文地址 著名的快速排序算法里有一个经典的划分过程：我们通常采用某种方法取一个元素作为主元，通过交换，把比主元小的元素放到它的左边，比主元大的元素放到它的右边。 给定划分后的 N 个互不相同的正整数的排列，请问有多少个元素可能是划分前选取的主元？ 例如给定 $N &#x3D; 5$, 排列是1、3、2、4、5。则：  1 的左边没有元素，右边的元素都比它大，所以它可能是主元">
+<meta property="og:description" content="1045 快速排序 （25 分） 原文地址 著名的快速排序算法里有一个经典的划分过程：我们通常采用某种方法取一个元素作为主元，通过交换，把比主元小的元素放到它的左边，比主元大的元素放到它的右边。 给定划分后的 N 个互不相同的正整数的排列，请问有多少个元素可能是划分前选取的主元？ 例如给定 $N &#x3D; 5$, 排列是1、3、2、4、5。则：  1 的左边没有元素，右边的元素都比它大，所以它可能是主元">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-03-12T10:23:06.000Z">
 <meta property="article:modified_time" content="2019-03-12T10:23:06.000Z">
@@ -116,7 +116,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2019/03/12/pat-1045-yi-ji-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2019/03/12/pat-1045-yi-ji-1/"/>
 
 
 
@@ -318,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2019/03/12/pat-1045-yi-ji-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/03/12/pat-1045-yi-ji-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -429,8 +429,8 @@
       
 
       
-        <p>1045 快速排序 （25 分） <a href="https://pintia.cn/problem-sets/994805260223102976/problems/994805278589960192">原文地址</a></p>
-<p>著名的快速排序算法里有一个经典的划分过程：我们通常采用某种方法取一个元素作为主元，通过交换，把比主元小的元素放到它的左边，比主元大的元素放到它的右边。 给定划分后的 N 个互不相同的正整数的排列，请问有多少个元素可能是划分前选取的主元？ 例如给定 $N = 5$, 排列是1、3、2、4、5。则：</p>
+        <p>1045 快速排序 （25 分） <a href="https://pintia.cn/problem-sets/994805260223102976/problems/994805278589960192">原文地址</a></p>
+<p>著名的快速排序算法里有一个经典的划分过程：我们通常采用某种方法取一个元素作为主元，通过交换，把比主元小的元素放到它的左边，比主元大的元素放到它的右边。 给定划分后的 N 个互不相同的正整数的排列，请问有多少个元素可能是划分前选取的主元？ 例如给定 $N = 5$, 排列是1、3、2、4、5。则：</p>
 <ul>
 <li>1 的左边没有元素，右边的元素都比它大，所以它可能是主元；</li>
 <li>尽管 3 的左边元素都比它小，但其右边的 2 比它小，所以它不能是主元；</li>
@@ -438,11 +438,19 @@
 <li>类似原因，4 和 5 都可能是主元。</li>
 </ul>
 <p>因此，有 3 个元素可能是主元。</p>
-<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入在第 1 行中给出一个正整数 N（≤10​5​​）； 第 2 行是空格分隔的 N 个不同的正整数，每个数不超过 10​9​​。</p>
-<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>在第 1 行中输出有可能是主元的元素个数；在第 2 行中按递增顺序输出这些元素，其间以 1 个空格分隔，行首尾不得有多余空格。</p>
-<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><pre><code>5
-1 3 2 4 5</code></pre><h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><pre><code>3
-1 4 5</code></pre><p>代码：</p>
+<h3 id="输入格式："><a class="header-anchor" href="#输入格式：">¶</a>输入格式：</h3>
+<p>输入在第 1 行中给出一个正整数 N（≤10​5​​）； 第 2 行是空格分隔的 N 个不同的正整数，每个数不超过 10​9​​。</p>
+<h3 id="输出格式："><a class="header-anchor" href="#输出格式：">¶</a>输出格式：</h3>
+<p>在第 1 行中输出有可能是主元的元素个数；在第 2 行中按递增顺序输出这些元素，其间以 1 个空格分隔，行首尾不得有多余空格。</p>
+<h3 id="输入样例："><a class="header-anchor" href="#输入样例：">¶</a>输入样例：</h3>
+<pre><code>5
+1 3 2 4 5
+</code></pre>
+<h3 id="输出样例："><a class="header-anchor" href="#输出样例：">¶</a>输出样例：</h3>
+<pre><code>3
+1 4 5
+</code></pre>
+<p>代码：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="comment">//思路：将数组排序，排序后的结果和原来的数组比较如果相同位置的数字相同也是不会小于之前（包含自己）的最大值 则为主元</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a &lt; b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">int</span> len,sum=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;len;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">int</span> num\[len\],goal\[len\],result\[len\];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">long</span> <span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;num\[i\];</span><br><span class="line">        goal\[i\] = num\[i\];</span><br><span class="line">    &#125;</span><br><span class="line">    sort(num,num+len,cmp);</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">int</span> maxx = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">long</span> <span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(goal\[i\] &gt; maxx)&#123;</span><br><span class="line">            maxx = goal\[i\];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(goal\[i\] == num\[i\] &amp;&amp; num\[i\] == maxx)&#123;</span><br><span class="line">            result\[sum\] = num\[i\];</span><br><span class="line">            sum++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;sum&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">long</span> <span class="keyword">int</span> i=<span class="number">0</span>;i&lt;sum;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i == sum<span class="number">-1</span>)&#123;</span><br><span class="line">            <span class="built_in">cout</span>&lt;&lt;result\[i\];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="built_in">cout</span>&lt;&lt;result\[i\]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -636,7 +644,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例："><span class="nav-number">3.</span> <span class="nav-text">输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例："><span class="nav-number">4.</span> <span class="nav-text">输出样例：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">¶输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">¶输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例："><span class="nav-number">3.</span> <span class="nav-text">¶输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例："><span class="nav-number">4.</span> <span class="nav-text">¶输出样例：</span></a></li></ol></div>
             
 
           </div>

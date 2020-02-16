@@ -78,7 +78,7 @@
 <meta name="description" content="今天来介绍一下SQLServer 如何将Windwos身份验证登陆转为混合验证登陆。 为什么要进行这个设置呢？在对数据库进行操作时可以通过用户名和密码来连接数据库。 首先你先用Windwos登陆验证登陆  然后右键服务器点击属性  在安全性一栏中将服务器身份验证改为SQL Server和Windwos身份验证模式  接下来在安全性登录名你会发现sa上面是有一个红色的叉  右键sa属性在状态一栏中">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQLServerWindows用户登陆转为混合登陆">
-<meta property="og:url" content="blog.strivezs.com/2018/07/05/sqlserversetting-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/07/05/sqlserversetting-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="今天来介绍一下SQLServer 如何将Windwos身份验证登陆转为混合验证登陆。 为什么要进行这个设置呢？在对数据库进行操作时可以通过用户名和密码来连接数据库。 首先你先用Windwos登陆验证登陆  然后右键服务器点击属性  在安全性一栏中将服务器身份验证改为SQL Server和Windwos身份验证模式  接下来在安全性登录名你会发现sa上面是有一个红色的叉  右键sa属性在状态一栏中">
 <meta property="og:locale" content="en_US">
@@ -125,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/07/05/sqlserversetting-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/07/05/sqlserversetting-1/"/>
 
 
 
@@ -327,7 +327,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/07/05/sqlserversetting-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/07/05/sqlserversetting-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -438,7 +438,7 @@
       
 
       
-        <p><img src="http://47.100.4.8/wp-content/uploads/2018/06/QQ%E5%9B%BE%E7%89%8720180621230739.png" alt=""> <strong>今天来介绍一下SQLServer 如何将Windwos身份验证登陆转为混合验证登陆</strong>。 为什么要进行这个设置呢？在对数据库进行操作时可以通过用户名和密码来连接数据库。 首先你先用Windwos登陆验证登陆 <img src="http://47.100.4.8/wp-content/uploads/2018/07/1-2.png" alt=""> 然后右键服务器点击属性 <img src="http://47.100.4.8/wp-content/uploads/2018/07/2.png" alt=""> 在安全性一栏中将服务器身份验证改为SQL Server和Windwos身份验证模式 <img src="http://47.100.4.8/wp-content/uploads/2018/07/3.png" alt=""> 接下来在安全性登录名你会发现sa上面是有一个红色的叉 <img src="http://47.100.4.8/wp-content/uploads/2018/07/4.png" alt=""> 右键sa属性在状态一栏中将登录名启用 <img src="http://47.100.4.8/wp-content/uploads/2018/07/5.png" alt=""> 然后在常规里面随便设置一个自己能记住的密码。 接下来新建一个查询将如下语句执行 ALTER LOGIN sa ENABLE; GO ALTER LOGIN sa WITH PASSWORD = ‘<enterStrongPasswordHere>‘; 执行成功之后重新启动一下服务器 <img src="http://47.100.4.8/wp-content/uploads/2018/07/6.png" alt=""> 启动完成后断开连接，重新登录在身份验证一栏中选择SQLServer身份验证，用户名为sa密码为你之前设置的密码。 单击连接即可登陆成功</p>
+        <p><img src="http://47.100.4.8/wp-content/uploads/2018/06/QQ%E5%9B%BE%E7%89%8720180621230739.png" alt=""> <strong>今天来介绍一下SQLServer 如何将Windwos身份验证登陆转为混合验证登陆</strong>。 为什么要进行这个设置呢？在对数据库进行操作时可以通过用户名和密码来连接数据库。 首先你先用Windwos登陆验证登陆 <img src="http://47.100.4.8/wp-content/uploads/2018/07/1-2.png" alt=""> 然后右键服务器点击属性 <img src="http://47.100.4.8/wp-content/uploads/2018/07/2.png" alt=""> 在安全性一栏中将服务器身份验证改为SQL Server和Windwos身份验证模式 <img src="http://47.100.4.8/wp-content/uploads/2018/07/3.png" alt=""> 接下来在安全性登录名你会发现sa上面是有一个红色的叉 <img src="http://47.100.4.8/wp-content/uploads/2018/07/4.png" alt=""> 右键sa属性在状态一栏中将登录名启用 <img src="http://47.100.4.8/wp-content/uploads/2018/07/5.png" alt=""> 然后在常规里面随便设置一个自己能记住的密码。 接下来新建一个查询将如下语句执行 ALTER LOGIN sa ENABLE; GO ALTER LOGIN sa WITH PASSWORD = ‘<enterStrongPasswordHere>’; 执行成功之后重新启动一下服务器 <img src="http://47.100.4.8/wp-content/uploads/2018/07/6.png" alt=""> 启动完成后断开连接，重新登录在身份验证一栏中选择SQLServer身份验证，用户名为sa密码为你之前设置的密码。 单击连接即可登陆成功</p>
 
       
     </div>

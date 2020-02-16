@@ -78,7 +78,7 @@
 <meta name="description" content="通过使用SQL Sever 导入excel表格数据： 步骤： 1.通过任务选项中的导入数据进行导入  2.选择你想要导入的数据：  3.选择你本地的数据库 并输入需要的输入的数据  4.选择对应表进行数据导入：  这里需要注意的是左侧一栏为源文件可导入的表，右侧一栏是导入你自己创建表中。 5.之后就一直下一步即可创建成功。  需要注意的是：在导入数据之前要记得先创建文件中对应的表以及数据要求 还">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据库 Excel文件导入&amp;Select语句的基础操作">
-<meta property="og:url" content="blog.strivezs.com/2018/05/01/shu-ju-ku-excel-wen-jian-dao-ru-select-yu-ju-de-ji-chu-cao-zuo-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/05/01/shu-ju-ku-excel-wen-jian-dao-ru-select-yu-ju-de-ji-chu-cao-zuo-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="通过使用SQL Sever 导入excel表格数据： 步骤： 1.通过任务选项中的导入数据进行导入  2.选择你想要导入的数据：  3.选择你本地的数据库 并输入需要的输入的数据  4.选择对应表进行数据导入：  这里需要注意的是左侧一栏为源文件可导入的表，右侧一栏是导入你自己创建表中。 5.之后就一直下一步即可创建成功。  需要注意的是：在导入数据之前要记得先创建文件中对应的表以及数据要求 还">
 <meta property="og:locale" content="en_US">
@@ -89,6 +89,7 @@
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/05/13241.png">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/05/852.png">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/05/9636.png">
+<meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/05/8.png">
 <meta property="article:published_time" content="2018-05-01T05:12:12.000Z">
 <meta property="article:modified_time" content="2018-05-01T05:12:12.000Z">
 <meta property="article:author" content="StriveZs">
@@ -126,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/05/01/shu-ju-ku-excel-wen-jian-dao-ru-select-yu-ju-de-ji-chu-cao-zuo-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/05/01/shu-ju-ku-excel-wen-jian-dao-ru-select-yu-ju-de-ji-chu-cao-zuo-1/"/>
 
 
 
@@ -328,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/05/01/shu-ju-ku-excel-wen-jian-dao-ru-select-yu-ju-de-ji-chu-cao-zuo-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/01/shu-ju-ku-excel-wen-jian-dao-ru-select-yu-ju-de-ji-chu-cao-zuo-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -428,7 +429,7 @@
       
 
       
-        <p><img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180412181315.png" alt=""> 通过使用SQL Sever 导入excel表格数据： 步骤： 1.通过任务选项中的导入数据进行导入 <img src="http://47.100.4.8/wp-content/uploads/2018/05/321.png" alt=""> 2.选择你想要导入的数据： <img src="http://47.100.4.8/wp-content/uploads/2018/05/3212.png" alt=""> 3.选择你本地的数据库 并输入需要的输入的数据 <img src="http://47.100.4.8/wp-content/uploads/2018/05/32123.png" alt=""> 4.选择对应表进行数据导入： <img src="http://47.100.4.8/wp-content/uploads/2018/05/13241.png" alt=""> 这里需要注意的是左侧一栏为源文件可导入的表，右侧一栏是导入你自己创建表中。 5.之后就一直下一步即可创建成功。 <img src="http://47.100.4.8/wp-content/uploads/2018/05/852.png" alt=""> 需要注意的是：在导入数据之前要记得先创建文件中对应的表以及数据要求 还有一点需要注意的是：如果在导入excel文件时弹出如下提示框： <img src="http://47.100.4.8/wp-content/uploads/2018/05/9636.png" alt=""> 那么你需要去Microsoft 官网上下载对应你office版本号的Microsoft office access database engine 2016 比如我这里就是2016版本的。   select语句的使用：</p>
+        <p><img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180412181315.png" alt=""> 通过使用SQL Sever 导入excel表格数据： 步骤： 1.通过任务选项中的导入数据进行导入 <img src="http://47.100.4.8/wp-content/uploads/2018/05/321.png" alt=""> 2.选择你想要导入的数据： <img src="http://47.100.4.8/wp-content/uploads/2018/05/3212.png" alt=""> 3.选择你本地的数据库 并输入需要的输入的数据 <img src="http://47.100.4.8/wp-content/uploads/2018/05/32123.png" alt=""> 4.选择对应表进行数据导入： <img src="http://47.100.4.8/wp-content/uploads/2018/05/13241.png" alt=""> 这里需要注意的是左侧一栏为源文件可导入的表，右侧一栏是导入你自己创建表中。 5.之后就一直下一步即可创建成功。 <img src="http://47.100.4.8/wp-content/uploads/2018/05/852.png" alt=""> 需要注意的是：在导入数据之前要记得先创建文件中对应的表以及数据要求 还有一点需要注意的是：如果在导入excel文件时弹出如下提示框： <img src="http://47.100.4.8/wp-content/uploads/2018/05/9636.png" alt=""> 那么你需要去Microsoft 官网上下载对应你office版本号的Microsoft office access database engine 2016 比如我这里就是2016版本的。   select语句的使用：</p>
 <ul>
 <li>查询计算机系的学生信息</li>
 </ul>
@@ -446,7 +447,8 @@
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="string">'最高分'</span>=<span class="keyword">MAX</span>(GRADE),<span class="string">'最低分'</span>=<span class="keyword">MIN</span>(GRADE),<span class="string">'平均分'</span>=<span class="keyword">AVG</span>(GRADE)</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> S,C,SC</span><br><span class="line"></span><br><span class="line"><span class="keyword">where</span> S.SNO=SC.SNO <span class="keyword">and</span> C.CNO=SC.CNO <span class="keyword">and</span> CNAME <span class="keyword">like</span> <span class="string">'操作系统'</span></span><br><span class="line"></span><br><span class="line">    结果： ![](<span class="keyword">http</span>://<span class="number">47.100</span><span class="number">.4</span><span class="number">.8</span>/wp-<span class="keyword">content</span>/uploads/<span class="number">2018</span>/<span class="number">05</span>/<span class="number">7.</span>png)</span><br><span class="line"></span><br><span class="line">*   top语句的使用：</span><br></pre></td></tr></table></figure>
 <p>代码：</p>
 <figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select  top <span class="number">3</span> S.*,GRADE  （选择出成绩前三名）</span><br><span class="line"></span><br><span class="line">from S,C,<span class="keyword">SC</span></span><br><span class="line"><span class="keyword"></span></span><br><span class="line"><span class="keyword">where </span>S.SNO=<span class="keyword">SC.SNO </span><span class="keyword">and </span>C.CNO=<span class="keyword">SC.CNO </span><span class="keyword">and </span>C.CNAME = <span class="string">'操作系统'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">order </span><span class="keyword">by </span>GRADE DESC  （梯度下降）</span><br></pre></td></tr></table></figure>
-<pre><code>结果： ![](http://47.100.4.8/wp-content/uploads/2018/05/8.png)</code></pre>
+<p>结果： <img src="http://47.100.4.8/wp-content/uploads/2018/05/8.png" alt=""></p>
+
       
     </div>
     

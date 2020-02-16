@@ -78,7 +78,7 @@
 <meta name="description" content="描述 isinstance() 函数来判断一个对象是否是一个已知的类型，类似 type()。 isinstance() 与 type() 区别：  type() 不会认为子类是一种父类类型，不考虑继承关系。 isinstance() 会认为子类是一种父类类型，考虑继承关系。  如果要判断两个类型是否相同推荐使用 isinstance()__。 语法 以下是 isinstance() 方法的语法:">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python isinstance() 函数">
-<meta property="og:url" content="blog.strivezs.com/2018/05/27/python-isinstance-han-shu-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/05/27/python-isinstance-han-shu-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="描述 isinstance() 函数来判断一个对象是否是一个已知的类型，类似 type()。 isinstance() 与 type() 区别：  type() 不会认为子类是一种父类类型，不考虑继承关系。 isinstance() 会认为子类是一种父类类型，考虑继承关系。  如果要判断两个类型是否相同推荐使用 isinstance()__。 语法 以下是 isinstance() 方法的语法:">
 <meta property="og:locale" content="en_US">
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/05/27/python-isinstance-han-shu-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/05/27/python-isinstance-han-shu-1/"/>
 
 
 
@@ -320,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/05/27/python-isinstance-han-shu-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/27/python-isinstance-han-shu-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -430,11 +430,11 @@
 <li>object – 实例对象。</li>
 <li>classinfo – 可以是直接或间接类名、基本类型或者有它们组成的元组。</li>
 </ul>
-<p><strong>返回值</strong> 如果对象的类型与参数二的类型（classinfo）相同则返回 True，否则返回 False。。 <strong>实例</strong> 以下展示了使用 isinstance 函数的实例：<br><code>a=2
-print(isinstance(a,int))
-print(isinstance(a,str))</code><br>结果 第一个返回True 第二个返回False <strong>type()</strong> <strong>与</strong> <strong>isinstance()**</strong>区别：**</p>
+<p><strong>返回值</strong> 如果对象的类型与参数二的类型（classinfo）相同则返回 True，否则返回 False。。 <strong>实例</strong> 以下展示了使用 isinstance 函数的实例：<br>
+<code>a=2 print(isinstance(a,int)) print(isinstance(a,str))</code><br>
+结果 第一个返回True 第二个返回False <strong>type()</strong> <strong>与</strong> **isinstance()**<strong>区别：</strong></p>
 <figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="symbol">A: <span class="symbol">pass</span></span> <span class="symbol">class</span> <span class="symbol">B</span>(<span class="symbol">A</span>):</span><br><span class="line"></span><br><span class="line">     <span class="symbol">pass</span> <span class="symbol">isinstance</span>(<span class="symbol">A</span>(), <span class="symbol">A</span>) </span><br><span class="line"></span><br><span class="line"><span class="symbol">type</span>(<span class="symbol">A</span>()) == <span class="symbol">A</span> </span><br><span class="line"></span><br><span class="line"><span class="symbol">isinstance</span>(<span class="symbol">B</span>(), <span class="symbol">A</span>)</span><br></pre></td></tr></table></figure>
-<p>结果： 第一个返回True 第二个返回False 第三个返回True   本文参考了python菜鸟教程中的文章，感谢该博主提供的知识。</p>
+<p>结果： 第一个返回True 第二个返回False 第三个返回True   本文参考了python菜鸟教程中的文章，感谢该博主提供的知识。</p>
 
       
     </div>

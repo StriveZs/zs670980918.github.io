@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="超前进位加法器(carry look ahead adder)是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。  这里先讲一下缘由： 在普通的串行加法器运算中，下一步的运算需要的等待上一步的进位来进行，这样很大程度上影响了运算的速度。为了提高运算速度所以设计了超前进位加法器。">
+<meta name="description" content="¶超前进位加法器(carry look ahead adder)是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。 这里先讲一下缘由： 在普通的串行加法器运算中，下一步的运算需要的等待上一步的进位来进行，这样很大程度上影响了运算的速度。为了提高运算速度所以设计了超前进位加法器。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="超前进位加法器原理">
-<meta property="og:url" content="blog.strivezs.com/2018/04/03/chao-qian-jin-wei-jia-fa-qi-yuan-li-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/04/03/chao-qian-jin-wei-jia-fa-qi-yuan-li-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="超前进位加法器(carry look ahead adder)是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。  这里先讲一下缘由： 在普通的串行加法器运算中，下一步的运算需要的等待上一步的进位来进行，这样很大程度上影响了运算的速度。为了提高运算速度所以设计了超前进位加法器。">
+<meta property="og:description" content="¶超前进位加法器(carry look ahead adder)是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。 这里先讲一下缘由： 在普通的串行加法器运算中，下一步的运算需要的等待上一步的进位来进行，这样很大程度上影响了运算的速度。为了提高运算速度所以设计了超前进位加法器。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/04/321312432423.jpg">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/04/9930-27967-tu14weiclachaoqianbujiandianlu.jpg">
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/04/03/chao-qian-jin-wei-jia-fa-qi-yuan-li-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/04/03/chao-qian-jin-wei-jia-fa-qi-yuan-li-1/"/>
 
 
 
@@ -322,7 +322,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/04/03/chao-qian-jin-wei-jia-fa-qi-yuan-li-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/03/chao-qian-jin-wei-jia-fa-qi-yuan-li-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -423,7 +423,8 @@
 
       
         <p><img src="http://47.100.4.8/wp-content/uploads/2018/04/321312432423.jpg" alt=""></p>
-<h3 id="超前进位加法器-carry-look-ahead-adder-是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。"><a href="#超前进位加法器-carry-look-ahead-adder-是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。" class="headerlink" title="超前进位加法器(carry look ahead adder)是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。"></a>超前进位加法器(carry look ahead adder)是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。</h3><p>  这里先讲一下缘由： 在普通的串行加法器运算中，下一步的运算需要的等待上一步的进位来进行，这样很大程度上影响了运算的速度。为了提高运算速度所以设计了超前进位加法器。 两个加数（以四位为例）X4X3X2X1和Y4Y3Y2Y1 穿行加法器的原理（给出式子）： C1 = X1*Y1 + (X1+Y1)*C0   C0为初始进位 分析：这是是用来判断是否有进位的如果X1和Y1均为1 则C1为1代表有进位，如果X1或者Y1中有一个为1 且C0为1 则C1为1 以此类推C2，C3，C4 C1 = X1*Y1 + (X1+Y1)*C0 C2 = X2*Y2 + (X2+Y2)*C1 C3 = X3*Y3 + (X3+Y3)*C2 C4 = X4*Y4 + (X4+Y4)*C3 这是串行加法器的运算原理。计算每次进位时都需要上一次的进位结果所以如果没还需要的等待，这样会大大影响运算速度因此便有了超前进位加法器。 <img src="http://47.100.4.8/wp-content/uploads/2018/04/9930-27967-tu14weiclachaoqianbujiandianlu.jpg" alt=""> 超前进位加法器原理（以式子为主）： 根据上面串行加法器的式子可以找出一个规律，C2中的C1可以用C1式子的值来替换。 这样就得出了如下式子： C2 = X2*Y2 + (X2+Y2)*（C1 = X1*Y1 + (X1+Y1)*C0） 以此类推可得： C1 = X1*Y1 + (X1+Y1)*C0 C2 = X2*Y2 + (X2+Y2)*（C1 = X1*Y1 + (X1+Y1)*C0） C3 = X3*Y3 + (X3+Y3)*（X2*Y2 + (X2+Y2)*（C1 = X1*Y1 + (X1+Y1)*C0）） C4 = X4*Y4 + (X4+Y4)*（X3*Y3 + (X3+Y3)*（X2*Y2 + (X2+Y2)*（C1 = X1*Y1 + (X1+Y1)*C0））） 然后可以设置Pi和Gi，Gi 定义为进位产生信号，Pi定义为进位传递信号 令Gi = Xi*Yi ，Pi=Xi+Yi 将上面式子进行变换可得： C1 = G1 + P1*C0 C2 = G2 + P2<em>（G1 + P1\</em>C0） C3 = G3 + P3*（G2 + P2<em>（G1 + P1\</em>C0）） C4 = G4 + P4*（G3 + P3<em>（G2 + P2</em>（G1 + P1*C0）））   由此可以看出，各级的进位彼此独立产生，只与输入数据和C0有关，将各级间的进位级联传播给去掉了，因此减小了进位产生的延迟。 这样就可提高计算速度了。 <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180403124635.png" alt=""></p>
+<h3 id="超前进位加法器-carry-look-ahead-adder-是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。"><a class="header-anchor" href="#超前进位加法器-carry-look-ahead-adder-是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。">¶</a>超前进位加法器(carry look ahead adder)是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。</h3>
+<p>这里先讲一下缘由： 在普通的串行加法器运算中，下一步的运算需要的等待上一步的进位来进行，这样很大程度上影响了运算的速度。为了提高运算速度所以设计了超前进位加法器。 两个加数（以四位为例）X4X3X2X1和Y4Y3Y2Y1 穿行加法器的原理（给出式子）： C1 = X1*Y1 + (X1+Y1)*C0   C0为初始进位 分析：这是是用来判断是否有进位的如果X1和Y1均为1 则C1为1代表有进位，如果X1或者Y1中有一个为1 且C0为1 则C1为1 以此类推C2，C3，C4 C1 = X1*Y1 + (X1+Y1)*C0 C2 = X2*Y2 + (X2+Y2)*C1 C3 = X3*Y3 + (X3+Y3)*C2 C4 = X4*Y4 + (X4+Y4)*C3 这是串行加法器的运算原理。计算每次进位时都需要上一次的进位结果所以如果没还需要的等待，这样会大大影响运算速度因此便有了超前进位加法器。 <img src="http://47.100.4.8/wp-content/uploads/2018/04/9930-27967-tu14weiclachaoqianbujiandianlu.jpg" alt=""> 超前进位加法器原理（以式子为主）： 根据上面串行加法器的式子可以找出一个规律，C2中的C1可以用C1式子的值来替换。 这样就得出了如下式子： C2 = X2*Y2 + (X2+Y2)*（C1 = X1*Y1 + (X1+Y1)*C0） 以此类推可得： C1 = X1*Y1 + (X1+Y1)*C0 C2 = X2*Y2 + (X2+Y2)*（C1 = X1*Y1 + (X1+Y1)*C0） C3 = X3*Y3 + (X3+Y3)*（X2*Y2 + (X2+Y2)*（C1 = X1*Y1 + (X1+Y1)*C0）） C4 = X4*Y4 + (X4+Y4)*（X3*Y3 + (X3+Y3)*（X2*Y2 + (X2+Y2)*（C1 = X1*Y1 + (X1+Y1)*C0））） 然后可以设置Pi和Gi，Gi 定义为进位产生信号，Pi定义为进位传递信号 令Gi = Xi*Yi ，Pi=Xi+Yi 将上面式子进行变换可得： C1 = G1 + P1*C0 C2 = G2 + P2*（G1 + P1*C0） C3 = G3 + P3*（G2 + P2*（G1 + P1*C0）） C4 = G4 + P4*（G3 + P3*（G2 + P2*（G1 + P1*C0）））   由此可以看出，各级的进位彼此独立产生，只与输入数据和C0有关，将各级间的进位级联传播给去掉了，因此减小了进位产生的延迟。 这样就可提高计算速度了。 <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180403124635.png" alt=""></p>
 
       
     </div>
@@ -617,7 +618,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#超前进位加法器-carry-look-ahead-adder-是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。"><span class="nav-number">1.</span> <span class="nav-text">超前进位加法器(carry look ahead adder)是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#超前进位加法器-carry-look-ahead-adder-是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。"><span class="nav-number">1.</span> <span class="nav-text">¶超前进位加法器(carry look ahead adder)是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。</span></a></li></ol></div>
             
 
           </div>

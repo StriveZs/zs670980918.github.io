@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="1048 数字加密 （20 分） 原文地址 本题要求实现一种数字加密方法。首先固定一个加密用正整数 A，对任一正整数 B，将其每 1 位数字与 A 的对应位置上的数字进行以下运算：对奇数位，对应位的数字相加后对 13 取余——这里用 J 代表 10、Q 代表 11、K 代表 12；对偶数位，用 B 的数字减去 A 的数字，若结果为负数，则再加 10。这里令个位为第 1 位。 输入格式：输入在一行中">
+<meta name="description" content="1048 数字加密 （20 分） 原文地址 本题要求实现一种数字加密方法。首先固定一个加密用正整数 A，对任一正整数 B，将其每 1 位数字与 A 的对应位置上的数字进行以下运算：对奇数位，对应位的数字相加后对 13 取余——这里用 J 代表 10、Q 代表 11、K 代表 12；对偶数位，用 B 的数字减去 A 的数字，若结果为负数，则再加 10。这里令个位为第 1 位。 ¶输入格式： 输入在一">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pat_1048（乙级）">
-<meta property="og:url" content="blog.strivezs.com/2019/03/12/pat-1048-yi-ji-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2019/03/12/pat-1048-yi-ji-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="1048 数字加密 （20 分） 原文地址 本题要求实现一种数字加密方法。首先固定一个加密用正整数 A，对任一正整数 B，将其每 1 位数字与 A 的对应位置上的数字进行以下运算：对奇数位，对应位的数字相加后对 13 取余——这里用 J 代表 10、Q 代表 11、K 代表 12；对偶数位，用 B 的数字减去 A 的数字，若结果为负数，则再加 10。这里令个位为第 1 位。 输入格式：输入在一行中">
+<meta property="og:description" content="1048 数字加密 （20 分） 原文地址 本题要求实现一种数字加密方法。首先固定一个加密用正整数 A，对任一正整数 B，将其每 1 位数字与 A 的对应位置上的数字进行以下运算：对奇数位，对应位的数字相加后对 13 取余——这里用 J 代表 10、Q 代表 11、K 代表 12；对偶数位，用 B 的数字减去 A 的数字，若结果为负数，则再加 10。这里令个位为第 1 位。 ¶输入格式： 输入在一">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-03-12T10:28:26.000Z">
 <meta property="article:modified_time" content="2019-03-12T10:28:26.000Z">
@@ -116,7 +116,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2019/03/12/pat-1048-yi-ji-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2019/03/12/pat-1048-yi-ji-1/"/>
 
 
 
@@ -318,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2019/03/12/pat-1048-yi-ji-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/03/12/pat-1048-yi-ji-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -429,11 +429,19 @@
       
 
       
-        <p>1048 数字加密 （20 分） <a href="https://pintia.cn/problem-sets/994805260223102976/problems/994805276438282240">原文地址</a></p>
+        <p>1048 数字加密 （20 分） <a href="https://pintia.cn/problem-sets/994805260223102976/problems/994805276438282240">原文地址</a></p>
 <p>本题要求实现一种数字加密方法。首先固定一个加密用正整数 A，对任一正整数 B，将其每 1 位数字与 A 的对应位置上的数字进行以下运算：对奇数位，对应位的数字相加后对 13 取余——这里用 J 代表 10、Q 代表 11、K 代表 12；对偶数位，用 B 的数字减去 A 的数字，若结果为负数，则再加 10。这里令个位为第 1 位。</p>
-<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入在一行中依次给出 A 和 B，均为不超过 100 位的正整数，其间以空格分隔。</p>
-<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>在一行中输出加密后的结果。</p>
-<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><pre><code>1234567 368782971</code></pre><h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><pre><code>3695Q8118</code></pre><p>代码：</p>
+<h3 id="输入格式："><a class="header-anchor" href="#输入格式：">¶</a>输入格式：</h3>
+<p>输入在一行中依次给出 A 和 B，均为不超过 100 位的正整数，其间以空格分隔。</p>
+<h3 id="输出格式："><a class="header-anchor" href="#输出格式：">¶</a>输出格式：</h3>
+<p>在一行中输出加密后的结果。</p>
+<h3 id="输入样例："><a class="header-anchor" href="#输入样例：">¶</a>输入样例：</h3>
+<pre><code>1234567 368782971
+</code></pre>
+<h3 id="输出样例："><a class="header-anchor" href="#输出样例：">¶</a>输出样例：</h3>
+<pre><code>3695Q8118
+</code></pre>
+<p>代码：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="comment">//比较两个长度对 长度较短的那个补0</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">string</span> s1,s2,result=<span class="string">""</span>;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;s1&gt;&gt;s2;</span><br><span class="line">    <span class="keyword">int</span> cha = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span>(s1.length() &lt; s2.length())&#123;</span><br><span class="line">        cha = s2.length() - s1.length();</span><br><span class="line">        <span class="function"><span class="built_in">string</span> <span class="title">temp</span><span class="params">(cha,<span class="string">'0'</span>)</span></span>;</span><br><span class="line">        s1 = temp + s1;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(s1.length() &gt; s2.length())&#123;</span><br><span class="line">        cha = s1.length() - s2.length();</span><br><span class="line">        <span class="function"><span class="built_in">string</span> <span class="title">temp</span><span class="params">(cha,<span class="string">'0'</span>)</span></span>;</span><br><span class="line">        s2 = temp + s2;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s2.length();i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> temp1,temp2,sum;</span><br><span class="line">        <span class="keyword">int</span> j = i+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(j%<span class="number">2</span> != <span class="number">0</span>)&#123;</span><br><span class="line">            temp1 = s1\[i\] - <span class="string">'0'</span>;</span><br><span class="line">            temp2 = s2\[i\] - <span class="string">'0'</span>;</span><br><span class="line">            sum = temp1 + temp2;</span><br><span class="line">            sum = sum % <span class="number">13</span>;</span><br><span class="line">            <span class="comment">//cout&lt;&lt;sum&lt;&lt;endl;</span></span><br><span class="line">            <span class="keyword">if</span>(sum &lt; <span class="number">10</span>)&#123;</span><br><span class="line">                <span class="keyword">char</span> s3 = (sum + <span class="string">'0'</span>);</span><br><span class="line">                result = result + s3;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(sum == <span class="number">10</span>)&#123;</span><br><span class="line">                result = result + <span class="string">'J'</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(sum == <span class="number">11</span>)&#123;</span><br><span class="line">                result = result + <span class="string">'Q'</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(sum == <span class="number">12</span>)&#123;</span><br><span class="line">                result = result + <span class="string">'K'</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            temp1 = s1\[i\] - <span class="string">'0'</span>;</span><br><span class="line">            temp2 = s2\[i\] - <span class="string">'0'</span>;</span><br><span class="line">            sum = temp2 - temp1;</span><br><span class="line">            <span class="keyword">if</span>(sum &lt; <span class="number">0</span>)&#123;</span><br><span class="line">                sum += <span class="number">10</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">char</span> s3 = (sum + <span class="string">'0'</span>);</span><br><span class="line">            result = result + s3;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;result&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -627,7 +635,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例："><span class="nav-number">3.</span> <span class="nav-text">输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例："><span class="nav-number">4.</span> <span class="nav-text">输出样例：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">¶输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">¶输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例："><span class="nav-number">3.</span> <span class="nav-text">¶输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例："><span class="nav-number">4.</span> <span class="nav-text">¶输出样例：</span></a></li></ol></div>
             
 
           </div>

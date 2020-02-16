@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="这里的排序算法进行处理的对象是通过array来创建的数组： 配合之前的队列来使用。 至于排序算法的思想，我感觉只要对C艹有一定了解得人大概都能看懂，所以这里不做过多的解释。 头文件代码： #include “queue.h”#include using namespace std;int main(){    Queue A;    cout&lt;&lt;”输入6个数值用来创建队列:”;">
+<meta name="description" content="这里的排序算法进行处理的对象是通过array来创建的数组： 配合之前的队列来使用。 至于排序算法的思想，我感觉只要对C艹有一定了解得人大概都能看懂，所以这里不做过多的解释。 头文件代码： #include “queue.h” #include using namespace std; int main() { Queue A; cout&lt;&lt;“输入6个数值用来创建队列:”; int a">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++实现直接插入排序、直接选择排序、冒泡排序">
-<meta property="og:url" content="blog.strivezs.com/2018/06/15/c-shi-xian-zhi-jie-cha-ru-pai-xu-zhi-jie-xuan-ze-pai-xu-mao-pao-pai-xu-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/06/15/c-shi-xian-zhi-jie-cha-ru-pai-xu-zhi-jie-xuan-ze-pai-xu-mao-pao-pai-xu-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="这里的排序算法进行处理的对象是通过array来创建的数组： 配合之前的队列来使用。 至于排序算法的思想，我感觉只要对C艹有一定了解得人大概都能看懂，所以这里不做过多的解释。 头文件代码： #include “queue.h”#include using namespace std;int main(){    Queue A;    cout&lt;&lt;”输入6个数值用来创建队列:”;">
+<meta property="og:description" content="这里的排序算法进行处理的对象是通过array来创建的数组： 配合之前的队列来使用。 至于排序算法的思想，我感觉只要对C艹有一定了解得人大概都能看懂，所以这里不做过多的解释。 头文件代码： #include “queue.h” #include using namespace std; int main() { Queue A; cout&lt;&lt;“输入6个数值用来创建队列:”; int a">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/05/%E5%9B%BE%E7%89%87150.png">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/06/QQ%E5%9B%BE%E7%89%8720180615000636.png">
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/06/15/c-shi-xian-zhi-jie-cha-ru-pai-xu-zhi-jie-xuan-ze-pai-xu-mao-pao-pai-xu-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/06/15/c-shi-xian-zhi-jie-cha-ru-pai-xu-zhi-jie-xuan-ze-pai-xu-mao-pao-pai-xu-1/"/>
 
 
 
@@ -320,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/06/15/c-shi-xian-zhi-jie-cha-ru-pai-xu-zhi-jie-xuan-ze-pai-xu-mao-pao-pai-xu-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/06/15/c-shi-xian-zhi-jie-cha-ru-pai-xu-zhi-jie-xuan-ze-pai-xu-mao-pao-pai-xu-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -432,27 +432,253 @@
 
       
         <p><img src="http://47.100.4.8/wp-content/uploads/2018/05/%E5%9B%BE%E7%89%87150.png" alt=""> 这里的排序算法进行处理的对象是通过array来创建的数组： 配合之前的队列来使用。 至于排序算法的思想，我感觉只要对C艹有一定了解得人大概都能看懂，所以这里不做过多的解释。 头文件代码：</p>
-<p>#include “queue.h”<br>#include<iostream></p>
-<p>using namespace std;<br>int main()<br>{<br>    Queue<int> A;<br>    cout&lt;&lt;”输入6个数值用来创建队列:”;<br>    int a=0;<br>    for(int i=0;i&lt;=5;i++)<br>    {<br>        cin&gt;&gt;a;<br>        A.QInsert(a);<br>    }<br>    cout&lt;&lt;”创建成功！”&lt;&lt;endl;<br>    cout &lt;&lt; “显示队列中的所有元素为：” ;<br>    while(!A.QEmpty())<br>    {<br>        cout &lt;&lt; A.QFront() &lt;&lt; “   “;<br>        A.QDelete();<br>    }<br>    cout&lt;&lt;endl;<br>    cout&lt;&lt;”判断队列是否为空：”&lt;&lt;(A.QEmpty()==0?”为空”:”不为空”)&lt;&lt;endl;<br>    cout &lt;&lt; endl;<br>    cout&lt;&lt;”开始清空队列！”&lt;&lt;endl;<br>    A.QClear();<br>    cout&lt;&lt;”队列成功清空！”&lt;&lt;endl;<br>    return 0;<br>}<br>5.<br>sort.h头文件：<br>#ifndef SORT_H_INCLUDED<br>#define SORT_H_INCLUDED<br>#include<iostream><br>#include<cstdlib><br>using namespace std;</p>
-<p>enum ErrorType<br>  {invalidArraySize, memoryAllocationError, indexOutOfRange};<br>char <em>errorMsg[] =<br>{<br>    “Invalid array size”, “Memory allocation error”,<br>    “Invalid index: “<br>};<br>template <class T><br>class Array<br>{<br>    private:<br>        T</em>  alist;<br>        int size;<br>        void Error(ErrorType error,int badIndex=0) const;<br>    public:<br>        Array(int sz = 50);<br>        Array(const Array<T>&amp; A);<br>        <del>Array(void);<br>        Array<T>&amp; operator= (const Array<T>&amp; rhs);<br>        T&amp; operator[](int i);<br>        operator T* (void) const;<br>        int ListSize(void) const;<br>        void Resize(int sz);<br>        void InsertionSort();<br>        void SelectionSort();<br>        void BubbleSort();<br>        int SeqSearch(T key);<br>};<br>template <class T><br>void Array<T>::Error(ErrorType error, int badIndex) const<br>{<br>    cerr &lt;&lt; errorMsg[error];<br>    if (error == indexOutOfRange)<br>        cerr &lt;&lt; badIndex;<br>    cerr &lt;&lt; endl;<br>    exit(1);<br>}<br>template <class T><br>Array<T>::Array(int sz)<br>{<br>    if (sz &lt;= 0)<br>        Error(invalidArraySize);<br>    size = sz;<br>    alist = new T[size];<br>    if (alist == NULL)<br>        Error(memoryAllocationError);<br>}<br>template <class T><br>Array<T>::</del>Array(void)<br>{<br>    delete [] alist;<br>}<br>template <class T><br>Array<T>::Array(const Array<T>&amp; X)<br>{<br>    int n = X.size;<br>    size = n;<br>    alist = new T[n];<br>    if (alist == NULL)<br>        Error(memoryAllocationError);<br>    T* srcptr = X.alist;<br>    T* destptr = alist;<br>    while (n–)<br>        *destptr++ = *srcptr++;<br>}<br>template <class T><br>Array<T>&amp; Array<T>::operator= (const Array<T>&amp; rhs)<br>{<br>    int n = rhs.size;<br>    if (size != n)<br>    {<br>        delete [] alist;<br>        alist = new T[n];<br>        if (alist == NULL)<br>            Error(memoryAllocationError);<br>        size = n;<br>    }<br>   T* destptr = alist;<br>   T* srcptr = rhs.alist;<br>    while (n–)<br>        *destptr++ = *srcptr++;<br>    return <em>this;<br>}<br>template <class T><br>T&amp; Array<T>::operator[] (int n)<br>{<br>   if (n &lt; 0 || n &gt; size-1)<br>      Error(indexOutOfRange,n);<br>   return alist[n];<br>}<br>template <class T><br>Array<T>::operator T</em> (void) const<br>{<br>    return alist;<br>}<br>template <class T><br>int Array<T>::ListSize(void) const<br>{<br>    return size;<br>}<br>template <class T><br>void Array<T>::Resize(int sz)<br>{<br>    if (sz &lt;= 0)<br>        Error(invalidArraySize);<br>    if (sz == size)<br>        return;<br>    T* newlist = new T[sz];<br>    if (newlist == NULL)<br>        Error(memoryAllocationError);<br>    int n = (sz &lt;= size) ? sz : size;<br>    T* srcptr = alist;<br>    T* destptr = newlist;<br>    while (n–)<br>        *destptr++ = *srcptr++;<br>    delete[] alist;<br>    alist = newlist;<br>    size = sz;<br>}<br>template <class T><br>void Array<T>::InsertionSort()<br>{<br>    int i, j;<br>    T   temp;<br>    for (i = 1; i &lt; size; i++)<br>    {<br>        j = i;<br>        temp = alist[i];<br>        while (j &gt; 0 &amp;&amp; temp &lt; alist[j-1])<br>        {<br>            alist[j] = alist[j-1];<br>            j–;<br>        }<br>        alist[j] = temp;<br>    }<br>}<br>template <class T><br>void Array<T>::SelectionSort()<br>{<br>    int smallIndex;<br>    int i, j;<br>    for (i = 0; i &lt; size-1; i++)<br>    {<br>        smallIndex = i;<br>        for (j = i+1; j &lt; size; j++)<br>            if (alist[j] &lt; alist[smallIndex])<br>                smallIndex = j;<br>            swap(alist[i], alist[smallIndex]);<br>    }<br>}<br>template <class T><br>void Swap (T &amp;x, T &amp;y)<br>{<br>    T temp;<br>    temp = x;<br>    x = y;<br>    y = temp;<br>}<br>template <class T><br>void Array<T>::BubbleSort()<br>{<br>    int i,j;<br>    int lastExchangeIndex;<br>    i = size-1;<br>    while (i &gt; 0)<br>    {<br>        lastExchangeIndex = 0;<br>        for (j = 0; j &lt; i; j++)<br>            if (alist[j+1] &lt; alist[j])<br>            {<br>                Swap(alist[j],alist[j+1]);<br>                lastExchangeIndex = j;<br>            }<br>            i = lastExchangeIndex;<br>    }<br>}<br>template <class T><br>int Array<T>::SeqSearch(T key)<br>{<br>    for(int i=0;i &lt; size;i++)<br>        if (alist[i] == key)<br>            return i;<br>    return -1;<br>}</p>
+<p>#include “queue.h”<br>
+#include<iostream></p>
+<p>using namespace std;<br>
+int main()<br>
+{<br>
+Queue<int> A;<br>
+cout&lt;&lt;“输入6个数值用来创建队列:”;<br>
+int a=0;<br>
+for(int i=0;i&lt;=5;i++)<br>
+{<br>
+cin&gt;&gt;a;<br>
+A.QInsert(a);<br>
+}<br>
+cout&lt;&lt;“创建成功！”&lt;&lt;endl;<br>
+cout &lt;&lt; “显示队列中的所有元素为：” ;<br>
+while(!A.QEmpty())<br>
+{<br>
+cout &lt;&lt; A.QFront() &lt;&lt; &quot;   &quot;;<br>
+A.QDelete();<br>
+}<br>
+cout&lt;&lt;endl;<br>
+cout&lt;&lt;“判断队列是否为空：”&lt;&lt;(A.QEmpty()==0?“为空”:“不为空”)&lt;&lt;endl;<br>
+cout &lt;&lt; endl;<br>
+cout&lt;&lt;“开始清空队列！”&lt;&lt;endl;<br>
+A.QClear();<br>
+cout&lt;&lt;“队列成功清空！”&lt;&lt;endl;<br>
+return 0;<br>
+}<br>
+5.<br>
+sort.h头文件：<br>
+#ifndef SORT_H_INCLUDED<br>
+#define SORT_H_INCLUDED<br>
+#include<iostream><br>
+#include<cstdlib><br>
+using namespace std;</p>
+<p>enum ErrorType<br>
+{invalidArraySize, memoryAllocationError, indexOutOfRange};<br>
+char <em>errorMsg[] =<br>
+{<br>
+“Invalid array size”, “Memory allocation error”,<br>
+&quot;Invalid index: &quot;<br>
+};<br>
+template <class T><br>
+class Array<br>
+{<br>
+private:<br>
+T</em>  alist;<br>
+int size;<br>
+void Error(ErrorType error,int badIndex=0) const;<br>
+public:<br>
+Array(int sz = 50);<br>
+Array(const Array<T>&amp; A);<br>
+~Array(void);<br>
+Array<T>&amp; operator= (const Array<T>&amp; rhs);<br>
+T&amp; operator[](int i);<br>
+operator T* (void) const;<br>
+int ListSize(void) const;<br>
+void Resize(int sz);<br>
+void InsertionSort();<br>
+void SelectionSort();<br>
+void BubbleSort();<br>
+int SeqSearch(T key);<br>
+};<br>
+template <class T><br>
+void Array<T>::Error(ErrorType error, int badIndex) const<br>
+{<br>
+cerr &lt;&lt; errorMsg[error];<br>
+if (error == indexOutOfRange)<br>
+cerr &lt;&lt; badIndex;<br>
+cerr &lt;&lt; endl;<br>
+exit(1);<br>
+}<br>
+template <class T><br>
+Array<T>::Array(int sz)<br>
+{<br>
+if (sz &lt;= 0)<br>
+Error(invalidArraySize);<br>
+size = sz;<br>
+alist = new T[size];<br>
+if (alist == NULL)<br>
+Error(memoryAllocationError);<br>
+}<br>
+template <class T><br>
+Array<T>::~Array(void)<br>
+{<br>
+delete [] alist;<br>
+}<br>
+template <class T><br>
+Array<T>::Array(const Array<T>&amp; X)<br>
+{<br>
+int n = X.size;<br>
+size = n;<br>
+alist = new T[n];<br>
+if (alist == NULL)<br>
+Error(memoryAllocationError);<br>
+T* srcptr = X.alist;<br>
+T* destptr = alist;<br>
+while (n–)<br>
+*destptr++ = *srcptr++;<br>
+}<br>
+template <class T><br>
+Array<T>&amp; Array<T>::operator= (const Array<T>&amp; rhs)<br>
+{<br>
+int n = rhs.size;<br>
+if (size != n)<br>
+{<br>
+delete [] alist;<br>
+alist = new T[n];<br>
+if (alist == NULL)<br>
+Error(memoryAllocationError);<br>
+size = n;<br>
+}<br>
+T* destptr = alist;<br>
+T* srcptr = rhs.alist;<br>
+while (n–)<br>
+*destptr++ = *srcptr++;<br>
+return <em>this;<br>
+}<br>
+template <class T><br>
+T&amp; Array<T>::operator[] (int n)<br>
+{<br>
+if (n &lt; 0 || n &gt; size-1)<br>
+Error(indexOutOfRange,n);<br>
+return alist[n];<br>
+}<br>
+template <class T><br>
+Array<T>::operator T</em> (void) const<br>
+{<br>
+return alist;<br>
+}<br>
+template <class T><br>
+int Array<T>::ListSize(void) const<br>
+{<br>
+return size;<br>
+}<br>
+template <class T><br>
+void Array<T>::Resize(int sz)<br>
+{<br>
+if (sz &lt;= 0)<br>
+Error(invalidArraySize);<br>
+if (sz == size)<br>
+return;<br>
+T* newlist = new T[sz];<br>
+if (newlist == NULL)<br>
+Error(memoryAllocationError);<br>
+int n = (sz &lt;= size) ? sz : size;<br>
+T* srcptr = alist;<br>
+T* destptr = newlist;<br>
+while (n–)<br>
+*destptr++ = *srcptr++;<br>
+delete[] alist;<br>
+alist = newlist;<br>
+size = sz;<br>
+}<br>
+template <class T><br>
+void Array<T>::InsertionSort()<br>
+{<br>
+int i, j;<br>
+T   temp;<br>
+for (i = 1; i &lt; size; i++)<br>
+{<br>
+j = i;<br>
+temp = alist[i];<br>
+while (j &gt; 0 &amp;&amp; temp &lt; alist[j-1])<br>
+{<br>
+alist[j] = alist[j-1];<br>
+j–;<br>
+}<br>
+alist[j] = temp;<br>
+}<br>
+}<br>
+template <class T><br>
+void Array<T>::SelectionSort()<br>
+{<br>
+int smallIndex;<br>
+int i, j;<br>
+for (i = 0; i &lt; size-1; i++)<br>
+{<br>
+smallIndex = i;<br>
+for (j = i+1; j &lt; size; j++)<br>
+if (alist[j] &lt; alist[smallIndex])<br>
+smallIndex = j;<br>
+swap(alist[i], alist[smallIndex]);<br>
+}<br>
+}<br>
+template <class T><br>
+void Swap (T &amp;x, T &amp;y)<br>
+{<br>
+T temp;<br>
+temp = x;<br>
+x = y;<br>
+y = temp;<br>
+}<br>
+template <class T><br>
+void Array<T>::BubbleSort()<br>
+{<br>
+int i,j;<br>
+int lastExchangeIndex;<br>
+i = size-1;<br>
+while (i &gt; 0)<br>
+{<br>
+lastExchangeIndex = 0;<br>
+for (j = 0; j &lt; i; j++)<br>
+if (alist[j+1] &lt; alist[j])<br>
+{<br>
+Swap(alist[j],alist[j+1]);<br>
+lastExchangeIndex = j;<br>
+}<br>
+i = lastExchangeIndex;<br>
+}<br>
+}<br>
+template <class T><br>
+int Array<T>::SeqSearch(T key)<br>
+{<br>
+for(int i=0;i &lt; size;i++)<br>
+if (alist[i] == key)<br>
+return i;<br>
+return -1;<br>
+}</p>
 <p>#endif // SORT_H_INCLUDED</p>
 <p>代码：</p>
-<p>#include <iostream><br>#include <cstdlib><br>#include &lt;time.h&gt;<br>#include &lt;windows.h&gt;<br>#include “Sort.h”<br>using namespace std;<br>int main()<br>{<br>    Array<int> A(10);<br>    int i,k;<br>    int SearchNum;</p>
+<p>#include <iostream><br>
+#include <cstdlib><br>
+#include &lt;time.h&gt;<br>
+#include &lt;windows.h&gt;<br>
+#include “Sort.h”<br>
+using namespace std;<br>
+int main()<br>
+{<br>
+Array<int> A(10);<br>
+int i,k;<br>
+int SearchNum;</p>
 <pre><code>cout &lt;&lt; &quot;&lt;--------------使用直接插入排序--------------&gt;&quot; &lt;&lt;endl;
 cout &lt;&lt; &quot;随机生成10个整数用来array数组&quot; &lt;&lt; endl;
 srand(unsigned(time(NULL)));
 for(i=0;i&lt;10;i++)
 {
-    A\[i\]=rand()%100;
+	A\[i\]=rand()%100;
 }
 cout &lt;&lt; &quot;创建的数组为：&quot; &lt;&lt; endl;
 for(i=0;i&lt;10;i++)
-    cout &lt;&lt; A\[i\] &lt;&lt; &quot;  &quot;;
+	cout &lt;&lt; A\[i\] &lt;&lt; &quot;  &quot;;
 cout&lt;&lt;endl;
 A.InsertionSort();
 cout &lt;&lt; &quot;排序后的数组为：&quot; &lt;&lt; endl;
 for(i=0;i&lt;10;i++)
-    cout &lt;&lt; A\[i\] &lt;&lt; &quot;  &quot;;
+	cout &lt;&lt; A\[i\] &lt;&lt; &quot;  &quot;;
 cout &lt;&lt; endl;
 
 Sleep(700);
@@ -461,16 +687,16 @@ cout &lt;&lt; &quot;随机生成10个整数用来array数组&quot; &lt;&lt; endl
 srand(unsigned(time(NULL)));
 for(i=0;i&lt;10;i++)
 {
-    A\[i\]=rand()%100;
+	A\[i\]=rand()%100;
 }
 cout &lt;&lt; &quot;创建的数组为：&quot; &lt;&lt; endl;
 for(i=0;i&lt;10;i++)
-    cout &lt;&lt; A\[i\] &lt;&lt; &quot;  &quot;;
+	cout &lt;&lt; A\[i\] &lt;&lt; &quot;  &quot;;
 cout&lt;&lt;endl;
 A.SelectionSort();
 cout &lt;&lt; &quot;排序后的数组为：&quot; &lt;&lt; endl;
 for(i=0;i&lt;10;i++)
-    cout &lt;&lt; A\[i\] &lt;&lt; &quot;  &quot;;
+	cout &lt;&lt; A\[i\] &lt;&lt; &quot;  &quot;;
 cout &lt;&lt; endl;
 
 Sleep(600);
@@ -479,25 +705,27 @@ cout &lt;&lt; &quot;随机生成10个整数用来array数组&quot; &lt;&lt; endl
 srand(unsigned(time(NULL)));
 for(i=0;i&lt;10;i++)
 {
-    A\[i\]=rand()%100;
+	A\[i\]=rand()%100;
 }
 cout &lt;&lt; &quot;创建的数组为：&quot; &lt;&lt; endl;
 for(i=0;i&lt;10;i++)
-    cout &lt;&lt; A\[i\] &lt;&lt; &quot;  &quot;;
+	cout &lt;&lt; A\[i\] &lt;&lt; &quot;  &quot;;
 cout&lt;&lt;endl;
 A.BubbleSort();
 cout &lt;&lt; &quot;排序后的数组为：&quot; &lt;&lt; endl;
 for(i=0;i&lt;10;i++)
-    cout &lt;&lt; A\[i\] &lt;&lt; &quot;  &quot;;
+	cout &lt;&lt; A\[i\] &lt;&lt; &quot;  &quot;;
 cout &lt;&lt; endl;
 
 cout &lt;&lt; endl&lt;&lt;&quot;对最后创建的数组进行查找数字的操作：&quot;;
 cin &gt;&gt; SearchNum;
 k= A.SeqSearch(SearchNum);
 if (k&lt;0)
-    cout &lt;&lt; &quot;没有找到数字&quot; &lt;&lt; SearchNum &lt;&lt; endl;
+	cout &lt;&lt; &quot;没有找到数字&quot; &lt;&lt; SearchNum &lt;&lt; endl;
 else
-    cout &lt;&lt; SearchNum &lt;&lt; &quot;的下标为&quot; &lt;&lt; k &lt;&lt;endl;</code></pre><p>}</p>
+	cout &lt;&lt; SearchNum &lt;&lt; &quot;的下标为&quot; &lt;&lt; k &lt;&lt;endl;
+</code></pre>
+<p>}</p>
 <p>结果： <img src="http://47.100.4.8/wp-content/uploads/2018/06/QQ%E5%9B%BE%E7%89%8720180615000636.png" alt=""></p>
 
       

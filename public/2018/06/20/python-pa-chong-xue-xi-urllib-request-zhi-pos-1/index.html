@@ -78,7 +78,7 @@
 <meta name="description" content="Post请求分析 实现思路：  设置好URL网址 构建表单数据，并使用parse.urlencode对数据进行编码处理 创建Request对象，参数包括URL地址和要传递的数据 使用add_header（）添加头信息，模拟浏览器进行爬取 使用request.urlopen（）打开对应的Request对象，完成信息的传递 后续处理，比如读取内容，将内容写入文件  代码： import urllib">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python爬虫学习urllib.request之Post">
-<meta property="og:url" content="blog.strivezs.com/2018/06/20/python-pa-chong-xue-xi-urllib-request-zhi-pos-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/06/20/python-pa-chong-xue-xi-urllib-request-zhi-pos-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="Post请求分析 实现思路：  设置好URL网址 构建表单数据，并使用parse.urlencode对数据进行编码处理 创建Request对象，参数包括URL地址和要传递的数据 使用add_header（）添加头信息，模拟浏览器进行爬取 使用request.urlopen（）打开对应的Request对象，完成信息的传递 后续处理，比如读取内容，将内容写入文件  代码： import urllib">
 <meta property="og:locale" content="en_US">
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/06/20/python-pa-chong-xue-xi-urllib-request-zhi-pos-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/06/20/python-pa-chong-xue-xi-urllib-request-zhi-pos-1/"/>
 
 
 
@@ -320,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/06/20/python-pa-chong-xue-xi-urllib-request-zhi-pos-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/06/20/python-pa-chong-xue-xi-urllib-request-zhi-pos-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -441,9 +441,19 @@
 <li>后续处理，比如读取内容，将内容写入文件</li>
 </ul>
 <p>代码：</p>
-<p>import urllib.request<br>import urllib.parse</p>
-<p>url = “<a href="https://www.zhihu.com/sign&quot;">https://www.zhihu.com/sign&quot;</a><br>data={“username”:”<a href="mailto:54651565@qq.com">54651565@qq.com</a>“,”password”:”1223131233”}<br>postdata = urllib.parse.urlencode(data).encode(‘utf-8’)<br>headers = [‘User-Agent’, ‘Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36’]<br>req = urllib.request.Request(url,postdata)<br>req.add_header(headers[0],headers[1])<br>data = urllib.request.urlopen(req).read()<br>filename  = open(“F:/a.html”,”wb”)<br>filename.write(data)<br>filename.close()</p>
-<p>post主要用于进行网页提交信息时候用，或者在登陆网站上面使用。后面会介绍使用cookie进行登陆。   <strong>post请求时，在_data，_full_data,data 中都可以看到请求的参数，然后这些参数可以设置对应格式的字典，对字典进行编码后可以使用post进行提交。</strong> <img src="http://47.100.4.8/wp-content/uploads/2018/06/QQ%E5%9B%BE%E7%89%8720180620125213.png" alt=""> post信息可以在网页界面按F12键 network中进行查看。如果不想用也可以使用fiddler进行获取。</p>
+<p>import urllib.request<br>
+import urllib.parse</p>
+<p>url = “<a href="https://www.zhihu.com/sign">https://www.zhihu.com/sign</a>”<br>
+data={“<a href="mailto:username%22:%2254651565@qq.com">username&quot;:&quot;54651565@qq.com</a>”,“password”:“1223131233”}<br>
+postdata = urllib.parse.urlencode(data).encode(‘utf-8’)<br>
+headers = [‘User-Agent’, ‘Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36’]<br>
+req = urllib.request.Request(url,postdata)<br>
+req.add_header(headers[0],headers[1])<br>
+data = urllib.request.urlopen(req).read()<br>
+filename  = open(“F:/a.html”,“wb”)<br>
+filename.write(data)<br>
+filename.close()</p>
+<p>post主要用于进行网页提交信息时候用，或者在登陆网站上面使用。后面会介绍使用cookie进行登陆。   <strong>post请求时，在_data，_full_data,data 中都可以看到请求的参数，然后这些参数可以设置对应格式的字典，对字典进行编码后可以使用post进行提交。</strong> <img src="http://47.100.4.8/wp-content/uploads/2018/06/QQ%E5%9B%BE%E7%89%8720180620125213.png" alt=""> post信息可以在网页界面按F12键 network中进行查看。如果不想用也可以使用fiddler进行获取。</p>
 
       
     </div>

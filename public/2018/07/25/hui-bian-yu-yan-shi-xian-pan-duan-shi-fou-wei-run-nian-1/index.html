@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="使用汇编语言实现根据输入的数字来判断是否为闰年。 算法流程图：  主要代码： data segment    output1 db ‘Yes’,’$’    output2 db ‘No’,’$’    output3 db ‘Error’,’$’    year dw ?    x1 dw 4    x2 dw 100    x3 dw 400data ends code segment">
+<meta name="description" content="使用汇编语言实现根据输入的数字来判断是否为闰年。 算法流程图：  主要代码： data segment output1 db ‘Yes’,’$’ output2 db ‘No’,’$’ output3 db ‘Error’,’$’ year dw ? x1 dw 4 x2 dw 100 x3 dw 400 data ends code segment assume cs:code,ds:data">
 <meta property="og:type" content="article">
 <meta property="og:title" content="汇编语言实现判断是否为闰年">
-<meta property="og:url" content="blog.strivezs.com/2018/07/25/hui-bian-yu-yan-shi-xian-pan-duan-shi-fou-wei-run-nian-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/07/25/hui-bian-yu-yan-shi-xian-pan-duan-shi-fou-wei-run-nian-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="使用汇编语言实现根据输入的数字来判断是否为闰年。 算法流程图：  主要代码： data segment    output1 db ‘Yes’,’$’    output2 db ‘No’,’$’    output3 db ‘Error’,’$’    year dw ?    x1 dw 4    x2 dw 100    x3 dw 400data ends code segment">
+<meta property="og:description" content="使用汇编语言实现根据输入的数字来判断是否为闰年。 算法流程图：  主要代码： data segment output1 db ‘Yes’,’$’ output2 db ‘No’,’$’ output3 db ‘Error’,’$’ year dw ? x1 dw 4 x2 dw 100 x3 dw 400 data ends code segment assume cs:code,ds:data">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/07/QQ%E5%9B%BE%E7%89%8720180725093458.png">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/07/%E9%A1%B9%E7%9B%AE%E6%B5%81%E7%A8%8B.png">
@@ -121,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/07/25/hui-bian-yu-yan-shi-xian-pan-duan-shi-fou-wei-run-nian-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/07/25/hui-bian-yu-yan-shi-xian-pan-duan-shi-fou-wei-run-nian-1/"/>
 
 
 
@@ -323,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/07/25/hui-bian-yu-yan-shi-xian-pan-duan-shi-fou-wei-run-nian-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/07/25/hui-bian-yu-yan-shi-xian-pan-duan-shi-fou-wei-run-nian-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -424,16 +424,62 @@
 
       
         <p><img src="http://47.100.4.8/wp-content/uploads/2018/07/QQ%E5%9B%BE%E7%89%8720180725093458.png" alt=""> <strong>使用汇编语言实现根据输入的数字来判断是否为闰年。</strong> <strong>算法流程图：</strong> <img src="http://47.100.4.8/wp-content/uploads/2018/07/%E9%A1%B9%E7%9B%AE%E6%B5%81%E7%A8%8B.png" alt=""> <strong>主要代码：</strong></p>
-<p>data segment<br>    output1 db ‘Yes’,’$’<br>    output2 db ‘No’,’$’<br>    output3 db ‘Error’,’$’<br>    year dw ?<br>    x1 dw 4<br>    x2 dw 100<br>    x3 dw 400<br>data ends</p>
-<p>code segment<br>    assume cs:code,ds:data<br>start:<br>    mov ax,data<br>    mov ds,ax<br>    ;数据初始化<br>    mov year,0 ;存储年份的位数清零<br>    mov cx,4 ;年份为4位<br>lk:<br>    push cx<br>    mov ah,1 ;输入单个字符<br>    int 21H<br>    ;进行输入的判断 如何小于0则跳转到Error<br>    cmp al,’0’<br>    jb error<br>    cmp al,3AH<br>    jb chuli ;如何满足则进行处理</p>
-<p>error:<br>    ;输出换行符<br>    mov dl,0AH<br>    mov ah,02H<br>    int 21H</p>
+<p>data segment<br>
+output1 db ‘Yes’,’$’<br>
+output2 db ‘No’,’$’<br>
+output3 db ‘Error’,’$’<br>
+year dw ?<br>
+x1 dw 4<br>
+x2 dw 100<br>
+x3 dw 400<br>
+data ends</p>
+<p>code segment<br>
+assume cs:code,ds:data<br>
+start:<br>
+mov ax,data<br>
+mov ds,ax<br>
+;数据初始化<br>
+mov year,0 ;存储年份的位数清零<br>
+mov cx,4 ;年份为4位<br>
+lk:<br>
+push cx<br>
+mov ah,1 ;输入单个字符<br>
+int 21H<br>
+;进行输入的判断 如何小于0则跳转到Error<br>
+cmp al,‘0’<br>
+jb error<br>
+cmp al,3AH<br>
+jb chuli ;如何满足则进行处理</p>
+<p>error:<br>
+;输出换行符<br>
+mov dl,0AH<br>
+mov ah,02H<br>
+int 21H</p>
 <pre><code>lea dx,output3
 mov ah,09H
 int 21h
-jmp exit</code></pre><p>chuli:<br>    sub al,30H ;将字符转换为数字<br>    mov ah,0 ;将ah置0<br>    mov cx,ax ;用cx暂存ax的内容<br>    ;将老的数据乘以10并且加上原来的存储的数据<br>    mov ax,year<br>    mov bx,10<br>    mul bx<br>    add ax,cx<br>    mov year,ax ;将乘10以后的数据存储到原值</p>
+jmp exit
+</code></pre>
+<p>chuli:<br>
+sub al,30H ;将字符转换为数字<br>
+mov ah,0 ;将ah置0<br>
+mov cx,ax ;用cx暂存ax的内容<br>
+;将老的数据乘以10并且加上原来的存储的数据<br>
+mov ax,year<br>
+mov bx,10<br>
+mul bx<br>
+add ax,cx<br>
+mov year,ax ;将乘10以后的数据存储到原值</p>
 <pre><code>pop cx ;将原来的cx值出栈用以循环使用
 
-loop lk ;进行循环输入</code></pre><p>panduan:<br>    mov ax,year;取得最终输入的年份<br>    cwd ;扩展为32位 方便进行乘除<br>    div x1 ;除以4<br>    cmp dx,0 ;判断余数是否为0<br>    jne feirunnian;如果余数非0则不是闰年</p>
+loop lk ;进行循环输入
+</code></pre>
+<p>panduan:<br>
+mov ax,year;取得最终输入的年份<br>
+cwd ;扩展为32位 方便进行乘除<br>
+div x1 ;除以4<br>
+cmp dx,0 ;判断余数是否为0<br>
+jne feirunnian;如果余数非0则不是闰年</p>
 <pre><code>mov ax,year
 cwd
 div x3 ;除以400
@@ -444,16 +490,33 @@ mov ax,year
 cwd
 div x2 ;除以100
 cmp dx,0
-jne runnian</code></pre><p>feirunnian:<br>    ;输出换行符<br>    mov dl,0AH<br>    mov ah,02H<br>    int 21H</p>
+jne runnian
+</code></pre>
+<p>feirunnian:<br>
+;输出换行符<br>
+mov dl,0AH<br>
+mov ah,02H<br>
+int 21H</p>
 <pre><code>lea dx,output2
 mov ah,09H
 int 21H
-jmp exit</code></pre><p>runnian:<br>    ;输出换行符<br>    mov dl,0AH<br>    mov ah,02H<br>    int 21H</p>
+jmp exit
+</code></pre>
+<p>runnian:<br>
+;输出换行符<br>
+mov dl,0AH<br>
+mov ah,02H<br>
+int 21H</p>
 <pre><code>lea dx,output1
 mov ah,09H
 int 21H
-jmp exit</code></pre><p>exit:<br>    mov ah,4ch<br>    int 21H</p>
-<p>code ends<br>end start</p>
+jmp exit
+</code></pre>
+<p>exit:<br>
+mov ah,4ch<br>
+int 21H</p>
+<p>code ends<br>
+end start</p>
 <p><strong>测试：</strong> <img src="http://47.100.4.8/wp-content/uploads/2018/07/QQ%E5%9B%BE%E7%89%8720180725094929.png" alt=""> <img src="http://47.100.4.8/wp-content/uploads/2018/07/QQ%E5%9B%BE%E7%89%8720180725094951.png" alt=""></p>
 
       

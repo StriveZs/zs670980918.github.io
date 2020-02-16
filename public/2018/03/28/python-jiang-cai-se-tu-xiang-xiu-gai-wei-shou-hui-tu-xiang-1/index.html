@@ -78,7 +78,7 @@
 <meta name="description" content="这里是通过使用numpy.array数组来对图像进行处理。 这里是代码：  from PIL import Image import numpy as np a &#x3D; np.array(Image.open(“F:&#x2F;a.png”).convert(‘L’)).astype(‘float’) depth &#x3D; 10. #（0-100） grad &#x3D; np.gradient(a) #取图像灰度的梯度值">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python将彩色图像修改为手绘图像">
-<meta property="og:url" content="blog.strivezs.com/2018/03/28/python-jiang-cai-se-tu-xiang-xiu-gai-wei-shou-hui-tu-xiang-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/03/28/python-jiang-cai-se-tu-xiang-xiu-gai-wei-shou-hui-tu-xiang-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="这里是通过使用numpy.array数组来对图像进行处理。 这里是代码：  from PIL import Image import numpy as np a &#x3D; np.array(Image.open(“F:&#x2F;a.png”).convert(‘L’)).astype(‘float’) depth &#x3D; 10. #（0-100） grad &#x3D; np.gradient(a) #取图像灰度的梯度值">
 <meta property="og:locale" content="en_US">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/03/28/python-jiang-cai-se-tu-xiang-xiu-gai-wei-shou-hui-tu-xiang-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/03/28/python-jiang-cai-se-tu-xiang-xiu-gai-wei-shou-hui-tu-xiang-1/"/>
 
 
 
@@ -324,7 +324,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/03/28/python-jiang-cai-se-tu-xiang-xiu-gai-wei-shou-hui-tu-xiang-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/28/python-jiang-cai-se-tu-xiang-xiu-gai-wei-shou-hui-tu-xiang-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -435,7 +435,7 @@
       
 
       
-        <p><img src="http://47.100.4.8/wp-content/uploads/2018/03/u407244128253124607fm27gp0-1-300x200.jpg" alt=""> 这里是通过使用numpy.array数组来对图像进行处理。 这里是代码： <img src="http://47.100.4.8/wp-content/uploads/2018/03/1231232132143425436457654.png" alt=""> from PIL import Image import numpy as np a = np.array(Image.open(“F:/a.png”).convert(‘L’)).astype(‘float’) depth = 10. #（0-100） grad = np.gradient(a) #取图像灰度的梯度值 grad_x,grad_y = grad #分别取横纵图像的梯度值 grad_x = grad_x * depth / 100. grad_y = grad_y * depth / 100. A = np.sqrt(grad_x**2 + grad_y**2 + 1.) uni_x = grad_x / A uni_y = grad_y / A uni_z = 1. / A vec_e1 = np.pi / 2.2 #光源的俯视角度，弧度值 vec_az = np.pi / 4 #光源的方位角度，弧度值 dx = np.cos(vec_e1) * np.cos(vec_az) #光源对x轴的影响 dy = np.cos(vec_e1) * np.sin(vec_az) #光源对y轴的影响 dz = np.sin(vec_e1) #光源对z的影响 b = 255 * (dx * uni_x + dy * uni_y + dz * uni_z) #光源归一化 b = b.clip(0,255) im = Image.fromarray(b.astype(‘uint8’)) #重构图像 im.save(‘F:/b.jpg’)   原图： <img src="http://47.100.4.8/wp-content/uploads/2018/03/546424323.png" alt=""> 下面是效果图： <img src="http://47.100.4.8/wp-content/uploads/2018/03/3242133123.png" alt=""></p>
+        <p><img src="http://47.100.4.8/wp-content/uploads/2018/03/u407244128253124607fm27gp0-1-300x200.jpg" alt=""> 这里是通过使用numpy.array数组来对图像进行处理。 这里是代码： <img src="http://47.100.4.8/wp-content/uploads/2018/03/1231232132143425436457654.png" alt=""> from PIL import Image import numpy as np a = np.array(Image.open(“F:/a.png”).convert(‘L’)).astype(‘float’) depth = 10. #（0-100） grad = np.gradient(a) #取图像灰度的梯度值 grad_x,grad_y = grad #分别取横纵图像的梯度值 grad_x = grad_x * depth / 100. grad_y = grad_y * depth / 100. A = np.sqrt(grad_x**2 + grad_y**2 + 1.) uni_x = grad_x / A uni_y = grad_y / A uni_z = 1. / A vec_e1 = np.pi / 2.2 #光源的俯视角度，弧度值 vec_az = np.pi / 4 #光源的方位角度，弧度值 dx = np.cos(vec_e1) * np.cos(vec_az) #光源对x轴的影响 dy = np.cos(vec_e1) * np.sin(vec_az) #光源对y轴的影响 dz = np.sin(vec_e1) #光源对z的影响 b = 255 * (dx * uni_x + dy * uni_y + dz * uni_z) #光源归一化 b = b.clip(0,255) im = Image.fromarray(b.astype(‘uint8’)) #重构图像 im.save(‘F:/b.jpg’)   原图： <img src="http://47.100.4.8/wp-content/uploads/2018/03/546424323.png" alt=""> 下面是效果图： <img src="http://47.100.4.8/wp-content/uploads/2018/03/3242133123.png" alt=""></p>
 
       
     </div>

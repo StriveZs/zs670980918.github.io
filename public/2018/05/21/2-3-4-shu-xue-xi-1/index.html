@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="首先先对二叉树进行介绍： 二叉树表面上理解是：只有两个分叉 如图：  需要注意的是每一个的结点的左子节点都比该节点的值小，同理该节点的右节点都比该节点的值大。还有就是每一个节点都只能有一个key值。相对的来讲二叉树的的结点越多，高度也越高，那么查找效率也就越低。   2-3-4数：  需要注意的无论什么操作都要保证所有的结点高度一样！ 特点是高度平衡 有名字就可以看出来的它的结点可以有2个3个4个">
+<meta name="description" content="首先先对二叉树进行介绍： 二叉树表面上理解是：只有两个分叉 如图：  需要注意的是每一个的结点的左子节点都比该节点的值小，同理该节点的右节点都比该节点的值大。还有就是每一个节点都只能有一个key值。相对的来讲二叉树的的结点越多，高度也越高，那么查找效率也就越低。   2-3-4数：  需要注意的无论什么操作都要保证所有的结点高度一样！ 特点是高度平衡 有名字就可以看出来的它的结点可以有2个3个4个">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2-3-4树学习">
-<meta property="og:url" content="blog.strivezs.com/2018/05/21/2-3-4-shu-xue-xi-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/05/21/2-3-4-shu-xue-xi-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="首先先对二叉树进行介绍： 二叉树表面上理解是：只有两个分叉 如图：  需要注意的是每一个的结点的左子节点都比该节点的值小，同理该节点的右节点都比该节点的值大。还有就是每一个节点都只能有一个key值。相对的来讲二叉树的的结点越多，高度也越高，那么查找效率也就越低。   2-3-4数：  需要注意的无论什么操作都要保证所有的结点高度一样！ 特点是高度平衡 有名字就可以看出来的它的结点可以有2个3个4个">
+<meta property="og:description" content="首先先对二叉树进行介绍： 二叉树表面上理解是：只有两个分叉 如图：  需要注意的是每一个的结点的左子节点都比该节点的值小，同理该节点的右节点都比该节点的值大。还有就是每一个节点都只能有一个key值。相对的来讲二叉树的的结点越多，高度也越高，那么查找效率也就越低。   2-3-4数：  需要注意的无论什么操作都要保证所有的结点高度一样！ 特点是高度平衡 有名字就可以看出来的它的结点可以有2个3个4个">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/05/1-6.png">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/05/2-6.png">
@@ -132,7 +132,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/05/21/2-3-4-shu-xue-xi-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/05/21/2-3-4-shu-xue-xi-1/"/>
 
 
 
@@ -334,7 +334,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/05/21/2-3-4-shu-xue-xi-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/21/2-3-4-shu-xue-xi-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -445,7 +445,7 @@
       
 
       
-        <p>首先先对二叉树进行介绍： 二叉树表面上理解是：只有两个分叉 如图： <img src="http://47.100.4.8/wp-content/uploads/2018/05/1-6.png" alt=""> 需要注意的是每一个的结点的左子节点都比该节点的值小，同理该节点的右节点都比该节点的值大。还有就是每一个节点都只能有一个key值。相对的来讲二叉树的的结点越多，高度也越高，那么查找效率也就越低。   2-3-4数：  <strong>需要注意的无论什么操作都要保证所有的结点高度一样！</strong> <strong>特点是高度平衡</strong> 有名字就可以看出来的它的结点可以有2个3个4个。 具体的定义：</p>
+        <p>首先先对二叉树进行介绍： 二叉树表面上理解是：只有两个分叉 如图： <img src="http://47.100.4.8/wp-content/uploads/2018/05/1-6.png" alt=""> 需要注意的是每一个的结点的左子节点都比该节点的值小，同理该节点的右节点都比该节点的值大。还有就是每一个节点都只能有一个key值。相对的来讲二叉树的的结点越多，高度也越高，那么查找效率也就越低。   2-3-4数：  <strong>需要注意的无论什么操作都要保证所有的结点高度一样！</strong> <strong>特点是高度平衡</strong> 有名字就可以看出来的它的结点可以有2个3个4个。 具体的定义：</p>
 <ol>
 <li>一个key有两个儿子结点。</li>
 </ol>
@@ -458,7 +458,7 @@
 <ol start="3">
 <li>如果最终能找到相同的值，则返回并提示查找成功，否则当遍历完该树时，结束并且返回查找失败。</li>
 </ol>
-<p>图解： <img src="http://47.100.4.8/wp-content/uploads/2018/05/6-2.png" alt=""> 2-3-4插入   插入分别几种情况： 1. 如果是向2 key值的结点插入数据的话，那么直接将它转换为3 key值的结点就好了。 如图： <img src="http://47.100.4.8/wp-content/uploads/2018/05/7-2.png" alt=""> <img src="http://47.100.4.8/wp-content/uploads/2018/05/8.png" alt=""> 3.如果是向一个3 key值的结点插入，则就将3 key值的结点变换为4 key值的结点 如图： <img src="http://47.100.4.8/wp-content/uploads/2018/05/9.png" alt=""> <img src="http://47.100.4.8/wp-content/uploads/2018/05/10.png" alt="">、 4.向四结点的插入节点的情况： 就需要对节点进行变化。 第一种情况： 向3 key值的结点插入，其父结点不是3 key值的结点，则进行如图操作： <img src="http://47.100.4.8/wp-content/uploads/2018/05/11-1.png" alt=""> <img src="http://47.100.4.8/wp-content/uploads/2018/05/12.png" alt=""> 则将FGJ中的G提到父结点中（注意这里的父结点不是3 key值的结点） <img src="http://47.100.4.8/wp-content/uploads/2018/05/13.png" alt=""> 3 key结点的父结点分别为1 key结点和2 key结点不是3 key结点： <img src="http://47.100.4.8/wp-content/uploads/2018/05/14.png" alt=""> 会在明天的 博文中讨论向一个三key值的结点插入数据时父结点也是3key值结点时的情况。 在这里要感谢：<a href="https://www.jianshu.com/p/37c845a5add6">https://www.jianshu.com/p/37c845a5add6</a>   博主提供的讲解，上面的图均取自其的博文，再次感谢。</p>
+<p>图解： <img src="http://47.100.4.8/wp-content/uploads/2018/05/6-2.png" alt=""> 2-3-4插入   插入分别几种情况： 1. 如果是向2 key值的结点插入数据的话，那么直接将它转换为3 key值的结点就好了。 如图： <img src="http://47.100.4.8/wp-content/uploads/2018/05/7-2.png" alt=""> <img src="http://47.100.4.8/wp-content/uploads/2018/05/8.png" alt=""> 3.如果是向一个3 key值的结点插入，则就将3 key值的结点变换为4 key值的结点 如图： <img src="http://47.100.4.8/wp-content/uploads/2018/05/9.png" alt=""> <img src="http://47.100.4.8/wp-content/uploads/2018/05/10.png" alt="">、 4.向四结点的插入节点的情况： 就需要对节点进行变化。 第一种情况： 向3 key值的结点插入，其父结点不是3 key值的结点，则进行如图操作： <img src="http://47.100.4.8/wp-content/uploads/2018/05/11-1.png" alt=""> <img src="http://47.100.4.8/wp-content/uploads/2018/05/12.png" alt=""> 则将FGJ中的G提到父结点中（注意这里的父结点不是3 key值的结点） <img src="http://47.100.4.8/wp-content/uploads/2018/05/13.png" alt=""> 3 key结点的父结点分别为1 key结点和2 key结点不是3 key结点： <img src="http://47.100.4.8/wp-content/uploads/2018/05/14.png" alt=""> 会在明天的 博文中讨论向一个三key值的结点插入数据时父结点也是3key值结点时的情况。 在这里要感谢：<a href="https://www.jianshu.com/p/37c845a5add6">https://www.jianshu.com/p/37c845a5add6</a>   博主提供的讲解，上面的图均取自其的博文，再次感谢。</p>
 
       
     </div>

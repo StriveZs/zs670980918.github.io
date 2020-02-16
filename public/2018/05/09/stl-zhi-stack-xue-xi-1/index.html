@@ -78,7 +78,7 @@
 <meta name="description" content="栈是一种容器适配器，特别为后入先出而设计的一种（LIFO ），那种数据被插入，然后再容器末端取出 栈实现了容器适配器，这是用了一个封装了的类作为他的特定容器，提供了一组成员函数去访问他的元素，元素从特定的容器，也就是堆栈的头取出。 遵循先进先出的原则。栈口只有一个，允许新增元素（只能在栈顶上增加）、移除元素（只能一处栈顶元素）、取得栈顶元素等操作。在STL，栈是以别的容器作为底部结构，再将接口改">
 <meta property="og:type" content="article">
 <meta property="og:title" content="STL之Stack学习">
-<meta property="og:url" content="blog.strivezs.com/2018/05/09/stl-zhi-stack-xue-xi-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/05/09/stl-zhi-stack-xue-xi-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="栈是一种容器适配器，特别为后入先出而设计的一种（LIFO ），那种数据被插入，然后再容器末端取出 栈实现了容器适配器，这是用了一个封装了的类作为他的特定容器，提供了一组成员函数去访问他的元素，元素从特定的容器，也就是堆栈的头取出。 遵循先进先出的原则。栈口只有一个，允许新增元素（只能在栈顶上增加）、移除元素（只能一处栈顶元素）、取得栈顶元素等操作。在STL，栈是以别的容器作为底部结构，再将接口改">
 <meta property="og:locale" content="en_US">
@@ -121,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/05/09/stl-zhi-stack-xue-xi-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/05/09/stl-zhi-stack-xue-xi-1/"/>
 
 
 
@@ -323,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/05/09/stl-zhi-stack-xue-xi-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/09/stl-zhi-stack-xue-xi-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -434,9 +434,9 @@
       
 
       
-        <p><img src="http://47.100.4.8/wp-content/uploads/2018/05/QQ%E5%9B%BE%E7%89%8720180507183124.png" alt=""> 栈是一种容器适配器，特别为后入先出而设计的一种（LIFO ），那种数据被插入，然后再容器末端取出 栈实现了容器适配器，这是用了一个封装了的类作为他的特定容器，提供了一组成员函数去访问他的元素，元素从特定的容器，也就是堆栈的头取出。 遵循先进先出的原则。栈口只有一个，允许新增元素（只能在栈顶上增加）、移除元素（只能一处栈顶元素）、取得栈顶元素等操作。在STL，栈是以别的容器作为底部结构，再将接口改变，使之符合栈的特性就可以了。   栈的相关函数 构造函数： stack<Elem>c  创建一个空的stack stack<Elem>c1(c2)  用c2初始化c1   数据增减： c.top（）  返回栈顶元素 c.push（elem） 在栈顶增加elem数据 c.pop（）  弹出栈顶元素   其他操作： c.empty（）   判断栈是否为空 c.size（）  返回栈中数据的个数 代码：</p>
+        <p><img src="http://47.100.4.8/wp-content/uploads/2018/05/QQ%E5%9B%BE%E7%89%8720180507183124.png" alt=""> 栈是一种容器适配器，特别为后入先出而设计的一种（LIFO ），那种数据被插入，然后再容器末端取出 栈实现了容器适配器，这是用了一个封装了的类作为他的特定容器，提供了一组成员函数去访问他的元素，元素从特定的容器，也就是堆栈的头取出。 遵循先进先出的原则。栈口只有一个，允许新增元素（只能在栈顶上增加）、移除元素（只能一处栈顶元素）、取得栈顶元素等操作。在STL，栈是以别的容器作为底部结构，再将接口改变，使之符合栈的特性就可以了。   栈的相关函数 构造函数： stack<Elem>c  创建一个空的stack stack<Elem>c1(c2)  用c2初始化c1   数据增减： c.top（）  返回栈顶元素 c.push（elem） 在栈顶增加elem数据 c.pop（）  弹出栈顶元素   其他操作： c.empty（）   判断栈是否为空 c.size（）  返回栈中数据的个数 代码：</p>
 <figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt;s;  <span class="comment">//创建一个栈</span></span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"创建栈成功！"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"当前栈的数据个数："</span>&lt;&lt;s.<span class="built_in">size</span>()&lt;&lt;<span class="built_in">endl</span>;\</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"添加三个元素在之后："</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    s.push(<span class="number">1</span>);  <span class="comment">//向栈中添加元素</span></span><br><span class="line">    s.push(<span class="number">2</span>);</span><br><span class="line">    s.push(<span class="number">3</span>);</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"当前栈的数据个数："</span>&lt;&lt;s.<span class="built_in">size</span>()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"返回栈顶元素："</span>&lt;&lt;s.top()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"弹出栈顶元素之前的数据个数："</span>&lt;&lt;s.<span class="built_in">size</span>()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    s.pop();</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"弹出栈顶元素之后的数据个数："</span>&lt;&lt;s.<span class="built_in">size</span>()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"判断栈是否为空:"</span>&lt;&lt;s.empty()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>  结果： <img src="http://47.100.4.8/wp-content/uploads/2018/05/12335424.png" alt=""></p>
+<p>结果： <img src="http://47.100.4.8/wp-content/uploads/2018/05/12335424.png" alt=""></p>
 
       
     </div>

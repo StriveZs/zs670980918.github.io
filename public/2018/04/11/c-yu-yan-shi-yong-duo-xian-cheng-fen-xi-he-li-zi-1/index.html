@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="因为最近在进行操作系统实验，涉及到了C语言多线程的实现，因此就写一片博文来讲一下。同样这个对于C++也适用。 首先要引用pthread.h 头文件。   声明一个线程变量： 格式：pthread_t 线程名（ps：这里也可以是一个线程组）   建立一个线程： 格式：pthread_create（） pthread_create(pthread_t *restrict tidp,const pth">
+<meta name="description" content="因为最近在进行操作系统实验，涉及到了C语言多线程的实现，因此就写一片博文来讲一下。同样这个对于C++也适用。 首先要引用pthread.h 头文件。   声明一个线程变量： 格式：pthread_t 线程名（ps：这里也可以是一个线程组）   建立一个线程： 格式：pthread_create（） pthread_create(pthread_t *restrict tidp,const pth">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C语言使用多线程分析和例子">
-<meta property="og:url" content="blog.strivezs.com/2018/04/11/c-yu-yan-shi-yong-duo-xian-cheng-fen-xi-he-li-zi-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/04/11/c-yu-yan-shi-yong-duo-xian-cheng-fen-xi-he-li-zi-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="因为最近在进行操作系统实验，涉及到了C语言多线程的实现，因此就写一片博文来讲一下。同样这个对于C++也适用。 首先要引用pthread.h 头文件。   声明一个线程变量： 格式：pthread_t 线程名（ps：这里也可以是一个线程组）   建立一个线程： 格式：pthread_create（） pthread_create(pthread_t *restrict tidp,const pth">
+<meta property="og:description" content="因为最近在进行操作系统实验，涉及到了C语言多线程的实现，因此就写一片博文来讲一下。同样这个对于C++也适用。 首先要引用pthread.h 头文件。   声明一个线程变量： 格式：pthread_t 线程名（ps：这里也可以是一个线程组）   建立一个线程： 格式：pthread_create（） pthread_create(pthread_t *restrict tidp,const pth">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180411221012.png">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180411222056.png">
@@ -123,7 +123,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/04/11/c-yu-yan-shi-yong-duo-xian-cheng-fen-xi-he-li-zi-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/04/11/c-yu-yan-shi-yong-duo-xian-cheng-fen-xi-he-li-zi-1/"/>
 
 
 
@@ -325,7 +325,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/04/11/c-yu-yan-shi-yong-duo-xian-cheng-fen-xi-he-li-zi-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/11/c-yu-yan-shi-yong-duo-xian-cheng-fen-xi-he-li-zi-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -425,7 +425,7 @@
       
 
       
-        <p><img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180411221012.png" alt=""> 因为最近在进行操作系统实验，涉及到了C语言多线程的实现，因此就写一片博文来讲一下。同样这个对于C++也适用。 首先要引用pthread.h 头文件。   声明一个线程变量： 格式：pthread_t 线程名（ps：这里也可以是一个线程组）   建立一个线程： 格式：pthread_create（） pthread_create(<a href="http://baike.baidu.com/view/4591990.htm">pthread_t</a> *restrict tidp,const pthread_attr_t *restrict_attr,void<em>（*start_rtn)(void\</em>),void <em>restrict arg) 四个参数： 第一个参数为指向线程<a href="http://baike.baidu.com/view/390932.htm">标识符</a>的指针。 第二个参数用来设置线程属性。 第三个参数是线程运行函数的起始地址。 最后一个参数是运行函数的参数。   pthread_join用来等待一个线程的结束。 格式：pthread_join void <em>a  这个随意定义的 pthread_join (你定义的线程名,&amp;a);   线程的终止： pthread_exit()； 用来终止当前进程。   下面给出一些常用的操作函数： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180411222056.png" alt=""> 常用的同步函数： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180411222125.png" alt="">   接下来是应用实例： 我是以生产者消费者问题为实例，这里我是创建了多个生产者和消费者线程，让他们同时发生。 <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180411222254.png" alt="">   特别注意在Linux系统下编译可能会出现： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180411222415.png" alt=""> 需要 在编译时使用命令： *</em>gcc a.c -o b -lpthread** 这样就可以编译成功了。(</em>^▽^*) End！</p>
+        <p><img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180411221012.png" alt=""> 因为最近在进行操作系统实验，涉及到了C语言多线程的实现，因此就写一片博文来讲一下。同样这个对于C++也适用。 首先要引用pthread.h 头文件。   声明一个线程变量： 格式：pthread_t 线程名（ps：这里也可以是一个线程组）   建立一个线程： 格式：pthread_create（） pthread_create(<a href="http://baike.baidu.com/view/4591990.htm">pthread_t</a> *restrict tidp,const pthread_attr_t *restrict_attr,void*（*start_rtn)(void*),void <em>restrict arg) 四个参数： 第一个参数为指向线程<a href="http://baike.baidu.com/view/390932.htm">标识符</a>的指针。 第二个参数用来设置线程属性。 第三个参数是线程运行函数的起始地址。 最后一个参数是运行函数的参数。   pthread_join用来等待一个线程的结束。 格式：pthread_join void <em>a  这个随意定义的 pthread_join (你定义的线程名,&amp;a);   线程的终止： pthread_exit()； 用来终止当前进程。   下面给出一些常用的操作函数： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180411222056.png" alt=""> 常用的同步函数： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180411222125.png" alt="">   接下来是应用实例： 我是以生产者消费者问题为实例，这里我是创建了多个生产者和消费者线程，让他们同时发生。 <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180411222254.png" alt="">   特别注意在Linux系统下编译可能会出现： <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180411222415.png" alt=""> 需要 在编译时使用命令： <strong>gcc a.c -o b -lpthread</strong> 这样就可以编译成功了。(</em><sup>▽</sup></em>) End！</p>
 
       
     </div>

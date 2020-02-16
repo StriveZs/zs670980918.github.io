@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="w(ﾟДﾟ)w  不会CMD命令的程序猿不是一个好的程序猿！ 咳咳，当然在Linux下就要会Shell脚本。 这是一篇真正的入门，讲解一般的DOS可以怎么使用。不排列庞大的命令条目，这里只举例子。 按照废话的惯例，先普及下基础知识，走你： 以下提及的win键，就是键盘上那个有个窗户图标的键 win7或者XP直接按win键，在弹出的窗口选择你要输入的程序，比如cmd然后按enter键就可以打开cmd">
+<meta name="description" content="w(ﾟДﾟ)w   不会CMD命令的程序猿不是一个好的程序猿！ 咳咳，当然在Linux下就要会Shell脚本。 这是一篇真正的入门，讲解一般的DOS可以怎么使用。不排列庞大的命令条目，这里只举例子。 按照废话的惯例，先普及下基础知识，走你： 以下提及的win键，就是键盘上那个有个窗户图标的键 win7或者XP直接按win键，在弹出的窗口选择你要输入的程序，比如cmd然后按enter键就可以打开cm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cmd命令入门(&#96;・ω・´)">
-<meta property="og:url" content="blog.strivezs.com/2018/03/04/cmd-ming-ling-ru-men-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/03/04/cmd-ming-ling-ru-men-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="w(ﾟДﾟ)w  不会CMD命令的程序猿不是一个好的程序猿！ 咳咳，当然在Linux下就要会Shell脚本。 这是一篇真正的入门，讲解一般的DOS可以怎么使用。不排列庞大的命令条目，这里只举例子。 按照废话的惯例，先普及下基础知识，走你： 以下提及的win键，就是键盘上那个有个窗户图标的键 win7或者XP直接按win键，在弹出的窗口选择你要输入的程序，比如cmd然后按enter键就可以打开cmd">
+<meta property="og:description" content="w(ﾟДﾟ)w   不会CMD命令的程序猿不是一个好的程序猿！ 咳咳，当然在Linux下就要会Shell脚本。 这是一篇真正的入门，讲解一般的DOS可以怎么使用。不排列庞大的命令条目，这里只举例子。 按照废话的惯例，先普及下基础知识，走你： 以下提及的win键，就是键盘上那个有个窗户图标的键 win7或者XP直接按win键，在弹出的窗口选择你要输入的程序，比如cmd然后按enter键就可以打开cm">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180304184635.png">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180304183856-300x157.png">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/03/04/cmd-ming-ling-ru-men-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/03/04/cmd-ming-ling-ru-men-1/"/>
 
 
 
@@ -324,7 +324,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/03/04/cmd-ming-ling-ru-men-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/04/cmd-ming-ling-ru-men-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -424,10 +424,12 @@
       
 
       
-        <h1 id="w-ﾟДﾟ-w"><a href="#w-ﾟДﾟ-w" class="headerlink" title="w(ﾟДﾟ)w  "></a>w(ﾟДﾟ)w  <img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180304184635.png" alt=""></h1><p>不会CMD命令的程序猿不是一个好的程序猿！ 咳咳，当然在Linux下就要会Shell脚本。 这是一篇真正的入门，讲解一般的DOS可以怎么使用。不排列庞大的命令条目，这里只举例子。 按照废话的惯例，先普及下基础知识，走你： 以下提及的win键，就是键盘上那个有个窗户图标的键 win7或者XP直接按win键，在弹出的窗口选择你要输入的程序，比如cmd然后按enter键就可以打开cmd命令窗口了！但是win8这样做就不方便。 win+R在左下角弹出一个窗口才是在window系统下最通用的做法，打开窗口后再输入cmd按enter键打开命令窗口。 通常的命令是在命令窗口直接完成的，如果需要保存在文本里进行运行，就要保存为.bat或者 .cmd的后缀(WTF，我的文件怎么没有后缀，好吧，你需要百度下使得操作系统显示你的文件后缀名)。 开始步入正题。 首先在cmd命令输入help，看到如下图的结果，这里展示的原生的DOS命令。 这里列出了一些命令，可以自己试试的玩。一般看到一个命令后，如果没有说明文档，你就尝试的在其命令后直接输入 -help 或者 /? 再或者一个随便什么的字符让它报错，一般情况下就会给出这个命令下相应的参数说明。试试吧，输入attrib /?,效果如下： <img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180304183856-300x157.png" alt=""> <img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180304183912-300x157.png" alt=""> <img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180304183923-300x157.png" alt="">  </p>
-<p>看看说明是不是比较详细啊！后面的参数使用方法这样来进行解读：一个中括号里面的是一组参数，括号中间|的是或的意思，比如一个红框包住的部分，你不能即+R又-R，二者择其一！最后的[/S [/D] [/L]]可以多选。<br>具体的使用要慢慢的练习。这里不一一列举。</p>
+        <h1>w(ﾟДﾟ)w  <img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180304184635.png" alt=""></h1>
+<p>不会CMD命令的程序猿不是一个好的程序猿！ 咳咳，当然在Linux下就要会Shell脚本。 这是一篇真正的入门，讲解一般的DOS可以怎么使用。不排列庞大的命令条目，这里只举例子。 按照废话的惯例，先普及下基础知识，走你： 以下提及的win键，就是键盘上那个有个窗户图标的键 win7或者XP直接按win键，在弹出的窗口选择你要输入的程序，比如cmd然后按enter键就可以打开cmd命令窗口了！但是win8这样做就不方便。 win+R在左下角弹出一个窗口才是在window系统下最通用的做法，打开窗口后再输入cmd按enter键打开命令窗口。 通常的命令是在命令窗口直接完成的，如果需要保存在文本里进行运行，就要保存为.bat或者 .cmd的后缀(WTF，我的文件怎么没有后缀，好吧，你需要百度下使得操作系统显示你的文件后缀名)。 开始步入正题。 首先在cmd命令输入help，看到如下图的结果，这里展示的原生的DOS命令。 这里列出了一些命令，可以自己试试的玩。一般看到一个命令后，如果没有说明文档，你就尝试的在其命令后直接输入 -help 或者 /? 再或者一个随便什么的字符让它报错，一般情况下就会给出这个命令下相应的参数说明。试试吧，输入attrib /?,效果如下： <img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180304183856-300x157.png" alt=""> <img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180304183912-300x157.png" alt=""> <img src="http://47.100.4.8/wp-content/uploads/2018/03/QQ%E5%9B%BE%E7%89%8720180304183923-300x157.png" alt=""></p>
+<p>看看说明是不是比较详细啊！后面的参数使用方法这样来进行解读：一个中括号里面的是一组参数，括号中间|的是或的意思，比如一个红框包住的部分，你不能即+R又-R，二者择其一！最后的[/S [/D] [/L]]可以多选。<br>
+具体的使用要慢慢的练习。这里不一一列举。</p>
 <p>这里就有点懵逼了。说好的net ，telnet命令等各种命令，那些哪里去了。</p>
-<p>  第二类： 其实那是window系统内嵌的程序（支持命令行），这个没法一下子列出，只能慢慢搜集了，下面给出几个有用的应用程序。用于浏览自身系统的状态。举个栗子： ipconfig           查看自身的网络配置 route                管理自身的路由转发表（增删改查） arp                   查看主机存储的IP和MAC的映射 systeminfo      查看系统信息（带图像界面的输入msinfo32） tasklist             查看当前进程列表 query               查询进程 netstat             查看网络状态（不间断的输出，可以用ctrl+c中断其执行） net                    网络的功能，很强大，/? 查看命令去感受吧 netsh   第三类： 要介绍的是就是系统各种程序（带图形界面）的名字，可以帮助你快速找到想要的功能。以下都是图形界面（win+R）中运行，不用去用鼠标点来点去，装逼神器啊。 mstsc                    远程它人的电脑（局域网内常用） MSConfig            可以禁止启动项和启动的服务（在服务和启动的 子项中） services.msc       打开服务 devmgmt.msc     打开设备管理 control                  打开控制面板 regedit                 打开注册表 appwiz.cpl           打开删除程序的面板 还有一些小程序可以通过命令行打开，比如在cmd窗口中输入calc 打开系统自带的计算器，call mspaint打开画图板 ,notepad新打开一个文本   快捷键 啊，快捷键有木有！可以找个什么快捷键大全耍耍，下面值列举经常用的的快捷键（好吧，是我经常用） win+E                 打开文件管器 win+D                 显示桌面 win+L                 锁计算机 alt+F4                 关闭当前程序 ctrl+shift+Esc    打开任务管理器（或者ctrl+alt+delete） ctrl+F                  在一个文本或者网页里面查找，相当实用（退出一般按ESC） ctrl+A                  选中所有文本   QWQ  <img src="http://47.100.4.8/wp-content/uploads/2018/03/09fa513d269759ee9acfdca1b1fb43166d22df39.gif" alt=""></p>
+<p>第二类： 其实那是window系统内嵌的程序（支持命令行），这个没法一下子列出，只能慢慢搜集了，下面给出几个有用的应用程序。用于浏览自身系统的状态。举个栗子： ipconfig           查看自身的网络配置 route                管理自身的路由转发表（增删改查） arp                   查看主机存储的IP和MAC的映射 systeminfo      查看系统信息（带图像界面的输入msinfo32） tasklist             查看当前进程列表 query               查询进程 netstat             查看网络状态（不间断的输出，可以用ctrl+c中断其执行） net                    网络的功能，很强大，/? 查看命令去感受吧 netsh   第三类： 要介绍的是就是系统各种程序（带图形界面）的名字，可以帮助你快速找到想要的功能。以下都是图形界面（win+R）中运行，不用去用鼠标点来点去，装逼神器啊。 mstsc                    远程它人的电脑（局域网内常用） MSConfig            可以禁止启动项和启动的服务（在服务和启动的 子项中） services.msc       打开服务 devmgmt.msc     打开设备管理 control                  打开控制面板 regedit                 打开注册表 appwiz.cpl           打开删除程序的面板 还有一些小程序可以通过命令行打开，比如在cmd窗口中输入calc 打开系统自带的计算器，call mspaint打开画图板 ,notepad新打开一个文本   快捷键 啊，快捷键有木有！可以找个什么快捷键大全耍耍，下面值列举经常用的的快捷键（好吧，是我经常用） win+E                 打开文件管器 win+D                 显示桌面 win+L                 锁计算机 alt+F4                 关闭当前程序 ctrl+shift+Esc    打开任务管理器（或者ctrl+alt+delete） ctrl+F                  在一个文本或者网页里面查找，相当实用（退出一般按ESC） ctrl+A                  选中所有文本   QWQ  <img src="http://47.100.4.8/wp-content/uploads/2018/03/09fa513d269759ee9acfdca1b1fb43166d22df39.gif" alt=""></p>
 
       
     </div>
@@ -621,7 +623,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#w-ﾟДﾟ-w"><span class="nav-number">1.</span> <span class="nav-text">w(ﾟДﾟ)w  </span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">w(ﾟДﾟ)w  </span></a></li></ol></div>
             
 
           </div>

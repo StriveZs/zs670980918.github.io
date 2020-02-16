@@ -78,7 +78,7 @@
 <meta name="description" content="queue单向队列使用 queue单向队列与栈有点类似，一个是在同一端存取数据，另一个是在一端存入数据，另一端取出数据。单向队列中的数据是先进先出（First In First Out,FIFO）。在STL中，单向队列也是以别的容器作为底部结构，再将接口改变，使之符合单向队列的特性就可以了。因此实现也是非常方便的。下面就给出单向队列的函数列表和VS2008中单向队列的源代码。单向队列一共6个常用函">
 <meta property="og:type" content="article">
 <meta property="og:title" content="STL之queue">
-<meta property="og:url" content="blog.strivezs.com/2018/05/11/stl-zhi-queue-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/05/11/stl-zhi-queue-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="queue单向队列使用 queue单向队列与栈有点类似，一个是在同一端存取数据，另一个是在一端存入数据，另一端取出数据。单向队列中的数据是先进先出（First In First Out,FIFO）。在STL中，单向队列也是以别的容器作为底部结构，再将接口改变，使之符合单向队列的特性就可以了。因此实现也是非常方便的。下面就给出单向队列的函数列表和VS2008中单向队列的源代码。单向队列一共6个常用函">
 <meta property="og:locale" content="en_US">
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/05/11/stl-zhi-queue-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/05/11/stl-zhi-queue-1/"/>
 
 
 
@@ -322,7 +322,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/05/11/stl-zhi-queue-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/11/stl-zhi-queue-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -433,7 +433,7 @@
       
 
       
-        <p>queue单向队列使用 queue单向队列与<a href="http://blog.csdn.net/morewindows/article/details/6950881">栈</a>有点类似，一个是在同一端存取数据，另一个是在一端存入数据，另一端取出数据。单向队列中的数据是先进先出（First In First Out,FIFO）。在STL中，单向队列也是以别的容器作为底部结构，再将接口改变，使之符合单向队列的特性就可以了。因此实现也是非常方便的。下面就给出单向队列的函数列表和VS2008中单向队列的源代码。单向队列一共6个常用函数（front()、back()、push()、pop()、empty()、size()），与<a href="http://blog.csdn.net/morewindows/article/details/6950881">栈</a>的常用函数较为相似。 <img src="http://47.100.4.8/wp-content/uploads/2018/05/512357486.png" alt=""> 由于仅需取队首和队尾元素的操作，因此<strong>queue**</strong>队列容器并不提供任何类型的迭代器对队列中其他位置处的元素进行访问操作。** <strong>函数</strong> <strong>构造函数：</strong> queue&lt;类型&gt;c   创建一个空间queue queue&lt;类型&gt;c1(c2)  用c2初始化c1   数据访问与增减 c.front（）  返回队列头部数据 c.back（）  返回队列尾部数据 c.push（elem）  在队列尾部增加elem数据 c.pop（）   队列头部数据出队   其他操作 c.empty（）  判断队列是否为空 c.size（）  返回队列中数据的个数 代码：</p>
+        <p>queue单向队列使用 queue单向队列与<a href="http://blog.csdn.net/morewindows/article/details/6950881">栈</a>有点类似，一个是在同一端存取数据，另一个是在一端存入数据，另一端取出数据。单向队列中的数据是先进先出（First In First Out,FIFO）。在STL中，单向队列也是以别的容器作为底部结构，再将接口改变，使之符合单向队列的特性就可以了。因此实现也是非常方便的。下面就给出单向队列的函数列表和VS2008中单向队列的源代码。单向队列一共6个常用函数（front()、back()、push()、pop()、empty()、size()），与<a href="http://blog.csdn.net/morewindows/article/details/6950881">栈</a>的常用函数较为相似。 <img src="http://47.100.4.8/wp-content/uploads/2018/05/512357486.png" alt=""> 由于仅需取队首和队尾元素的操作，因此<strong>queue****队列容器并不提供任何类型的迭代器对队列中其他位置处的元素进行访问操作。</strong> <strong>函数</strong> <strong>构造函数：</strong> queue&lt;类型&gt;c   创建一个空间queue queue&lt;类型&gt;c1(c2)  用c2初始化c1   数据访问与增减 c.front（）  返回队列头部数据 c.back（）  返回队列尾部数据 c.push（elem）  在队列尾部增加elem数据 c.pop（）   队列头部数据出队   其他操作 c.empty（）  判断队列是否为空 c.size（）  返回队列中数据的个数 代码：</p>
 <figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//创建队列1</span></span><br><span class="line">    <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt;test1;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"判断队列test1是否为空："</span>&lt;&lt;test1.empty()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"得到队列test1元素个数:"</span>&lt;&lt;test1.<span class="built_in">size</span>()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    test1.push(<span class="number">1</span>);</span><br><span class="line">    test1.push(<span class="number">2</span>);</span><br><span class="line">    <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt;test2(test1);</span><br><span class="line">    <span class="comment">//打印队列元素</span></span><br><span class="line">    <span class="keyword">int</span> t=test1.<span class="built_in">size</span>();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;t;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;test1.front()&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">        test1.pop();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;test2.back()&lt;&lt;<span class="string">" "</span>&lt;&lt;test2.front()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>结果： <img src="http://47.100.4.8/wp-content/uploads/2018/05/14741.png" alt=""></p>
 

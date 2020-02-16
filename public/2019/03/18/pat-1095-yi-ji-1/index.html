@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="1095 解码PAT准考证 （25 分) 原文地址 PAT 准考证号由 4 部分组成：  第 1 位是级别，即 T 代表顶级；A 代表甲级；B 代表乙级； 第 2~4 位是考场编号，范围从 101 到 999； 第 5~10 位是考试日期，格式为年、月、日顺次各占 2 位； 最后 11~13 位是考生编号，范围从 000 到 999。  现给定一系列考生的准考证号和他们的成绩，请你按照要求输出各种">
+<meta name="description" content="1095 解码PAT准考证 （25 分) 原文地址 PAT 准考证号由 4 部分组成：  第 1 位是级别，即 T 代表顶级；A 代表甲级；B 代表乙级； 第 2~4 位是考场编号，范围从 101 到 999； 第 5~10 位是考试日期，格式为年、月、日顺次各占 2 位； 最后 11~13 位是考生编号，范围从 000 到 999。  现给定一系列考生的准考证号和他们的成绩，请你按照要求输出各种">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pat_1095（乙级）">
-<meta property="og:url" content="blog.strivezs.com/2019/03/18/pat-1095-yi-ji-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2019/03/18/pat-1095-yi-ji-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="1095 解码PAT准考证 （25 分) 原文地址 PAT 准考证号由 4 部分组成：  第 1 位是级别，即 T 代表顶级；A 代表甲级；B 代表乙级； 第 2~4 位是考场编号，范围从 101 到 999； 第 5~10 位是考试日期，格式为年、月、日顺次各占 2 位； 最后 11~13 位是考生编号，范围从 000 到 999。  现给定一系列考生的准考证号和他们的成绩，请你按照要求输出各种">
+<meta property="og:description" content="1095 解码PAT准考证 （25 分) 原文地址 PAT 准考证号由 4 部分组成：  第 1 位是级别，即 T 代表顶级；A 代表甲级；B 代表乙级； 第 2~4 位是考场编号，范围从 101 到 999； 第 5~10 位是考试日期，格式为年、月、日顺次各占 2 位； 最后 11~13 位是考生编号，范围从 000 到 999。  现给定一系列考生的准考证号和他们的成绩，请你按照要求输出各种">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-03-18T03:36:54.000Z">
 <meta property="article:modified_time" content="2019-03-18T03:36:54.000Z">
@@ -116,7 +116,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2019/03/18/pat-1095-yi-ji-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2019/03/18/pat-1095-yi-ji-1/"/>
 
 
 
@@ -318,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2019/03/18/pat-1095-yi-ji-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/03/18/pat-1095-yi-ji-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -429,29 +429,32 @@
       
 
       
-        <p>1095 解码PAT准考证 （25 分) <a href="https://pintia.cn/problem-sets/994805260223102976/problems/1071786104348536832">原文地址</a></p>
+        <p>1095 解码PAT准考证 （25 分) <a href="https://pintia.cn/problem-sets/994805260223102976/problems/1071786104348536832">原文地址</a></p>
 <p>PAT 准考证号由 4 部分组成：</p>
 <ul>
-<li>第 1 位是级别，即 <code>T</code> 代表顶级；<code>A</code> 代表甲级；<code>B</code> 代表乙级；</li>
+<li>第 1 位是级别，即 <code>T</code> 代表顶级；<code>A</code> 代表甲级；<code>B</code> 代表乙级；</li>
 <li>第 2~4 位是考场编号，范围从 101 到 999；</li>
 <li>第 5~10 位是考试日期，格式为年、月、日顺次各占 2 位；</li>
 <li>最后 11~13 位是考生编号，范围从 000 到 999。</li>
 </ul>
 <p>现给定一系列考生的准考证号和他们的成绩，请你按照要求输出各种统计信息。</p>
-<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入首先在一行中给出两个正整数 N（≤10​4​​）和 M（≤100），分别为考生人数和统计要求的个数。 接下来 N 行，每行给出一个考生的准考证号和其分数（在区间 [0,100] 内的整数），其间以空格分隔。 考生信息之后，再给出 M 行，每行给出一个统计要求，格式为：<code>类型 指令</code>，其中</p>
+<h3 id="输入格式："><a class="header-anchor" href="#输入格式：">¶</a>输入格式：</h3>
+<p>输入首先在一行中给出两个正整数 N（≤10​4​​）和 M（≤100），分别为考生人数和统计要求的个数。 接下来 N 行，每行给出一个考生的准考证号和其分数（在区间 [0,100] 内的整数），其间以空格分隔。 考生信息之后，再给出 M 行，每行给出一个统计要求，格式为：<code>类型 指令</code>，其中</p>
 <ul>
-<li><code>类型</code> 为 1 表示要求按分数非升序输出某个指定级别的考生的成绩，对应的 <code>指令</code> 则给出代表指定级别的字母；</li>
-<li><code>类型</code> 为 2 表示要求将某指定考场的考生人数和总分统计输出，对应的 <code>指令</code> 则给出指定考场的编号；</li>
-<li><code>类型</code> 为 3 表示要求将某指定日期的考生人数分考场统计输出，对应的 <code>指令</code> 则给出指定日期，格式与准考证上日期相同。</li>
+<li><code>类型</code> 为 1 表示要求按分数非升序输出某个指定级别的考生的成绩，对应的 <code>指令</code> 则给出代表指定级别的字母；</li>
+<li><code>类型</code> 为 2 表示要求将某指定考场的考生人数和总分统计输出，对应的 <code>指令</code> 则给出指定考场的编号；</li>
+<li><code>类型</code> 为 3 表示要求将某指定日期的考生人数分考场统计输出，对应的 <code>指令</code> 则给出指定日期，格式与准考证上日期相同。</li>
 </ul>
-<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>对每项统计要求，首先在一行中输出 <code>Case #: 要求</code>，其中 <code>#</code> 是该项要求的编号，从 1 开始；<code>要求</code> 即复制输入给出的要求。随后输出相应的统计结果：</p>
+<h3 id="输出格式："><a class="header-anchor" href="#输出格式：">¶</a>输出格式：</h3>
+<p>对每项统计要求，首先在一行中输出 <code>Case #: 要求</code>，其中 <code>#</code> 是该项要求的编号，从 1 开始；<code>要求</code> 即复制输入给出的要求。随后输出相应的统计结果：</p>
 <ul>
-<li><code>类型</code> 为 1 的指令，输出格式与输入的考生信息格式相同，即 <code>准考证号 成绩</code>。对于分数并列的考生，按其准考证号的字典序递增输出（题目保证无重复准考证号）；</li>
-<li><code>类型</code> 为 2 的指令，按 <code>人数 总分</code> 的格式输出；</li>
-<li><code>类型</code> 为 3 的指令，输出按人数非递增顺序，格式为 <code>考场编号 总人数</code>。若人数并列则按考场编号递增顺序输出。</li>
+<li><code>类型</code> 为 1 的指令，输出格式与输入的考生信息格式相同，即 <code>准考证号 成绩</code>。对于分数并列的考生，按其准考证号的字典序递增输出（题目保证无重复准考证号）；</li>
+<li><code>类型</code> 为 2 的指令，按 <code>人数 总分</code> 的格式输出；</li>
+<li><code>类型</code> 为 3 的指令，输出按人数非递增顺序，格式为 <code>考场编号 总人数</code>。若人数并列则按考场编号递增顺序输出。</li>
 </ul>
-<p>如果查询结果为空，则输出 <code>NA</code>。</p>
-<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><pre><code>8 4
+<p>如果查询结果为空，则输出 <code>NA</code>。</p>
+<h3 id="输入样例："><a class="header-anchor" href="#输入样例：">¶</a>输入样例：</h3>
+<pre><code>8 4
 B123180908127 99
 B102180908003 86
 A112180318002 98
@@ -463,7 +466,10 @@ A107180908021 98
 1 A
 2 107
 3 180908
-2 999</code></pre><h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><pre><code>Case 1: 1 A
+2 999
+</code></pre>
+<h3 id="输出样例："><a class="header-anchor" href="#输出样例：">¶</a>输出样例：</h3>
+<pre><code>Case 1: 1 A
 A107180908108 100
 A107180908021 98
 A112180318002 98
@@ -474,7 +480,9 @@ Case 3: 3 180908
 123 2
 102 1
 Case 4: 2 999
-NA</code></pre><p>代码：</p>
+NA
+</code></pre>
+<p>代码：</p>
 <figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">student</span>&#123;</span></span><br><span class="line">    <span class="built_in">string</span> id;</span><br><span class="line">    <span class="keyword">int</span> score;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">examcase2</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> allscore=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> people=<span class="number">0</span>;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">examroom</span>&#123;</span></span><br><span class="line">    <span class="built_in">string</span> room;</span><br><span class="line">    <span class="keyword">int</span> people=<span class="number">0</span>;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(student a,student b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(a.score!=b.score) <span class="keyword">return</span> a.score&gt;b.score;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> a.id&lt;b.id;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp1</span><span class="params">(examroom a,examroom b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(a.people!=b.people) <span class="keyword">return</span> a.people&gt;b.people;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> a.room&lt;b.room;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> N,M;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;N,&amp;M);            <span class="comment">//用cin.cout会超时</span></span><br><span class="line">    <span class="built_in">map</span>&lt;<span class="built_in">string</span>,<span class="built_in">vector</span>&lt;student&gt;&gt;  case1;     <span class="comment">//按等级分；</span></span><br><span class="line">    <span class="built_in">map</span>&lt;<span class="built_in">string</span>,examcase2&gt; case2;             <span class="comment">//按教室分；</span></span><br><span class="line">    <span class="built_in">map</span>&lt;<span class="built_in">string</span>,<span class="built_in">map</span>&lt;<span class="built_in">string</span>,examroom&gt;&gt;  case3;     <span class="comment">//按日期分；</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        student s;</span><br><span class="line">        <span class="keyword">char</span> id\[<span class="number">14</span>\];</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%s %d"</span>,id,&amp;s.score);</span><br><span class="line">        s.id=id;</span><br><span class="line">        <span class="built_in">string</span> ranks=s.id.substr(<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">        <span class="built_in">string</span> exroom=s.id.substr(<span class="number">1</span>,<span class="number">3</span>);</span><br><span class="line">        <span class="built_in">string</span> date=s.id.substr(<span class="number">4</span>,<span class="number">6</span>);</span><br><span class="line">        case1\[ranks\].push_back(s);        <span class="comment">//将s放入同一个等级的动态数组中</span></span><br><span class="line">        case2\[exroom\].allscore+=s.score;    <span class="comment">//该考场的总成绩增加</span></span><br><span class="line">        case2\[exroom\].people++;            <span class="comment">//该考场的总人数增加</span></span><br><span class="line">        case3\[date\]\[exroom\].room=exroom;    <span class="comment">//这个日期考试的这个考场的考场号</span></span><br><span class="line">        case3\[date\]\[exroom\].people++;        <span class="comment">//这个日期考试的这个考场的人数</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=M;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> classi;</span><br><span class="line">        <span class="keyword">char</span> request\[<span class="number">7</span>\];</span><br><span class="line">        <span class="built_in">memset</span>(request,<span class="number">0</span>,<span class="keyword">sizeof</span>(request));</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d %s"</span>,&amp;classi,request);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"Case %d: %d %s\\n"</span>,i,classi,request);</span><br><span class="line">        <span class="keyword">int</span> flag=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">switch</span>(classi)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">vector</span>&lt;student&gt;  ttt=case1\[request\];    <span class="comment">//取出指定级别的集合</span></span><br><span class="line">                    sort(ttt.<span class="built_in">begin</span>(),ttt.<span class="built_in">end</span>(),cmp);        <span class="comment">//排序</span></span><br><span class="line">                    <span class="keyword">for</span>(<span class="keyword">auto</span> it=ttt.<span class="built_in">begin</span>();it!=ttt.<span class="built_in">end</span>();it++)</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="built_in">printf</span>(<span class="string">"%s %d\\n"</span>,(\*it).id.c_str(),(\*it).score);<span class="comment">//输出</span></span><br><span class="line">                        flag=<span class="number">0</span>;                    <span class="comment">//产生了输出，该要求有结果</span></span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">                &#123;</span><br><span class="line">                    examcase2 ttt=case2\[request\];        <span class="comment">//取出指定考场的信息</span></span><br><span class="line">                    <span class="keyword">if</span>(ttt.people!=<span class="number">0</span>)                <span class="comment">//该考场有人考试</span></span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="built_in">printf</span>(<span class="string">"%d %d\\n"</span>,ttt.people,ttt.allscore);    <span class="comment">//输出结果</span></span><br><span class="line">                        flag=<span class="number">0</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">map</span>&lt;<span class="built_in">string</span>,examroom&gt; ttt=case3\[request\]; <span class="comment">//取出该天考试的所有考场的信息</span></span><br><span class="line">                    <span class="keyword">int</span> i=<span class="number">0</span>,len=ttt.<span class="built_in">size</span>();        <span class="comment">//len--该天有len个考场进行考试</span></span><br><span class="line">                    examroom e\[len\];</span><br><span class="line">                    <span class="keyword">for</span>(<span class="keyword">auto</span> it=ttt.<span class="built_in">begin</span>();it!=ttt.<span class="built_in">end</span>();it++)</span><br><span class="line">                    &#123;</span><br><span class="line">                        e\[i++\]=it-&gt;second;        <span class="comment">//将考场信息存入数组</span></span><br><span class="line">                    &#125;</span><br><span class="line">                    sort(e,e+len,cmp1);    <span class="comment">//进行排序</span></span><br><span class="line">                    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="built_in">printf</span>(<span class="string">"%s %d\\n"</span>,e\[i\].room.c_str(),e\[i\].people);<span class="comment">//输出结果</span></span><br><span class="line">                        flag=<span class="number">0</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(flag)  <span class="built_in">printf</span>(<span class="string">"NA\\n"</span>);    <span class="comment">//没有符合条件的结果，则输出NA</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -668,7 +676,7 @@ NA</code></pre><p>代码：</p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例："><span class="nav-number">3.</span> <span class="nav-text">输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例："><span class="nav-number">4.</span> <span class="nav-text">输出样例：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">¶输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">¶输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例："><span class="nav-number">3.</span> <span class="nav-text">¶输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例："><span class="nav-number">4.</span> <span class="nav-text">¶输出样例：</span></a></li></ol></div>
             
 
           </div>

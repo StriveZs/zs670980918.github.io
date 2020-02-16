@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="memset 函数是内存赋值函数，用来给某一块内存空间进行赋值的。 其原型是：void* memset(void *_Dst, int  _Val, size_t _Size)   _Dst是目标起始地址，_Val是要赋的值，_Size是要赋值的字节数。 例一：使用memset对字符数组进行快速初始化： 12345char num\[12\];memset(num,&#39;A&#39;,12);for(int">
+<meta name="description" content="memset 函数是内存赋值函数，用来给某一块内存空间进行赋值的。 其原型是：void* memset(void *_Dst, int  _Val, size_t _Size)   _Dst是目标起始地址，_Val是要赋的值，_Size是要赋值的字节数。 例一：使用memset对字符数组进行快速初始化： 12345char num\[12\];memset(num,&#39;A&#39;,12);for(int">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++ memset使用">
-<meta property="og:url" content="blog.strivezs.com/2019/01/26/c-memset-shi-yong-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2019/01/26/c-memset-shi-yong-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="memset 函数是内存赋值函数，用来给某一块内存空间进行赋值的。 其原型是：void* memset(void *_Dst, int  _Val, size_t _Size)   _Dst是目标起始地址，_Val是要赋的值，_Size是要赋值的字节数。 例一：使用memset对字符数组进行快速初始化： 12345char num\[12\];memset(num,&#39;A&#39;,12);for(int">
+<meta property="og:description" content="memset 函数是内存赋值函数，用来给某一块内存空间进行赋值的。 其原型是：void* memset(void *_Dst, int  _Val, size_t _Size)   _Dst是目标起始地址，_Val是要赋的值，_Size是要赋值的字节数。 例一：使用memset对字符数组进行快速初始化： 12345char num\[12\];memset(num,&#39;A&#39;,12);for(int">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2019/01/QQ%E5%9B%BE%E7%89%8720190126182812.png">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2019/01/QQ%E5%9B%BE%E7%89%8720190126183303.png">
@@ -121,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2019/01/26/c-memset-shi-yong-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2019/01/26/c-memset-shi-yong-1/"/>
 
 
 
@@ -323,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2019/01/26/c-memset-shi-yong-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/01/26/c-memset-shi-yong-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -434,7 +434,7 @@
       
 
       
-        <p>memset 函数是内存赋值函数，用来给某一块内存空间进行赋值的。 其原型是：void* memset(void *_Dst, int  _Val, size_t _Size)   _Dst是目标起始地址，_Val是要赋的值，_Size是要赋值的字节数。 例一：使用memset对字符数组进行快速初始化：</p>
+        <p>memset 函数是内存赋值函数，用来给某一块内存空间进行赋值的。 其原型是：void* memset(void *_Dst, int  _Val, size_t _Size)   _Dst是目标起始地址，_Val是要赋的值，_Size是要赋值的字节数。 例一：使用memset对字符数组进行快速初始化：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> num\[<span class="number">12</span>\];</span><br><span class="line"><span class="built_in">memset</span>(num,<span class="string">'A'</span>,<span class="number">12</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">12</span>;i++)</span><br><span class="line">   <span class="built_in">cout</span>&lt;&lt;num\[i\]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
 <p><img src="http://47.100.4.8/wp-content/uploads/2019/01/QQ%E5%9B%BE%E7%89%8720190126182812.png" alt=""> 要注意：memset是逐字节拷贝的 例二：使用memset初始化整形数组 首先要注意一个int是4个字节，因此在对长度赋值时要*4 代码：</p>
 <figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">int</span> num1\[<span class="number">12</span>\];</span><br><span class="line">memset(num1,<span class="number">-1</span>,<span class="number">48</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;<span class="number">12</span>;i++)</span><br><span class="line">    cout&lt;&lt;num1\[i\]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">cout&lt;&lt;endl;</span><br></pre></td></tr></table></figure>

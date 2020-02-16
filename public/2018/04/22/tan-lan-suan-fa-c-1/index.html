@@ -78,7 +78,7 @@
 <meta name="description" content="在介绍贪婪算法之前先介绍一下最优化问题。 每个最优化问题都包含一组限制条件和一个优化函数。符合限制条件的问题求解方案称为可行解。使优化函数可能取最佳值的可行解称为最优解。 贪婪算法： 在贪婪算法中，要逐步构造出一个最优解。每一步，我们都在一定的标准下，做出一个最有决策。在每一步做出的决策，在以后的步骤中都不可更改。作出决策所依据的标准称为贪婪准则。 下面用一个例子来阐述贪婪算法的思想以及对应的贪婪">
 <meta property="og:type" content="article">
 <meta property="og:title" content="贪婪算法C++实现">
-<meta property="og:url" content="blog.strivezs.com/2018/04/22/tan-lan-suan-fa-c-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/04/22/tan-lan-suan-fa-c-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
 <meta property="og:description" content="在介绍贪婪算法之前先介绍一下最优化问题。 每个最优化问题都包含一组限制条件和一个优化函数。符合限制条件的问题求解方案称为可行解。使优化函数可能取最佳值的可行解称为最优解。 贪婪算法： 在贪婪算法中，要逐步构造出一个最优解。每一步，我们都在一定的标准下，做出一个最有决策。在每一步做出的决策，在以后的步骤中都不可更改。作出决策所依据的标准称为贪婪准则。 下面用一个例子来阐述贪婪算法的思想以及对应的贪婪">
 <meta property="og:locale" content="en_US">
@@ -121,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/04/22/tan-lan-suan-fa-c-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/04/22/tan-lan-suan-fa-c-1/"/>
 
 
 
@@ -323,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/04/22/tan-lan-suan-fa-c-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/22/tan-lan-suan-fa-c-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -440,16 +440,13 @@
 </ol>
 <p>if 面值最大的&lt;要找的钱数比较： 选择该面值的硬币 else: 选择出它之外面值最大的硬币</p>
 <ol start="2">
-<li><p>选择完成之后用当前要找的零钱数减去选择的面值的硬币，并在相应的计数上+1</p>
-</li>
-<li><p>循环进行上面的步骤</p>
-</li>
-<li><p>直至要找的钱凑够</p>
+<li>选择完成之后用当前要找的零钱数减去选择的面值的硬币，并在相应的计数上+1</li>
+<li>循环进行上面的步骤</li>
+<li>直至要找的钱凑够</li>
+</ol>
 <p>实现：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"零钱表：25美分，10美分，5美分，1美分若干个！"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">int</span> Con1 = <span class="number">25</span>;</span><br><span class="line">    <span class="keyword">int</span> Con2 = <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">int</span> Con3 = <span class="number">5</span>;</span><br><span class="line">    <span class="keyword">int</span> Con4 = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"输入想要得找回的零钱数：(单位为美分)"</span>;</span><br><span class="line">    <span class="keyword">int</span> numCon = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;numCon;</span><br><span class="line">    <span class="keyword">int</span> CountCon1=<span class="number">0</span>,CountCon2=<span class="number">0</span>,CountCon3=<span class="number">0</span>,CountCon4 = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(numCon != <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(Con1 &lt;= numCon)</span><br><span class="line">        &#123;</span><br><span class="line">            CountCon1++;</span><br><span class="line">            numCon = numCon - Con1;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(Con2 &lt;= numCon)</span><br><span class="line">        &#123;</span><br><span class="line">            CountCon2++;</span><br><span class="line">            numCon = numCon - Con2;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(Con3 &lt;= numCon)</span><br><span class="line">        &#123;</span><br><span class="line">            CountCon3++;</span><br><span class="line">            numCon = numCon - Con3;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            CountCon4++;</span><br><span class="line">            numCon = numCon - Con4;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"需要25美分个数为:"</span>&lt;&lt;CountCon1&lt;&lt;<span class="string">"个，需要10美分个数为:"</span></span><br><span class="line">    &lt;&lt;CountCon2&lt;&lt;<span class="string">"个，需要5美分个数为："</span>&lt;&lt;CountCon3&lt;&lt;<span class="string">"个，需要1美分个数为："</span>&lt;&lt;CountCon4&lt;&lt;<span class="string">"个."</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>结果： <img src="http://47.100.4.8/wp-content/uploads/2018/04/%E4%B8%BA3123.png" alt="">)<img src="http://47.100.4.8/wp-content/uploads/2018/04/5214615315.png" alt=""></p>
-</li>
-</ol>
+<p>结果： <img src="http://47.100.4.8/wp-content/uploads/2018/04/%E4%B8%BA3123.png" alt=""><img src="http://47.100.4.8/wp-content/uploads/2018/04/5214615315.png" alt=""></p>
 
       
     </div>

@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="程序性能是指运行这个程序所需要的内存和时间的多少。 使用分析方法和实现方法来确定一个程序的性能。在性能分析时，采用分析方法，而在性能测量时，使用实验方法。 一个程序的空间复杂度是指该程序的运行所需内存的大小。 一个程序的时间复杂度是指运行程序所需要的时间。  程序的空间复杂度主要由以下部分构成：  指令空间 编译之后的程序指令所需要的存储空间  数据空间 由常量和动态对象所需要的空间组成  环境">
+<meta name="description" content="程序性能是指运行这个程序所需要的内存和时间的多少。 使用分析方法和实现方法来确定一个程序的性能。在性能分析时，采用分析方法，而在性能测量时，使用实验方法。 一个程序的空间复杂度是指该程序的运行所需内存的大小。 一个程序的时间复杂度是指运行程序所需要的时间。  程序的空间复杂度主要由以下部分构成：  指令空间 编译之后的程序指令所需要的存储空间 数据空间 由常量和动态对象所需要的空间组成 环境栈空">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++程序性能分析">
-<meta property="og:url" content="blog.strivezs.com/2018/04/25/c-cheng-xu-xing-neng-fen-xi-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2018/04/25/c-cheng-xu-xing-neng-fen-xi-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="程序性能是指运行这个程序所需要的内存和时间的多少。 使用分析方法和实现方法来确定一个程序的性能。在性能分析时，采用分析方法，而在性能测量时，使用实验方法。 一个程序的空间复杂度是指该程序的运行所需内存的大小。 一个程序的时间复杂度是指运行程序所需要的时间。  程序的空间复杂度主要由以下部分构成：  指令空间 编译之后的程序指令所需要的存储空间  数据空间 由常量和动态对象所需要的空间组成  环境">
+<meta property="og:description" content="程序性能是指运行这个程序所需要的内存和时间的多少。 使用分析方法和实现方法来确定一个程序的性能。在性能分析时，采用分析方法，而在性能测量时，使用实验方法。 一个程序的空间复杂度是指该程序的运行所需内存的大小。 一个程序的时间复杂度是指运行程序所需要的时间。  程序的空间复杂度主要由以下部分构成：  指令空间 编译之后的程序指令所需要的存储空间 数据空间 由常量和动态对象所需要的空间组成 环境栈空">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180425215619.png">
 <meta property="og:image" content="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180425220108.png">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2018/04/25/c-cheng-xu-xing-neng-fen-xi-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2018/04/25/c-cheng-xu-xing-neng-fen-xi-1/"/>
 
 
 
@@ -324,7 +324,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2018/04/25/c-cheng-xu-xing-neng-fen-xi-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/25/c-cheng-xu-xing-neng-fen-xi-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -437,19 +437,16 @@
       
         <p><img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180425215619.png" alt=""> 程序性能是指运行这个程序所需要的内存和时间的多少。 使用分析方法和实现方法来确定一个程序的性能。在性能分析时，采用分析方法，而在性能测量时，使用实验方法。 一个程序的空间复杂度是指该程序的运行所需内存的大小。 一个程序的时间复杂度是指运行程序所需要的时间。 <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180425220108.png" alt=""> 程序的空间复杂度主要由以下部分构成：</p>
 <ol>
-<li><p>指令空间 编译之后的程序指令所需要的存储空间</p>
-</li>
-<li><p>数据空间 由常量和动态对象所需要的空间组成</p>
-</li>
-<li><p>环境栈空间 环境栈是用来保存暂停的函数和方法在恢复运行时所需要的信息</p>
-<p>指令空间的数量取决于： 把程序转换成机器代码的编译器 在编译时的编译器选项 目标计算机   数据空间： 32位计算机上C++数据类型通常占用的空间 <img src="http://47.100.4.8/wp-content/uploads/2018/04/1235413.png" alt=""> 环境栈空间： 当一个函数被调用时，下面的数据将被保存在环境栈中：</p>
-</li>
+<li>指令空间 编译之后的程序指令所需要的存储空间</li>
+<li>数据空间 由常量和动态对象所需要的空间组成</li>
+<li>环境栈空间 环境栈是用来保存暂停的函数和方法在恢复运行时所需要的信息</li>
 </ol>
+<p>指令空间的数量取决于： 把程序转换成机器代码的编译器 在编译时的编译器选项 目标计算机   数据空间： 32位计算机上C++数据类型通常占用的空间 <img src="http://47.100.4.8/wp-content/uploads/2018/04/1235413.png" alt=""> 环境栈空间： 当一个函数被调用时，下面的数据将被保存在环境栈中：</p>
 <ul>
 <li>返回地址</li>
 <li>正在调用的函数的所有局部变量的值以及形式参数的值</li>
 </ul>
-<p>注：实际使用的编辑器影响环境栈所需空间大小。 <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180425215858.png" alt=""> 时间复杂度： 影响空间复杂度的因素也影响时间复杂度。 一个算数操作的时间取决于操作数的类型，所以要精确地计算运行时间，必须按照数据类型对操作进行分类。 估计一个程序的运行时间两种方法： （1） 找出一个或多个关键操作，确定他们的执行时间 （2） 确定程序总的步数   一个程序的时间复杂度可以通过它进行的for循环次数进行计算。</p>
+<p>注：实际使用的编辑器影响环境栈所需空间大小。 <img src="http://47.100.4.8/wp-content/uploads/2018/04/QQ%E5%9B%BE%E7%89%8720180425215858.png" alt=""> 时间复杂度： 影响空间复杂度的因素也影响时间复杂度。 一个算数操作的时间取决于操作数的类型，所以要精确地计算运行时间，必须按照数据类型对操作进行分类。 估计一个程序的运行时间两种方法： （1） 找出一个或多个关键操作，确定他们的执行时间 （2） 确定程序总的步数   一个程序的时间复杂度可以通过它进行的for循环次数进行计算。</p>
 
       
     </div>

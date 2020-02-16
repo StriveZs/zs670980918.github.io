@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="1068 万绿丛中一点红 （20 分) 原文地址 对于计算机而言，颜色不过是像素点对应的一个 24 位的数值。现给定一幅分辨率为 M×N 的画，要求你找出万绿丛中的一点红，即有独一无二颜色的那个像素点，并且该点的颜色与其周围 8 个相邻像素的颜色差充分大。 输入格式：输入第一行给出三个正整数，分别是 M 和 N（≤ 1000），即图像的分辨率；以及 TOL，是所求像素点与相邻点的颜色差阈值，色差超">
+<meta name="description" content="1068 万绿丛中一点红 （20 分) 原文地址 对于计算机而言，颜色不过是像素点对应的一个 24 位的数值。现给定一幅分辨率为 M×N 的画，要求你找出万绿丛中的一点红，即有独一无二颜色的那个像素点，并且该点的颜色与其周围 8 个相邻像素的颜色差充分大。 ¶输入格式： 输入第一行给出三个正整数，分别是 M 和 N（≤ 1000），即图像的分辨率；以及 TOL，是所求像素点与相邻点的颜色差阈值，色">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pat_1068（乙级）">
-<meta property="og:url" content="blog.strivezs.com/2019/03/18/pat-1068-yi-ji-1/index.html">
+<meta property="og:url" content="www.strivezs.com/2019/03/18/pat-1068-yi-ji-1/index.html">
 <meta property="og:site_name" content="StriveZs的博客">
-<meta property="og:description" content="1068 万绿丛中一点红 （20 分) 原文地址 对于计算机而言，颜色不过是像素点对应的一个 24 位的数值。现给定一幅分辨率为 M×N 的画，要求你找出万绿丛中的一点红，即有独一无二颜色的那个像素点，并且该点的颜色与其周围 8 个相邻像素的颜色差充分大。 输入格式：输入第一行给出三个正整数，分别是 M 和 N（≤ 1000），即图像的分辨率；以及 TOL，是所求像素点与相邻点的颜色差阈值，色差超">
+<meta property="og:description" content="1068 万绿丛中一点红 （20 分) 原文地址 对于计算机而言，颜色不过是像素点对应的一个 24 位的数值。现给定一幅分辨率为 M×N 的画，要求你找出万绿丛中的一点红，即有独一无二颜色的那个像素点，并且该点的颜色与其周围 8 个相邻像素的颜色差充分大。 ¶输入格式： 输入第一行给出三个正整数，分别是 M 和 N（≤ 1000），即图像的分辨率；以及 TOL，是所求像素点与相邻点的颜色差阈值，色">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-03-18T02:59:23.000Z">
 <meta property="article:modified_time" content="2019-03-18T02:59:23.000Z">
@@ -116,7 +116,7 @@
 
 
 
-  <link rel="canonical" href="blog.strivezs.com/2019/03/18/pat-1068-yi-ji-1/"/>
+  <link rel="canonical" href="www.strivezs.com/2019/03/18/pat-1068-yi-ji-1/"/>
 
 
 
@@ -318,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="blog.strivezs.com/2019/03/18/pat-1068-yi-ji-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/03/18/pat-1068-yi-ji-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -429,25 +429,45 @@
       
 
       
-        <p>1068 万绿丛中一点红 （20 分) <a href="https://pintia.cn/problem-sets/994805260223102976/problems/994805265579229184">原文地址</a></p>
-<p>对于计算机而言，颜色不过是像素点对应的一个 24 位的数值。现给定一幅分辨率为 M×N 的画，要求你找出万绿丛中的一点红，即有独一无二颜色的那个像素点，并且该点的颜色与其周围 8 个相邻像素的颜色差充分大。</p>
-<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入第一行给出三个正整数，分别是 M 和 N（≤ 1000），即图像的分辨率；以及 TOL，是所求像素点与相邻点的颜色差阈值，色差超过 TOL 的点才被考虑。随后 N 行，每行给出 M 个像素的颜色值，范围在 [0,2​24​​) 内。所有同行数字间用空格或 TAB 分开。</p>
-<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>在一行中按照 <code>(x, y): color</code> 的格式输出所求像素点的位置以及颜色值，其中位置 <code>x</code> 和 <code>y</code> 分别是该像素在图像矩阵中的列、行编号（从 1 开始编号）。如果这样的点不唯一，则输出 <code>Not Unique</code>；如果这样的点不存在，则输出 <code>Not Exist</code>。</p>
-<h3 id="输入样例-1："><a href="#输入样例-1：" class="headerlink" title="输入样例 1："></a>输入样例 1：</h3><pre><code>8 6 200
-0      0       0        0        0          0           0        0
-65280      65280    65280    16711479 65280    65280    65280    65280
+        <p>1068 万绿丛中一点红 （20 分) <a href="https://pintia.cn/problem-sets/994805260223102976/problems/994805265579229184">原文地址</a></p>
+<p>对于计算机而言，颜色不过是像素点对应的一个 24 位的数值。现给定一幅分辨率为 M×N 的画，要求你找出万绿丛中的一点红，即有独一无二颜色的那个像素点，并且该点的颜色与其周围 8 个相邻像素的颜色差充分大。</p>
+<h3 id="输入格式："><a class="header-anchor" href="#输入格式：">¶</a>输入格式：</h3>
+<p>输入第一行给出三个正整数，分别是 M 和 N（≤ 1000），即图像的分辨率；以及 TOL，是所求像素点与相邻点的颜色差阈值，色差超过 TOL 的点才被考虑。随后 N 行，每行给出 M 个像素的颜色值，范围在 [0,2​24​​) 内。所有同行数字间用空格或 TAB 分开。</p>
+<h3 id="输出格式："><a class="header-anchor" href="#输出格式：">¶</a>输出格式：</h3>
+<p>在一行中按照 <code>(x, y): color</code> 的格式输出所求像素点的位置以及颜色值，其中位置 <code>x</code> 和 <code>y</code> 分别是该像素在图像矩阵中的列、行编号（从 1 开始编号）。如果这样的点不唯一，则输出 <code>Not Unique</code>；如果这样的点不存在，则输出 <code>Not Exist</code>。</p>
+<h3 id="输入样例-1："><a class="header-anchor" href="#输入样例-1：">¶</a>输入样例 1：</h3>
+<pre><code>8 6 200
+0 	 0 	  0 	   0	    0 	     0 	      0        0
+65280 	 65280    65280    16711479 65280    65280    65280    65280
 16711479 65280    65280    65280    16711680 65280    65280    65280
-65280      65280    65280    65280    65280    65280    165280   165280
-65280      65280       16777015 65280    65280    165280   65480    165280
-16777215 16777215 16777215 16777215 16777215 16777215 16777215 16777215</code></pre><h3 id="输出样例-1："><a href="#输出样例-1：" class="headerlink" title="输出样例 1："></a>输出样例 1：</h3><pre><code>(5, 3): 16711680</code></pre><h3 id="输入样例-2："><a href="#输入样例-2：" class="headerlink" title="输入样例 2："></a>输入样例 2：</h3><pre><code>4 5 2
+65280 	 65280    65280    65280    65280    65280    165280   165280
+65280 	 65280 	  16777015 65280    65280    165280   65480    165280
+16777215 16777215 16777215 16777215 16777215 16777215 16777215 16777215
+</code></pre>
+<h3 id="输出样例-1："><a class="header-anchor" href="#输出样例-1：">¶</a>输出样例 1：</h3>
+<pre><code>(5, 3): 16711680
+</code></pre>
+<h3 id="输入样例-2："><a class="header-anchor" href="#输入样例-2：">¶</a>输入样例 2：</h3>
+<pre><code>4 5 2
 0 0 0 0
 0 0 3 0
 0 0 0 0
 0 5 0 0
-0 0 0 0</code></pre><h3 id="输出样例-2："><a href="#输出样例-2：" class="headerlink" title="输出样例 2："></a>输出样例 2：</h3><pre><code>Not Unique</code></pre><h3 id="输入样例-3："><a href="#输入样例-3：" class="headerlink" title="输入样例 3："></a>输入样例 3：</h3><pre><code>3 3 5
+0 0 0 0
+</code></pre>
+<h3 id="输出样例-2："><a class="header-anchor" href="#输出样例-2：">¶</a>输出样例 2：</h3>
+<pre><code>Not Unique
+</code></pre>
+<h3 id="输入样例-3："><a class="header-anchor" href="#输入样例-3：">¶</a>输入样例 3：</h3>
+<pre><code>3 3 5
 1 2 3
 3 4 5
-5 6 7</code></pre><h3 id="输出样例-3："><a href="#输出样例-3：" class="headerlink" title="输出样例 3："></a>输出样例 3：</h3><pre><code>Not Exist</code></pre><p>代码：</p>
+5 6 7
+</code></pre>
+<h3 id="输出样例-3："><a class="header-anchor" href="#输出样例-3：">¶</a>输出样例 3：</h3>
+<pre><code>Not Exist
+</code></pre>
+<p>代码：</p>
 <figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;cmath&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line">//要注意的是其中如果一个点满足和其他点之间差值大于阈值时 同样要没有另外一个点也满足该条件 同样该点不能多次出现</span><br><span class="line">//题目中说周围八个点感觉迷惑性比较强应该算上边界值的 不应该去掉 可以是四个点或者三个点之类的。</span><br><span class="line">//注意点：1.该元素是否唯一     2.该元素是否比周围元素相差TOL    3.输出的坐标是（列，行）</span><br><span class="line">int main()&#123;</span><br><span class="line">    int M,N,TOL;</span><br><span class="line">    cin&gt;&gt;N&gt;&gt;M&gt;&gt;TOL;</span><br><span class="line">    long int pic<span class="symbol">\[</span>M<span class="symbol">\]</span><span class="symbol">\[</span>N<span class="symbol">\]</span> = &#123;0&#125;;</span><br><span class="line">    for(int i=0;i&lt;M;i++)&#123;</span><br><span class="line">        for(int j=0;j&lt;N;j++)&#123;</span><br><span class="line">            cin&gt;&gt;pic<span class="symbol">\[</span>i<span class="symbol">\]</span><span class="symbol">\[</span>j<span class="symbol">\]</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    int num=0,x=-1,y=-1,t1 = -1,t2 = -1;</span><br><span class="line">    bool flag = false;</span><br><span class="line">    for(int i=0;i&lt;M;i++)&#123;</span><br><span class="line">        for(int j=0;j&lt;N;j++)&#123;</span><br><span class="line">            if(abs(pic<span class="symbol">\[</span>i<span class="symbol">\]</span><span class="symbol">\[</span>j<span class="symbol">\]</span>-pic<span class="symbol">\[</span>i-1<span class="symbol">\]</span><span class="symbol">\[</span>j-1<span class="symbol">\]</span>)&gt;TOL &amp;&amp; abs(pic<span class="symbol">\[</span>i<span class="symbol">\]</span><span class="symbol">\[</span>j<span class="symbol">\]</span>-pic<span class="symbol">\[</span>i+1<span class="symbol">\]</span><span class="symbol">\[</span>j-1<span class="symbol">\]</span>)&gt;TOL &amp;&amp; abs(pic<span class="symbol">\[</span>i<span class="symbol">\]</span><span class="symbol">\[</span>j<span class="symbol">\]</span>-pic<span class="symbol">\[</span>i+1<span class="symbol">\]</span><span class="symbol">\[</span>j+1<span class="symbol">\]</span>)&gt;TOL &amp;&amp; abs(pic<span class="symbol">\[</span>i<span class="symbol">\]</span><span class="symbol">\[</span>j<span class="symbol">\]</span>-pic<span class="symbol">\[</span>i-1<span class="symbol">\]</span><span class="symbol">\[</span>j+1<span class="symbol">\]</span>)&gt;TOL &amp;&amp; abs(pic<span class="symbol">\[</span>i<span class="symbol">\]</span><span class="symbol">\[</span>j<span class="symbol">\]</span>-pic<span class="symbol">\[</span>i-1<span class="symbol">\]</span><span class="symbol">\[</span>j<span class="symbol">\]</span>)&gt;TOL &amp;&amp; abs(pic<span class="symbol">\[</span>i<span class="symbol">\]</span><span class="symbol">\[</span>j<span class="symbol">\]</span>-pic<span class="symbol">\[</span>i+1<span class="symbol">\]</span><span class="symbol">\[</span>j<span class="symbol">\]</span>)&gt;TOL &amp;&amp; abs(pic<span class="symbol">\[</span>i<span class="symbol">\]</span><span class="symbol">\[</span>j<span class="symbol">\]</span>-pic<span class="symbol">\[</span>i<span class="symbol">\]</span><span class="symbol">\[</span>j-1<span class="symbol">\]</span>)&gt;TOL &amp;&amp; abs(pic<span class="symbol">\[</span>i<span class="symbol">\]</span><span class="symbol">\[</span>j<span class="symbol">\]</span>-pic<span class="symbol">\[</span>i<span class="symbol">\]</span><span class="symbol">\[</span>j+1<span class="symbol">\]</span>)&gt;TOL)&#123;</span><br><span class="line">                x = i;</span><br><span class="line">                y = j;</span><br><span class="line">                bool unique_pixel = true;</span><br><span class="line">                for(int m=0;m&lt;M;m++)&#123;</span><br><span class="line">                    for(int n=0;n&lt;N;n++)&#123;</span><br><span class="line">                        if(m!=x &amp;&amp; n!=y)&#123;</span><br><span class="line">                            if(pic<span class="symbol">\[</span>m<span class="symbol">\]</span><span class="symbol">\[</span>n<span class="symbol">\]</span> == pic<span class="symbol">\[</span>x<span class="symbol">\]</span><span class="symbol">\[</span>y<span class="symbol">\]</span>)&#123;</span><br><span class="line">                                unique_pixel = false;</span><br><span class="line">                                break;</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                if(unique_pixel)&#123;</span><br><span class="line">                    t1 = x;</span><br><span class="line">                    t2 = y;</span><br><span class="line">                    num++;</span><br><span class="line">                    if(num == 2)&#123;</span><br><span class="line">                        flag = true;</span><br><span class="line">                        break;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                else&#123;</span><br><span class="line">                    x = -1;</span><br><span class="line">                    y = -1;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    if(flag)&#123;</span><br><span class="line">        cout&lt;&lt;"Not Unique"&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    else if(num == 0)&#123;</span><br><span class="line">        cout&lt;&lt;"Not Exist"&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">        cout&lt;&lt;"("&lt;&lt;t2+1&lt;&lt;", "&lt;&lt;t1+1&lt;&lt;"): "&lt;&lt;pic<span class="symbol">\[</span>t1<span class="symbol">\]</span><span class="symbol">\[</span>t2<span class="symbol">\]</span>&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -641,7 +661,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例-1："><span class="nav-number">3.</span> <span class="nav-text">输入样例 1：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例-1："><span class="nav-number">4.</span> <span class="nav-text">输出样例 1：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例-2："><span class="nav-number">5.</span> <span class="nav-text">输入样例 2：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例-2："><span class="nav-number">6.</span> <span class="nav-text">输出样例 2：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例-3："><span class="nav-number">7.</span> <span class="nav-text">输入样例 3：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例-3："><span class="nav-number">8.</span> <span class="nav-text">输出样例 3：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">¶输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">¶输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例-1："><span class="nav-number">3.</span> <span class="nav-text">¶输入样例 1：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例-1："><span class="nav-number">4.</span> <span class="nav-text">¶输出样例 1：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例-2："><span class="nav-number">5.</span> <span class="nav-text">¶输入样例 2：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例-2："><span class="nav-number">6.</span> <span class="nav-text">¶输出样例 2：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例-3："><span class="nav-number">7.</span> <span class="nav-text">¶输入样例 3：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例-3："><span class="nav-number">8.</span> <span class="nav-text">¶输出样例 3：</span></a></li></ol></div>
             
 
           </div>
