@@ -31,13 +31,6 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
-#Search
-search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 10000
-
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -181,3 +174,11 @@ symbols_count_time:
   total_symbols: true          # 站点总字数统计
   total_time: true             # 站点总阅读时长
   exclude_codeblock: false     # 排除代码字数统计
+
+#Search
+search:
+  path: search.xml
+  field: post
+  format: html
+  content: true
+  limit: 1000

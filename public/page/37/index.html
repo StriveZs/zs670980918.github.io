@@ -115,6 +115,21 @@
 
 
 
+<div id="tp-weather-widget"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "bubble",
+      location: "WX4FBXXFKE4F",
+      geolocation: true,
+      language: "zh-Hans",
+      unit: "c",
+      theme: "dark",
+      token: "cec3125e-f640-4fcf-b6f2-6f0cdc38a0ae",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
 
 
   <title>StriveZs的博客</title>
@@ -314,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/06/ru-he-gei-wordpress-shang-chuan-zhu-ti-tt-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/16/python-shu-ju-fen-xi-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -333,7 +348,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/06/ru-he-gei-wordpress-shang-chuan-zhu-ti-tt-1/" itemprop="url">如何给WordPress上传主题┗( T﹏T )┛</a></h1>
+                <a class="post-title-link" href="/2018/03/16/python-shu-ju-fen-xi-1/" itemprop="url">python数据分析</a></h1>
         
 
         <div class="post-meta">
@@ -345,8 +360,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-06T17:57:03+08:00">
-                2018-03-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-16T17:21:41+08:00">
+                2018-03-16
               </time>
             
 
@@ -368,8 +383,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Website-building/" itemprop="url" rel="index">
-                    <span itemprop="name">Website building</span>
+                  <a href="/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" itemprop="url" rel="index">
+                    <span itemprop="name">python数据分析</span>
                   </a>
                 </span>
 
@@ -379,18 +394,7 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Website-building/Xshell/" itemprop="url" rel="index">
-                    <span itemprop="name">Xshell</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Website-building/Xshell/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                  <a href="/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
                     <span itemprop="name">文章页</span>
                   </a>
                 </span>
@@ -401,8 +405,6 @@
             </span>
           
 
-          
-            
           
 
           
@@ -429,11 +431,13 @@
       
         
           
-           咳咳，偶哈哟，WordPress的文件上传限制相信困扰了不少人，这里我给大家提供一种能够跳过上传限制的方法，来安装你自己心仪的主题。 当然需要一款软件名字叫做Xshell，当当当：就是它！3333 没有的可自行下载，在我以前的博文中也有关于它的使用需要的可自行去看。 接下来就介绍他的相关操作： 首
+          首先介绍一下编程工具：
+¶Anaconda这个集成开发工具
+¶anaconda指的是一个开源的Python发行版本，其包含了conda、Python等180多个科学包及其依赖项。[1]  因为包含了大量的科学包，Anaconda 的下载文件比较大（约 515 MB），如果只需要某些包，或者需要节省带
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/06/ru-he-gei-wordpress-shang-chuan-zhu-ti-tt-1/#more" rel="contents">
+            <a class="btn" href="/2018/03/16/python-shu-ju-fen-xi-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -484,7 +488,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/05/ru-he-gei-wordpress-jiang-ji-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/15/ji-qi-xue-xi-xu-lun-xue-xi-yi-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -503,7 +507,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/05/ru-he-gei-wordpress-jiang-ji-1/" itemprop="url">如何给WordPress降级(￣_,￣ )</a></h1>
+                <a class="post-title-link" href="/2018/03/15/ji-qi-xue-xi-xu-lun-xue-xi-yi-1/" itemprop="url">机器学习绪论学习（一）</a></h1>
         
 
         <div class="post-meta">
@@ -515,167 +519,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-05T23:17:27+08:00">
-                2018-03-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Website-building/" itemprop="url" rel="index">
-                    <span itemprop="name">Website building</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Website-building/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          手动降级的方法： 1.下载对应的 WordPress 旧版本 下载你目前使用的语言版本（即如果你使用官方中文版，就下载官方中文的旧版本，如果是英文原版，就下载英文旧版本） WordPress官方中文版各版本下载地址：https://cn.wordpress.org/releases/#older W
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/05/ru-he-gei-wordpress-jiang-ji-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/05/yan-wen-zi-da-quan-w-w-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="StriveZs">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="StriveZs的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/05/yan-wen-zi-da-quan-w-w-1/" itemprop="url">颜文字大全 w(ﾟДﾟ)w</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-05T23:04:48+08:00">
-                2018-03-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-15T18:11:29+08:00">
+                2018-03-15
               </time>
             
 
@@ -708,8 +553,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/%E9%A2%9C%E6%96%87%E5%AD%97/" itemprop="url" rel="index">
-                    <span itemprop="name">颜文字</span>
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
                   </a>
                 </span>
 
@@ -747,11 +592,15 @@
       
         
           
-           常用的颜文字： 【啊啊】 颜文字是： w(ﾟДﾟ)w 【擦眼泪】 颜文字是： (ノへ￣、) 【不屑】 颜文字是： (￣_,￣ ) 【好耶】 颜文字是： ヽ(✿ﾟ▽ﾟ)ノ 【棒】 颜文字是： (๑•̀ㅂ•́)و✧ 【抽】 颜文字是： (￣ε(#￣)☆╰╮o(￣皿￣///) 【亲】 颜文字是： （づ￣
+          
+什么是机器学习？
+
+¶机器学习(Machine Learning, ML)是一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、算法复杂度理论等多门学科。专门研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能。
+¶它是人工智能的核心，是使
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/05/yan-wen-zi-da-quan-w-w-1/#more" rel="contents">
+            <a class="btn" href="/2018/03/15/ji-qi-xue-xi-xu-lun-xue-xi-yi-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -802,7 +651,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/05/ru-he-yong-you-yi-ge-zi-ji-de-bo-ke-wang-zhan-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/14/ta-ben-shu-yu-xing-chen-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -821,7 +670,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/05/ru-he-yong-you-yi-ge-zi-ji-de-bo-ke-wang-zhan-1/" itemprop="url">如何拥有一个自己的博客网站╰(*°▽°*)╯</a></h1>
+                <a class="post-title-link" href="/2018/03/14/ta-ben-shu-yu-xing-chen-1/" itemprop="url">他本属于星辰</a></h1>
         
 
         <div class="post-meta">
@@ -833,8 +682,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-05T09:52:57+08:00">
-                2018-03-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-14T13:07:01+08:00">
+                2018-03-14
               </time>
             
 
@@ -856,19 +705,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Website-building/" itemprop="url" rel="index">
-                    <span itemprop="name">Website building</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Website-building/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
+                  <a href="/categories/Stephen-Hawking/" itemprop="url" rel="index">
+                    <span itemprop="name">Stephen Hawking</span>
                   </a>
                 </span>
 
@@ -906,11 +744,15 @@
       
         
           
-           咳咳，首先呢你可以先去阿里云上购买一个域名（最好购买.com）这里呢我给大家提供可以获得优惠码的微信公众号，在购买页面输入优惠码可以减10元，能省就省吧钱来的都不容易，具体如下图：  接下来购买域名就可以了， 然后接下来就是购买云服务器了￣□￣｜｜ （我这用的是阿里云的ESC 因为学生优惠比较便宜
+          
+¶知名物理学家史蒂芬·霍金（Stephen Hawking）去世，享年76岁。爱因斯坦生日这天，霍金走了。他出生的那天，是伽利略去世的日子。
+
+¶BBC新闻上的报道：
+World renowned physicist Stephen Hawking has died at the age of 7
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/05/ru-he-yong-you-yi-ge-zi-ji-de-bo-ke-wang-zhan-1/#more" rel="contents">
+            <a class="btn" href="/2018/03/14/ta-ben-shu-yu-xing-chen-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -961,7 +803,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/04/shi-yong-tkinter-bian-xie-yi-ge-ke-yi-tuo-dong-de-shi-zhong-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/13/shi-yong-pyinstaller-jiang-py-python-wen-jian-sheng-cheng-ke-zhi-xing-de-exe-wen-jian-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -980,7 +822,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/04/shi-yong-tkinter-bian-xie-yi-ge-ke-yi-tuo-dong-de-shi-zhong-1/" itemprop="url">使用tkinter 编写一个可以拖动的时钟[]~(￣▽￣)~*</a></h1>
+                <a class="post-title-link" href="/2018/03/13/shi-yong-pyinstaller-jiang-py-python-wen-jian-sheng-cheng-ke-zhi-xing-de-exe-wen-jian-1/" itemprop="url">使用Pyinstaller 将.py python文件生成可执行的.exe 文件</a></h1>
         
 
         <div class="post-meta">
@@ -992,8 +834,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-04T22:53:03+08:00">
-                2018-03-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-13T17:34:30+08:00">
+                2018-03-13
               </time>
             
 
@@ -1015,8 +857,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python%E2%80%94%E2%80%94Tkinter%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index">
-                    <span itemprop="name">Python——Tkinter编程</span>
+                  <a href="/categories/Python%E5%8A%9F%E8%83%BD/" itemprop="url" rel="index">
+                    <span itemprop="name">Python功能</span>
                   </a>
                 </span>
 
@@ -1026,7 +868,7 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python%E2%80%94%E2%80%94Tkinter%E7%BC%96%E7%A8%8B/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                  <a href="/categories/Python%E5%8A%9F%E8%83%BD/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
                     <span itemprop="name">文章页</span>
                   </a>
                 </span>
@@ -1065,12 +907,11 @@
       
         
           
-           
-¶import tkinter import threading import datetime import time app = tkinter.Tk() app.overrideredirect(True) #不显示标题栏 app.attributes(’-alpha’, 0.9) #半透
+             今天介绍Pyinstaller生成.exe可执行文件。o(＠)o   首先你需要安装pyinstaller 可以在该链接下载：http://www.pyinstaller.org/ 也可以使用pip 安装pyinstaller 在你pip文件夹目录下输入如下命令即可：   pyinstalle
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/04/shi-yong-tkinter-bian-xie-yi-ge-ke-yi-tuo-dong-de-shi-zhong-1/#more" rel="contents">
+            <a class="btn" href="/2018/03/13/shi-yong-pyinstaller-jiang-py-python-wen-jian-sheng-cheng-ke-zhi-xing-de-exe-wen-jian-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1121,7 +962,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/04/jetbrains-ruan-jian-ji-huo-o-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/12/pyqt5-xue-xi-bi-ji-san-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -1140,7 +981,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/04/jetbrains-ruan-jian-ji-huo-o-1/" itemprop="url">jetbrains软件激活o(*≧▽≦)ツ┏━┓</a></h1>
+                <a class="post-title-link" href="/2018/03/12/pyqt5-xue-xi-bi-ji-san-1/" itemprop="url">PyQt5学习笔记（三）</a></h1>
         
 
         <div class="post-meta">
@@ -1152,8 +993,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-04T19:17:48+08:00">
-                2018-03-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-12T18:15:48+08:00">
+                2018-03-12
               </time>
             
 
@@ -1175,8 +1016,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/jetBrian/" itemprop="url" rel="index">
-                    <span itemprop="name">jetBrian</span>
+                  <a href="/categories/Python%E6%A8%A1%E5%9D%97PyQt5/" itemprop="url" rel="index">
+                    <span itemprop="name">Python模块PyQt5</span>
                   </a>
                 </span>
 
@@ -1186,7 +1027,7 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/jetBrian/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                  <a href="/categories/Python%E6%A8%A1%E5%9D%97PyQt5/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
                     <span itemprop="name">文章页</span>
                   </a>
                 </span>
@@ -1225,11 +1066,11 @@
       
         
           
-            你需要下载一个jar包，需要自己去找新的。 https://tieba.baidu.com/p/4927686353?pn=4联系贴吧 把jar包复制到要激活的 jetbrains 产品的bin目录下，如：D:\Program Files (x86)\JetBrains\WebStorm 201
+           偶哈呦，敏娜！ O(∩_∩)O~   今天继续发PyQt5的学习笔记，最近比较忙只能发一些自己写的以前的东西了，请见谅(▽)~    框布局控制： 创建水平布局： hbox = QHBoxLayout() 添加水平布局的伸展因子和添加按钮 hbox.addStretch(1) hbox.addWi
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/04/jetbrains-ruan-jian-ji-huo-o-1/#more" rel="contents">
+            <a class="btn" href="/2018/03/12/pyqt5-xue-xi-bi-ji-san-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1280,7 +1121,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/04/cmd-ming-ling-ru-men-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/11/meng-xiang-bing-bu-yao-yuan-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -1299,7 +1140,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/04/cmd-ming-ling-ru-men-1/" itemprop="url">cmd命令入门(`・ω・´)</a></h1>
+                <a class="post-title-link" href="/2018/03/11/meng-xiang-bing-bu-yao-yuan-1/" itemprop="url">梦想并不遥远~~ (✿◡‿◡)</a></h1>
         
 
         <div class="post-meta">
@@ -1311,8 +1152,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-04T18:51:55+08:00">
-                2018-03-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-11T18:14:10+08:00">
+                2018-03-11
               </time>
             
 
@@ -1334,8 +1175,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
+                  <a href="/categories/%E5%8A%B1%E5%BF%97/" itemprop="url" rel="index">
+                    <span itemprop="name">励志</span>
                   </a>
                 </span>
 
@@ -1345,8 +1186,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/%E7%B3%BB%E7%BB%9FCMD%E5%91%BD%E4%BB%A4/" itemprop="url" rel="index">
-                    <span itemprop="name">系统CMD命令</span>
+                  <a href="/categories/%E5%8A%B1%E5%BF%97/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
                   </a>
                 </span>
 
@@ -1384,12 +1225,176 @@
       
         
           
-          w(ﾟДﾟ)w  
-不会CMD命令的程序猿不是一个好的程序猿！ 咳咳，当然在Linux下就要会Shell脚本。 这是一篇真正的入门，讲解一般的DOS可以怎么使用。不排列庞大的命令条目，这里只举例子。 按照废话的惯例，先普及下基础知识，走你： 以下提及的win键，就是键盘上那个有个窗户图标的键 win
+          
+¶纽约时间比加州时间早三个小时， New York is 3 hours ahead of California,
+¶但加州时间并没有变慢。 but it does not make California slow.
+¶有人22岁就毕业了， Someone graduated at the age
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/04/cmd-ming-ling-ru-men-1/#more" rel="contents">
+            <a class="btn" href="/2018/03/11/meng-xiang-bing-bu-yao-yuan-1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/03/10/ru-he-gei-pycharm-an-zhuang-di-san-fang-ku-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/10/ru-he-gei-pycharm-an-zhuang-di-san-fang-ku-1/" itemprop="url">如何给PyCharm安装第三方库┑(￣Д ￣)┍</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-10T18:33:03+08:00">
+                2018-03-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python%E5%8A%9F%E8%83%BD/" itemprop="url" rel="index">
+                    <span itemprop="name">Python功能</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python%E5%8A%9F%E8%83%BD/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+¶今天给大家带来的是安装第三方Python库的办法 O(∩_∩)O~~~
+¶第一种方式：
+使用PyCharm自带的setting进行第三方库的安装 首先打开File里面的setting  然后找到project interpreter  点击+  然后搜索你想要的 第三方库名称，点击install
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/10/ru-he-gei-pycharm-an-zhuang-di-san-fang-ku-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1431,7 +1436,7 @@
 
   
  <nav class="pagination">
-   <a class="extend prev" rel="prev" href="/page/36/"><i class="fa fa-angle-left" aria-label="accessibility.prev_page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/32/">32</a><a class="page-number" href="/page/33/">33</a><a class="page-number" href="/page/34/">34</a><a class="page-number" href="/page/35/">35</a><a class="page-number" href="/page/36/">36</a><span class="page-number current">37</span><a class="page-number" href="/page/38/">38</a><a class="extend next" rel="next" href="/page/38/"><i class="fa fa-angle-right" aria-label="accessibility.next_page"></i></a>
+   <a class="extend prev" rel="prev" href="/page/36/"><i class="fa fa-angle-left" aria-label="accessibility.prev_page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/32/">32</a><a class="page-number" href="/page/33/">33</a><a class="page-number" href="/page/34/">34</a><a class="page-number" href="/page/35/">35</a><a class="page-number" href="/page/36/">36</a><span class="page-number current">37</span><a class="page-number" href="/page/38/">38</a><a class="page-number" href="/page/39/">39</a><a class="page-number" href="/page/40/">40</a><a class="extend next" rel="next" href="/page/38/"><i class="fa fa-angle-right" aria-label="accessibility.next_page"></i></a>
  </nav>
 
           </div>
@@ -1479,7 +1484,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">263</span>
+                  <span class="site-state-item-count">274</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1490,7 +1495,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">176</span>
+                  <span class="site-state-item-count">189</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1501,7 +1506,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">167</span>
+                  <span class="site-state-item-count">183</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -1518,6 +1523,58 @@
             </div>
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.home.strivezs.com/" target="_blank" title="Home">
+                      
+                        <i class="fa fa-fw fa-home"></i>Home</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/zs670980918" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="zs670980918@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/qq_16184125" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-bug"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://space.bilibili.com/32353303" target="_blank" title="BiLiBiLi">
+                      
+                        <i class="fa fa-fw fa-bold"></i>BiLiBiLi</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/5417471468/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/StriveZs" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.youtube.com/channel/UC3iJKUkUdlvN6DY2qP1x2Sg/featured?view_as=subscriber" target="_blank" title="YouTube">
+                      
+                        <i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                  </span>
+                
+            </div>
           
 
           

@@ -8,6 +8,118 @@
     </url>
 
     <url>
+        <loc>www.strivezs.com/categories/Math/</loc>
+        <lastmod>2020-06-25T09:10:22.814Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/PyTorch/Python/</loc>
+        <lastmod>2020-06-21T10:34:37.707Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/PyTorch/</loc>
+        <lastmod>2020-06-21T10:34:37.707Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/%25E6%258A%2580%25E6%259C%25AF/</loc>
+        <lastmod>2020-06-05T07:48:57.625Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/Knowledge/%25E6%25AF%2595%25E8%25AE%25BE/Linux/</loc>
+        <lastmod>2020-05-22T09:46:03.172Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/Knowledge/%25E6%25AF%2595%25E8%25AE%25BE/</loc>
+        <lastmod>2020-05-22T09:46:03.172Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/Knowledge/</loc>
+        <lastmod>2020-05-22T09:46:03.172Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/Neural-Network/Artificial-Intelligence/Knowledge/</loc>
+        <lastmod>2020-05-22T09:45:57.928Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/Neural-Network/Artificial-Intelligence/</loc>
+        <lastmod>2020-05-22T09:45:57.928Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/Neural-Network/</loc>
+        <lastmod>2020-05-22T09:45:57.928Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/%25E6%2596%2587%25E7%25AB%25A0%25E9%25A1%25B5/PHP/</loc>
+        <lastmod>2020-05-06T03:13:22.764Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/%25E6%2596%2587%25E7%25AB%25A0%25E9%25A1%25B5/</loc>
+        <lastmod>2020-05-06T03:13:22.764Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/Knowledge/Nerual-Network/</loc>
+        <lastmod>2020-04-04T09:54:30.990Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/Knowledge/PyTorch/</loc>
+        <lastmod>2020-03-18T02:22:12.072Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/%25E6%2596%2587%25E7%25AB%25A0%25E9%25A1%25B5/Github/%25E5%259F%259F%25E5%2590%258D/</loc>
+        <lastmod>2020-02-22T03:15:36.268Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/categories/%25E6%2596%2587%25E7%25AB%25A0%25E9%25A1%25B5/Github/</loc>
+        <lastmod>2020-02-22T03:15:36.268Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>www.strivezs.com/categories/%25E6%2596%2587%25E7%25AB%25A0%25E9%25A1%25B5/Python/Machine-Learning/Neural-NetWork/</loc>
         <lastmod>2020-02-16T04:04:20.591Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -24,27 +136,6 @@
     <url>
         <loc>www.strivezs.com/categories/%25E6%2596%2587%25E7%25AB%25A0%25E9%25A1%25B5/Python/</loc>
         <lastmod>2020-02-16T04:04:20.591Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>www.strivezs.com/categories/%25E6%2596%2587%25E7%25AB%25A0%25E9%25A1%25B5/</loc>
-        <lastmod>2020-02-16T04:04:20.591Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>www.strivezs.com/categories/%25E6%2596%2587%25E7%25AB%25A0%25E9%25A1%25B5/Github/%25E5%259F%259F%25E5%2590%258D/</loc>
-        <lastmod>2020-02-16T03:58:38.133Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>www.strivezs.com/categories/%25E6%2596%2587%25E7%25AB%25A0%25E9%25A1%25B5/Github/</loc>
-        <lastmod>2020-02-16T03:58:38.133Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

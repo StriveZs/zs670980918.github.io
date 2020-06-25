@@ -115,6 +115,21 @@
 
 
 
+<div id="tp-weather-widget"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "bubble",
+      location: "WX4FBXXFKE4F",
+      geolocation: true,
+      language: "zh-Hans",
+      unit: "c",
+      theme: "dark",
+      token: "cec3125e-f640-4fcf-b6f2-6f0cdc38a0ae",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
 
 
   <title>StriveZs的博客</title>
@@ -314,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/09/k-lin-jin-suan-fa-ying-yong-shi-li-yi-ji-fen-xi-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/20/python-ding-shi-guan-ji-ruan-jian-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -333,7 +348,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/09/k-lin-jin-suan-fa-ying-yong-shi-li-yi-ji-fen-xi-1/" itemprop="url">k-邻近算法应用实例以及分析</a></h1>
+                <a class="post-title-link" href="/2018/04/20/python-ding-shi-guan-ji-ruan-jian-1/" itemprop="url">Python定时关机软件</a></h1>
         
 
         <div class="post-meta">
@@ -345,702 +360,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-09T18:20:54+08:00">
-                2018-04-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/k-%E9%82%BB%E8%BF%91%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
-                    <span itemprop="name">k-邻近算法</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/k-%E9%82%BB%E8%BF%91%E7%AE%97%E6%B3%95/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/k-%E9%82%BB%E8%BF%91%E7%AE%97%E6%B3%95/%E6%96%87%E7%AB%A0%E9%A1%B5/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
-                    <span itemprop="name">机器学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           这里的实例是手写数字识别系统。 步骤：
-
-收集数据：提供文本文件。
-准备数据：编写函数img2vector（），将图像格式转换为分类器使用的向量格式
-分析数据：在python命令提示符中检查数据，确保它符合要求
-训练算法：此步骤不适用于k-邻近算法
-测试算法：编写函数使用提供的部分数据集作为测试样
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/09/k-lin-jin-suan-fa-ying-yong-shi-li-yi-ji-fen-xi-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/08/k-lin-jin-suan-fa-ying-yong-shi-li-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="StriveZs">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="StriveZs的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/08/k-lin-jin-suan-fa-ying-yong-shi-li-1/" itemprop="url">k-邻近算法应用实例</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-08T12:10:16+08:00">
-                2018-04-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/k-%E9%82%BB%E8%BF%91%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
-                    <span itemprop="name">k-邻近算法</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/k-%E9%82%BB%E8%BF%91%E7%AE%97%E6%B3%95/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/k-%E9%82%BB%E8%BF%91%E7%AE%97%E6%B3%95/%E6%96%87%E7%AB%A0%E9%A1%B5/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
-                    <span itemprop="name">机器学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          这里使用k-邻近算法解决约会网站问题： 步骤：
-
-收集数据：提供文本文件。
-准备数据：使用python解析文本文件。
-分析算法：使用Matplotlib画二维扩散图
-训练算法：此步骤使用于k-邻近算法
-测试算法：使用海伦提供的部分数据作为测试样本。测试样本和费测试样本的区别在于：测试样本是已经完成分
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/08/k-lin-jin-suan-fa-ying-yong-shi-li-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/07/ji-qi-xue-xi-zhi-k-lin-jin-suan-fa-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="StriveZs">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="StriveZs的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/07/ji-qi-xue-xi-zhi-k-lin-jin-suan-fa-1/" itemprop="url">机器学习之k-邻近算法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-07T11:28:07+08:00">
-                2018-04-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/k-%E9%82%BB%E8%BF%91%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
-                    <span itemprop="name">k-邻近算法</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/k-%E9%82%BB%E8%BF%91%E7%AE%97%E6%B3%95/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/k-%E9%82%BB%E8%BF%91%E7%AE%97%E6%B3%95/%E6%96%87%E7%AB%A0%E9%A1%B5/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
-                    <span itemprop="name">机器学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           K-邻近算法 简单地说，k-邻近算法采用测量不同特征值之间的距离方法进行分类。   优点：精度高，对异常值不敏感，无数据输入假定。 缺点：计算复杂度高，空间复杂度高。 适应数据范围：数值型和标称型。   工作原理：存在一个样本数据集合，也称训练样本集，并且样本集中每个数据都存在标签，即我们知道样本
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/07/ji-qi-xue-xi-zhi-k-lin-jin-suan-fa-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/06/shi-yong-java-he-javafx-shi-xian-jing-zi-you-xi-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="StriveZs">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="StriveZs的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/06/shi-yong-java-he-javafx-shi-xian-jing-zi-you-xi-1/" itemprop="url">使用java和javafx实现井字游戏</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-06T17:17:03+08:00">
-                2018-04-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/%E5%B0%8F%E6%B8%B8%E6%88%8F/" itemprop="url" rel="index">
-                    <span itemprop="name">小游戏</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/%E5%B0%8F%E6%B8%B8%E6%88%8F/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-¶javafx简介：
-JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设计、创建、测试、调试和部署富客户端应用程序，并在不同的平台上有致的运行效果。   相比于AWT，SWT, Swing等Java库，JavaFX的控件种类和UI效果都要好得多，且已经默认集成在最新的JDK包中。
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/06/shi-yong-java-he-javafx-shi-xian-jing-zi-you-xi-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/05/ico-tu-pian-sheng-cheng-qi-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="StriveZs">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="StriveZs的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/05/ico-tu-pian-sheng-cheng-qi-1/" itemprop="url">ICO图片生成器</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-05T14:19:18+08:00">
-                2018-04-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-20T23:29:53+08:00">
+                2018-04-20
               </time>
             
 
@@ -1112,14 +433,11 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
       
         
           
-          
-¶首先先介绍一下ICO图片：
-¶ICO是Windows的图标文件格式，图标文件可以存储单个图案、多尺寸、多色板的图标文件。一个图标实际上是多张不同格式的图片的集合体，并且还包含了一定的透明区域。
-为什么我想起来搞一个这个转换器呢。主要是在之前使用PyQt5中有一个音量图标的使用要求使用ico图片，
+           之前因为有需要想要设置电脑定时关机，但是一直没有可用的软件（不想用360等流氓软件提供的定时关机） 又因为系统计划任务设置比较困难， 所以在这里分享一个设置定时关机的软件 地址：链接：https://pan.baidu.com/s/1jHIRXxYJmkYEiIfkpv5YwA 密码：5tvh 使
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/04/05/ico-tu-pian-sheng-cheng-qi-1/#more" rel="contents">
+            <a class="btn" href="/2018/04/20/python-ding-shi-guan-ji-ruan-jian-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1170,7 +488,7 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/04/di-zhi-1-1-1-1cloudflare-tui-xin-de-dns-fu-wu-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/19/ji-qi-xue-xi-zhi-jue-ce-shu-si-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -1189,7 +507,7 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/04/di-zhi-1-1-1-1cloudflare-tui-xin-de-dns-fu-wu-1/" itemprop="url">地址 1.1.1.1，Cloudflare 推新的 DNS 服务</a></h1>
+                <a class="post-title-link" href="/2018/04/19/ji-qi-xue-xi-zhi-jue-ce-shu-si-1/" itemprop="url">机器学习之决策树（四）</a></h1>
         
 
         <div class="post-meta">
@@ -1201,8 +519,8 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-04T18:30:17+08:00">
-                2018-04-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-19T22:56:20+08:00">
+                2018-04-19
               </time>
             
 
@@ -1224,8 +542,8 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
+                  <a href="/categories/%E5%86%B3%E7%AD%96%E6%A0%91/" itemprop="url" rel="index">
+                    <span itemprop="name">决策树</span>
                   </a>
                 </span>
 
@@ -1235,8 +553,8 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/%E8%B5%84%E8%AE%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">资讯</span>
+                  <a href="/categories/%E5%86%B3%E7%AD%96%E6%A0%91/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
                   </a>
                 </span>
 
@@ -1274,11 +592,12 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
       
         
           
-          2018.4.1 Cloudflare 宣布正式推出 1.1.1.1 公共 DNS 服务，号称任何人都可以使用它可以加快互联网访问速度并并保持连接私密性。Cloudflare 声称它将是“互联网上速度最快，隐私优先的消费者 DNS 服务”，此前类似的免费公共服务 OpenDNS 与 Google D
+           使用matplotlib绘制决策树： 构造注解树： 首先要得到树的子节点数目和树的深度 都是通过递归得到的 首先是递归得到树的叶子结点数目：
+123456789101112131415161718192021222324252627282930313233343536373839404142434
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/04/04/di-zhi-1-1-1-1cloudflare-tui-xin-de-dns-fu-wu-1/#more" rel="contents">
+            <a class="btn" href="/2018/04/19/ji-qi-xue-xi-zhi-jue-ce-shu-si-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1329,7 +648,7 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/03/chao-qian-jin-wei-jia-fa-qi-yuan-li-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/18/python-shu-ju-fen-xi-xue-xi-bi-ji-si-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -1348,7 +667,7 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/03/chao-qian-jin-wei-jia-fa-qi-yuan-li-1/" itemprop="url">超前进位加法器原理</a></h1>
+                <a class="post-title-link" href="/2018/04/18/python-shu-ju-fen-xi-xue-xi-bi-ji-si-1/" itemprop="url">Python数据分析学习笔记（四）</a></h1>
         
 
         <div class="post-meta">
@@ -1360,8 +679,8 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-03T12:47:29+08:00">
-                2018-04-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-18T18:19:05+08:00">
+                2018-04-18
               </time>
             
 
@@ -1383,8 +702,8 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
+                  <a href="/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" itemprop="url" rel="index">
+                    <span itemprop="name">python数据分析</span>
                   </a>
                 </span>
 
@@ -1394,8 +713,8 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机组成原理</span>
+                  <a href="/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
                   </a>
                 </span>
 
@@ -1433,13 +752,673 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
       
         
           
-          
-¶超前进位加法器(carry look ahead adder)是对普通的全加器进行改良而设计成的并行加法器，主要是针对普通全加器串联时互相进位产生的延迟进行了改良。超前进位加法器是通过增加了一个不是十分复杂的逻辑电路来做到这点的。
-这里先讲一下缘由： 在普通的串行加法器运算中，下一步的运算需要的
+             切片操作： 在每个维度上给出一个切片空间  第一个冒号是对于在第一个维度上覆盖了所有元素  ndarray数组的运算：   数据与标量之间的运算作用于数组的每一个元素 比如： a和b都是ndarray数组 a**2 + b**3 = c  即为a和b中每一个元素进行平方和三次方运算相加 存储到
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/04/03/chao-qian-jin-wei-jia-fa-qi-yuan-li-1/#more" rel="contents">
+            <a class="btn" href="/2018/04/18/python-shu-ju-fen-xi-xue-xi-bi-ji-si-1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/17/chrome-qu-chu-biao-qian-lan-de-suo-lue-tu-dao-hang-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/17/chrome-qu-chu-biao-qian-lan-de-suo-lue-tu-dao-hang-1/" itemprop="url">Chrome去除标签栏的缩略图导航</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-17T10:27:03+08:00">
+                2018-04-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Chrome/" itemprop="url" rel="index">
+                    <span itemprop="name">Chrome</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Chrome/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+           最近开始使用Chrome浏览器了，主要是觉得360 chrome内核的浏览器启动太慢了。_ 但是发现了一个问题自从之前的版本更新过之后就会出现8个缩略图导航，这样我很不爽最晚鼓捣了一小时参考了不少文章才搞好，这里给大家总结一下： 1.首先是知乎上提供的方法：（https://link.zhihu.
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/17/chrome-qu-chu-biao-qian-lan-de-suo-lue-tu-dao-hang-1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/16/ji-qi-xue-xi-zhi-jue-ce-shu-san-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/16/ji-qi-xue-xi-zhi-jue-ce-shu-san-1/" itemprop="url">机器学习之决策树（三）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-16T22:22:46+08:00">
+                2018-04-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%86%B3%E7%AD%96%E6%A0%91/" itemprop="url" rel="index">
+                    <span itemprop="name">决策树</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%86%B3%E7%AD%96%E6%A0%91/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%86%B3%E7%AD%96%E6%A0%91/%E6%96%87%E7%AB%A0%E9%A1%B5/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+           创建一个投票表决器得到出现次数位的分类名称： 
+def majorityCnt(classList):  #类似一个投票表决代码 得到出现次数最多的分类名称也就是键值
+classCount = {}
+for vote in classList:
+if vote[-1] not in classCo
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/16/ji-qi-xue-xi-zhi-jue-ce-shu-san-1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/15/ji-qi-xue-xi-zhi-jue-ce-shu-er-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/15/ji-qi-xue-xi-zhi-jue-ce-shu-er-1/" itemprop="url">机器学习之决策树（二）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-15T12:57:18+08:00">
+                2018-04-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%86%B3%E7%AD%96%E6%A0%91/" itemprop="url" rel="index">
+                    <span itemprop="name">决策树</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%86%B3%E7%AD%96%E6%A0%91/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%86%B3%E7%AD%96%E6%A0%91/%E6%96%87%E7%AB%A0%E9%A1%B5/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+             这里使用ID3算法划分数据集。 ID3算法的伪代码： ID3（例子，目标属性，属性） 为树创建一个根节点 如果所有示例都是肯定的，则返回单节点树Root，其中label = +。 如果所有示例均为负数，则返回单节点树Root，标签为 - 。 如果预测属性的数量为空，则返回单节点树Root， 标
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/15/ji-qi-xue-xi-zhi-jue-ce-shu-er-1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/04/14/pyqt5-xue-xi-bi-ji-qi-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/14/pyqt5-xue-xi-bi-ji-qi-1/" itemprop="url">PyQt5学习笔记（七）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-14T23:17:20+08:00">
+                2018-04-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python%E6%A8%A1%E5%9D%97PyQt5/" itemprop="url" rel="index">
+                    <span itemprop="name">Python模块PyQt5</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python%E6%A8%A1%E5%9D%97PyQt5/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+           很久没发了。 ： 重新定义事件处理器： def keyPressEvent(self, QKeyEvent): if QKeyEvent.key() == Qt.Key_Escape: self.close()   按Esc键就会关闭窗口  self.close()  就是关闭窗口的命令     
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/14/pyqt5-xue-xi-bi-ji-qi-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1481,7 +1460,7 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
 
   
  <nav class="pagination">
-   <a class="extend prev" rel="prev" href="/page/31/"><i class="fa fa-angle-left" aria-label="accessibility.prev_page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="page-number" href="/page/28/">28</a><a class="page-number" href="/page/29/">29</a><a class="page-number" href="/page/30/">30</a><a class="page-number" href="/page/31/">31</a><span class="page-number current">32</span><a class="page-number" href="/page/33/">33</a><a class="page-number" href="/page/34/">34</a><a class="page-number" href="/page/35/">35</a><a class="page-number" href="/page/36/">36</a><a class="page-number" href="/page/37/">37</a><a class="page-number" href="/page/38/">38</a><a class="extend next" rel="next" href="/page/33/"><i class="fa fa-angle-right" aria-label="accessibility.next_page"></i></a>
+   <a class="extend prev" rel="prev" href="/page/31/"><i class="fa fa-angle-left" aria-label="accessibility.prev_page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="page-number" href="/page/28/">28</a><a class="page-number" href="/page/29/">29</a><a class="page-number" href="/page/30/">30</a><a class="page-number" href="/page/31/">31</a><span class="page-number current">32</span><a class="page-number" href="/page/33/">33</a><a class="page-number" href="/page/34/">34</a><a class="page-number" href="/page/35/">35</a><a class="page-number" href="/page/36/">36</a><a class="page-number" href="/page/37/">37</a><span class="space">&hellip;</span><a class="page-number" href="/page/40/">40</a><a class="extend next" rel="next" href="/page/33/"><i class="fa fa-angle-right" aria-label="accessibility.next_page"></i></a>
  </nav>
 
           </div>
@@ -1529,7 +1508,7 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">263</span>
+                  <span class="site-state-item-count">274</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1540,7 +1519,7 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">176</span>
+                  <span class="site-state-item-count">189</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1551,7 +1530,7 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">167</span>
+                  <span class="site-state-item-count">183</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -1568,6 +1547,58 @@ JavaFX是Oracle公司推出的图形和多媒体包，使开发人员能够设�
             </div>
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.home.strivezs.com/" target="_blank" title="Home">
+                      
+                        <i class="fa fa-fw fa-home"></i>Home</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/zs670980918" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="zs670980918@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/qq_16184125" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-bug"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://space.bilibili.com/32353303" target="_blank" title="BiLiBiLi">
+                      
+                        <i class="fa fa-fw fa-bold"></i>BiLiBiLi</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/5417471468/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/StriveZs" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.youtube.com/channel/UC3iJKUkUdlvN6DY2qP1x2Sg/featured?view_as=subscriber" target="_blank" title="YouTube">
+                      
+                        <i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                  </span>
+                
+            </div>
           
 
           

@@ -115,6 +115,21 @@
 
 
 
+<div id="tp-weather-widget"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "bubble",
+      location: "WX4FBXXFKE4F",
+      geolocation: true,
+      language: "zh-Hans",
+      unit: "c",
+      theme: "dark",
+      token: "cec3125e-f640-4fcf-b6f2-6f0cdc38a0ae",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
 
 
   <title>StriveZs的博客</title>
@@ -314,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/12/31/Hexo%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%8A%A8%E6%80%812d%E4%BA%8C%E6%AC%A1%E5%85%83%E4%BA%BA%E7%89%A9%E6%A8%A1%E5%9E%8B/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2020/04/22/Anaconda%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%8E%E6%BA%90%E5%B9%B6%E4%B8%94%E5%AE%89%E8%A3%85PyTorch.md/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -333,7 +348,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/12/31/Hexo%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%8A%A8%E6%80%812d%E4%BA%8C%E6%AC%A1%E5%85%83%E4%BA%BA%E7%89%A9%E6%A8%A1%E5%9E%8B/" itemprop="url">Hexo中添加动态2d二次元人物模型</a></h1>
+                <a class="post-title-link" href="/2020/04/22/Anaconda%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%8E%E6%BA%90%E5%B9%B6%E4%B8%94%E5%AE%89%E8%A3%85PyTorch.md/" itemprop="url">Anaconda配置清华源并且安装PyTorch.md</a></h1>
         
 
         <div class="post-meta">
@@ -345,8 +360,467 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-31T14:54:02+08:00">
-                2019-12-31
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-22T11:36:21+08:00">
+                2020-04-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Anaconda配置清华源并且安装PyTorch
+¶配置清华源
+12345678910111213配置基础包：conda config --add channels http://mirror.tuna.tsinghua.edu.cn/anaconda/pkgs/main/conda config 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/04/22/Anaconda%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%8E%E6%BA%90%E5%B9%B6%E4%B8%94%E5%AE%89%E8%A3%85PyTorch.md/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2020/04/04/Word%20Embedding/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/04/04/Word%20Embedding/" itemprop="url">Word Embedding</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-04T17:54:30+08:00">
+                2020-04-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Knowledge/" itemprop="url" rel="index">
+                    <span itemprop="name">Knowledge</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Knowledge/Nerual-Network/" itemprop="url" rel="index">
+                    <span itemprop="name">Nerual Network</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Word Embedding
+¶Introduction
+¶引入One-Hot
+自然语言处理主要研究语言信息，语言（词、句子等）属于人类认知过程中产生的高层认知抽象实体，而语言和图像属于较低层的元时输入信号。语音、图像和数据表达不需要特殊的编码，并且有天生的顺序性和关联性，近似的数字会被认为是近似的
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/04/04/Word%20Embedding/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2020/03/18/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%EF%BC%9ANVIDIA+Anaconda+PyTorch+PyCharm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/03/18/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%EF%BC%9ANVIDIA+Anaconda+PyTorch+PyCharm/" itemprop="url">环境配置：NVIDIA+Anaconda+PyTorch+PyCharm</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-18T10:22:12+08:00">
+                2020-03-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Knowledge/" itemprop="url" rel="index">
+                    <span itemprop="name">Knowledge</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Knowledge/PyTorch/" itemprop="url" rel="index">
+                    <span itemprop="name">PyTorch</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          环境配置：NVIDIA+Anaconda+PyTorch+PyCharm
+¶步骤
+¶配置英伟达显卡
+¶安装CUDA
+
+首先打开自己的英伟达控制面板查看自己的系统信息，如下图所示：我的是CUDA10.2.95因此需要去英伟达官网下载对应版本的CUDA，下载地址：click here
+
+
+
+
+进行安装，
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/03/18/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%EF%BC%9ANVIDIA+Anaconda+PyTorch+PyCharm/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2020/02/22/%E4%BD%BF%E7%94%A8CDN%E5%8A%A0%E9%80%9Fgithub%20page%E8%AE%BF%E9%97%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/22/%E4%BD%BF%E7%94%A8CDN%E5%8A%A0%E9%80%9Fgithub%20page%E8%AE%BF%E9%97%AE/" itemprop="url">使用CDN加速github page访问</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-22T11:15:36+08:00">
+                2020-02-22
               </time>
             
 
@@ -379,8 +853,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Github/" itemprop="url" rel="index">
+                    <span itemprop="name">Github</span>
                   </a>
                 </span>
 
@@ -390,8 +864,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Hexo/Next%E4%B8%BB%E9%A2%98/" itemprop="url" rel="index">
-                    <span itemprop="name">Next主题</span>
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Github/%E5%9F%9F%E5%90%8D/" itemprop="url" rel="index">
+                    <span itemprop="name">域名</span>
                   </a>
                 </span>
 
@@ -429,19 +903,23 @@
       
         
           
-          Hexo中添加动态2d二次元人物模型
-Hexo添加helper-live2d模型插件
-插件的github地址
-插件作者提供了较为详细的安装步骤，我结合自己操作和图示，提供大家。
-¶插件效果
+          使用CDN加速github page访问
+这里我使用的七牛云来加速网站的访问.
+特别注意：你的域名一定要备案了才能用CDN！！！
+¶步骤
+¶创建CDN域名加速实例
 
-¶安装插件
-hexo博客根目录使用git bash 输入以下代码，安装插件：
-1npm install --
+¶配置实例
+
+
+配置完如上实例后，需要等待实例状态变为成功:
+
+¶添加到CNAME解析
+打开你自己的域名管理控制台。这里我用的是阿里云
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/12/31/Hexo%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%8A%A8%E6%80%812d%E4%BA%8C%E6%AC%A1%E5%85%83%E4%BA%BA%E7%89%A9%E6%A8%A1%E5%9E%8B/#more" rel="contents">
+            <a class="btn" href="/2020/02/22/%E4%BD%BF%E7%94%A8CDN%E5%8A%A0%E9%80%9Fgithub%20page%E8%AE%BF%E9%97%AE/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -492,7 +970,7 @@ hexo博客根目录使用git bash 输入以下代码，安装插件：
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/12/31/Hexo%E4%B8%ADNext%E4%B8%BB%E9%A2%98%E5%9C%A8%E4%B8%BB%E9%A1%B5%E6%B7%BB%E5%8A%A0%E7%B2%92%E5%AD%90%E6%95%88%E6%9E%9C%E6%97%B6%E9%92%9F/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2020/02/16/Learning%20In%20RNN%20Part%20II/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -511,7 +989,7 @@ hexo博客根目录使用git bash 输入以下代码，安装插件：
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/12/31/Hexo%E4%B8%ADNext%E4%B8%BB%E9%A2%98%E5%9C%A8%E4%B8%BB%E9%A1%B5%E6%B7%BB%E5%8A%A0%E7%B2%92%E5%AD%90%E6%95%88%E6%9E%9C%E6%97%B6%E9%92%9F/" itemprop="url">Hexo中Next主题在主页添加粒子效果时钟</a></h1>
+                <a class="post-title-link" href="/2020/02/16/Learning%20In%20RNN%20Part%20II/" itemprop="url">Learning In RNN Part II</a></h1>
         
 
         <div class="post-meta">
@@ -523,8 +1001,8 @@ hexo博客根目录使用git bash 输入以下代码，安装插件：
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-31T14:04:10+08:00">
-                2019-12-31
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-16T12:04:20+08:00">
+                2020-02-16
               </time>
             
 
@@ -557,8 +1035,8 @@ hexo博客根目录使用git bash 输入以下代码，安装插件：
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
                   </a>
                 </span>
 
@@ -568,8 +1046,19 @@ hexo博客根目录使用git bash 输入以下代码，安装插件：
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Hexo/Next%E4%B8%BB%E9%A2%98/" itemprop="url" rel="index">
-                    <span itemprop="name">Next主题</span>
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Python/Machine-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Machine Learning</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Python/Machine-Learning/Neural-NetWork/" itemprop="url" rel="index">
+                    <span itemprop="name">Neural NetWork</span>
                   </a>
                 </span>
 
@@ -607,14 +1096,16 @@ hexo博客根目录使用git bash 输入以下代码，安装插件：
       
         
           
-          Hexo中Next主题在主页添加粒子效果时钟
-¶创建配置文件
-在\themes\next\layout_custom\目录下，新建clock.swig文件，内容如下：
-123456789101112131415161718192021222324252627282930313233343536373
+          Learning In RNN Part II
+Learning Tager: Make the loss be minimize that evaluating by cost function.
+
+¶Unfortunately
+
+RNN-based network is not always e
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/12/31/Hexo%E4%B8%ADNext%E4%B8%BB%E9%A2%98%E5%9C%A8%E4%B8%BB%E9%A1%B5%E6%B7%BB%E5%8A%A0%E7%B2%92%E5%AD%90%E6%95%88%E6%9E%9C%E6%97%B6%E9%92%9F/#more" rel="contents">
+            <a class="btn" href="/2020/02/16/Learning%20In%20RNN%20Part%20II/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -665,7 +1156,7 @@ hexo博客根目录使用git bash 输入以下代码，安装插件：
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/12/31/Hexo%E4%B8%ADNext%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E4%B8%BB%E9%A1%B5%E6%A0%87%E7%AD%BE%E9%A1%B5%E4%BB%A5%E5%8F%8A%E7%BE%8E%E5%8C%96%E6%A0%87%E7%AD%BE%E9%A1%B5/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2020/02/16/%E5%B0%86%E5%9F%9F%E5%90%8D%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A7%A3%E6%9E%90%E5%88%B0github%20page%E4%B8%8A/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -684,7 +1175,7 @@ hexo博客根目录使用git bash 输入以下代码，安装插件：
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/12/31/Hexo%E4%B8%ADNext%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E4%B8%BB%E9%A1%B5%E6%A0%87%E7%AD%BE%E9%A1%B5%E4%BB%A5%E5%8F%8A%E7%BE%8E%E5%8C%96%E6%A0%87%E7%AD%BE%E9%A1%B5/" itemprop="url">Hexo中Next主题添加主页标签页以及美化标签页</a></h1>
+                <a class="post-title-link" href="/2020/02/16/%E5%B0%86%E5%9F%9F%E5%90%8D%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A7%A3%E6%9E%90%E5%88%B0github%20page%E4%B8%8A/" itemprop="url">将域名从服务器解析到github page上</a></h1>
         
 
         <div class="post-meta">
@@ -696,8 +1187,8 @@ hexo博客根目录使用git bash 输入以下代码，安装插件：
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-31T13:27:43+08:00">
-                2019-12-31
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-16T11:58:38+08:00">
+                2020-02-16
               </time>
             
 
@@ -730,8 +1221,8 @@ hexo博客根目录使用git bash 输入以下代码，安装插件：
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Github/" itemprop="url" rel="index">
+                    <span itemprop="name">Github</span>
                   </a>
                 </span>
 
@@ -741,8 +1232,8 @@ hexo博客根目录使用git bash 输入以下代码，安装插件：
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Hexo/Next%E4%B8%BB%E9%A2%98/" itemprop="url" rel="index">
-                    <span itemprop="name">Next主题</span>
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Github/%E5%9F%9F%E5%90%8D/" itemprop="url" rel="index">
+                    <span itemprop="name">域名</span>
                   </a>
                 </span>
 
@@ -780,18 +1271,25 @@ hexo博客根目录使用git bash 输入以下代码，安装插件：
       
         
           
-          Hexo中Next主题添加主页标签页以及美化标签页
-¶添加主页标签云
-¶使用 tag-cloud 插件
-hexo-tag-cloud插件是作者写的一个Hexo博客的标签云插件，旨在直观的展示标签的种类，美观大方且非常优雅。
-插件地址：
-插件的GitHub地址
-安装插件
-进入到 hexo 的根目录，在
+          将域名从服务器解析到github page上
+
+首先停用掉自己之前的所使用的的子域名
+
+
+
+然后将列表中关于服务器解析的相关记录去除掉防止出现冲突
+
+
+
+然后修改github上项目配置将著名设置为www.stirvezs.com.
+
+
+
+修改hexo中的配置文件将url：改为www.strivezs
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/12/31/Hexo%E4%B8%ADNext%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E4%B8%BB%E9%A1%B5%E6%A0%87%E7%AD%BE%E9%A1%B5%E4%BB%A5%E5%8F%8A%E7%BE%8E%E5%8C%96%E6%A0%87%E7%AD%BE%E9%A1%B5/#more" rel="contents">
+            <a class="btn" href="/2020/02/16/%E5%B0%86%E5%9F%9F%E5%90%8D%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A7%A3%E6%9E%90%E5%88%B0github%20page%E4%B8%8A/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -842,7 +1340,7 @@ hexo-tag-cloud插件是作者写的一个Hexo博客的标签云插件，旨在�
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/12/30/%E4%BD%BF%E7%94%A8FileZilla%E8%AE%BF%E9%97%AE%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ESC%EF%BC%88Centos%EF%BC%89/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2020/01/30/Learning%20In%20RNN%20Part%20I/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -861,7 +1359,7 @@ hexo-tag-cloud插件是作者写的一个Hexo博客的标签云插件，旨在�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/12/30/%E4%BD%BF%E7%94%A8FileZilla%E8%AE%BF%E9%97%AE%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ESC%EF%BC%88Centos%EF%BC%89/" itemprop="url">使用FileZilla通过sftp连接以Linux为内核的云服务器</a></h1>
+                <a class="post-title-link" href="/2020/01/30/Learning%20In%20RNN%20Part%20I/" itemprop="url">Learning In RNN Part I</a></h1>
         
 
         <div class="post-meta">
@@ -873,8 +1371,8 @@ hexo-tag-cloud插件是作者写的一个Hexo博客的标签云插件，旨在�
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-30T13:19:27+08:00">
-                2019-12-30
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-30T18:30:27+08:00">
+                2020-01-30
               </time>
             
 
@@ -907,8 +1405,8 @@ hexo-tag-cloud插件是作者写的一个Hexo博客的标签云插件，旨在�
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/%E6%9C%8D%E5%8A%A1%E5%99%A8/" itemprop="url" rel="index">
-                    <span itemprop="name">服务器</span>
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
                   </a>
                 </span>
 
@@ -918,8 +1416,19 @@ hexo-tag-cloud插件是作者写的一个Hexo博客的标签云插件，旨在�
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Python/Machine-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Machine Learning</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/Python/Machine-Learning/Neural-NetWork/" itemprop="url" rel="index">
+                    <span itemprop="name">Neural NetWork</span>
                   </a>
                 </span>
 
@@ -957,567 +1466,15 @@ hexo-tag-cloud插件是作者写的一个Hexo博客的标签云插件，旨在�
       
         
           
-          使用FileZilla通过sftp连接以Linux为内核的云服务器
-¶首先去FileZilla下载该软件进行安装
-下载地址：https://filezilla-project.org/
-¶登陆阿里云实例控制台
-¶创建新的安全组规则
-打开端口22
-
-¶使用VNC连接使用终端
-连接VNC需要输入连接密码
+          Learning In RNN
+Recurrent Neural Network(RNN)
+The chinese name is 循环神经网络.
+¶The introduction of RNN by Dr.Mofan Zhou
+If you want some  dramatic explana
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/12/30/%E4%BD%BF%E7%94%A8FileZilla%E8%AE%BF%E9%97%AE%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ESC%EF%BC%88Centos%EF%BC%89/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/12/27/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="StriveZs">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="StriveZs的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/27/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/" itemprop="url">博客迁移</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-27T13:16:59+08:00">
-                2019-12-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index">
-                    <span itemprop="name">博客</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/%E5%8D%9A%E5%AE%A2/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%96%87%E7%AB%A0%E9%A1%B5/%E5%8D%9A%E5%AE%A2/Hexo/next%E4%B8%BB%E9%A2%98/" itemprop="url" rel="index">
-                    <span itemprop="name">next主题</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          博客迁移 for MAC
-¶第一步：导出wordpress内容
-进入WordPress后台的工具栏界面，将所有内容导出为一个XML文件。
-
-¶第二步：安装Hexo
-¶环境准备
-¶安装Node.js
-这里建议用nvm安装管理Node.js
-cURL:
-1curl -o- https://raw.git
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/12/27/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/05/13/zhuang-shi-mo-shi-bian-cheng-shi-xian-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="StriveZs">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="StriveZs的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/13/zhuang-shi-mo-shi-bian-cheng-shi-xian-1/" itemprop="url">装饰模式编程实现</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-13T15:04:12+08:00">
-                2019-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-amp-C/" itemprop="url" rel="index">
-                    <span itemprop="name">C&amp;C++</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-amp-C/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-amp-C/%E6%96%87%E7%AB%A0%E9%A1%B5/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" itemprop="url" rel="index">
-                    <span itemprop="name">设计模式</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          装饰模式
-实验原理：
-
-动态地给一个对象添加一些额外的职责。
-就增加功能来说，装饰模式比生成子类更为灵活。
-
-装饰模式的适用性：
-
-在不影响其他对象的情况下，以动态、透明的方式给单个对象添加职责。
-处理那些可以撤销的职责。
-当不能采用生成子类的方法进行扩充时。
-可能有大量独立的扩展，为支持每一种组合
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/05/13/zhuang-shi-mo-shi-bian-cheng-shi-xian-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2019/05/08/shi-pei-qi-mo-shi-bian-cheng-shi-xian-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="StriveZs">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="StriveZs的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/08/shi-pei-qi-mo-shi-bian-cheng-shi-xian-1/" itemprop="url">适配器模式编程实现</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-08T19:02:27+08:00">
-                2019-05-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-amp-C/" itemprop="url" rel="index">
-                    <span itemprop="name">C&amp;C++</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-amp-C/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-amp-C/%E6%96%87%E7%AB%A0%E9%A1%B5/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" itemprop="url" rel="index">
-                    <span itemprop="name">设计模式</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          适配器模式
-适配器模式的结构：
-
-客户端使用的Target类需要使用一个已经存在的接口Adaptee类，可以用两种方法实现：
-构造Adapter类继承Target类，并实现Adaptee接口（适配器模式的类版本）
-将一个Adaptee实例作为Adapter的组成部分（适配器模式的对象版本）
-
-类版本
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/05/08/shi-pei-qi-mo-shi-bian-cheng-shi-xian-1/#more" rel="contents">
+            <a class="btn" href="/2020/01/30/Learning%20In%20RNN%20Part%20I/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1559,7 +1516,7 @@ cURL:
 
   
  <nav class="pagination">
-   <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="accessibility.prev_page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/38/">38</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="accessibility.next_page"></i></a>
+   <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="accessibility.prev_page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/40/">40</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="accessibility.next_page"></i></a>
  </nav>
 
           </div>
@@ -1607,7 +1564,7 @@ cURL:
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">263</span>
+                  <span class="site-state-item-count">274</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1618,7 +1575,7 @@ cURL:
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">176</span>
+                  <span class="site-state-item-count">189</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1629,7 +1586,7 @@ cURL:
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">167</span>
+                  <span class="site-state-item-count">183</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -1646,6 +1603,58 @@ cURL:
             </div>
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.home.strivezs.com/" target="_blank" title="Home">
+                      
+                        <i class="fa fa-fw fa-home"></i>Home</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/zs670980918" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="zs670980918@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/qq_16184125" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-bug"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://space.bilibili.com/32353303" target="_blank" title="BiLiBiLi">
+                      
+                        <i class="fa fa-fw fa-bold"></i>BiLiBiLi</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/5417471468/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/StriveZs" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.youtube.com/channel/UC3iJKUkUdlvN6DY2qP1x2Sg/featured?view_as=subscriber" target="_blank" title="YouTube">
+                      
+                        <i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                  </span>
+                
+            </div>
           
 
           

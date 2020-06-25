@@ -115,6 +115,21 @@
 
 
 
+<div id="tp-weather-widget"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "bubble",
+      location: "WX4FBXXFKE4F",
+      geolocation: true,
+      language: "zh-Hans",
+      unit: "c",
+      theme: "dark",
+      token: "cec3125e-f640-4fcf-b6f2-6f0cdc38a0ae",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
 
 
   <title>StriveZs的博客</title>
@@ -314,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/07/c-zhi-stl-jie-shao-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/18/c-zhi-valarray-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -333,7 +348,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/07/c-zhi-stl-jie-shao-1/" itemprop="url">C++之STL介绍</a></h1>
+                <a class="post-title-link" href="/2018/05/18/c-zhi-valarray-1/" itemprop="url">C++之valarray</a></h1>
         
 
         <div class="post-meta">
@@ -345,8 +360,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-07T18:33:45+08:00">
-                2018-05-07
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-18T23:05:26+08:00">
+                2018-05-18
               </time>
             
 
@@ -429,13 +444,11 @@
       
         
           
-           CSTL（标准模板库）是一套功能强大的C模板类，提供了通用的模板类和函数，这些模板类和函数可以实现多种流行和常用的算法和数据结构，如向量、链表、队列、栈。 C++标准模板库三个核心组件：
-算法（Algorithm）
-算法作用于容器。它们提供了执行各种操作的方式，包括对容器内容执行初始化、排序、搜索
+           valarray使用： valarray类似vector，也是一个模板类，其主要被用来对一系列元素进行高速的数字计算。 但是它和vector还是有区别的： 1、valarray定义了一组在两个相同长度和相同类型的valarray类对象之间的数字计算，例如xarr = cos(yarr) + sin
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/05/07/c-zhi-stl-jie-shao-1/#more" rel="contents">
+            <a class="btn" href="/2018/05/18/c-zhi-valarray-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -486,7 +499,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/06/c-zhi-vector-shi-yong-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/17/c-zhi-duo-tai-xing-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -505,7 +518,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/06/c-zhi-vector-shi-yong-1/" itemprop="url">C++之vector使用</a></h1>
+                <a class="post-title-link" href="/2018/05/17/c-zhi-duo-tai-xing-1/" itemprop="url">C++之多态性</a></h1>
         
 
         <div class="post-meta">
@@ -517,8 +530,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-06T22:41:21+08:00">
-                2018-05-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-17T22:19:52+08:00">
+                2018-05-17
               </time>
             
 
@@ -601,11 +614,11 @@
       
         
           
-           使用vector创建数组对象   C++标准库提供了被封装的动态数组—vector，而且这种封装的数组可以具有各种类型。 vector它不是类，它是类的一个模板。 使用vector动态定义数组的形式为： vector&lt;元素类型&gt;数组对象名（数组长度）;   例如： vectorarra
+           多态性概述： 多态是指同样的消息被不同类型的对象接收时导致不同的行为。消息是指对类的成员函数调用，不同的行为是指不同的实现。 例如：浮点数和整型数，则要先将整形数转换为浮点数，然后在进行运算。   面向对象的多态可以分为4类：重载多态，强制多态，包含多态和参数多态。 对函数的重载都属于重载多态，接
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/05/06/c-zhi-vector-shi-yong-1/#more" rel="contents">
+            <a class="btn" href="/2018/05/17/c-zhi-duo-tai-xing-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -656,7 +669,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/05/python-pi-liang-xiu-gai-wen-jian-jia-wen-jian-ming-cheng-de-xiao-cheng-xu-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/16/c-zhi-array-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -675,7 +688,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/05/python-pi-liang-xiu-gai-wen-jian-jia-wen-jian-ming-cheng-de-xiao-cheng-xu-1/" itemprop="url">Python批量修改文件夹文件名称的小程序</a></h1>
+                <a class="post-title-link" href="/2018/05/16/c-zhi-array-1/" itemprop="url">C++之array</a></h1>
         
 
         <div class="post-meta">
@@ -687,168 +700,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-05T23:22:52+08:00">
-                2018-05-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python%E5%8A%9F%E8%83%BD/" itemprop="url" rel="index">
-                    <span itemprop="name">Python功能</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python%E5%8A%9F%E8%83%BD/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           由于之前删除图片吃了一次大亏，所以想到写一个批量修改文件名称的小程序，以防止之前的文件被覆盖。   程序样子：    使用：   结果：    下载地址： https://download.csdn.net/download/qq_16184125/10394937
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/05/python-pi-liang-xiu-gai-wen-jian-jia-wen-jian-ming-cheng-de-xiao-cheng-xu-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/04/c-dong-tai-nei-cun-de-shi-yong-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="StriveZs">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="StriveZs的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/04/c-dong-tai-nei-cun-de-shi-yong-1/" itemprop="url">C++动态内存的使用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-04T22:17:03+08:00">
-                2018-05-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-16T23:56:20+08:00">
+                2018-05-16
               </time>
             
 
@@ -931,11 +784,11 @@
       
         
           
-           在C中动态内存分配技术可以保证程序在运行过程中按照实际需要申请适量的内存，使用结果后还会释放，这种在程序运行过程中申请和释放的存储单元也称为堆对象。 在C程序中建立和删除堆对象使用两个运算符：new和delete   运算符new的功能是动态内存分配，语法形式为： new 数据类型 （初始化参数列
+           array是序列容器的一种，它类似一般数组，是在连续的内存上来存储数据，并且array的长度是固定的不可改变的。 这里需要的注意的是：array中元素可以被修改，但是不能在array上进行数据插入和删除。 那么问题来了为什么要使用array呢？ array相比较于一般数组，它提供了更好、更安全的接
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/05/04/c-dong-tai-nei-cun-de-shi-yong-1/#more" rel="contents">
+            <a class="btn" href="/2018/05/16/c-zhi-array-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -986,7 +839,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/03/c-zhi-zhen-shu-zu-xue-xi-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/15/c-shi-xian-zi-mu-biao-quan-pai-xu-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -1005,7 +858,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/03/c-zhi-zhen-shu-zu-xue-xi-1/" itemprop="url">C++指针数组学习</a></h1>
+                <a class="post-title-link" href="/2018/05/15/c-shi-xian-zi-mu-biao-quan-pai-xu-1/" itemprop="url">C++实现字母表全排序</a></h1>
         
 
         <div class="post-meta">
@@ -1017,180 +870,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-03T22:08:53+08:00">
-                2018-05-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-amp-C/" itemprop="url" rel="index">
-                    <span itemprop="name">C&amp;C++</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-amp-C/C-%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
-                    <span itemprop="name">C++学习</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-amp-C/C-%E5%AD%A6%E4%B9%A0/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           对C++指针的整理： 指针变量是用于存放内存单元地址的。 声明指针的语法形式： 数据类型 标识符；   要注意的只有指针名字是代表的是赋值给指针元素的地址，如果使用指针名 则是该元素的真实值。 例如：
-1int *t;
-上面例子定义是声明一个整形的指针变量，这个指针的名称为t专门用来存放int型数
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/03/c-zhi-zhen-shu-zu-xue-xi-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/02/c-mao-pao-pai-xu-zhe-ban-cha-zhao-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="StriveZs">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="StriveZs的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/02/c-mao-pao-pai-xu-zhe-ban-cha-zhao-1/" itemprop="url">C++ 冒泡排序&折半查找</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-02T21:48:31+08:00">
-                2018-05-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-15T23:22:16+08:00">
+                2018-05-15
               </time>
             
 
@@ -1273,12 +954,11 @@
       
         
           
-           冒泡策略：在一次循环中把最大元素移到序列最右端。 算法代码： 这里我以整型数组为例  数组类型大家可自行定义
-1234567891011121314//冒泡排序//一次冒泡void bubble(int a\[\],int n)&#123;    for(int i;i&lt;n-1;i++)  
+           全排列具体说明： 例如abc会有abc,acb,bac,bca,cab,abc六种情况 采用递归的方法： 先看a作为字母表首位时会有bc和cb两种排序 然后b作为字母表首位时会有ac和ca两种排序 最后是c作为字母表首位时会有ab和ba两种排序   这里就用到了swap（）进行交换。为了每次确保不
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/05/02/c-mao-pao-pai-xu-zhe-ban-cha-zhao-1/#more" rel="contents">
+            <a class="btn" href="/2018/05/15/c-shi-xian-zi-mu-biao-quan-pai-xu-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1329,7 +1009,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/01/shu-ju-ku-excel-wen-jian-dao-ru-select-yu-ju-de-ji-chu-cao-zuo-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/14/stl-zhi-priority-queue-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -1348,7 +1028,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/01/shu-ju-ku-excel-wen-jian-dao-ru-select-yu-ju-de-ji-chu-cao-zuo-1/" itemprop="url">数据库 Excel文件导入&Select语句的基础操作</a></h1>
+                <a class="post-title-link" href="/2018/05/14/stl-zhi-priority-queue-1/" itemprop="url">STL之priority_queue</a></h1>
         
 
         <div class="post-meta">
@@ -1360,8 +1040,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-01T13:12:12+08:00">
-                2018-05-01
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-14T23:02:22+08:00">
+                2018-05-14
               </time>
             
 
@@ -1383,8 +1063,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index">
-                    <span itemprop="name">数据库</span>
+                  <a href="/categories/C-amp-C/" itemprop="url" rel="index">
+                    <span itemprop="name">C&amp;C++</span>
                   </a>
                 </span>
 
@@ -1394,7 +1074,18 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                  <a href="/categories/C-amp-C/C-%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">C++学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-amp-C/C-%E5%AD%A6%E4%B9%A0/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
                     <span itemprop="name">文章页</span>
                   </a>
                 </span>
@@ -1433,11 +1124,351 @@
       
         
           
-           通过使用SQL Sever 导入excel表格数据： 步骤： 1.通过任务选项中的导入数据进行导入  2.选择你想要导入的数据：  3.选择你本地的数据库 并输入需要的输入的数据  4.选择对应表进行数据导入：  这里需要注意的是左侧一栏为源文件可导入的表，右侧一栏是导入你自己创建表中。 5.之后
+           优先级队列是一个拥有权值概念的单向队列，在这个队列中，所有元素是按优先级排 的。 优先队列容器也是一种从一端入队，另一端出对的队列。不同于一般队列的是，队列中最大的元素总是位于队首位置，因此，元素的出对并非按照先进先出的要求，将最先入队的元素出对，而是将当前队列中的最大元素出对。 C++ STL 
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/05/01/shu-ju-ku-excel-wen-jian-dao-ru-select-yu-ju-de-ji-chu-cao-zuo-1/#more" rel="contents">
+            <a class="btn" href="/2018/05/14/stl-zhi-priority-queue-1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/13/stl-zhi-heap-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/13/stl-zhi-heap-1/" itemprop="url">STL之heap</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-13T21:30:44+08:00">
+                2018-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-amp-C/" itemprop="url" rel="index">
+                    <span itemprop="name">C&amp;C++</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-amp-C/C-%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">C++学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-amp-C/C-%E5%AD%A6%E4%B9%A0/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+           STL中并没有把heap作为一种容器组件，heap的实现亦需要更低一层的容器组件（诸如list,array,vector）作为其底层机制。Heap是一个类属算法，包含在algorithm头文件中。虽然STL中关于heap默认调整成的是大顶堆，但却可以让用户利用自定义的compare_fuction
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/13/stl-zhi-heap-1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/12/fcfs-suan-fa-he-you-xian-ji-diao-du-suan-fa-c-shi-xian-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/12/fcfs-suan-fa-he-you-xian-ji-diao-du-suan-fa-c-shi-xian-1/" itemprop="url">FCFS算法和优先级调度算法C++实现</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-12T23:15:30+08:00">
+                2018-05-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-amp-C/" itemprop="url" rel="index">
+                    <span itemprop="name">C&amp;C++</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-amp-C/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-amp-C/%E6%96%87%E7%AB%A0%E9%A1%B5/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+           FCFS调度算法（短作业优先） 该算法采用非剥夺策略，算法按照进程提交或进程变为就绪状态的先后次序，分派 CPU。当前进程占用CPU，直到执行完或阻塞，才出让CPU（非抢占方式）。在进程唤醒后（如I/O 完成），并不立即恢复执行，通常等到当前进程出让CPU。这是最简单的调度算法，比较有利于长进程，
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/12/fcfs-suan-fa-he-you-xian-ji-diao-du-suan-fa-c-shi-xian-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1479,7 +1510,7 @@
 
   
  <nav class="pagination">
-   <a class="extend prev" rel="prev" href="/page/27/"><i class="fa fa-angle-left" aria-label="accessibility.prev_page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><a class="page-number" href="/page/24/">24</a><a class="page-number" href="/page/25/">25</a><a class="page-number" href="/page/26/">26</a><a class="page-number" href="/page/27/">27</a><span class="page-number current">28</span><a class="page-number" href="/page/29/">29</a><a class="page-number" href="/page/30/">30</a><a class="page-number" href="/page/31/">31</a><a class="page-number" href="/page/32/">32</a><a class="page-number" href="/page/33/">33</a><span class="space">&hellip;</span><a class="page-number" href="/page/38/">38</a><a class="extend next" rel="next" href="/page/29/"><i class="fa fa-angle-right" aria-label="accessibility.next_page"></i></a>
+   <a class="extend prev" rel="prev" href="/page/27/"><i class="fa fa-angle-left" aria-label="accessibility.prev_page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><a class="page-number" href="/page/24/">24</a><a class="page-number" href="/page/25/">25</a><a class="page-number" href="/page/26/">26</a><a class="page-number" href="/page/27/">27</a><span class="page-number current">28</span><a class="page-number" href="/page/29/">29</a><a class="page-number" href="/page/30/">30</a><a class="page-number" href="/page/31/">31</a><a class="page-number" href="/page/32/">32</a><a class="page-number" href="/page/33/">33</a><span class="space">&hellip;</span><a class="page-number" href="/page/40/">40</a><a class="extend next" rel="next" href="/page/29/"><i class="fa fa-angle-right" aria-label="accessibility.next_page"></i></a>
  </nav>
 
           </div>
@@ -1527,7 +1558,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">263</span>
+                  <span class="site-state-item-count">274</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1538,7 +1569,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">176</span>
+                  <span class="site-state-item-count">189</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1549,7 +1580,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">167</span>
+                  <span class="site-state-item-count">183</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -1566,6 +1597,58 @@
             </div>
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.home.strivezs.com/" target="_blank" title="Home">
+                      
+                        <i class="fa fa-fw fa-home"></i>Home</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/zs670980918" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="zs670980918@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/qq_16184125" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-bug"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://space.bilibili.com/32353303" target="_blank" title="BiLiBiLi">
+                      
+                        <i class="fa fa-fw fa-bold"></i>BiLiBiLi</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/5417471468/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/StriveZs" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.youtube.com/channel/UC3iJKUkUdlvN6DY2qP1x2Sg/featured?view_as=subscriber" target="_blank" title="YouTube">
+                      
+                        <i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                  </span>
+                
+            </div>
           
 
           

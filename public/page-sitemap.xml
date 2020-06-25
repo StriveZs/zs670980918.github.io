@@ -8,6 +8,13 @@
     </url>
     
     <url>
+        <loc>www.strivezs.com/about/</loc>
+        <lastmod>2020-03-01T02:28:10.444Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>www.strivezs.com/categories/</loc>
         <lastmod>2020-01-04T08:49:51.673Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -43,14 +50,14 @@
     </url>
     
     <url>
-        <loc>www.strivezs.com/zai-xian-gong-ju/</loc>
+        <loc>www.strivezs.com/zai-xian-gong-ju/index-1.html</loc>
         <lastmod>2018-06-05T10:06:09.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>www.strivezs.com/zai-xian-gong-ju/index-1.html</loc>
+        <loc>www.strivezs.com/zai-xian-gong-ju/</loc>
         <lastmod>2018-06-05T10:06:09.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -71,14 +78,14 @@
     </url>
     
     <url>
-        <loc>www.strivezs.com/tong-ji/index-1.html</loc>
+        <loc>www.strivezs.com/tong-ji/</loc>
         <lastmod>2018-03-04T03:26:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>www.strivezs.com/tong-ji/</loc>
+        <loc>www.strivezs.com/tong-ji/index-1.html</loc>
         <lastmod>2018-03-04T03:26:19.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
