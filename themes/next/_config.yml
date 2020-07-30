@@ -367,7 +367,7 @@ font:
 
 # MathJax Support
 mathjax:
-  enable: false
+  enable: true
   per_page: false
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
@@ -403,16 +403,15 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
-  avatar: mm # gravatar style
+  enable: true
+  appid: KqICB5D6mxxGk3BP6KIJz0ar-gzGzoHsz # your leancloud application appid
+  appkey: YsAzygIOG5S4oWgdymQBthCv # your leancloud application appkey
+  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: true # Verification code
+  placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!' # comment box placeholder
+  avatar: wavatar # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
-
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc

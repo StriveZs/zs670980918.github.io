@@ -329,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/11/stl-zhi-queue-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/18/c-zhi-valarray-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -348,7 +348,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/11/stl-zhi-queue-1/" itemprop="url">STL之queue</a></h1>
+                <a class="post-title-link" href="/2018/05/18/c-zhi-valarray-1/" itemprop="url">C++之valarray</a></h1>
         
 
         <div class="post-meta">
@@ -360,8 +360,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-11T23:22:58+08:00">
-                2018-05-11
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-18T23:05:26+08:00">
+                2018-05-18
               </time>
             
 
@@ -418,6 +418,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/18/c-zhi-valarray-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/05/18/c-zhi-valarray-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -444,11 +454,11 @@
       
         
           
-          queue单向队列使用 queue单向队列与栈有点类似，一个是在同一端存取数据，另一个是在一端存入数据，另一端取出数据。单向队列中的数据是先进先出（First In First Out,FIFO）。在STL中，单向队列也是以别的容器作为底部结构，再将接口改变，使之符合单向队列的特性就可以了。因此实现
+           valarray使用： valarray类似vector，也是一个模板类，其主要被用来对一系列元素进行高速的数字计算。 但是它和vector还是有区别的： 1、valarray定义了一组在两个相同长度和相同类型的valarray类对象之间的数字计算，例如xarr = cos(yarr) + sin
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/05/11/stl-zhi-queue-1/#more" rel="contents">
+            <a class="btn" href="/2018/05/18/c-zhi-valarray-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -499,7 +509,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/10/c-zhi-ji-cheng-pai-sheng-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/17/c-zhi-duo-tai-xing-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -518,7 +528,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/10/c-zhi-ji-cheng-pai-sheng-1/" itemprop="url">C++之继承派生</a></h1>
+                <a class="post-title-link" href="/2018/05/17/c-zhi-duo-tai-xing-1/" itemprop="url">C++之多态性</a></h1>
         
 
         <div class="post-meta">
@@ -530,8 +540,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-10T22:01:27+08:00">
-                2018-05-10
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-17T22:19:52+08:00">
+                2018-05-17
               </time>
             
 
@@ -588,6 +598,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/17/c-zhi-duo-tai-xing-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/05/17/c-zhi-duo-tai-xing-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -614,11 +634,11 @@
       
         
           
-           类的继承，是新的类从已有的类那里得到已有的特性。从另一个角度上看，从已有的类中产生新类的过程就是类的派生。 原有的类称为基类或父类，产生的新类称为派生类或子类。派生类也可以作为基类派生新的类，这样就形成了类的层次结构。   派生类的定义： class 派生类名称：继承方式 基类名1，继承方式 基类
+           多态性概述： 多态是指同样的消息被不同类型的对象接收时导致不同的行为。消息是指对类的成员函数调用，不同的行为是指不同的实现。 例如：浮点数和整型数，则要先将整形数转换为浮点数，然后在进行运算。   面向对象的多态可以分为4类：重载多态，强制多态，包含多态和参数多态。 对函数的重载都属于重载多态，接
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/05/10/c-zhi-ji-cheng-pai-sheng-1/#more" rel="contents">
+            <a class="btn" href="/2018/05/17/c-zhi-duo-tai-xing-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -669,7 +689,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/09/stl-zhi-stack-xue-xi-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/16/c-zhi-array-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -688,7 +708,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/09/stl-zhi-stack-xue-xi-1/" itemprop="url">STL之Stack学习</a></h1>
+                <a class="post-title-link" href="/2018/05/16/c-zhi-array-1/" itemprop="url">C++之array</a></h1>
         
 
         <div class="post-meta">
@@ -700,8 +720,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-09T22:41:26+08:00">
-                2018-05-09
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-16T23:56:20+08:00">
+                2018-05-16
               </time>
             
 
@@ -758,6 +778,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/16/c-zhi-array-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/05/16/c-zhi-array-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -784,11 +814,11 @@
       
         
           
-           栈是一种容器适配器，特别为后入先出而设计的一种（LIFO ），那种数据被插入，然后再容器末端取出 栈实现了容器适配器，这是用了一个封装了的类作为他的特定容器，提供了一组成员函数去访问他的元素，元素从特定的容器，也就是堆栈的头取出。 遵循先进先出的原则。栈口只有一个，允许新增元素（只能在栈顶上增加）
+           array是序列容器的一种，它类似一般数组，是在连续的内存上来存储数据，并且array的长度是固定的不可改变的。 这里需要的注意的是：array中元素可以被修改，但是不能在array上进行数据插入和删除。 那么问题来了为什么要使用array呢？ array相比较于一般数组，它提供了更好、更安全的接
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/05/09/stl-zhi-stack-xue-xi-1/#more" rel="contents">
+            <a class="btn" href="/2018/05/16/c-zhi-array-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -839,7 +869,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/08/stl-zhi-deque-xue-xi-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/15/c-shi-xian-zi-mu-biao-quan-pai-xu-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -858,7 +888,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/08/stl-zhi-deque-xue-xi-1/" itemprop="url">STL之deque学习</a></h1>
+                <a class="post-title-link" href="/2018/05/15/c-shi-xian-zi-mu-biao-quan-pai-xu-1/" itemprop="url">C++实现字母表全排序</a></h1>
         
 
         <div class="post-meta">
@@ -870,8 +900,188 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-08T23:14:08+08:00">
-                2018-05-08
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-15T23:22:16+08:00">
+                2018-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-amp-C/" itemprop="url" rel="index">
+                    <span itemprop="name">C&amp;C++</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-amp-C/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-amp-C/%E6%96%87%E7%AB%A0%E9%A1%B5/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/15/c-shi-xian-zi-mu-biao-quan-pai-xu-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/05/15/c-shi-xian-zi-mu-biao-quan-pai-xu-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+           全排列具体说明： 例如abc会有abc,acb,bac,bca,cab,abc六种情况 采用递归的方法： 先看a作为字母表首位时会有bc和cb两种排序 然后b作为字母表首位时会有ac和ca两种排序 最后是c作为字母表首位时会有ab和ba两种排序   这里就用到了swap（）进行交换。为了每次确保不
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/15/c-shi-xian-zi-mu-biao-quan-pai-xu-1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/14/stl-zhi-priority-queue-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StriveZs">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="StriveZs的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/14/stl-zhi-priority-queue-1/" itemprop="url">STL之priority_queue</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-14T23:02:22+08:00">
+                2018-05-14
               </time>
             
 
@@ -928,6 +1138,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/14/stl-zhi-priority-queue-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/05/14/stl-zhi-priority-queue-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -954,15 +1174,11 @@
       
         
           
-          
-
-deque双向队列：
-
-deque双向队列是一种双向开口的连续线性空间，可以高效的在头尾两端插入和删除元素，deque在接口上和vector非常相似，下面列出deque的常用成员函数：   构造析构函数： deque&lt;类型&gt;c  创建一个名称为c的空元素类型的deque deque&
+           优先级队列是一个拥有权值概念的单向队列，在这个队列中，所有元素是按优先级排 的。 优先队列容器也是一种从一端入队，另一端出对的队列。不同于一般队列的是，队列中最大的元素总是位于队首位置，因此，元素的出对并非按照先进先出的要求，将最先入队的元素出对，而是将当前队列中的最大元素出对。 C++ STL 
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/05/08/stl-zhi-deque-xue-xi-1/#more" rel="contents">
+            <a class="btn" href="/2018/05/14/stl-zhi-priority-queue-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1013,7 +1229,7 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/07/c-zhi-stl-jie-shao-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/13/stl-zhi-heap-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -1032,7 +1248,7 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/07/c-zhi-stl-jie-shao-1/" itemprop="url">C++之STL介绍</a></h1>
+                <a class="post-title-link" href="/2018/05/13/stl-zhi-heap-1/" itemprop="url">STL之heap</a></h1>
         
 
         <div class="post-meta">
@@ -1044,8 +1260,8 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-07T18:33:45+08:00">
-                2018-05-07
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-13T21:30:44+08:00">
+                2018-05-13
               </time>
             
 
@@ -1102,6 +1318,16 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/13/stl-zhi-heap-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/05/13/stl-zhi-heap-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1128,13 +1354,11 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
       
         
           
-           CSTL（标准模板库）是一套功能强大的C模板类，提供了通用的模板类和函数，这些模板类和函数可以实现多种流行和常用的算法和数据结构，如向量、链表、队列、栈。 C++标准模板库三个核心组件：
-算法（Algorithm）
-算法作用于容器。它们提供了执行各种操作的方式，包括对容器内容执行初始化、排序、搜索
+           STL中并没有把heap作为一种容器组件，heap的实现亦需要更低一层的容器组件（诸如list,array,vector）作为其底层机制。Heap是一个类属算法，包含在algorithm头文件中。虽然STL中关于heap默认调整成的是大顶堆，但却可以让用户利用自定义的compare_fuction
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/05/07/c-zhi-stl-jie-shao-1/#more" rel="contents">
+            <a class="btn" href="/2018/05/13/stl-zhi-heap-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1185,7 +1409,7 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/06/c-zhi-vector-shi-yong-1/">
+    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/12/fcfs-suan-fa-he-you-xian-ji-diao-du-suan-fa-c-shi-xian-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StriveZs">
@@ -1204,7 +1428,7 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/06/c-zhi-vector-shi-yong-1/" itemprop="url">C++之vector使用</a></h1>
+                <a class="post-title-link" href="/2018/05/12/fcfs-suan-fa-he-you-xian-ji-diao-du-suan-fa-c-shi-xian-1/" itemprop="url">FCFS算法和优先级调度算法C++实现</a></h1>
         
 
         <div class="post-meta">
@@ -1216,8 +1440,8 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-06T22:41:21+08:00">
-                2018-05-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-12T23:15:30+08:00">
+                2018-05-12
               </time>
             
 
@@ -1250,8 +1474,8 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-amp-C/C-%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
-                    <span itemprop="name">C++学习</span>
+                  <a href="/categories/C-amp-C/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
+                    <span itemprop="name">文章页</span>
                   </a>
                 </span>
 
@@ -1261,8 +1485,8 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-amp-C/C-%E5%AD%A6%E4%B9%A0/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
+                  <a href="/categories/C-amp-C/%E6%96%87%E7%AB%A0%E9%A1%B5/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
                   </a>
                 </span>
 
@@ -1273,6 +1497,16 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/12/fcfs-suan-fa-he-you-xian-ji-diao-du-suan-fa-c-shi-xian-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/05/12/fcfs-suan-fa-he-you-xian-ji-diao-du-suan-fa-c-shi-xian-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -1300,171 +1534,11 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
       
         
           
-           使用vector创建数组对象   C++标准库提供了被封装的动态数组—vector，而且这种封装的数组可以具有各种类型。 vector它不是类，它是类的一个模板。 使用vector动态定义数组的形式为： vector&lt;元素类型&gt;数组对象名（数组长度）;   例如： vectorarra
+           FCFS调度算法（短作业优先） 该算法采用非剥夺策略，算法按照进程提交或进程变为就绪状态的先后次序，分派 CPU。当前进程占用CPU，直到执行完或阻塞，才出让CPU（非抢占方式）。在进程唤醒后（如I/O 完成），并不立即恢复执行，通常等到当前进程出让CPU。这是最简单的调度算法，比较有利于长进程，
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/05/06/c-zhi-vector-shi-yong-1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.strivezs.com/2018/05/05/python-pi-liang-xiu-gai-wen-jian-jia-wen-jian-ming-cheng-de-xiao-cheng-xu-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="StriveZs">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="StriveZs的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/05/python-pi-liang-xiu-gai-wen-jian-jia-wen-jian-ming-cheng-de-xiao-cheng-xu-1/" itemprop="url">Python批量修改文件夹文件名称的小程序</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-05T23:22:52+08:00">
-                2018-05-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python%E5%8A%9F%E8%83%BD/" itemprop="url" rel="index">
-                    <span itemprop="name">Python功能</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python%E5%8A%9F%E8%83%BD/%E6%96%87%E7%AB%A0%E9%A1%B5/" itemprop="url" rel="index">
-                    <span itemprop="name">文章页</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           由于之前删除图片吃了一次大亏，所以想到写一个批量修改文件名称的小程序，以防止之前的文件被覆盖。   程序样子：    使用：   结果：    下载地址： https://download.csdn.net/download/qq_16184125/10394937
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/05/python-pi-liang-xiu-gai-wen-jian-jia-wen-jian-ming-cheng-de-xiao-cheng-xu-1/#more" rel="contents">
+            <a class="btn" href="/2018/05/12/fcfs-suan-fa-he-you-xian-ji-diao-du-suan-fa-c-shi-xian-1/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1506,7 +1580,7 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
 
   
  <nav class="pagination">
-   <a class="extend prev" rel="prev" href="/page/28/"><i class="fa fa-angle-left" aria-label="accessibility.prev_page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="page-number" href="/page/25/">25</a><a class="page-number" href="/page/26/">26</a><a class="page-number" href="/page/27/">27</a><a class="page-number" href="/page/28/">28</a><span class="page-number current">29</span><a class="page-number" href="/page/30/">30</a><a class="page-number" href="/page/31/">31</a><a class="page-number" href="/page/32/">32</a><a class="page-number" href="/page/33/">33</a><a class="page-number" href="/page/34/">34</a><span class="space">&hellip;</span><a class="page-number" href="/page/40/">40</a><a class="extend next" rel="next" href="/page/30/"><i class="fa fa-angle-right" aria-label="accessibility.next_page"></i></a>
+   <a class="extend prev" rel="prev" href="/page/28/"><i class="fa fa-angle-left" aria-label="accessibility.prev_page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="page-number" href="/page/25/">25</a><a class="page-number" href="/page/26/">26</a><a class="page-number" href="/page/27/">27</a><a class="page-number" href="/page/28/">28</a><span class="page-number current">29</span><a class="page-number" href="/page/30/">30</a><a class="page-number" href="/page/31/">31</a><a class="page-number" href="/page/32/">32</a><a class="page-number" href="/page/33/">33</a><a class="page-number" href="/page/34/">34</a><span class="space">&hellip;</span><a class="page-number" href="/page/41/">41</a><a class="extend next" rel="next" href="/page/30/"><i class="fa fa-angle-right" aria-label="accessibility.next_page"></i></a>
  </nav>
 
           </div>
@@ -1554,7 +1628,7 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">274</span>
+                  <span class="site-state-item-count">281</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1565,7 +1639,7 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">189</span>
+                  <span class="site-state-item-count">204</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1576,7 +1650,7 @@ deque双向队列是一种双向开口的连续线性空间，可以高效的在
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">183</span>
+                  <span class="site-state-item-count">197</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -2141,6 +2215,28 @@ if(canvas.getContext){
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 'KqICB5D6mxxGk3BP6KIJz0ar-gzGzoHsz',
+        appKey: 'YsAzygIOG5S4oWgdymQBthCv',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+        avatar:'wavatar',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
 
 
   
@@ -2476,6 +2572,28 @@ if(canvas.getContext){
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
