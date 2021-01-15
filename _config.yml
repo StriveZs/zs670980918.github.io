@@ -108,15 +108,16 @@ deploy:
 plugins: 
   hexo-generate-cname
   hexo-generator-feed
-  # hexo-tag-cloud
+  hexo-tag-cloud
 
+# 标签云
 # hexo-tag-cloud
-# tag_cloud:
-#     textFont: Trebuchet MS, Helvetica
-#     textColor: '#333'
-#     textHeight: 25
-#     outlineColor: '#E2E1D1'
-#     maxSpeed: 0.1 
+tag_cloud:
+    textFont: Trebuchet MS, Helvetica
+    textColor: '#333'
+    textHeight: 25
+    outlineColor: '#E2E1D1'
+    maxSpeed: 0.1 
 
 # 2d 二次元人物模型
 live2d:

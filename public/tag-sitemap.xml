@@ -3,6 +3,174 @@
 
 
     <url>
+        <loc>www.strivezs.com/tags/OJ/</loc>
+        <lastmod>2021-01-15T11:23:19.142Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/LeetCode/</loc>
+        <lastmod>2021-01-15T11:23:19.142Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/Programing/</loc>
+        <lastmod>2021-01-15T11:23:19.142Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/round/</loc>
+        <lastmod>2021-01-11T11:22:58.791Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/Python/</loc>
+        <lastmod>2021-01-11T11:22:58.791Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/Resolution/</loc>
+        <lastmod>2020-11-15T04:56:45.096Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/Cliclick/</loc>
+        <lastmod>2020-11-02T08:56:22.471Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/%25E9%25BC%25A0%25E6%25A0%2587%25E5%258D%2595%25E5%2587%25BB/</loc>
+        <lastmod>2020-11-02T08:56:22.471Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/Focal-Loss/</loc>
+        <lastmod>2020-10-19T09:21:29.493Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/Latex/</loc>
+        <lastmod>2020-10-07T03:32:27.328Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/Skim/</loc>
+        <lastmod>2020-10-07T03:32:27.328Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/Sublime/</loc>
+        <lastmod>2020-10-07T03:32:27.328Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/MAC/</loc>
+        <lastmod>2020-10-07T03:32:27.328Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/GPU/</loc>
+        <lastmod>2020-09-27T10:39:19.530Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/PyTorch/</loc>
+        <lastmod>2020-09-27T10:39:19.530Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/Google-Colaboratory/</loc>
+        <lastmod>2020-09-27T10:39:19.530Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/Anaconda/</loc>
+        <lastmod>2020-09-27T10:39:19.530Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/%25E6%25A0%25A1%25E5%259B%25AD%25E7%25BD%2591/</loc>
+        <lastmod>2020-09-23T01:28:45.635Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/%25E5%2585%258D%25E6%25B5%2581/</loc>
+        <lastmod>2020-09-23T01:28:45.635Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/ipv6/</loc>
+        <lastmod>2020-09-23T01:28:45.635Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/Clean/</loc>
+        <lastmod>2020-09-02T14:13:14.357Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/%25E5%25BF%25AB%25E6%258D%25B7%25E9%2594%25AE/</loc>
+        <lastmod>2020-08-19T09:45:52.241Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/%25E5%2593%2588%25E5%25B8%258C/</loc>
+        <lastmod>2020-08-04T09:08:44.874Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>www.strivezs.com/tags/%25E7%259B%25B8%25E4%25BC%25BC%25E5%259B%25BE%25E7%2589%2587%25E6%2590%259C%25E7%25B4%25A2/</loc>
+        <lastmod>2020-08-04T09:08:44.874Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>www.strivezs.com/tags/Gaussian-Blur/</loc>
         <lastmod>2020-07-30T08:25:02.583Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -136,13 +304,6 @@
     </url>
 
     <url>
-        <loc>www.strivezs.com/tags/Python/</loc>
-        <lastmod>2020-06-21T10:34:37.707Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>www.strivezs.com/tags/%25E5%25BE%25AE%25E4%25BF%25A1%25E5%2585%25AC%25E4%25BC%2597%25E5%258F%25B7/</loc>
         <lastmod>2020-06-05T07:48:57.625Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -158,13 +319,6 @@
 
     <url>
         <loc>www.strivezs.com/tags/Linux/</loc>
-        <lastmod>2020-05-22T09:46:03.172Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>www.strivezs.com/tags/Anaconda/</loc>
         <lastmod>2020-05-22T09:46:03.172Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -214,13 +368,6 @@
 
     <url>
         <loc>www.strivezs.com/tags/CUDA/</loc>
-        <lastmod>2020-03-18T02:22:12.072Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>www.strivezs.com/tags/PyTorch/</loc>
         <lastmod>2020-03-18T02:22:12.072Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

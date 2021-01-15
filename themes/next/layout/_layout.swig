@@ -10,7 +10,7 @@
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
   <!-- 球型气泡标签云 -->
-    <script type="text/javascript" src="/js/src/bubble.js"></script>
+  <!--  <script type="text/javascript" src="/js/src/bubble.js"></script>   暂时不用了-->
     
   {% include '_third-party/analytics/index.swig' %}
 </head>

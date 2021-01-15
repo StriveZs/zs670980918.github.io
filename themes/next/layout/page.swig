@@ -38,7 +38,7 @@
             </div>
           </div>
 
-          {% include 'tag-bubble.swig' %}
+          {# {% include 'tag-bubble.swig' %} 暂时不使用了 #}
 
         {% elif page.type === 'categories' %}
           <div class="category-all-page">
