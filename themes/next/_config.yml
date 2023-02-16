@@ -839,3 +839,6 @@ diy_time:
   clock: true # 粒子时钟
 # Theme version
 version: 5.1.4
+
+# mouse click effect: fireworks | explosion | love | text 
+cursor_effect: text
