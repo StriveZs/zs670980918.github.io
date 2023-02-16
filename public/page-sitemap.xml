@@ -8,29 +8,29 @@
     </url>
     
     <url>
-        <loc>www.strivezs.com/about/</loc>
-        <lastmod>2021-04-06T14:03:42.755Z</lastmod>
+        <loc>www.strivezs.com/tags/</loc>
+        <lastmod>2021-08-21T06:20:41.997Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>www.strivezs.com/categories/</loc>
-        <lastmod>2020-01-04T08:49:51.673Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>www.strivezs.com/tags/</loc>
-        <lastmod>2020-01-04T08:49:51.667Z</lastmod>
+        <lastmod>2021-08-21T06:20:41.969Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>www.strivezs.com/archives/</loc>
-        <lastmod>2020-01-04T08:49:51.664Z</lastmod>
+        <lastmod>2021-08-21T06:20:41.967Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>www.strivezs.com/about/</loc>
+        <lastmod>2021-08-21T06:20:41.953Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -64,14 +64,14 @@
     </url>
     
     <url>
-        <loc>www.strivezs.com/di-qiu-fang-ke/index-1.html</loc>
+        <loc>www.strivezs.com/di-qiu-fang-ke/</loc>
         <lastmod>2018-03-16T04:31:04.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>www.strivezs.com/di-qiu-fang-ke/</loc>
+        <loc>www.strivezs.com/di-qiu-fang-ke/index-1.html</loc>
         <lastmod>2018-03-16T04:31:04.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

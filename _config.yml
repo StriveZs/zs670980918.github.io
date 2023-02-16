@@ -177,9 +177,30 @@ symbols_count_time:
   exclude_codeblock: false     # 排除代码字数统计
 
 #Search
-search:
-  path: search.xml
-  field: post
-  format: html
-  content: true
-  limit: 1000
+# search:
+#   path: search.xml
+#   field: post
+#   format: html
+#   content: true
+#   limit: 1000
+jsonContent:
+  dateFormat: MM-DD
+  pages:
+    title: true
+    text: true
+    path: true
+    date: true
+    excerpt: true
+    preview: true
+  posts:
+    title: true
+    text: true
+    path: true
+    date: true
+    excerpt: true
+    tags: [{
+      name: tag.name,
+      slug: tag.slug,
+      permalink: tag.permalink
+    }]
+    preview: true

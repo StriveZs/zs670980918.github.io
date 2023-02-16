@@ -25,8 +25,8 @@
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/5.js?i=5b3ac4cx0nk&amp;m=0&amp;c=ff0000&amp;cr1=ffffff" async="async"></script>
 
 <div class=BbeiAn-info">
-  {{ __('皖ICP备') }} -
-  <a href="http://www.miitbeian.gov.cn/">18004602</a>
+  {{ __('京ICP备') }} -
+  <a href="http://www.miitbeian.gov.cn/">2023002560</a>
 </div>
 
 {% if theme.footer.powered %}
